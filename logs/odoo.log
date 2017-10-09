@@ -1050,3 +1050,13 @@
 2017-10-09 20:48:11,039 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:48:11] "POST /longpolling/poll? HTTP/1.1" 200 -
 2017-10-09 20:49:01,141 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:49:01] "POST /longpolling/poll? HTTP/1.1" 200 -
 2017-10-09 20:49:51,242 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:49:51] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:50:41,342 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:50:41] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:51:31,435 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:51:31] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:52:21,544 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:52:21] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:53:11,641 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:53:11] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:54:01,738 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:54:01] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:54:51,842 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:54:51] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:55:41,881 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:55:41] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:56:31,935 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:56:31] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:57:22,038 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:57:22] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:58:12,079 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:58:12] "POST /longpolling/poll? HTTP/1.1" 200 -
