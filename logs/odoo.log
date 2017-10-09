@@ -1,0 +1,1052 @@
+2017-10-09 18:30:56,754 4 INFO ? odoo: Odoo version 11.0
+2017-10-09 18:30:56,754 4 INFO ? odoo: Using configuration file at /home/odoo/.config/odoo/odoo.conf
+2017-10-09 18:30:56,754 4 INFO ? odoo: addons paths: ['/home/odoo/data/addons/11.0', '/home/odoo/src/enterprise', '/home/odoo/src/themes', '/home/odoo/src/odoo/addons', '/home/odoo/src/odoo/odoo/addons']
+2017-10-09 18:30:56,755 4 INFO ? odoo: database: p_aurelien_ideal_odoo11_master_924@192.168.1.1:5432
+2017-10-09 18:30:56,766 4 INFO ? odoo: Could not determine if database aurelien-ideal-odoo11-master-924 exists, skipping auto-creation: permission denied for relation pg_database
+
+2017-10-09 18:30:56,796 4 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2017-10-09 18:30:56,814 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 1 modules...
+2017-10-09 18:30:56,992 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2017-10-09 18:30:57,673 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 1 modules loaded in 0.86s, 0 queries
+2017-10-09 18:30:57,754 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 15 modules...
+2017-10-09 18:30:58,041 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 15 modules loaded in 0.29s, 0 queries
+2017-10-09 18:30:58,221 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: Modules loaded.
+2017-10-09 18:30:59,159 4 INFO ? odoo.addons.website_crm_score.models.sales_team: Flanker is not compatible with Python 3, email validation has been disabled
+2017-10-09 18:31:00,398 4 INFO ? odoo.http: HTTP Configuring static files
+2017-10-09 18:31:00,402 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_http: Generating routing map
+2017-10-09 18:31:00,429 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:00] "GET /? HTTP/1.1" 200 -
+2017-10-09 18:31:00,477 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:00] "GET /web? HTTP/1.1" 303 -
+2017-10-09 18:31:04,097 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/login? HTTP/1.1" 200 -
+2017-10-09 18:31:04,148 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/content/389-62ccda1/web.assets_common.0.css? HTTP/1.1" 200 -
+2017-10-09 18:31:04,195 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/content/392-e825e89/web.assets_frontend.js? HTTP/1.1" 200 -
+2017-10-09 18:31:04,196 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/binary/company_logo? HTTP/1.1" 200 -
+2017-10-09 18:31:04,213 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/content/391-62ccda1/web.assets_common.js? HTTP/1.1" 200 -
+2017-10-09 18:31:04,221 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/content/390-e825e89/web.assets_frontend.0.css? HTTP/1.1" 200 -
+2017-10-09 18:31:04,386 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/webclient/qweb?mods= HTTP/1.1" 200 -
+2017-10-09 18:31:04,389 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "POST /web/webclient/bootstrap_translations? HTTP/1.1" 200 -
+2017-10-09 18:31:04,465 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:04] "GET /web/static/src/img/favicon.ico? HTTP/1.1" 200 -
+2017-10-09 18:31:12,673 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:12] "POST /web/login? HTTP/1.1" 200 -
+2017-10-09 18:31:13,022 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:13] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2017-10-09 18:31:17,784 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web? HTTP/1.1" 200 -
+2017-10-09 18:31:17,873 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web/content/393-98febf7/web.assets_backend.0.css? HTTP/1.1" 200 -
+2017-10-09 18:31:17,874 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web/content/395-36aa98f/web_editor.summernote.0.css? HTTP/1.1" 200 -
+2017-10-09 18:31:17,876 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web/content/394-98febf7/web.assets_backend.1.css? HTTP/1.1" 200 -
+2017-10-09 18:31:17,878 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web/content/397-98febf7/web.assets_backend.js? HTTP/1.1" 200 -
+2017-10-09 18:31:17,883 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web/content/396-e06adbc/web_editor.assets_editor.0.css? HTTP/1.1" 200 -
+2017-10-09 18:31:17,889 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web/content/398-36aa98f/web_editor.summernote.js? HTTP/1.1" 200 -
+2017-10-09 18:31:17,905 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:17] "GET /web/content/399-e06adbc/web_editor.assets_editor.js? HTTP/1.1" 200 -
+2017-10-09 18:31:18,121 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web/webclient/qweb?mods=web,base,web_grid,web_planner,web_tour,base_import,web_gantt,web_diagram,web_enterprise,web_kanban_gauge,iap,web_settings_dashboard,web_mobile,web_editor HTTP/1.1" 200 -
+2017-10-09 18:31:18,241 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "POST /web/dataset/call? HTTP/1.1" 200 -
+2017-10-09 18:31:18,269 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web_enterprise/static/src/fonts/Roboto/Roboto-Regular-webfont.woff? HTTP/1.1" 200 -
+2017-10-09 18:31:18,290 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "POST /web/webclient/translations? HTTP/1.1" 200 -
+2017-10-09 18:31:18,314 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web/webclient/locale/en_US? HTTP/1.1" 200 -
+2017-10-09 18:31:18,493 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "POST /web/dataset/call_kw/ir.ui.menu/load_menus? HTTP/1.1" 200 -
+2017-10-09 18:31:18,546 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web/static/src/img/logo_inverse_white_206px.png? HTTP/1.1" 200 -
+2017-10-09 18:31:18,569 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web/static/src/img/user_menu_avatar.png? HTTP/1.1" 200 -
+2017-10-09 18:31:18,595 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "POST /web/dataset/call_kw/web.planner/search_read? HTTP/1.1" 200 -
+2017-10-09 18:31:18,597 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "POST /web/dataset/call_kw/res.users/read? HTTP/1.1" 200 -
+2017-10-09 18:31:18,598 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2017-10-09 18:31:18,670 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web_enterprise/static/src/fonts/Roboto/Roboto-Bold-webfont.woff? HTTP/1.1" 200 -
+2017-10-09 18:31:18,671 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:18] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+2017-10-09 18:31:31,771 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:31:31] "GET /favicon.ico? HTTP/1.1" 404 -
+2017-10-09 18:31:58,350 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_attachment: filestore gc 357 checked, 10 removed
+2017-10-09 18:31:58,361 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_autovacuum: GC'd 0 user log entries
+2017-10-09 18:34:15,810 4 INFO ? odoo: Odoo version 11.0
+2017-10-09 18:34:15,810 4 INFO ? odoo: Using configuration file at /home/odoo/.config/odoo/odoo.conf
+2017-10-09 18:34:15,811 4 INFO ? odoo: addons paths: ['/home/odoo/data/addons/11.0', '/home/odoo/src/enterprise', '/home/odoo/src/themes', '/home/odoo/src/odoo/addons', '/home/odoo/src/odoo/odoo/addons']
+2017-10-09 18:34:15,811 4 INFO ? odoo: database: p_aurelien_ideal_odoo11_master_924@192.168.1.1:5432
+2017-10-09 18:34:15,823 4 INFO ? odoo: Could not determine if database aurelien-ideal-odoo11-master-924 exists, skipping auto-creation: permission denied for relation pg_database
+
+2017-10-09 18:34:15,853 4 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2017-10-09 18:34:15,869 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 1 modules...
+2017-10-09 18:34:16,017 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2017-10-09 18:34:16,701 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 1 modules loaded in 0.83s, 0 queries
+2017-10-09 18:34:16,765 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 15 modules...
+2017-10-09 18:34:17,077 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 15 modules loaded in 0.31s, 0 queries
+2017-10-09 18:34:17,261 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: Modules loaded.
+2017-10-09 18:34:18,333 4 INFO ? odoo.addons.website_crm_score.models.sales_team: Flanker is not compatible with Python 3, email validation has been disabled
+2017-10-09 18:34:19,549 4 INFO ? odoo.http: HTTP Configuring static files
+2017-10-09 18:34:19,553 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_http: Generating routing map
+2017-10-09 18:34:19,694 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:19] "GET /? HTTP/1.1" 200 -
+2017-10-09 18:34:19,774 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:19] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2017-10-09 18:34:20,787 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [389]
+2017-10-09 18:34:23,955 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [394, 393]
+2017-10-09 18:34:24,375 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [395]
+2017-10-09 18:34:25,139 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [396]
+2017-10-09 18:34:25,615 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [391]
+2017-10-09 18:34:26,078 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [397]
+2017-10-09 18:34:26,202 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [398]
+2017-10-09 18:34:26,316 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [399]
+2017-10-09 18:34:26,340 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web? HTTP/1.1" 200 -
+2017-10-09 18:34:26,388 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/400-4a07bfb/web.assets_common.0.css? HTTP/1.1" 200 -
+2017-10-09 18:34:26,389 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/401-d67846e/web.assets_backend.0.css? HTTP/1.1" 200 -
+2017-10-09 18:34:26,468 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/402-d67846e/web.assets_backend.1.css? HTTP/1.1" 200 -
+2017-10-09 18:34:26,469 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/403-e4735b7/web_editor.summernote.0.css? HTTP/1.1" 200 -
+2017-10-09 18:34:26,470 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/404-e61806f/web_editor.assets_editor.0.css? HTTP/1.1" 200 -
+2017-10-09 18:34:26,471 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/405-4a07bfb/web.assets_common.js? HTTP/1.1" 200 -
+2017-10-09 18:34:26,472 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/406-d67846e/web.assets_backend.js? HTTP/1.1" 200 -
+2017-10-09 18:34:26,479 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/407-e4735b7/web_editor.summernote.js? HTTP/1.1" 200 -
+2017-10-09 18:34:26,496 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/content/408-e61806f/web_editor.assets_editor.js? HTTP/1.1" 200 -
+2017-10-09 18:34:26,676 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/webclient/qweb?mods=web,base,web_gantt,web_planner,web_settings_dashboard,web_mobile,web_diagram,web_tour,web_grid,iap,web_kanban_gauge,web_editor,base_import,web_enterprise HTTP/1.1" 200 -
+2017-10-09 18:34:26,747 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "POST /web/dataset/call? HTTP/1.1" 200 -
+2017-10-09 18:34:26,768 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "POST /web/webclient/translations? HTTP/1.1" 200 -
+2017-10-09 18:34:26,923 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "POST /web/dataset/call_kw/ir.ui.menu/load_menus? HTTP/1.1" 200 -
+2017-10-09 18:34:26,992 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "POST /web/dataset/call_kw/web.planner/search_read? HTTP/1.1" 200 -
+2017-10-09 18:34:26,994 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "POST /web/dataset/call_kw/res.users/read? HTTP/1.1" 200 -
+2017-10-09 18:34:26,997 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:34:26] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 304 -
+2017-10-09 18:37:56,151 4 INFO ? odoo: Odoo version 11.0
+2017-10-09 18:37:56,152 4 INFO ? odoo: Using configuration file at /home/odoo/.config/odoo/odoo.conf
+2017-10-09 18:37:56,152 4 INFO ? odoo: addons paths: ['/home/odoo/data/addons/11.0', '/home/odoo/src/enterprise', '/home/odoo/src/themes', '/home/odoo/src/odoo/addons', '/home/odoo/src/odoo/odoo/addons']
+2017-10-09 18:37:56,152 4 INFO ? odoo: database: p_aurelien_ideal_odoo11_master_924@192.168.1.1:5432
+2017-10-09 18:37:56,163 4 INFO ? odoo: Could not determine if database aurelien-ideal-odoo11-master-924 exists, skipping auto-creation: permission denied for relation pg_database
+
+2017-10-09 18:37:56,196 4 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2017-10-09 18:37:56,213 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 1 modules...
+2017-10-09 18:37:56,366 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2017-10-09 18:37:57,102 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 1 modules loaded in 0.89s, 0 queries
+2017-10-09 18:37:57,170 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 15 modules...
+2017-10-09 18:37:57,484 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 15 modules loaded in 0.31s, 0 queries
+2017-10-09 18:37:57,678 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: Modules loaded.
+2017-10-09 18:37:58,628 4 INFO ? odoo.addons.website_crm_score.models.sales_team: Flanker is not compatible with Python 3, email validation has been disabled
+2017-10-09 18:37:59,906 4 INFO ? odoo.http: HTTP Configuring static files
+2017-10-09 18:37:59,911 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_http: Generating routing map
+2017-10-09 18:38:00,236 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "POST /web/action/load? HTTP/1.1" 200 -
+2017-10-09 18:38:00,382 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "POST /web/dataset/call_kw/ir.module.module/load_views? HTTP/1.1" 200 -
+2017-10-09 18:38:00,487 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:38:00,527 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /crm/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,545 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /hr_timesheet/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,547 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /project/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,554 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /stock/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,559 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /mrp/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,563 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /sale_management/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,564 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /point_of_sale/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,567 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /hr_holidays/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,570 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /mail/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,575 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /account_invoicing/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,581 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /hr_appraisal/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,592 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /note/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,593 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /account_accountant/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,595 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /mrp_plm/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,598 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /quality/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,601 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,602 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website_sale/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,612 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /purchase/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,617 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /helpdesk/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,617 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /hr/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,624 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /hr_attendance/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,627 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /hr_expense/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,628 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /hr_recruitment/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,634 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /board/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,640 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /marketing_automation/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,640 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /contacts/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,644 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /mrp_maintenance/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,650 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /sale_subscription/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,651 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /project_forecast/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,652 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /stock_barcode/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,658 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /voip/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,661 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /web_studio/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,667 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website_sign/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,672 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /survey/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,673 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /mass_mailing/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,683 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /lunch/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,684 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /maintenance/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,693 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website_blog/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,693 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website_calendar/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,696 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website_slides/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,696 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /calendar/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,705 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website_forum/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,706 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /fleet/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,711 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /website_event/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,714 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /im_livechat/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,716 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /mrp_repair/static/description/icon.png? HTTP/1.1" 200 -
+2017-10-09 18:38:00,787 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:38:00,806 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:00] "GET /web_enterprise/static/src/fonts/Roboto/Roboto-Medium-webfont.woff? HTTP/1.1" 200 -
+2017-10-09 18:38:01,043 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:01] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:38:01,256 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:01] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:38:12,545 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: ALLOW access to module.button_immediate_install on ['crm'] to user admin #1 via 37.58.201.24
+2017-10-09 18:38:12,545 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: User #1 triggered module installation
+2017-10-09 18:38:12,545 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: ALLOW access to module.button_install on ['crm'] to user admin #1 via 37.58.201.24
+2017-10-09 18:38:13,124 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 1 modules...
+2017-10-09 18:38:13,138 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries
+2017-10-09 18:38:13,252 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: updating modules list
+2017-10-09 18:38:13,256 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: ALLOW access to module.update_list on [] to user admin #1 via 37.58.201.24
+2017-10-09 18:38:14,040 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 15 modules...
+2017-10-09 18:38:14,068 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 15 modules loaded in 0.03s, 0 queries
+2017-10-09 18:38:14,078 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 30 modules...
+2017-10-09 18:38:14,118 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module contacts: creating or updating database tables
+2017-10-09 18:38:14,317 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading contacts/views/contact_views.xml
+2017-10-09 18:38:14,582 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module resource: creating or updating database tables
+2017-10-09 18:38:14,730 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:14,945 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of resource.calendar.leaves.company_id
+2017-10-09 18:38:15,046 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of resource.test.company_id
+2017-10-09 18:38:15,081 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading resource/data/resource_data.xml
+2017-10-09 18:38:15,161 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading resource/security/ir.model.access.csv
+2017-10-09 18:38:15,300 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading resource/security/resource_security.xml
+2017-10-09 18:38:15,338 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading resource/views/resource_views.xml
+2017-10-09 18:38:15,546 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:15] "GET /web/static/src/img/spin.png? HTTP/1.1" 200 -
+2017-10-09 18:38:15,915 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module utm: creating or updating database tables
+2017-10-09 18:38:16,084 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading utm/security/ir.model.access.csv
+2017-10-09 18:38:16,165 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading utm/views/utm.xml
+2017-10-09 18:38:16,363 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading utm/data/utm_data.xml
+2017-10-09 18:38:16,531 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module base_setup: creating or updating database tables
+2017-10-09 18:38:16,604 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml
+2017-10-09 18:38:16,693 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2017-10-09 18:38:16,869 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module bus: creating or updating database tables
+2017-10-09 18:38:16,933 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:17,065 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading bus/views/bus.xml
+2017-10-09 18:38:17,138 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading bus/security/ir.model.access.csv
+2017-10-09 18:38:17,395 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module mail: creating or updating database tables
+2017-10-09 18:38:18,054 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:18,926 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of mail.activity.res_model
+2017-10-09 18:38:18,928 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of mail.activity.res_name
+2017-10-09 18:38:19,351 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of mail.template.model
+2017-10-09 18:38:19,490 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of res.partner.activity_date_deadline
+2017-10-09 18:38:20,014 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of email_template.preview.model
+2017-10-09 18:38:20,277 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/wizard/invite_view.xml
+2017-10-09 18:38:20,320 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/wizard/mail_compose_message_view.xml
+2017-10-09 18:38:20,377 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2017-10-09 18:38:20,451 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_tracking_views.xml
+2017-10-09 18:38:20,541 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_message_views.xml
+2017-10-09 18:38:20,698 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2017-10-09 18:38:20,811 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2017-10-09 18:38:20,893 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_channel_views.xml
+2017-10-09 18:38:21,143 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_shortcode_views.xml
+2017-10-09 18:38:21,202 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_activity_views.xml
+2017-10-09 18:38:21,379 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/res_config_settings_views.xml
+2017-10-09 18:38:21,437 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/data/mail_data.xml
+2017-10-09 18:38:21,544 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/data/mail_channel_data.xml
+2017-10-09 18:38:21,657 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/data/mail_shortcode_data.xml
+2017-10-09 18:38:21,754 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/data/mail_activity_data.xml
+2017-10-09 18:38:21,774 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/security/mail_security.xml
+2017-10-09 18:38:21,833 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/security/ir.model.access.csv
+2017-10-09 18:38:22,366 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2017-10-09 18:38:22,462 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/res_users_views.xml
+2017-10-09 18:38:22,572 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_templates.xml
+2017-10-09 18:38:22,789 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/wizard/email_template_preview_view.xml
+2017-10-09 18:38:22,835 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/mail_template_views.xml
+2017-10-09 18:38:22,970 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/ir_actions_views.xml
+2017-10-09 18:38:23,027 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/ir_model_views.xml
+2017-10-09 18:38:23,173 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/views/res_partner_views.xml
+2017-10-09 18:38:23,321 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/data/mail_demo.xml
+2017-10-09 18:38:23,463 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:23,470 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 1 and Message-Id '<466562427882847.1507574303.331442594528198-openerp-private@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:23,487 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [1]
+2017-10-09 18:38:23,487 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:23,591 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:23,596 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 2 and Message-Id '<961339890555577.1507574303.502163648605347-openerp-private@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:23,609 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [2]
+2017-10-09 18:38:23,610 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:23,739 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:23,744 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 3 and Message-Id '<322680507857035.1507574303.641355276107788-openerp-private@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:23,756 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [3]
+2017-10-09 18:38:23,757 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:23,890 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:23,895 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 4 and Message-Id '<731103040864703.1507574303.806991338729858-openerp-private@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:23,908 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [4]
+2017-10-09 18:38:23,909 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:24,118 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:24,123 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 5 and Message-Id '<254343018917834.1507574304.034208536148071-openerp-private@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:24,135 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [5]
+2017-10-09 18:38:24,135 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:24,242 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:24,246 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 6 and Message-Id '<651910306945162.1507574304.161071062088013-openerp-private@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:24,259 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [6]
+2017-10-09 18:38:24,260 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:24,325 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail/data/mail_channel_demo.xml
+2017-10-09 18:38:25,492 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module web_clearbit: creating or updating database tables
+2017-10-09 18:38:25,506 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading web_clearbit/views/res_partner_views.xml
+2017-10-09 18:38:25,791 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading web_clearbit/views/web_clearbit_templates.xml
+2017-10-09 18:38:26,259 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module auth_signup: creating or updating database tables
+2017-10-09 18:38:26,311 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:26,423 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading auth_signup/data/auth_signup_data.xml
+2017-10-09 18:38:26,699 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml
+2017-10-09 18:38:26,756 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2017-10-09 18:38:26,825 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2017-10-09 18:38:26,935 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading auth_signup/views/auth_signup_assets.xml
+2017-10-09 18:38:27,251 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module calendar: creating or updating database tables
+2017-10-09 18:38:27,539 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:27,641 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.attendee.common_name
+2017-10-09 18:38:27,693 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.alarm.duration_minutes
+2017-10-09 18:38:27,885 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.event.display_start
+2017-10-09 18:38:27,886 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.event.start_date
+2017-10-09 18:38:27,887 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.event.start_datetime
+2017-10-09 18:38:27,888 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.event.stop_date
+2017-10-09 18:38:27,889 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.event.stop_datetime
+2017-10-09 18:38:27,893 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.event.res_model
+2017-10-09 18:38:27,894 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of calendar.event.rrule
+2017-10-09 18:38:28,107 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/security/ir.model.access.csv
+2017-10-09 18:38:28,270 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/security/calendar_security.xml
+2017-10-09 18:38:28,336 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/data/calendar_cron.xml
+2017-10-09 18:38:28,367 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/data/calendar_data.xml
+2017-10-09 18:38:28,493 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/views/mail_activity_views.xml
+2017-10-09 18:38:28,572 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/views/calendar_templates.xml
+2017-10-09 18:38:28,765 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/views/calendar_views.xml
+2017-10-09 18:38:29,100 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/data/mail_activity_data.xml
+2017-10-09 18:38:29,109 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar/data/calendar_demo.xml
+2017-10-09 18:38:29,702 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [8]
+2017-10-09 18:38:29,841 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [12]
+2017-10-09 18:38:30,370 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [17]
+2017-10-09 18:38:30,792 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [20]
+2017-10-09 18:38:31,364 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module fetchmail: creating or updating database tables
+2017-10-09 18:38:31,548 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading fetchmail/data/fetchmail_data.xml
+2017-10-09 18:38:31,594 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading fetchmail/security/ir.model.access.csv
+2017-10-09 18:38:31,614 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading fetchmail/views/fetchmail_views.xml
+2017-10-09 18:38:31,721 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading fetchmail/views/mail_mail_views.xml
+2017-10-09 18:38:31,769 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading fetchmail/views/res_config_settings_views.xml
+2017-10-09 18:38:32,029 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module sales_team: creating or updating database tables
+2017-10-09 18:38:32,105 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:32,299 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sales_team/security/sales_team_security.xml
+2017-10-09 18:38:32,997 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sales_team/security/ir.model.access.csv
+2017-10-09 18:38:33,043 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sales_team/data/sales_team_data.xml
+2017-10-09 18:38:33,362 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sales_team/views/crm_team_views.xml
+2017-10-09 18:38:33,600 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sales_team/views/sales_team_dashboard.xml
+2017-10-09 18:38:33,635 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sales_team/data/sales_team_demo.xml
+2017-10-09 18:38:34,043 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module sms: creating or updating database tables
+2017-10-09 18:38:34,148 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:34,319 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sms/wizard/send_sms_views.xml
+2017-10-09 18:38:34,371 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading sms/views/res_partner_views.xml
+2017-10-09 18:38:34,631 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module calendar_sms: creating or updating database tables
+2017-10-09 18:38:34,700 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading calendar_sms/views/calendar_views.xml
+2017-10-09 18:38:34,886 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module crm: creating or updating database tables
+2017-10-09 18:38:34,906 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:35,195 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_alias: Mail alias created for crm.team America (id 3)
+2017-10-09 18:38:35,202 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_alias: Mail alias created for crm.team Europe (id 1)
+2017-10-09 18:38:35,208 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_alias: Mail alias created for crm.team Website (id 2)
+2017-10-09 18:38:35,886 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of crm.lead.day_open
+2017-10-09 18:38:35,888 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of crm.lead.day_close
+2017-10-09 18:38:35,916 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of crm.lead.activity_date_deadline
+2017-10-09 18:38:36,687 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/security/crm_security.xml
+2017-10-09 18:38:36,989 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/security/ir.model.access.csv
+2017-10-09 18:38:37,335 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/crm_data.xml
+2017-10-09 18:38:37,386 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/crm_stage_data.xml
+2017-10-09 18:38:37,408 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/crm_lead_data.xml
+2017-10-09 18:38:37,485 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/mail_template_data.xml
+2017-10-09 18:38:37,590 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/wizard/base_partner_merge_views.xml
+2017-10-09 18:38:37,651 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/wizard/crm_lead_lost_views.xml
+2017-10-09 18:38:37,690 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/wizard/crm_lead_to_opportunity_views.xml
+2017-10-09 18:38:37,777 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/wizard/crm_merge_opportunities_views.xml
+2017-10-09 18:38:37,831 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/wizard/base_partner_merge_views.xml
+2017-10-09 18:38:37,876 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/crm_templates.xml
+2017-10-09 18:38:37,983 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/res_config_settings_views.xml
+2017-10-09 18:38:38,076 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/crm_views.xml
+2017-10-09 18:38:38,176 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/crm_stage_views.xml
+2017-10-09 18:38:38,276 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/crm_lead_views.xml
+2017-10-09 18:38:39,087 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/calendar_views.xml
+2017-10-09 18:38:39,137 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/res_partner_views.xml
+2017-10-09 18:38:39,326 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/web_planner_data.xml
+2017-10-09 18:38:39,412 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/report/crm_activity_report_views.xml
+2017-10-09 18:38:39,527 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/report/crm_opportunity_report_views.xml
+2017-10-09 18:38:39,761 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/views/crm_team_views.xml
+2017-10-09 18:38:39,988 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/crm_demo.xml
+2017-10-09 18:38:40,074 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/mail_activity_demo.xml
+2017-10-09 18:38:40,093 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading crm/data/crm_lead_demo.xml
+2017-10-09 18:38:40,529 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:40,534 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 18 and Message-Id '<863259887359541.1507574320.505478620529175-openerp-3-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:40,546 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [18]
+2017-10-09 18:38:40,561 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [60]
+2017-10-09 18:38:40,561 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:40,732 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:40,737 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 19 and Message-Id '<808474780255725.1507574320.714145183563232-openerp-4-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:40,748 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [19]
+2017-10-09 18:38:40,762 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [63]
+2017-10-09 18:38:40,763 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:41,170 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:41,174 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 20 and Message-Id '<729745077631294.1507574321.150428533554077-openerp-9-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:41,184 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [20]
+2017-10-09 18:38:41,197 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [71]
+2017-10-09 18:38:41,198 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:41,351 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:41,356 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 21 and Message-Id '<673249504940854.1507574321.333398342132568-openerp-10-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:41,369 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [21]
+2017-10-09 18:38:41,387 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [74]
+2017-10-09 18:38:41,387 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:41,543 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:41,548 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 22 and Message-Id '<055749683541581.1507574321.434144020080566-openerp-10-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:41,563 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [22]
+2017-10-09 18:38:41,564 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:41,897 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:41,901 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 23 and Message-Id '<959096922935755.1507574321.874766826629639-openerp-14-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:41,914 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [23]
+2017-10-09 18:38:41,928 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [81]
+2017-10-09 18:38:41,929 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:42,053 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:42,057 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 24 and Message-Id '<681054506576918.1507574322.037175893783569-openerp-15-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:42,068 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [24]
+2017-10-09 18:38:42,080 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [83]
+2017-10-09 18:38:42,081 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:42,207 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:42,212 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 25 and Message-Id '<401644510225799.1507574322.127728700637817-openerp-15-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:42,223 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [25]
+2017-10-09 18:38:42,224 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:42,348 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:42,352 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 26 and Message-Id '<577682457172170.1507574322.255423069000244-openerp-15-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:42,364 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [26]
+2017-10-09 18:38:42,365 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:42,484 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:42,489 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 27 and Message-Id '<547971941217436.1507574322.467803716659546-openerp-16-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:42,500 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [27]
+2017-10-09 18:38:42,512 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [89]
+2017-10-09 18:38:42,512 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:42,658 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:42,662 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 28 and Message-Id '<345019063769997.1507574322.641656160354614-openerp-17-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:42,674 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [28]
+2017-10-09 18:38:42,688 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [92]
+2017-10-09 18:38:42,688 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:42,879 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:42,884 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 29 and Message-Id '<420610999282654.1507574322.861999273300171-openerp-18-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:42,895 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [29]
+2017-10-09 18:38:42,908 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [96]
+2017-10-09 18:38:42,909 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:43,069 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:43,075 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 30 and Message-Id '<399195804675316.1507574322.956451654434204-openerp-18-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:43,089 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [30]
+2017-10-09 18:38:43,090 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:43,305 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:43,310 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 31 and Message-Id '<536526522429324.1507574323.285067796707153-openerp-20-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:43,324 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [31]
+2017-10-09 18:38:43,340 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [101]
+2017-10-09 18:38:43,341 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:43,711 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:43,716 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 32 and Message-Id '<878743652961778.1507574323.691524744033813-openerp-23-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:43,729 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [32]
+2017-10-09 18:38:43,744 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [107]
+2017-10-09 18:38:43,744 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:44,108 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:44,112 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 33 and Message-Id '<984628674913408.1507574324.089815378189087-openerp-26-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:44,123 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [33]
+2017-10-09 18:38:44,138 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [113]
+2017-10-09 18:38:44,138 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:44,275 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:38:44,279 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 34 and Message-Id '<835670031219937.1507574324.257753610610962-openerp-27-crm.lead@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:44,291 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [34]
+2017-10-09 18:38:44,307 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [115]
+2017-10-09 18:38:44,307 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:38:44,450 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [43]
+2017-10-09 18:38:44,512 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [44]
+2017-10-09 18:38:44,566 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [46]
+2017-10-09 18:38:44,629 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [48]
+2017-10-09 18:38:44,683 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [50]
+2017-10-09 18:38:44,753 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [52]
+2017-10-09 18:38:44,814 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [54]
+2017-10-09 18:38:44,868 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [55]
+2017-10-09 18:38:44,919 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [57]
+2017-10-09 18:38:44,975 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [58]
+2017-10-09 18:38:45,026 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [59]
+2017-10-09 18:38:45,070 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [61]
+2017-10-09 18:38:45,117 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [62]
+2017-10-09 18:38:45,161 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [63]
+2017-10-09 18:38:45,970 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module mail_push: creating or updating database tables
+2017-10-09 18:38:46,050 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:38:46,374 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail_push/views/mail_push_templates.xml
+2017-10-09 18:38:46,482 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail_push/views/res_config_settings_views.xml
+2017-10-09 18:38:46,564 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mail_push/security/ir.model.access.csv
+2017-10-09 18:38:46,747 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 30 modules loaded in 32.67s, 11 queries
+2017-10-09 18:38:47,105 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: Modules loaded.
+2017-10-09 18:38:47,109 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Computing parent left and right for table ir_ui_menu...
+2017-10-09 18:38:47,163 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: getting next ir.actions.todo()
+2017-10-09 18:38:47,166 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:47] "POST /web/dataset/call_button? HTTP/1.1" 200 -
+2017-10-09 18:38:47,206 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_http: Generating routing map
+2017-10-09 18:38:47,218 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_http: Generating routing map
+2017-10-09 18:38:47,255 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:47] "GET /web/webclient/qweb?mods= HTTP/1.1" 304 -
+2017-10-09 18:38:48,220 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [400]
+2017-10-09 18:38:51,265 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [402, 401]
+2017-10-09 18:38:51,658 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [403]
+2017-10-09 18:38:52,400 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [404]
+2017-10-09 18:38:52,872 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [405]
+2017-10-09 18:38:53,425 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [406]
+2017-10-09 18:38:53,558 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [407]
+2017-10-09 18:38:53,680 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [408]
+2017-10-09 18:38:53,705 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web? HTTP/1.1" 200 -
+2017-10-09 18:38:53,802 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/433-868641c/web.assets_backend.0.css? HTTP/1.1" 200 -
+2017-10-09 18:38:53,815 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/434-868641c/web.assets_backend.1.css? HTTP/1.1" 200 -
+2017-10-09 18:38:53,818 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/432-ea4a6bf/web.assets_common.0.css? HTTP/1.1" 200 -
+2017-10-09 18:38:53,822 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/437-ea4a6bf/web.assets_common.js? HTTP/1.1" 200 -
+2017-10-09 18:38:53,823 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/435-fd162b5/web_editor.summernote.0.css? HTTP/1.1" 200 -
+2017-10-09 18:38:53,831 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/436-2f44d7e/web_editor.assets_editor.0.css? HTTP/1.1" 200 -
+2017-10-09 18:38:53,873 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/438-868641c/web.assets_backend.js? HTTP/1.1" 200 -
+2017-10-09 18:38:53,884 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/439-fd162b5/web_editor.summernote.js? HTTP/1.1" 200 -
+2017-10-09 18:38:53,889 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:53] "GET /web/content/440-2f44d7e/web_editor.assets_editor.js? HTTP/1.1" 200 -
+2017-10-09 18:38:54,069 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "GET /web/webclient/qweb?mods=web,base,bus,web_tour,mail,auth_signup,web_enterprise,web_grid,calendar,contacts,web_planner,web_settings_dashboard,web_mobile,web_editor,base_import,sales_team,crm,web_kanban_gauge,web_gantt,mail_push,web_clearbit,web_diagram,iap HTTP/1.1" 200 -
+2017-10-09 18:38:54,121 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /web/dataset/call? HTTP/1.1" 200 -
+2017-10-09 18:38:54,155 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /web/webclient/translations? HTTP/1.1" 200 -
+2017-10-09 18:38:54,232 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /mail/client_action? HTTP/1.1" 200 -
+2017-10-09 18:38:54,296 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:38:54,363 4 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2017-10-09 18:38:54,465 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /web/dataset/call_kw/ir.ui.menu/load_menus? HTTP/1.1" 200 -
+2017-10-09 18:38:54,567 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2017-10-09 18:38:54,572 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /web/dataset/call_kw/res.users/activity_user_count? HTTP/1.1" 200 -
+2017-10-09 18:38:54,573 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /web/dataset/call_kw/res.users/read? HTTP/1.1" 200 -
+2017-10-09 18:38:54,586 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /web/dataset/call_kw/web.planner/search_read? HTTP/1.1" 200 -
+2017-10-09 18:38:54,627 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:38:54] "POST /calendar/notify? HTTP/1.1" 200 -
+2017-10-09 18:38:57,898 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 16 and Message-Id '<459435854803177.1507574310.975209951400757-openerp-14-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:57,913 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [16]
+2017-10-09 18:38:57,932 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [50]
+2017-10-09 18:38:57,971 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 15 and Message-Id '<626317440341962.1507574310.749200105667114-openerp-12-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:57,983 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [15]
+2017-10-09 18:38:58,001 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [47]
+2017-10-09 18:38:58,041 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 14 and Message-Id '<120885765351034.1507574310.667713642120361-openerp-11-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,052 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [14]
+2017-10-09 18:38:58,069 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [46]
+2017-10-09 18:38:58,103 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 13 and Message-Id '<969908728356743.1507574310.591113805770874-openerp-10-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,116 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [13]
+2017-10-09 18:38:58,133 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [45]
+2017-10-09 18:38:58,171 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 12 and Message-Id '<977086767025923.1507574310.331646442413330-openerp-8-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,182 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [12]
+2017-10-09 18:38:58,198 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [42]
+2017-10-09 18:38:58,237 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 11 and Message-Id '<210798031689607.1507574310.119828701019287-openerp-7-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,248 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [11]
+2017-10-09 18:38:58,264 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [39]
+2017-10-09 18:38:58,302 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 10 and Message-Id '<458320479722160.1507574310.045027017593384-openerp-6-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,313 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [10]
+2017-10-09 18:38:58,331 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [38]
+2017-10-09 18:38:58,371 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 9 and Message-Id '<702527383862707.1507574309.660245180130005-openerp-3-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,383 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [9]
+2017-10-09 18:38:58,402 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [33]
+2017-10-09 18:38:58,439 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 8 and Message-Id '<975226258269153.1507574309.594616651535034-openerp-2-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,451 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [8]
+2017-10-09 18:38:58,466 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [32]
+2017-10-09 18:38:58,502 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 7 and Message-Id '<114297162666820.1507574309.372450351715088-openerp-1-calendar.attendee@Lhh93SrF4N>' successfully sent
+2017-10-09 18:38:58,513 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [7]
+2017-10-09 18:38:58,528 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [29]
+2017-10-09 18:38:58,529 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 10 emails via mail server ID #False
+2017-10-09 18:39:44,369 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:39:44] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:40:13,435 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:13] "POST /web/dataset/call_kw/ir.config_parameter/get_param? HTTP/1.1" 200 -
+2017-10-09 18:40:13,441 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:13] "POST /web/dataset/call_kw/ir.config_parameter/set_param? HTTP/1.1" 200 -
+2017-10-09 18:40:13,497 4 INFO aurelien-ideal-odoo11-master-924 requests.packages.urllib3.connectionpool: Starting new HTTP connection (1): 192.168.1.1
+2017-10-09 18:40:13,792 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:13] "POST /web/dataset/call_kw/publisher_warranty.contract/update_notification? HTTP/1.1" 200 -
+2017-10-09 18:40:13,840 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:13] "POST /web/dataset/call_kw/ir.config_parameter/get_param? HTTP/1.1" 200 -
+2017-10-09 18:40:13,841 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:13] "POST /web/dataset/call_kw/ir.config_parameter/get_param? HTTP/1.1" 200 -
+2017-10-09 18:40:26,630 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:26] "POST /web/action/load? HTTP/1.1" 200 -
+2017-10-09 18:40:26,933 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:26] "POST /web/action/run? HTTP/1.1" 200 -
+2017-10-09 18:40:27,167 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/call_kw/crm.lead/load_views? HTTP/1.1" 200 -
+2017-10-09 18:40:27,294 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/call_kw/crm.lead/read_group? HTTP/1.1" 200 -
+2017-10-09 18:40:27,299 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/call_kw/crm.lead/read_progress_bar? HTTP/1.1" 200 -
+2017-10-09 18:40:27,366 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:40:27,380 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:40:27,401 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/call_kw/crm.lead.tag/read? HTTP/1.1" 200 -
+2017-10-09 18:40:27,410 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/call_kw/crm.lead.tag/read? HTTP/1.1" 200 -
+2017-10-09 18:40:27,447 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "POST /web/dataset/call_kw/crm.stage/read? HTTP/1.1" 200 -
+2017-10-09 18:40:27,496 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:27] "GET /web/image?model=res.users&field=image_small&id=1&unique= HTTP/1.1" 200 -
+2017-10-09 18:40:34,443 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:34] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:40:49,686 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:49] "POST /web/action/load? HTTP/1.1" 200 -
+2017-10-09 18:40:49,730 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:49] "GET /web_mobile/static/src/img/logo_google_play.png? HTTP/1.1" 200 -
+2017-10-09 18:40:49,746 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:49] "POST /web_settings_dashboard/data? HTTP/1.1" 200 -
+2017-10-09 18:40:49,777 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:49] "POST /web/dataset/call_kw? HTTP/1.1" 200 -
+2017-10-09 18:40:49,789 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:49] "POST /web/dataset/call_kw/web.planner/search_read? HTTP/1.1" 200 -
+2017-10-09 18:40:54,868 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:54] "POST /web/action/load? HTTP/1.1" 200 -
+2017-10-09 18:40:54,995 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:54] "POST /web/dataset/call_kw/ir.module.module/load_views? HTTP/1.1" 200 -
+2017-10-09 18:40:55,061 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:40:55] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:41:00,652 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:41:00] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:41:04,148 4 INFO ? werkzeug: 37.58.201.24 - - [09/Oct/2017 18:41:04] "GET /web_enterprise/static/src/img/checked.svg? HTTP/1.1" 200 -
+2017-10-09 18:41:10,047 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:41:10] "POST /web/action/load? HTTP/1.1" 200 -
+2017-10-09 18:41:10,089 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: ALLOW access to module.button_immediate_install on ['project', 'hr_timesheet', 'marketing_automation'] to user admin #1 via 37.58.201.24
+2017-10-09 18:41:10,089 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: User #1 triggered module installation
+2017-10-09 18:41:10,090 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: ALLOW access to module.button_install on ['project', 'hr_timesheet', 'marketing_automation'] to user admin #1 via 37.58.201.24
+2017-10-09 18:41:10,601 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 1 modules...
+2017-10-09 18:41:10,616 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries
+2017-10-09 18:41:10,735 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: updating modules list
+2017-10-09 18:41:10,737 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: ALLOW access to module.update_list on [] to user admin #1 via 37.58.201.24
+2017-10-09 18:41:11,734 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 30 modules...
+2017-10-09 18:41:11,791 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 30 modules loaded in 0.06s, 0 queries
+2017-10-09 18:41:11,802 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading 44 modules...
+2017-10-09 18:41:11,888 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module decimal_precision: creating or updating database tables
+2017-10-09 18:41:12,049 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading decimal_precision/views/decimal_precision_views.xml
+2017-10-09 18:41:12,128 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading decimal_precision/security/ir.model.access.csv
+2017-10-09 18:41:12,309 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module http_routing: creating or updating database tables
+2017-10-09 18:41:12,473 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module link_tracker: creating or updating database tables
+2017-10-09 18:41:12,620 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of link.tracker.count
+2017-10-09 18:41:12,621 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of link.tracker.favicon
+2017-10-09 18:41:12,748 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading link_tracker/views/link_tracker.xml
+2017-10-09 18:41:12,997 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading link_tracker/security/ir.model.access.csv
+2017-10-09 18:41:13,242 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module analytic: creating or updating database tables
+2017-10-09 18:41:13,574 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of account.analytic.line.company_id
+2017-10-09 18:41:13,616 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading analytic/security/analytic_security.xml
+2017-10-09 18:41:13,775 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading analytic/security/ir.model.access.csv
+2017-10-09 18:41:13,822 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading analytic/views/analytic_account_views.xml
+2017-10-09 18:41:14,195 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading analytic/data/analytic_demo.xml
+2017-10-09 18:41:14,205 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading analytic/data/analytic_account_demo.xml
+2017-10-09 18:41:15,431 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module hr: creating or updating database tables
+2017-10-09 18:41:15,684 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:41:15,858 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of hr.job.expected_employees
+2017-10-09 18:41:15,859 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of hr.job.no_of_employee
+2017-10-09 18:41:16,037 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of hr.employee.name
+2017-10-09 18:41:16,038 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of hr.employee.active
+2017-10-09 18:41:16,068 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of hr.employee.company_id
+2017-10-09 18:41:16,159 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of hr.department.complete_name
+2017-10-09 18:41:16,316 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr/security/hr_security.xml
+2017-10-09 18:41:16,756 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr/security/ir.model.access.csv
+2017-10-09 18:41:16,874 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr/views/hr_views.xml
+2017-10-09 18:41:17,367 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr/views/hr_templates.xml
+2017-10-09 18:41:17,449 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr/views/res_config_settings_views.xml
+2017-10-09 18:41:17,533 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr/data/hr_data.xml
+2017-10-09 18:41:17,921 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr/data/hr_demo.xml
+2017-10-09 18:41:20,979 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module mass_mailing: creating or updating database tables
+2017-10-09 18:41:21,536 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:41:22,085 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of mail.mail.statistics.mass_mailing_campaign_id
+2017-10-09 18:41:22,086 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of mail.mail.statistics.state
+2017-10-09 18:41:22,087 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of mail.mail.statistics.state_update
+2017-10-09 18:41:22,592 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/security/mass_mailing_security.xml
+2017-10-09 18:41:23,021 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/data/mass_mailing_data.xml
+2017-10-09 18:41:23,071 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/wizard/mail_compose_message_views.xml
+2017-10-09 18:41:23,114 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/wizard/test_mailing_views.xml
+2017-10-09 18:41:23,146 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/mass_mailing_report_views.xml
+2017-10-09 18:41:23,245 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/mass_mailing_stats_views.xml
+2017-10-09 18:41:23,384 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/link_tracker_views.xml
+2017-10-09 18:41:23,458 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/mass_mailing_template.xml
+2017-10-09 18:41:23,577 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/mass_mailing_views.xml
+2017-10-09 18:41:24,373 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/res_config_settings_views.xml
+2017-10-09 18:41:24,487 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/security/ir.model.access.csv
+2017-10-09 18:41:24,651 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/editor_field_html.xml
+2017-10-09 18:41:24,723 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/themes_templates.xml
+2017-10-09 18:41:24,774 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/snippets_themes.xml
+2017-10-09 18:41:25,305 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/snippets_themes_options.xml
+2017-10-09 18:41:25,330 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/views/res_company_views.xml
+2017-10-09 18:41:25,372 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing/data/mass_mailing_demo.xml
+2017-10-09 18:41:26,520 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module portal: creating or updating database tables
+2017-10-09 18:41:26,746 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:41:27,179 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading portal/data/portal_data.xml
+2017-10-09 18:41:27,215 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading portal/views/assets.xml
+2017-10-09 18:41:27,300 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading portal/views/portal_templates.xml
+2017-10-09 18:41:27,611 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2017-10-09 18:41:27,948 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module product: creating or updating database tables
+2017-10-09 18:41:28,065 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Computing parent left and right for table product_category...
+2017-10-09 18:41:28,541 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:41:28,765 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.template.volume
+2017-10-09 18:41:28,766 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.template.weight
+2017-10-09 18:41:28,776 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.template.default_code
+2017-10-09 18:41:28,777 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.template.activity_date_deadline
+2017-10-09 18:41:28,822 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.category.complete_name
+2017-10-09 18:41:29,104 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.product.activity_date_deadline
+2017-10-09 18:41:29,609 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.pricelist.item.company_id
+2017-10-09 18:41:29,613 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of product.pricelist.item.currency_id
+2017-10-09 18:41:30,052 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/data/product_data.xml
+2017-10-09 18:41:30,204 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/security/product_security.xml
+2017-10-09 18:41:31,069 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/security/ir.model.access.csv
+2017-10-09 18:41:31,310 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/wizard/product_price_list_views.xml
+2017-10-09 18:41:31,356 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/views/res_config_settings_views.xml
+2017-10-09 18:41:31,452 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/views/product_attribute_views.xml
+2017-10-09 18:41:31,618 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/views/product_uom_views.xml
+2017-10-09 18:41:31,712 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/views/product_views.xml
+2017-10-09 18:41:32,265 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/views/product_template_views.xml
+2017-10-09 18:41:32,393 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2017-10-09 18:41:32,595 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/views/res_partner_views.xml
+2017-10-09 18:41:32,666 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/report/product_reports.xml
+2017-10-09 18:41:32,697 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/report/product_pricelist_templates.xml
+2017-10-09 18:41:32,730 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/report/product_product_templates.xml
+2017-10-09 18:41:32,796 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/report/product_template_templates.xml
+2017-10-09 18:41:32,828 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/data/product_demo.xml
+2017-10-09 18:41:36,869 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading product/data/product_image_demo.xml
+2017-10-09 18:41:38,798 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module marketing_automation: creating or updating database tables
+2017-10-09 18:41:39,179 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of marketing.campaign.model_name
+2017-10-09 18:41:39,331 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of marketing.activity.interval_standardized
+2017-10-09 18:41:39,418 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of marketing.participant.model_id
+2017-10-09 18:41:39,420 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of marketing.participant.model_name
+2017-10-09 18:41:39,520 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of marketing.trace.res_id
+2017-10-09 18:41:39,637 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/security/marketing_automation_security.xml
+2017-10-09 18:41:39,783 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/security/ir.model.access.csv
+2017-10-09 18:41:39,838 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/views/assets.xml
+2017-10-09 18:41:39,996 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/views/marketing_campaign_views.xml
+2017-10-09 18:41:40,151 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/views/marketing_participant_views.xml
+2017-10-09 18:41:40,307 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/views/mail_mass_mailing_views.xml
+2017-10-09 18:41:40,338 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/data/marketing_automation_data.xml
+2017-10-09 18:41:40,380 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading marketing_automation/data/marketing_automation_demo.xml
+2017-10-09 18:41:41,525 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module mass_mailing_themes: creating or updating database tables
+2017-10-09 18:41:41,537 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing_themes/assets.xml
+2017-10-09 18:41:41,571 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading mass_mailing_themes/views/mass_mailing_themes_templates.xml
+2017-10-09 18:41:42,317 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module project: creating or updating database tables
+2017-10-09 18:41:42,716 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2017-10-09 18:41:43,347 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.working_hours_open
+2017-10-09 18:41:43,349 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.working_hours_close
+2017-10-09 18:41:43,350 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.working_days_open
+2017-10-09 18:41:43,351 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.working_days_close
+2017-10-09 18:41:43,351 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.activity_date_deadline
+2017-10-09 18:41:43,730 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/security/project_security.xml
+2017-10-09 18:41:44,816 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/security/ir.model.access.csv
+2017-10-09 18:41:45,220 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/data/project_data.xml
+2017-10-09 18:41:45,722 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [201]
+2017-10-09 18:41:45,852 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [203]
+2017-10-09 18:41:45,987 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [205]
+2017-10-09 18:41:46,107 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [207]
+2017-10-09 18:41:46,226 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [209]
+2017-10-09 18:41:46,387 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [211]
+2017-10-09 18:41:46,514 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [213]
+2017-10-09 18:41:46,640 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [215]
+2017-10-09 18:41:46,761 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [217]
+2017-10-09 18:41:46,921 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [219]
+2017-10-09 18:41:47,041 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [221]
+2017-10-09 18:41:47,160 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [223]
+2017-10-09 18:41:47,275 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [225]
+2017-10-09 18:41:47,413 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/report/project_report_views.xml
+2017-10-09 18:41:47,536 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/views/project_views.xml
+2017-10-09 18:41:48,382 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/views/res_partner_views.xml
+2017-10-09 18:41:48,459 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/views/res_config_settings_views.xml
+2017-10-09 18:41:48,564 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/views/project_templates.xml
+2017-10-09 18:41:48,751 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/views/project_portal_templates.xml
+2017-10-09 18:41:48,921 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/data/web_planner_data.xml
+2017-10-09 18:41:49,001 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/data/project_mail_template_data.xml
+2017-10-09 18:41:49,083 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/wizard/project_task_merge_wizard_views.xml
+2017-10-09 18:41:49,130 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project/data/project_demo.xml
+2017-10-09 18:41:49,531 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:49,537 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 36 and Message-Id '<513091339769458.1507574509.506193399429321-openerp-2-project.project@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:49,551 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [36]
+2017-10-09 18:41:49,570 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [318]
+2017-10-09 18:41:49,570 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:49,784 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:49,788 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 37 and Message-Id '<480300600018160.1507574509.763518095016479-openerp-3-project.project@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:49,801 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [37]
+2017-10-09 18:41:49,818 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [323]
+2017-10-09 18:41:49,818 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:49,992 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:49,996 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 38 and Message-Id '<427928034542894.1507574509.972059965133667-openerp-4-project.project@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:50,009 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [38]
+2017-10-09 18:41:50,026 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [328]
+2017-10-09 18:41:50,026 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:50,668 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:50,673 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 39 and Message-Id '<455934086938180.1507574510.646141290664673-openerp-14-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:50,687 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [39]
+2017-10-09 18:41:50,702 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [338]
+2017-10-09 18:41:50,702 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:50,902 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:50,907 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 40 and Message-Id '<402738735045651.1507574510.725614309310913-openerp-14-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:50,925 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [40]
+2017-10-09 18:41:50,945 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:50,950 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 41 and Message-Id '<402738735045651.1507574510.725614309310913-openerp-14-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:50,968 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [41]
+2017-10-09 18:41:50,968 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 2 emails via mail server ID #False
+2017-10-09 18:41:51,074 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:51,079 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 42 and Message-Id '<755843459253706.1507574511.050904512405396-openerp-14-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:51,098 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [42]
+2017-10-09 18:41:51,099 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:51,274 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:51,280 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 43 and Message-Id '<709062871986914.1507574511.251644611358643-openerp-15-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:51,294 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [43]
+2017-10-09 18:41:51,310 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [341]
+2017-10-09 18:41:51,311 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:51,490 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:51,495 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 44 and Message-Id '<828762934993480.1507574511.334596157073975-openerp-15-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:51,510 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [44]
+2017-10-09 18:41:51,530 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:51,535 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 45 and Message-Id '<828762934993480.1507574511.334596157073975-openerp-15-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:51,551 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [45]
+2017-10-09 18:41:51,552 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 2 emails via mail server ID #False
+2017-10-09 18:41:51,907 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:51,912 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 46 and Message-Id '<373464292519867.1507574511.748895883560181-openerp-16-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:51,927 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [46]
+2017-10-09 18:41:51,946 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:51,951 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 47 and Message-Id '<373464292519867.1507574511.748895883560181-openerp-16-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:51,965 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [47]
+2017-10-09 18:41:51,966 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 2 emails via mail server ID #False
+2017-10-09 18:41:52,161 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:52,165 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 48 and Message-Id '<617464593812527.1507574512.140272855758667-openerp-17-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:52,177 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [48]
+2017-10-09 18:41:52,193 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [344]
+2017-10-09 18:41:52,193 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:52,376 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:52,382 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 49 and Message-Id '<040023234214205.1507574512.215320825576782-openerp-17-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:52,400 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [49]
+2017-10-09 18:41:52,426 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:52,432 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 50 and Message-Id '<040023234214205.1507574512.215320825576782-openerp-17-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:52,446 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [50]
+2017-10-09 18:41:52,447 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 2 emails via mail server ID #False
+2017-10-09 18:41:52,954 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:52,958 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 51 and Message-Id '<871861960745502.1507574512.798726081848145-openerp-19-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:52,973 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [51]
+2017-10-09 18:41:52,993 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:52,997 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 52 and Message-Id '<871861960745502.1507574512.798726081848145-openerp-19-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:53,012 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [52]
+2017-10-09 18:41:53,013 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 2 emails via mail server ID #False
+2017-10-09 18:41:53,352 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:53,357 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 53 and Message-Id '<381279844622495.1507574513.189407348632812-openerp-20-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:53,374 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [53]
+2017-10-09 18:41:53,395 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:53,400 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 54 and Message-Id '<381279844622495.1507574513.189407348632812-openerp-20-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:53,416 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [54]
+2017-10-09 18:41:53,417 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 2 emails via mail server ID #False
+2017-10-09 18:41:53,594 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:53,599 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 55 and Message-Id '<350371018025029.1507574513.572576522827148-openerp-21-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:53,613 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [55]
+2017-10-09 18:41:53,629 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [349]
+2017-10-09 18:41:53,629 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:53,760 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:53,765 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 56 and Message-Id '<930849651607668.1507574513.650651931762695-openerp-21-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:53,779 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [56]
+2017-10-09 18:41:53,779 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:53,954 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:53,958 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 57 and Message-Id '<848889620714232.1507574513.933583021163940-openerp-22-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:53,972 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [57]
+2017-10-09 18:41:53,988 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [351]
+2017-10-09 18:41:53,988 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:54,108 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:54,113 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 58 and Message-Id '<197180699056069.1507574514.010207176208496-openerp-22-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:54,129 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [58]
+2017-10-09 18:41:54,130 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:54,225 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:54,395 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:54,402 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 60 and Message-Id '<594384442541216.1507574514.366867542266846-openerp-23-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:54,422 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [60]
+2017-10-09 18:41:54,442 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [354]
+2017-10-09 18:41:54,442 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:54,740 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:54,744 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 61 and Message-Id '<071879274756703.1507574514.631790399551392-openerp-24-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:54,760 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [61]
+2017-10-09 18:41:54,760 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:55,037 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:55,041 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 62 and Message-Id '<524587124270636.1507574514.933242797851562-openerp-25-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:55,055 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [62]
+2017-10-09 18:41:55,056 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:55,142 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:55,267 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:55,271 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 64 and Message-Id '<814368515062509.1507574515.249467372894287-openerp-26-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:55,285 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [64]
+2017-10-09 18:41:55,301 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [359]
+2017-10-09 18:41:55,302 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:55,432 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:55,437 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 65 and Message-Id '<672565875497749.1507574515.321912288665771-openerp-26-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:55,452 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [65]
+2017-10-09 18:41:55,452 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:55,746 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:55,752 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 66 and Message-Id '<764096811679127.1507574515.630464315414429-openerp-27-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:55,768 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [66]
+2017-10-09 18:41:55,769 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:56,036 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:56,041 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 67 and Message-Id '<744027425547619.1507574515.927870035171509-openerp-28-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:56,056 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [67]
+2017-10-09 18:41:56,056 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:56,234 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:56,238 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 68 and Message-Id '<131145997694176.1507574516.213279485702515-openerp-29-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:56,251 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [68]
+2017-10-09 18:41:56,268 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [363]
+2017-10-09 18:41:56,268 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:56,397 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:56,402 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 69 and Message-Id '<911139718810306.1507574516.290366411209106-openerp-29-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:56,417 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [69]
+2017-10-09 18:41:56,418 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:56,583 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:56,587 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 70 and Message-Id '<429791638942393.1507574516.563189744949341-openerp-30-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:56,600 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [70]
+2017-10-09 18:41:56,615 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.message records with IDs: [365]
+2017-10-09 18:41:56,615 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:56,740 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:56,745 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 71 and Message-Id '<325941248753371.1507574516.635570764541626-openerp-30-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:56,761 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [71]
+2017-10-09 18:41:56,762 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:57,023 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:57,027 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 72 and Message-Id '<761408059725892.1507574516.922622919082642-openerp-31-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:57,041 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [72]
+2017-10-09 18:41:57,042 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:57,121 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [299]
+2017-10-09 18:41:57,222 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [302]
+2017-10-09 18:41:57,361 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:57,402 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [305]
+2017-10-09 18:41:58,083 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:58,087 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 74 and Message-Id '<761643342442014.1507574518.058838129043579-openerp-38-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:58,103 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [74]
+2017-10-09 18:41:58,103 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:58,280 4 INFO aurelien-ideal-odoo11-master-924 odoo.tests: skip sending email in test mode
+2017-10-09 18:41:58,286 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Mail with ID 75 and Message-Id '<027754728370375.1507574518.257132291793823-openerp-39-project.task@Lhh93SrF4N>' successfully sent
+2017-10-09 18:41:58,303 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.mail records with IDs: [75]
+2017-10-09 18:41:58,303 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.mail.models.mail_mail: Sent batch 1 emails via mail server ID #False
+2017-10-09 18:41:58,383 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted mail.followers records with IDs: [228]
+2017-10-09 18:41:59,439 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module hr_timesheet: creating or updating database tables
+2017-10-09 18:41:59,554 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of account.analytic.line.department_id
+2017-10-09 18:41:59,635 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.effective_hours
+2017-10-09 18:41:59,637 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.total_hours
+2017-10-09 18:41:59,638 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.total_hours_spent
+2017-10-09 18:41:59,639 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.progress
+2017-10-09 18:41:59,639 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.delay_hours
+2017-10-09 18:41:59,640 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of project.task.children_hours
+2017-10-09 18:41:59,907 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/security/hr_timesheet_security.xml
+2017-10-09 18:42:00,602 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/security/ir.model.access.csv
+2017-10-09 18:42:00,722 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/views/hr_timesheet_views.xml
+2017-10-09 18:42:01,044 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/views/res_config_settings_views.xml
+2017-10-09 18:42:01,197 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/views/project_views.xml
+2017-10-09 18:42:01,521 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/views/project_portal_templates.xml
+2017-10-09 18:42:01,561 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/report/hr_timesheet_report_view.xml
+2017-10-09 18:42:01,695 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/report/report_timesheet_templates.xml
+2017-10-09 18:42:01,747 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/views/hr_views.xml
+2017-10-09 18:42:01,852 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading hr_timesheet/data/hr_timesheet_demo.xml
+2017-10-09 18:42:02,399 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module project_timesheet_synchro: creating or updating database tables
+2017-10-09 18:42:02,448 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project_timesheet_synchro/views/templates.xml
+2017-10-09 18:42:02,641 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading project_timesheet_synchro/views/timesheet_views.xml
+2017-10-09 18:42:02,956 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.registry: module timesheet_grid: creating or updating database tables
+2017-10-09 18:42:03,077 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Storing computed values of account.analytic.line.validated
+2017-10-09 18:42:03,338 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading timesheet_grid/data/timesheet_data.xml
+2017-10-09 18:42:03,435 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading timesheet_grid/security/timesheet_security.xml
+2017-10-09 18:42:03,449 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading timesheet_grid/views/views.xml
+2017-10-09 18:42:03,964 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading timesheet_grid/views/res_config_settings_views.xml
+2017-10-09 18:42:04,086 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading timesheet_grid/views/timesheet_templates.xml
+2017-10-09 18:42:04,225 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: loading timesheet_grid/wizard/timesheet_validation_views.xml
+2017-10-09 18:42:04,688 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: 44 modules loaded in 52.88s, 56 queries
+2017-10-09 18:42:05,368 4 INFO aurelien-ideal-odoo11-master-924 odoo.modules.loading: Modules loaded.
+2017-10-09 18:42:05,373 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Computing parent left and right for table ir_ui_menu...
+2017-10-09 18:42:05,450 4 INFO aurelien-ideal-odoo11-master-924 odoo.models: Computing parent left and right for table product_category...
+2017-10-09 18:42:05,456 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.module.module: getting next ir.actions.todo()
+2017-10-09 18:42:05,461 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:42:05] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:42:05,462 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:42:05] "POST /web/action/run? HTTP/1.1" 200 -
+2017-10-09 18:42:05,485 4 INFO aurelien-ideal-odoo11-master-924 odoo.addons.base.ir.ir_http: Generating routing map
+2017-10-09 18:42:05,547 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:42:05] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:42:05,580 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:42:05] "POST /web/dataset/search_read? HTTP/1.1" 200 -
+2017-10-09 18:42:05,682 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:42:05] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:42:05,684 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:42:05] "POST /web/dataset/call_kw/mail.channel/channel_join_and_get_info? HTTP/1.1" 200 -
+2017-10-09 18:42:55,727 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:42:55] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:43:45,770 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:43:45] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:44:35,838 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:44:35] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:45:25,940 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:45:25] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:46:16,042 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:46:16] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:47:06,145 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:47:06] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:47:56,238 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:47:56] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:48:46,340 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:48:46] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:49:36,438 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:49:36] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:50:26,535 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:50:26] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:51:16,639 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:51:16] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:52:06,675 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:52:06] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:52:56,738 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:52:56] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:53:46,835 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:53:46] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:54:36,943 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:54:36] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:55:27,042 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:55:27] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:56:17,139 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:56:17] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:57:07,239 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:57:07] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:57:57,335 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:57:57] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:58:47,439 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:58:47] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 18:59:37,542 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 18:59:37] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:00:27,643 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:00:27] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:01:17,741 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:01:17] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:02:07,844 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:02:07] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:02:57,935 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:02:57] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:03:48,042 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:03:48] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:04:38,141 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:04:38] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:05:28,244 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:05:28] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:06:18,341 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:06:18] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:07:08,435 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:07:08] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:07:58,540 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:07:58] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:08:48,647 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:08:48] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:09:38,736 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:09:38] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:10:28,838 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:10:28] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:11:18,943 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:11:18] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:12:09,040 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:12:09] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:12:59,151 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:12:59] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:13:49,245 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:13:49] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:14:39,342 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:14:39] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:15:29,446 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:15:29] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:16:09,625 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 78.192.32.209 - - [09/Oct/2017 19:16:09] "GET /? HTTP/1.1" 200 -
+2017-10-09 19:16:09,659 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 78.192.32.209 - - [09/Oct/2017 19:16:09] "GET /web? HTTP/1.1" 303 -
+2017-10-09 19:16:10,705 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [432]
+2017-10-09 19:16:12,744 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [390]
+2017-10-09 19:16:13,253 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [437]
+2017-10-09 19:16:13,361 4 INFO aurelien-ideal-odoo11-master-924 odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [392]
+2017-10-09 19:16:13,397 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 78.192.32.209 - - [09/Oct/2017 19:16:13] "GET /web/login? HTTP/1.1" 200 -
+2017-10-09 19:16:19,543 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:16:19] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:17:09,638 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:17:09] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:17:59,746 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:17:59] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:18:49,843 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:18:49] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:19:39,939 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:19:39] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:20:30,038 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:20:30] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:21:20,138 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:21:20] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:21:23,641 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 78.192.32.209 - - [09/Oct/2017 19:21:23] "GET /favicon.ico? HTTP/1.1" 404 -
+2017-10-09 19:22:10,240 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:22:10] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:23:00,343 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:23:00] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:23:50,442 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:23:50] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:24:40,546 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:24:40] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:25:30,640 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:25:30] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:26:20,741 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:26:20] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:27:10,849 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:27:10] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:28:00,945 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:28:00] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:28:51,042 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:28:51] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:29:41,149 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:29:41] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:30:31,244 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:30:31] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:31:21,339 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:31:21] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:32:11,442 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:32:11] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:33:01,542 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:33:01] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:33:51,647 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:33:51] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:34:41,742 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:34:41] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:35:31,838 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:35:31] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:36:21,942 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:36:21] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:37:12,040 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:37:12] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:38:02,147 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:38:02] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:38:52,197 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:38:52] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:39:42,239 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:39:42] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:40:32,339 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:40:32] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:41:22,438 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:41:22] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:42:12,537 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:42:12] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:43:02,636 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:43:02] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:43:52,741 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:43:52] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:44:42,842 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:44:42] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:45:32,939 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:45:32] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:46:23,043 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:46:23] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:47:13,141 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:47:13] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:48:03,240 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:48:03] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:48:53,337 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:48:53] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:49:43,439 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:49:43] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:50:33,536 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:50:33] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:51:23,642 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:51:23] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:52:13,741 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:52:13] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:53:04,343 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 78.192.32.209 - - [09/Oct/2017 19:53:04] "GET /favicon.ico? HTTP/1.1" 404 -
+2017-10-09 19:53:04,736 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:53:04] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:53:54,843 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:53:54] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:54:44,936 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:54:44] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:55:35,037 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:55:35] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:56:25,134 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:56:25] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:57:15,235 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:57:15] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:58:05,336 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:58:05] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:58:55,439 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:58:55] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 19:59:45,541 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 19:59:45] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:00:35,637 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:00:35] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:01:25,739 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:01:25] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:02:15,835 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:02:15] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:03:05,938 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:03:05] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:03:56,036 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:03:56] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:04:46,141 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:04:46] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:05:36,239 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:05:36] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:06:26,334 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:06:26] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:07:16,438 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:07:16] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:08:06,541 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:08:06] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:08:56,643 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:08:56] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:09:46,742 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:09:46] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:10:36,835 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:10:36] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:11:26,936 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:11:26] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:12:17,039 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:12:17] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:13:07,144 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:13:07] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:13:57,238 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:13:57] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:14:47,341 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:14:47] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:15:37,438 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:15:37] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:16:27,536 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:16:27] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:17:17,643 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:17:17] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:18:07,742 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:18:07] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:18:57,841 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:18:57] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:19:47,879 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:19:47] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:20:37,937 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:20:37] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:21:28,036 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:21:28] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:22:18,139 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:22:18] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:23:08,179 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:23:08] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:23:58,234 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:23:58] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:24:48,338 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:24:48] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:25:38,445 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:25:38] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:26:28,537 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:26:28] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:27:18,638 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:27:18] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:28:08,741 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:28:08] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:28:58,840 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:28:58] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:29:48,938 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:29:48] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:30:39,042 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:30:39] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:31:29,141 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:31:29] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:32:19,246 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:32:19] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:33:09,338 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:33:09] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:33:59,438 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:33:59] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:34:49,538 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:34:49] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:35:39,640 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:35:39] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:36:29,739 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:36:29] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:37:19,836 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:37:19] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:38:09,939 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:38:09] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:39:00,038 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:39:00] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:39:50,079 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:39:50] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:40:40,142 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:40:40] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:41:30,242 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:41:30] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:42:20,336 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:42:20] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:43:10,442 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:43:10] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:44:00,536 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:44:00] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:44:50,642 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:44:50] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:45:40,743 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:45:40] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:46:30,844 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:46:30] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:47:20,944 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:47:20] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:48:11,039 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:48:11] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:49:01,141 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:49:01] "POST /longpolling/poll? HTTP/1.1" 200 -
+2017-10-09 20:49:51,242 4 INFO aurelien-ideal-odoo11-master-924 werkzeug: 37.58.201.24 - - [09/Oct/2017 20:49:51] "POST /longpolling/poll? HTTP/1.1" 200 -
