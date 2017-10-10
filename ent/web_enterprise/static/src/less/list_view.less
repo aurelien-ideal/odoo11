@@ -1,0 +1,169 @@
+
+// ------- Provide room for the caret -------
+.o-list-view-sortable-caret-padding(@base: @table-cell-padding, @ratio: 1) {
+    > thead > tr > th.o_column_sortable:not(:empty) {
+        padding-right: ceil(@base * @ratio) + 5px;
+
+        // Extra room when needed
+        &:last-child {
+            padding-right: ceil(@base * @ratio) + 5px + @odoo-horizontal-padding!important;
+        }
+    }
+}
+
+// ------- Define paddings independently for each table component -------
+.o-list-view-full-width-padding(@base: @table-cell-padding, @ratio: 1) {
+    @body-padding: floor(@base * @ratio*0.7);
+
+    > thead > tr > :not(:empty) {
+        padding: (ceil(@base * @ratio) + 4px) 4px;
+    }
+    > tbody > tr:not(.o_list_view_grouped) > td {
+        padding: @body-padding 4px;
+    }
+    > tbody > tr.o_group_header {
+        > th, > td {
+            padding-top: floor(@table-condensed-cell-padding*0.2);
+            padding-bottom: floor(@table-condensed-cell-padding*0.2);
+        }
+    }
+    > tfoot > tr > :not(:empty) {
+        padding: (ceil(@base * @ratio) + 2px) 4px;
+    }
+
+    .o-list-view-sortable-caret-padding(@base, @ratio);
+
+    // ------- Make full-width tables to fit odoo layout -------
+    > thead, > tbody, > tfoot {
+        > tr > * {
+            &:first-child {
+                padding-left: @odoo-horizontal-padding!important;
+            }
+            &:last-child {
+                padding-right: @odoo-horizontal-padding!important;
+            }
+            &.o_list_record_selector {
+                padding-right: 5px!important;
+            }
+        }
+    }
+
+    // ------- Editable -------
+    .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) {
+        .o_input {
+            padding: @body-padding (@body-padding - 1) @body-padding @body-padding;
+        }
+    }
+}
+
+// Common style for list views (also inside form views)
+.o_list_view {
+    border-collapse: initial;
+    .o-list-view-sortable-caret-padding();
+
+    // ------- Force empty cells' padding -------
+    > thead, > tbody, > tfoot {
+        > tr > :empty {
+            padding: 0;
+            &::after {
+                // ... end hide caret icon
+                display: none;
+            }
+        }
+    }
+
+    // ------- Increase thead and tfoot vertical padding -------
+    > thead, > tfoot {
+        > tr > * {
+            // List views always have the table-condensed class, maybe we should
+            // remove it (and consider it does not exist) and change the default
+            // table paddings
+            padding-top: @table-condensed-cell-padding + 3px;
+            padding-bottom: @table-condensed-cell-padding + 3px;
+        }
+    }
+
+    // ------- Style thead -------
+    > thead {
+        background-color: white;
+        border: none;
+
+        > tr:first-child > th {
+            border: none;
+        }
+    }
+
+    // ------- Decrease table's inner content "visual depth" -------
+    tbody:first-of-type > tr:first-child:not(.o_group_header) {
+        box-shadow: inset 0px 5px 10px -4px fade(black, 10%);
+    }
+    tfoot > tr > td {
+        border-top: 2px solid @gray-lighter-darker;
+    }
+
+    // ------- Force progress bars to respect table's layout -------
+    .o_progressbar_cell {
+        .o_progressbar {
+            display: table-row;
+
+            > div {
+                width: 100%;
+                display: table-cell;
+            }
+
+            .o_progressbar_value {
+                width: 45px;
+                min-width: 45px;
+            }
+        }
+    }
+
+    // -------   Grouped list views -------
+    &.o_list_view_grouped {
+        > tbody > tr.o_group_header {
+            background-color: @gray-lighter;
+            box-shadow: inset 0 2px 0 #ffffff;
+
+            &.o_group_has_content {
+                .o-hover-text-color(@text-muted, @brand-primary);
+
+                &.o_group_open {
+                    font-weight: bold;
+                    .o-hover-text-color(@headings-color, @brand-primary);
+                }
+            }
+        }
+
+        // Decrease grouped content "visual depth"
+        > tbody + tbody > tr:first-child:not(.o_group_header) {
+            box-shadow: inset 0px 5px 10px -4px fade(black, 10%);
+        }
+
+        // Disable striped design for grouped content
+        &.table-striped > tbody + tbody > tr:not(.o_group_header):nth-of-type(odd) {
+            background-color: @table-bg;
+        }
+    }
+
+    //--------------------------------------------------------------------------
+    // Editable
+    //--------------------------------------------------------------------------
+    .o_data_row.o_selected_row > .o_data_cell:not(.o_readonly_modifier) {
+        border-right: 1px solid @table-border-color;
+        .o_input {
+            padding-right: @table-condensed-cell-padding - 1;
+        }
+    }
+}
+
+// Standalone list views
+.o_view_manager_content > div > .table-responsive > .o_list_view.table {
+    // List views always have the table-condensed class, maybe we should remove
+    // it (and consider it does not exist) and change the default table paddings
+    .o-list-view-full-width-padding(@base: @table-condensed-cell-padding, @ratio: 2);
+    &:not(.o_list_view_grouped) {
+        @media (min-width: @screen-lg-min) {
+            .o-list-view-full-width-padding(@base: @table-condensed-cell-padding, @ratio: 2.5);
+        }
+    }
+}

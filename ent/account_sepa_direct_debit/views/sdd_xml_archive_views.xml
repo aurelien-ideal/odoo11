@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="account_sepa_direct_debit_xml_archive_form">
+            <field name="name">sdd.xml.archive.form</field>
+            <field name="model">sdd.xml.archive</field>
+            <field name="arch" type="xml">
+                <form string="Generated SDD file">
+                    <group>
+                        <field name="creation_date"/>
+                        <field name="xml_filename" invisible="1"/>
+                        <field name="xml_file" readonly="1" filename="xml_filename"/>
+                        <field name="payment_ids" readonly="1" context="{'tree_view_ref':'account_sepa_direct_debit.sdd_account_payment_with_mandates_tree'}"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="account_sepa_direct_debit_xml_archive_tree">
+            <field name="name">sdd.xml.archive.tree</field>
+            <field name="model">sdd.xml.archive</field>
+            <field name="arch" type="xml">
+                <tree string="History of generated SDD files" create="0">
+                    <field name="creation_date"/>
+                    <field name="xml_filename"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="account_sepa_direct_debit_xml_archive_tree_act" model="ir.actions.act_window">
+            <field name="name">SDD Payment Files</field>
+            <field name="res_model">sdd.xml.archive</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p style="font-weight: bold;">
+                    You haven't generated any SDD XML payment collection file yet.
+                </p>
+                <p>
+                    Once you have, you will be able to keep track here of all the files
+                    you created this way, and what their precise content was.
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="account_sepa_direct_debit_xml_archive_search">
+            <field name="name">Search SDD Payment Files</field>
+            <field name="model">sdd.xml.archive</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="creation_date"/>
+                    <field name="xml_filename"/>
+                </search>
+            </field>
+        </record>
+
+        <menuitem id="account_sepa_direct_debit_sdd_payment_files_menu"
+            name="SDD Payment Files"
+            parent="payment.root_payment_menu"
+            action="account_sepa_direct_debit_xml_archive_tree_act"
+            groups="base.group_no_one"/>
+    </data>
+</odoo>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mrp_workorder_view_form_inherit_quality" model="ir.ui.view">
+        <field name="name">mrp.workorder.view.form.inherit.quality</field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id" ref="mrp.mrp_production_workcenter_form_view_inherit"/>
+        <field name="arch" type="xml">
+            <button name="record_production" position="replace">
+                <button name="record_production" type="object" string="Done" class="btn-success" attrs="{'invisible': ['|', '|', ('state', '!=', 'progress'), ('is_user_working', '=', False), ('quality_check_todo','=', True)]}"/>
+                <field name="quality_check_todo" invisible="1"/>
+            </button>
+            <button name="record_production" position="before">
+                <button name="check_quality" attrs="{'invisible': ['|', ('quality_check_todo', '=', False), ('state', 'in', ('pending', 'ready'))]}" type="object" string="Quality Checks" class="oe_highlight"/>
+                <field name="check_ids" invisible="1"/>
+            </button>
+            <div name="button_box" position="inside">
+                <button name="open_quality_alert_wo" type="object" class="oe_stat_button" icon="fa-bell" attrs="{'invisible': [('quality_alert_count', '=', 0)]}" context="{'search_default_workorder_id': active_id}">
+                    <div class="o_field_widget o_stat_info">
+                        <span class="o_stat_value"><field name="quality_alert_count"/></span>
+                        <span class="o_stat_text">Quality Alert</span>
+                    </div>
+                </button>
+                <button name="%(quality_check_action_wo)d" attrs="{'invisible': [('check_ids', '=', [])]}" type="action" class="oe_stat_button" icon="fa-check">
+                    <span class="o_stat_text text-success" attrs="{'invisible': [('quality_check_fail', '=', True)]}">Quality Checks</span>
+                    <span class="o_stat_text text-danger" attrs="{'invisible': [('quality_check_fail', '!=', True)]}">Quality Checks</span>
+                </button>
+            </div>
+            <xpath expr="//header" position="replace">
+                <field name="check_ids" invisible="1"/>
+                <field name="quality_check_fail" invisible="1"/>
+                <header>
+                    <button name="open_tablet_view" type="object" string="Process" attrs="{'invisible': [('state', 'not in', ('ready', 'progress'))]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="pending,ready,progress,done"/>
+                </header>
+            </xpath>
+            <notebook position="inside">
+                <page string="Finished Steps">
+                    <field name="check_ids" domain="[('quality_state', '!=', 'none')]" readonly="1">
+                        <tree>
+                            <field name="quality_state" invisible="1"/>
+                            <field name="test_type" invisible="1"/>
+                            <field name="control_date" string="Date"/>
+                            <field name="user_id" string="Operator"/>
+                            <field name="title"/>
+                            <field name="result"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <!-- MRP.WORKORDER TABLET VIEW -->
+    <record id="mrp_workorder_view_form_tablet" model="ir.ui.view">
+        <field name="name">mrp.workorder.view.form.inherit.quality.tablet.new</field>
+        <field name="model">mrp.workorder</field>
+        <field name="arch" type="xml">
+            <form string="Production Workcenter" delete="0" create="0" class="o_workorder_tablet">
+                <field name="allow_producing_quantity_change" invisible="1"/>
+                <field name="active_move_line_ids" invisible="1"/>
+                <field name="current_quality_check_id" invisible="1"/>
+                <field name="check_ids" invisible="1"/>
+                <field name="component_tracking" invisible="1"/>
+                <field name="is_first_step" invisible="1"/>
+                <field name="is_last_lot" invisible="1"/>
+                <field name="is_last_step" invisible="1"/>
+                <field name="is_user_working" invisible="1"/>
+                <field name="is_produced" invisible="1"/>
+                <field name="measure_success" invisible="1"/>
+                <field name="move_line_id" invisible="1"/>
+                <field name="move_raw_ids" invisible="1"/>
+                <field name="quality_state" invisible="1"/>
+                <field name="qty_produced" invisible="1"/>
+                <field name="state" invisible="1"/>
+                <field name="skipped_check_ids" invisible="1"/>
+                <field name="test_type" invisible="1"/>
+                <field name="tracking" invisible="1"/>
+                <field name="workcenter_id" invisible="1"/>
+                <field name="working_state" invisible="1"/>
+                <field name="worksheet_page" invisible="1"/>
+                <div class="workorder_bar">
+                    <div class="workorder_bar_left o_workorder_bar_content">
+                        <field name="id" class="o_workorder_icon_btn" widget="back_arrow" readonly="1"/>
+                        <label for="product_id" string=""/>
+                        <field name="product_id" options="{'no_open': True}" readonly="1"/>
+                        <label for="qty_producing" string=":"/>
+                        <field name="qty_producing" class="oe_inline text-left" attrs="{'readonly': ['|', ('allow_producing_quantity_change', '=', False), ('tracking', '=', 'serial')]}" required="1"/>
+                        / <field name="qty_remaining" class="oe_inline text-left"/>
+                        <label for="product_uom_id" string="" class="oe_inline"/>
+                        <field name="product_uom_id" options="{'no_open': True}" class="oe_inline" readonly="1"/>
+                    </div>
+                    <div class="workorder_bar_center o_workorder_bar_content">
+                        <div attrs="{'invisible': [('tracking', '=', 'none')]}">
+                            <label for="final_lot_id" string="Lot:" attrs="{'invisible': [('tracking', '!=', 'lot')]}"/>
+                            <label for="final_lot_id" string="SN:" attrs="{'invisible': [('tracking', '!=', 'serial')]}"/>
+                            <field name="final_lot_id" context="{'default_product_id': product_id}"/>
+                        </div>
+                    </div>
+                    <div class="workorder_bar_right o_workorder_bar_content o_workorder_bar_content_right">
+                        <field name="production_id" options="{'no_open': True}" readonly="1"/> - <field name="name" readonly="1"/>
+                    </div>
+                </div>
+                <div class="workorder_actions">
+                    <div class="o_workorder_bar_content">
+                        <button name="action_menu" type="object" class="btn-default o_workorder_icon_btn" string="" icon="fa-th"/>
+                        <button name="button_pending" type="object" class="btn-default mr8" attrs="{'invisible': ['|', ('is_user_working', '=', False), ('working_state', '=', 'blocked')]}" string="Pause"/>
+                        <button name="button_start" type="object" class="btn-warning" attrs="{'invisible': ['|', ('is_user_working', '=', True), ('working_state', '=', 'blocked')]}" string="Continue"/>
+                        <button name="button_unblock" type="object" context="{'default_workcenter_id': workcenter_id}" attrs="{'invisible': [('working_state', '!=', 'blocked')]}" string="Unblock" class="btn-danger"/>
+                        <button name="action_previous" type="object" class="btn-default" string="Previous" icon="fa-chevron-left o_workorder_btn_icon_small" attrs="{'invisible': [('is_first_step', '=', True)]}"/>
+                        <button disabled="1" class="btn-default" string="Previous" icon="fa-chevron-left o_workorder_btn_icon_small" attrs="{'invisible': [('is_first_step', '=', False)]}"/>
+                        <button name="action_skip" type="object" class="btn-default" string="Skip" icon="fa-chevron-right pull-right o_workorder_btn_icon_small" attrs="{'invisible': [('is_last_step', '=', True)]}"/>
+                        <button disabled="1" class="btn-default" string="Skip" icon="fa-chevron-right pull-right o_workorder_btn_icon_small" attrs="{'invisible': [('is_last_step', '=', False)]}"/>
+                    </div>
+                    <div class="o_workorder_bar_content o_workorder_bar_content_right">
+                        <div attrs="{'invisible': ['|', ('working_state', '=', 'blocked'), ('is_user_working', '=', False)]}">
+                            <button name="do_fail" type="object" class="btn-danger" attrs="{'invisible': ['|', ('quality_state', '!=', 'none'), ('test_type', '!=', 'passfail')]}" string="Fail"/>
+                            <button name="do_fail" type="object" class="btn-danger" attrs="{'invisible': ['|', ('quality_state', '=', 'none'), ('test_type', '!=', 'passfail')]}" string="Fail"/>
+                            <button name="do_pass" type="object" class="btn-success" attrs="{'invisible': ['|', ('quality_state', '!=', 'none'), ('test_type', '!=', 'passfail')]}" string="Pass"/>
+                            <button name="do_pass" type="object" class="btn-success" attrs="{'invisible': ['|', ('quality_state', '=', 'none'), ('test_type', '!=', 'passfail')]}" string="Pass"/>
+                            <button name="action_next" type="object" class="btn-primary" attrs="{'invisible': ['|', ('is_last_step', '=', True), '&amp;', '|', ('quality_state', '=', 'none'), ('test_type', '!=', 'passfail'), ('test_type', '!=', 'dummy')]}" string="Next"/>
+                            <button name="action_next" type="object" class="btn-primary" attrs="{'invisible': ['|', ('is_last_step', '=', True), ('test_type', 'not in', ['register_consumed_materials', 'picture'])]}" string="Validate"/>
+                            <button name="do_measure" type="object" class="btn-primary" string="Validate" attrs="{'invisible': [('test_type', '!=', 'measure')]}"/>
+                            <button name="record_production" type="object" string="Record production" attrs="{'invisible': ['|', '|', '|', ('is_last_step', '!=', True), ('skipped_check_ids', '!=', []), ('is_last_lot', '=', True)]}" class="btn-primary"/>
+                            <button name="do_finish" type="object" string="Mark as Done" icon="fa-check" attrs="{'invisible': ['|', '|', '|', ('is_last_step', '!=', True), ('skipped_check_ids', '!=', []), ('is_last_lot', '=', False)]}" class="btn-primary"/>
+                            <button name="action_first_skipped_step" type="object" string="Finish steps" attrs="{'invisible': ['|', '|', '|', ('is_last_step', '!=', True), ('state', '!=', 'progress'), ('skipped_check_ids', '=', [])]}" class="btn-primary"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="o_workorder_data">
+                    <field class="o_workorder_note" name="note"/>
+                    <div class="workorder_picture">
+                        <field name="picture" widget="tablet_image" attrs="{'invisible': [('test_type', '!=', 'picture')], 'required': [('test_type', '=', 'picture')]}"/>
+                    </div>
+                    <div attrs="{'invisible': [('test_type', '!=', 'measure')]}" class="o_row mb8">
+                        <label for="measure" string="Measure:" />
+                        <field name="measure" attrs="{'required': [('test_type', '=', 'measure')]}" class="oe_inline"/>
+                        <field name="norm_unit"/>
+                    </div>
+                    <h3 attrs="{'invisible': ['|', '|', ('current_quality_check_id', '!=', False), ('check_ids', '=', []), ('qty_producing', '=', 0)]}">
+                        <field name="product_id" options="{'no_open': True}"/> -
+                        <span attrs="{'invisible': ['|', ('tracking', '=', 'none'), ('lot_id', '=', False)]}">
+                            <field name="lot_id"/> -
+                        </span>
+                        <field name="qty_producing" readonly="1" force_save="1"/>
+                        <label for="product_uom_id" string=" "/>
+                        <field name="product_uom_id" options="{'no_open': True}" class="oe_inline"/>
+                    </h3>
+                    <field name="finished_product_check_ids" options="{'no_open': True}" attrs="{'invisible': ['|', '|', ('current_quality_check_id', '!=', False), ('check_ids', '=', []), ('qty_producing', '=', 0)]}" readonly="1">
+                        <tree decoration-success="quality_state == 'pass'" decoration-danger="quality_state == 'fail'">
+                            <field name="quality_state" invisible="1"/>
+                            <field name="test_type" invisible="1"/>
+                            <field name="control_date" string="Date"/>
+                            <field name="user_id" string="Operator"/>
+                            <field name="title"/>
+                            <field name="result"/>
+                            <field name="quality_state_for_summary"/>
+                        </tree>
+                    </field>
+                    <div class="o_workorder_bar_content o_workorder_form" attrs="{'invisible': ['|', ('test_type', '!=', 'register_consumed_materials'), ('is_last_step', '=', True)]}">
+                        <div class="o_workorder_field">
+                            <div class="o_form_label">Component</div>
+                            <field name="component_id" readonly="1"/>
+                        </div>
+                        <div class="o_workorder_field text-center">
+                            <div class="o_form_label" attrs="{'invisible': [('component_tracking', '!=', 'serial')]}">SN</div>
+                            <div class="o_form_label" attrs="{'invisible': [('component_tracking', '!=', 'lot')]}">Lot</div>
+                            <field name="lot_id" context="{'default_product_id': component_id}" attrs="{'invisible': [('component_tracking', '=', 'none')]}" domain="[('product_id', '=', component_id)]"/>
+                        </div>
+                        <div class="o_workorder_field text-right">
+                            <label for="qty_done" string="Quantity"/>
+                            <div>
+                                <field name="qty_done" attrs="{'readonly': [('component_tracking', '=', 'serial')]}" string="Quantity" class="oe_inline"/> /
+                                <field name="component_remaining_qty" readonly="1" class="oe_inline"/>
+                                <label for="qty_done" string=" "/>
+                                <field name="component_uom_id" readonly="1" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="workorder_pdf">
+                    <field name="worksheet" widget="pdf_viewer" attrs="{'invisible': [('is_last_step', '=', True), ('is_first_step', '=', False)]}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="mrp_workorder_view_form_tablet_menu" model="ir.ui.view">
+        <field name="name">mrp.workorder.view.form.tablet.menu</field>
+        <field name="model">mrp.workorder</field>
+        <field name="arch" type="xml">
+            <form string="Workorder Actions">
+                <field name="state" invisible="1"/>
+                <field name="working_state" invisible="1"/>
+                <field name="workcenter_id" invisible="1"/>
+                <div class="row workorder_menu">
+                    <div class="col-xs-6">
+                        <button name="%(mrp.act_mrp_block_workcenter_wo)d" type="action" context="{'default_workcenter_id': workcenter_id}" attrs="{'invisible': [('working_state', '=', 'blocked')]}" string="Block" class="btn-danger btn-block btn-lg"/>
+                        <button name="button_unblock" type="object" context="{'default_workcenter_id': workcenter_id}" attrs="{'invisible': [('working_state', '!=', 'blocked')]}" string="Unblock" class="btn-danger btn-block btn-lg"/>
+                    </div>
+                    <div class="col-xs-6">
+                        <button name="button_scrap" type="object" class="btn-primary btn-block btn btn-lg" string="Scrap"/>
+                    </div>
+                </div>
+                <div class="row workorder_menu">
+                    <div class="col-xs-6" id="workorder_maintenance_button">
+                    </div>
+                    <div class="col-xs-6">
+                        <button name="button_quality_alert" type="object" class="btn btn-primary btn-block" string="Quality alert"/>
+                    </div>
+                </div>
+                <footer></footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="mrp_workorder_action_tablet">
+        <field name="name">Work Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mrp.workorder</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'kanban', 'view_id': ref('mrp.workcenter_line_kanban')}),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('mrp.mrp_production_workcenter_tree_view_inherit')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('mrp_workorder_view_form_tablet')})]"/>
+        <field name="target">fullscreen</field>
+        <field name="domain">[('state', 'not in', ['done', 'cancel', 'pending']), ('workcenter_id','=',active_id)]</field>
+        <field name="context">{'form_view_initial_mode': 'edit'}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to start a new work order.
+            </p><p>
+                Work Orders is the list of operations to be performed for each
+                manufacturing order. Once you start the first work order of a
+                manufacturing order, the manufacturing order is automatically
+                marked as started. Once you finish the latest operation of a
+                manufacturing order, the MO is automatically done and the related
+                products are produced.
+            </p>
+        </field>
+    </record>
+
+    <template id="quality_check_view_form_css" name="quality.check.view.form.css" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/quality_mrp/static/src/less/tablet_view.less"/>
+            <script type="text/javascript" src="/quality_mrp/static/src/js/quality_mrp.js"></script>
+        </xpath>
+    </template>
+    <record id="mrp_workorder_view_kanban_inherit_quality" model="ir.ui.view">
+        <field name="name">mrp.workorder.view.kanban.inherit.quality</field>
+        <field name="model">mrp.workorder</field>
+        <field name="inherit_id" ref="mrp.workcenter_line_kanban"/>
+        <field name="arch" type="xml">
+            <kanban position="attributes">
+                <attribute name="js_class">tablet_kanban_view</attribute>
+            </kanban>
+        </field>
+    </record>
+    <record id="action_quality_mrp_show_steps" model="ir.actions.act_window">
+        <field name="name">Steps</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="res_model">quality.point</field>
+        <field name="domain">[('routing_id', '=', active_id)]</field>
+    </record>
+    <record id="mrp_routing_view_form_inherit_quality" model="ir.ui.view">
+        <field name="name">mrp.routing.form.inherit.quality</field>
+        <field name="inherit_id" ref="mrp.mrp_routing_form_view"/>
+        <field name="model">mrp.routing</field>
+        <field name="arch" type="xml">
+            <xpath expr="//button" position="before">
+                <button name="%(action_quality_mrp_show_steps)d" type="action" icon="fa-list-ul">
+                    Steps
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

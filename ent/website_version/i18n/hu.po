@@ -1,0 +1,1435 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_version
+# 
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2017
+# krnkris <krnkris@freemail.hu>, 2017
+# gezza <geza.nagy@oregional.hu>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: gezza <geza.nagy@oregional.hu>, 2017\n"
+"Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:206
+#, python-format
+msgid " Now you can manage this experiment by clicking on Manage A/B tests."
+msgstr ""
+" Most már tudja kezelni ezt a kísérletet az A/B teszt kezelésre kattintva."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:215
+#, python-format
+msgid "\"/google_account/authentication\""
+msgstr "\"/google_account/authentication\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:138
+#: code:addons/website_version/static/src/xml/version_templates.xml:150
+#, python-format
+msgid "\"Admin\""
+msgstr "\"Rendszergazda\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:197
+#, python-format
+msgid "\"Analytics API\""
+msgstr "\"Analitikus API\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:214
+#, python-format
+msgid "\"Authorized redirect URIs\""
+msgstr "\"Jóváhagyott átirányítású URI /egységes erőforrás azonosító/\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:198
+#, python-format
+msgid "\"Calendar API\""
+msgstr "\"Naptár API\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:191
+#, python-format
+msgid "\"Create Project\""
+msgstr "\"Projekt létrehozás\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:142
+#, python-format
+msgid "\"Tracking Code\""
+msgstr "\"Nyomkövetési kód\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:146
+#, python-format
+msgid "\"Tracking ID\""
+msgstr "\"Nyomkövetés ID azonosító\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:154
+#, python-format
+msgid "\"View ID\""
+msgstr "\"ID azonosító megtekintés\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:150
+#, python-format
+msgid "\"View Settings\""
+msgstr "\"Beállítások megtekintése\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:56
+#: code:addons/website_version/static/src/xml/version_templates.xml:302
+#: code:addons/website_version/static/src/xml/version_templates.xml:317
+#: code:addons/website_version/static/src/xml/version_templates.xml:336
+#: code:addons/website_version/static/src/xml/version_templates.xml:367
+#: code:addons/website_version/static/src/xml/version_templates.xml:384
+#: code:addons/website_version/static/src/xml/version_templates.xml:400
+#: code:addons/website_version/static/src/xml/version_templates.xml:445
+#, python-format
+msgid "&times;"
+msgstr "&times;"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:216
+#, python-format
+msgid "'Create Client ID'"
+msgstr "'Ügyfél azonosító ID létrehozás'"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:207
+#, python-format
+msgid "'Create New Client ID'"
+msgstr "'Új ügyfél azonosító ID létrehozás'"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:207
+#, python-format
+msgid "'Credentials'"
+msgstr "'Megbízók'"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:213
+#, python-format
+msgid "'Web Application'"
+msgstr "'Web alkalmazás'"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "(Sync)"
+msgstr "(Szinkr)"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:207
+#, python-format
+msgid "(from menu APIs and auth) and click on button"
+msgstr "(az API és szerző menüből) és kattintson a gombra"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#, python-format
+msgid ") that you need to insert in the 2 fields below !"
+msgstr ") ezt a lenti két mezőbe kell beillesztenie !"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid "7654321"
+msgstr "7654321"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "<b>Master</b>"
+msgstr "<b>Mester</b>"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:449
+#, python-format
+msgid ""
+"A version allows to modify several pages, without publishing the changes directly.\n"
+"                    You can also launch A/B tests to analyse the performance of different versions."
+msgstr ""
+"Egy verzió lehetővé teszi egyes oldalak módosítását, anélkül, hogy a változásokat közvetlenül közzé tenné.\n"
+"                    Elindíthatja az A/B tesztet is  a különböző verziók  teljesítményének értékeléséhez."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:33
+#, python-format
+msgid ""
+"All the modifications you will do, will be saved in this version. Drag the "
+"Cover block and drop it in your page."
+msgstr ""
+"Összes elvégzett módosítása, el lesz mentve ebben a verzióban. Fogja meg a "
+"Borító blokkot és vigye a saját oldalára."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "All versions"
+msgstr "Összes verzió"
+
+#. module: website_version
+#: code:addons/website_version/models/google_management.py:47
+#, python-format
+msgid "An exception occured during the google analytics request: %s"
+msgstr "Egy kifogás merült fel a google analytics igénylés közben: %s"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:57
+#, python-format
+msgid "Are you sure you want to publish your modifications?"
+msgstr "Biztos benne, hogy közzéteszi módosításait?"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:47
+#, python-format
+msgid "Authorize Google"
+msgstr "Google engedélyezés"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+msgid "Banner Odoo Image"
+msgstr "Odoo hírdetés képe"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:404
+#, python-format
+msgid ""
+"By publishing this version, you will overwrite the following master pages:"
+msgstr ""
+"Ennek a verziónak a közzétételével, felülírja a következő mester oldalakat:"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:291
+#: code:addons/website_version/static/src/xml/version_templates.xml:372
+#: code:addons/website_version/static/src/xml/version_templates.xml:389
+#: code:addons/website_version/static/src/xml/version_templates.xml:434
+#: code:addons/website_version/static/src/xml/version_templates.xml:465
+#, python-format
+msgid "Cancel"
+msgstr "Mégsem"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:39
+#, python-format
+msgid "Click in the content text and start editing it."
+msgstr "Kattintson a szöveg címre és kezdje meg szerkesztését."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:137
+#: code:addons/website_version/static/src/xml/version_templates.xml:141
+#: code:addons/website_version/static/src/xml/version_templates.xml:149
+#: code:addons/website_version/static/src/xml/version_templates.xml:190
+#, python-format
+msgid "Click on"
+msgstr "Kattintson erre"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on <b>\"Admin\"</b> and click on <b>\"View Settings\"</b>.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Kattintson az <b>\"Admin\"</b> -ra és kattintson a <b>\"Beállítások megtekintése\"</b> -re.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on <b>\"Admin\"</b>.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Kattintson az <b>\"Admin\"</b> -ra.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on <b>\"Tracking Code\"</b>.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Kattintson az <b>\"Nyomkövetési kód\"</b> -ra.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on Authorize Google.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Kattintson a Google engedélyezésre.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:17
+#, python-format
+msgid "Click on New version"
+msgstr "Kattintson az Új verzió-ra"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:63
+#, python-format
+msgid "Click on Publish Version"
+msgstr "Kattintson a Verzió közzététel -re"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:67
+#, python-format
+msgid "Click on Publish button"
+msgstr "Kattintson a Közzététel gombra"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on Save.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Kattintson a Mentés-re.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:83
+#, python-format
+msgid "Click on delete version button"
+msgstr "Kattintson a verzió törlés gombra"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+#: model:ir.ui.view,arch_db:website_version.homepage_localhost
+#: model:ir.ui.view,arch_db:website_version.website2_homepage_other
+msgid "Click to customize this text"
+msgstr "Kattintson ennek a szövegnek az egyedivé tételéhez"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#: code:addons/website_version/static/src/xml/version_templates.xml:230
+#, python-format
+msgid "Client ID"
+msgstr "Ügyfál ID azonosító"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#: code:addons/website_version/static/src/xml/version_templates.xml:237
+#, python-format
+msgid "Client Secret"
+msgstr "Ügyfél titok"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:356
+#, python-format
+msgid "Close"
+msgstr "Bezárás"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_color
+msgid "Color Index"
+msgstr "Szín jegyzék"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:287
+#, python-format
+msgid "Configure"
+msgstr "Beállít"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:29
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:71
+#, python-format
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:87
+#, python-format
+msgid ""
+"Confirm. Felicitation, you are now able to edit and manage your versions."
+msgstr ""
+"Megerősítés. Gratulálunk, most már tudja a verzióit szerkeszteni és kezelni."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:189
+#, python-format
+msgid "Connect on your google account and go to"
+msgstr "Kapcsolódjon a google fiókjához és menjen a"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+#: model:ir.ui.view,arch_db:website_version.homepage_localhost
+#: model:ir.ui.view,arch_db:website_version.website2_homepage_other
+msgid "Contact us"
+msgstr "Lépjen velünk kapcsolatba"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:145
+#: code:addons/website_version/static/src/xml/version_templates.xml:153
+#, python-format
+msgid "Copy the"
+msgstr "Ennek másollása"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Copy the <b>\"Tracking ID\"</b> and paste it in the field Google Analytics key.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Másolja a <b>\"Nyomkövetés ID\"</b> és illessze be a Google Analytics kulcs mezőbe.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Copy the <b>\"View ID\"</b> and paste it in the field View ID.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Másolja a <b>\"Nézet ID\"</b> és illessze be a Nézet ID mezőbe.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:464
+#, python-format
+msgid "Create"
+msgstr "Létrehozás"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_create_date
+msgid "Create Date"
+msgstr "Létrehozás dátuma"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_create_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_create_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_create_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_create_uid
+msgid "Created by"
+msgstr "Létrehozta"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_create_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_create_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_create_date
+msgid "Created on"
+msgstr "Létrehozva"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "Creation :"
+msgstr "Létrehozás :"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:45
+#, python-format
+msgid ""
+"Customize any block through this menu. Try to change the background of the "
+"banner."
+msgstr ""
+"Ezzel a menüvel testreszabhat bármilyen blokkot. Próbálja megváltoztatni a "
+"hírdetés hátterét."
+
+#. module: website_version
+#: model:website_version.goals,name:website_version.goal_bounces
+msgid "Decrease Bounces"
+msgstr "Ugrás csökkentése"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "Delete"
+msgstr "Törlés"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:371
+#, python-format
+msgid "Delete Version"
+msgstr "Verzió törlés"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:79
+#, python-format
+msgid "Delete Version Test"
+msgstr "Teszt verzió törlése"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_google_management_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_display_name
+msgid "Display Name"
+msgstr "Megjelenített név"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:50
+#, python-format
+msgid "Drag the <em>'Features'</em> block and drop it below the banner."
+msgstr "Húzza a <em>'Jellemzők'</em> blokkot és dobja el a hírdetés alatt."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Duplicate Version"
+msgstr "Duplikált verzió"
+
+#. module: website_version
+#: selection:website_version.experiment,state:0
+msgid "Ended"
+msgstr "Befejezett"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Exp"
+msgstr "Kísérlet"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_experiment_id
+msgid "Experiment"
+msgstr "Kisérlet"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Experiment Form"
+msgstr "Kísérlet űrlap"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:63
+#, python-format
+msgid "Experiment Name"
+msgstr "Kísérlet neve"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_experiment_version_ids
+msgid "Experiment Version"
+msgstr "Kísérlet verzió"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_tree_view
+msgid "Experiment tree"
+msgstr "Kísérlet fa"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_version_form_view
+msgid "Experiment_page Form"
+msgstr "Kísérlet_oldal űrlap"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.action_experiment
+#: model:ir.ui.menu,name:website_version.menu_action_experiment
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "Experiments"
+msgstr "Kísérletek"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_version_form_view
+msgid "Features"
+msgstr "Jellemzők"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:213
+#, python-format
+msgid "Fill in the Name of application and check that the platform is well on"
+msgstr ""
+"Töltse ki az alkalmazás nevét és győződjön meg, hogy a felület rendben "
+"működik"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_frequency
+msgid "Frequency"
+msgstr "Frekvencia"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:163
+#: code:addons/website_version/static/src/xml/version_templates.xml:252
+#, python-format
+msgid "GA Key"
+msgstr "GA kulcs"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:21
+#, python-format
+msgid "Give a clever name to retrieve it easily."
+msgstr "Adjon egy ötletes nevet amit könnyen visszaidézhet."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:131
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+#, python-format
+msgid "Go to"
+msgstr "Menjen ide"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.google_analytics_configuration
+msgid "Google Analytics Configuration"
+msgstr "Google Analytics beállítása"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_google_ref
+msgid "Google Reference"
+msgstr "Google hivatkozás"
+
+#. module: website_version
+#: model:ir.actions.act_url,name:website_version.action_analytic
+msgid "Google analytics"
+msgstr "Google analytics"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_google_management_authorization
+msgid "Google authorization"
+msgstr "Google felhatalmazás"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_google_id
+msgid "Google id"
+msgstr "Google id azonosító"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_google_index
+msgid "Google index"
+msgstr "Google index"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+#: model:ir.ui.view,arch_db:website_version.version_search
+msgid "Group By"
+msgstr "Csoportosítás ezzel"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP útválasztás"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_tuto_google_analytics
+msgid "How to get GA key and View ID"
+msgstr "Hogyan kap GA kulcsot és  Nézet ID azonosítót"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid "How to get the Google Analytics Key and the View ID"
+msgstr "Hogyan szerezhet Google Analytics Kulcsot és Nézet ID azonosítót"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_google_management_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_id
+msgid "ID"
+msgstr "Azonosító"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:206
+#, python-format
+msgid "In the menu on left side, select the sub menu"
+msgstr "A bal oldali menüben, vállassza az almenüt"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:197
+#, python-format
+msgid ""
+"In the menu on left side, select the sub menu APIs (from menu APIs and auth)"
+" and activate"
+msgstr ""
+"A bal oldali menüben, vállassza az almenüt APIs (az APIs és szerő menüből) "
+"és aktiválja"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_google_management___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_version___last_update
+msgid "Last Modified on"
+msgstr "Utoljára módosítva"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_write_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_write_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_write_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_write_uid
+msgid "Last Updated by"
+msgstr "Utoljára frissítette"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_write_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_write_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_write_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_write_date
+msgid "Last Updated on"
+msgstr "Utoljára frissítve "
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:270
+#, python-format
+msgid "Launch"
+msgstr "Indítás"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:57
+#, python-format
+msgid "Launch A/B Tests"
+msgstr "A/B Teszt elindítása"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Launch A/B tests"
+msgstr "A/B Tesztek elindítása"
+
+#. module: website_version
+#: selection:website_version.experiment.version,frequency:0
+msgid "Less"
+msgstr "Kevesebb"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "List Modified Pages"
+msgstr "Módosított oldalak listája"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:346
+#, python-format
+msgid "List of pages that have been modified in version"
+msgstr "Ebben a verzióban módosított oldalak listája"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:41
+#, python-format
+msgid "Manage A/B tests"
+msgstr "A/B Tesztek kezelése"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:85
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+#, python-format
+msgid "Master"
+msgstr "Mester"
+
+#. module: website_version
+#: selection:website_version.experiment.version,frequency:0
+msgid "Medium"
+msgstr "Közepes"
+
+#. module: website_version
+#: selection:website_version.experiment.version,frequency:0
+msgid "More"
+msgstr "Tovább"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_name
+msgid "Name"
+msgstr "Név"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:446
+#: code:addons/website_version/static/src/xml/version_templates.xml:455
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+#, python-format
+msgid "New Version"
+msgstr "Új verzió"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:75
+#, python-format
+msgid "Now we will delete the version you have just published."
+msgstr "Most közzétett verzióját fogjuk törölni."
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_goal_id
+msgid "Objective"
+msgstr "Célkitűzés"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:71
+#, python-format
+msgid "Objective:"
+msgstr "Célkitűzés:"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:115
+#: code:addons/website_version/static/src/xml/version_templates.xml:248
+#, python-format
+msgid ""
+"Odoo uses Google Analytics to track the performances of an A/B testing "
+"experiment comparing several versions."
+msgstr ""
+"Odoo rendszer használja a Google Analytics elemzőt az A/B kísérleti "
+"tesztelés teljesítmény nyomon követéséhez a többi verzióval összehasonlítva."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:306
+#: code:addons/website_version/static/src/xml/version_templates.xml:325
+#, python-format
+msgid "Ok"
+msgstr "Ok"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#, python-format
+msgid "Once done, you will have the both informations ("
+msgstr "Ha egyszer elvégezte, akkor mindkét információja meglesz ("
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "PPP"
+msgstr "PPP"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_page
+msgid "Page"
+msgstr "Oldal"
+
+#. module: website_version
+#: model:website_version.goals,name:website_version.goal_pageviews
+msgid "Page Views"
+msgstr "Oldal nézetek"
+
+#. module: website_version
+#: selection:website_version.experiment,state:0
+msgid "Paused"
+msgstr "Szüneteltetve"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:388
+#: code:addons/website_version/static/src/xml/version_templates.xml:433
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+#: model:ir.ui.view,arch_db:website_version.view_view_form_extend
+#, python-format
+msgid "Publish"
+msgstr "Publikálás"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Publish Version"
+msgstr "Verzió közzététele"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:425
+#, python-format
+msgid "Publish and copy the current version"
+msgstr "A jelenlegi verzió közzététele és másolása"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:419
+#, python-format
+msgid "Publish version"
+msgstr "Verzió közzététele"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:55
+#, python-format
+msgid "Publish your page by clicking on the <em>'Save'</em> button."
+msgstr "Az oldalának közzétételéhez, kattintson a <em>'Mentés'</em> gombra."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid "Return at Top"
+msgstr "Vissza a tetejére"
+
+#. module: website_version
+#: selection:website_version.experiment,state:0
+msgid "Running"
+msgstr "Futó"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:19
+#, python-format
+msgid "Save"
+msgstr "Mentés"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:26
+#, python-format
+msgid "Save as New Version"
+msgstr "Mentse mint új verzió"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:47
+#, python-format
+msgid "Save on %s"
+msgstr "Mentés ekkor %s"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+msgid "Search Experiment"
+msgstr "Kísérlet keresése"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_search
+msgid "Search version"
+msgstr "Verzió keresése"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_sequence
+msgid "Sequence"
+msgstr "Sorszám"
+
+#. module: website_version
+#: model:website_version.goals,name:website_version.goal_sessionDuration
+msgid "Session Duration"
+msgstr "Folyamat időtartama"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+msgid "Snap"
+msgstr "Képecske"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+msgid "State"
+msgstr "Állam / megye"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:42
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+#, python-format
+msgid "Statistics"
+msgstr "Statisztika"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_state
+msgid "Status"
+msgstr "Állapot"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:255
+#: code:addons/website_version/static/src/js/widget.js:42
+#, python-format
+msgid ""
+"The Google Management API key needs to be configured before you can use it, "
+"do you want to do it now?"
+msgstr ""
+"A Google szinkronizálást alk. interf. kulcsot be kell állítania, mielőtt "
+"használja, meg szeretné tenni most?"
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:121
+#, python-format
+msgid "The experiment you try to create has a bad format."
+msgstr "A létrehozni próbált kísérletnek rossz a formátuma."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:351
+#: code:addons/website_version/static/src/xml/version_templates.xml:413
+#, python-format
+msgid "There is no difference with Master"
+msgstr "Mesterhez képest nincs különbség"
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:54
+#, python-format
+msgid ""
+"This experiment contains a view which is already used in another running "
+"experience"
+msgstr ""
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:63
+#, python-format
+msgid "This experiment must have versions which are in the same website"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:23
+#: code:addons/website_version/static/src/js/menu_version.js:54
+#: code:addons/website_version/static/src/js/menu_version.js:127
+#: code:addons/website_version/static/src/js/menu_version.js:196
+#, python-format
+msgid "This field is required"
+msgstr "Ez a mező szükséges"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:36
+#: code:addons/website_version/static/src/js/menu_version.js:68
+#, python-format
+msgid "This name already exists."
+msgstr "Ez a név már létezik."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+msgid ""
+"This will overwrite the current Master version of your website with this "
+"one."
+msgstr "Ez felülírja a jelenlegi weboldalának a Törzsadat verzióját ezzel."
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_name
+msgid "Title"
+msgstr "Megsz."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:180
+#, python-format
+msgid "To get your Client ID and your Client Secret, follow these steps"
+msgstr ""
+"Az Ügyfél ID azonosító és Ügyfél titok eléréséhez, kövesse a következő "
+"lépéseket"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:122
+#, python-format
+msgid "To get your GA Key and your View ID"
+msgstr "GA kulcsa és  Nézet ID azonosítói eléréséhez"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:22
+#: code:addons/website_version/static/src/xml/version_templates.xml:284
+#, python-format
+msgid "Toggle Dropdown"
+msgstr "Legördülő kapcsolása"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:276
+#: code:addons/website_version/static/src/xml/version_templates.xml:277
+#: code:addons/website_version/static/src/xml/version_templates.xml:280
+#, python-format
+msgid "Validate"
+msgstr "Jóváhagyás"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:26
+#, python-format
+msgid "Validate the version name"
+msgstr "Verzió név jóváhagyása"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_ir_ui_view_version_id
+#: model:ir.model.fields,field_description:website_version.field_website_page_version_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_version_id
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Version"
+msgstr "Verzió"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_number
+msgid "Version Number"
+msgstr "Verziószám"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:337
+#, python-format
+msgid "Version:"
+msgstr "Verzió:"
+
+#. module: website_version
+#: model:ir.ui.menu,name:website_version.menu_website_version_root
+msgid "Versioning"
+msgstr "Verzió fordító"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.action_version
+#: model:ir.ui.menu,name:website_version.menu_action_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Versions"
+msgstr "Verziók"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Versions in experiment"
+msgstr "Kísérleti verziók"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_view_ids
+msgid "View"
+msgstr "Nézet"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:170
+#: code:addons/website_version/static/src/xml/version_templates.xml:258
+#: model:ir.model.fields,field_description:website_version.field_website_google_analytics_view_id
+#, python-format
+msgid "View ID"
+msgstr "Nézet ID azon."
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_website_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_website_id
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+#: model:ir.ui.view,arch_db:website_version.version_search
+msgid "Website"
+msgstr "Weboldal"
+
+#. module: website_version
+#: model:ir.ui.menu,name:website_version.menu_website_view
+msgid "Website Domain"
+msgstr "Weboldal domén"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.action_website_view
+msgid "Websites"
+msgstr "Honlapok"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:60
+#, python-format
+msgid ""
+"Well done, you created a version of your homepage. Now we will publish your "
+"version in production."
+msgstr ""
+"Gratulálok, ön elkészítette a honlapja egy verzióját. Élesben fogjuk "
+"közzétenni a verzióját."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:198
+#, python-format
+msgid "When it's done, check that the button of"
+msgstr "Ha végrehajtva, ellenőrizze a gombot, hogy"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:13
+#, python-format
+msgid "You can create a version for every page of your website."
+msgstr "Létrehozhat egy verziót a weboldala összes oldaláról."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:216
+#, python-format
+msgid "You can now click on"
+msgstr "Most már rákattinthat erre"
+
+#. module: website_version
+#: code:addons/website_version/models/version.py:28
+#, python-format
+msgid ""
+"You cannot delete a version which is in a running or paused experiment."
+msgstr ""
+"Nem törölhet olyan verziót mely futtatási vagy szüneteltetési kísérlet."
+
+#. module: website_version
+#: sql_constraint:website_version.version:0
+msgid ""
+"You cannot have multiple versions with the same name in the same domain!"
+msgstr ""
+"Nem lehet többszörös verzió ugyanazzal a névvel ugyanavval a doménnel!"
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:132
+#, python-format
+msgid "You cannot modify an ended experiment."
+msgstr "Nem tud módosítani egy befejezett  kísérletet."
+
+#. module: website_version
+#: code:addons/website_version/models/google_management.py:119
+#, python-format
+msgid "You must configure your account."
+msgstr "Be kell állítani a fiókját."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:237
+#: code:addons/website_version/static/src/js/menu_version.js:268
+#, python-format
+msgid "You must fill all the fields."
+msgstr "Ki kell töltenie az összes mezőt."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:106
+#, python-format
+msgid ""
+"You must have at least one version for this page to create a new experiment."
+msgstr ""
+"Legalább egy verziójának kell lennie erről az oldalhoz egy új kísérlet "
+"létrehozásához."
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:123
+#, python-format
+msgid "You must select at least one version in your experiment."
+msgstr "Legalább egy verziót ki kell választania a kísérletéhez."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:200
+#, python-format
+msgid "You must select at least one version which is not Master."
+msgstr "Legalább egy, nem mester, verziót ki kell választania."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:111
+#, python-format
+msgid ""
+"You need Administration/Settings rights to configure Google Analytics "
+"access."
+msgstr ""
+"Rendszergazda/Beállítások  jogokkal kell rendelkeznie a  Google Analytics "
+"hozzáférés beállításához."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:214
+#, python-format
+msgid ""
+"You should now configure the allowed pages on which you will be redirected. "
+"To do it, you need to complete the field"
+msgstr ""
+"Most be kell állítania azokat a megengedett oldalakat, melyekről át lesz "
+"irányítva. Ahhoz, hogy megtegye, ki kell egészítenie a mezőt"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:247
+#: code:addons/website_version/static/src/js/widget.js:38
+#, python-format
+msgid ""
+"You will be redirected to Google to authorize access to your Analytics "
+"Account!"
+msgstr ""
+"Át lesz irányítva a Google-ra, hogy az elemzések eléréshez jogosultságot "
+"kapjon!"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#, python-format
+msgid "and"
+msgstr "és"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:150
+#, python-format
+msgid "and click on"
+msgstr "és kattintson erre"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:131
+#, python-format
+msgid "and connect you."
+msgstr "és csatlakozzon."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"and connect you.\n"
+"                                    <br/><br/>"
+msgstr ""
+"és csatlakozzon.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:191
+#, python-format
+msgid "and enter a project name."
+msgstr "és írjon be egy projekt nevet."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:146
+#, python-format
+msgid "and paste it in the field Google Analytics key."
+msgstr "és illessze a Google Analytics kulcs mezőbe."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:154
+#, python-format
+msgid "and paste it in the field View ID."
+msgstr "és illessze a Nézet ID azonosító mezőbe."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:214
+#, python-format
+msgid "and set as value  (your own domain followed by"
+msgstr "és állítsa be mint értéket (a saját domain nevét követi a"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:197
+#, python-format
+msgid "by clicking on button \"OFF\"."
+msgstr "a \"KI\" gombra kattintva."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:346
+#, python-format
+msgid ""
+"compared to master. If you publish this version, all pages will be updated "
+"at once."
+msgstr ""
+"összehasonlítva egy mester verzióval. Ha ezt a verziót teszi közzé, az "
+"összes oldal frissítése egyszerre fog megtörténni."
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_google_management
+msgid "google.management"
+msgstr "google.management"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:189
+#, python-format
+msgid "https://console.developers.google.com"
+msgstr "https://console.developers.google.com"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:131
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+#, python-format
+msgid "https://www.google.com/analytics/"
+msgstr "https://www.google.com/analytics/"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_ir_qweb
+msgid "ir.qweb"
+msgstr "ir.qweb"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:198
+#, python-format
+msgid "is well in green and with text \"ON\""
+msgstr "ez zöld és \"BE\" felirattal"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "on"
+msgstr "ezen"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.website2_homepage_other
+msgid "version 0.0.0.0"
+msgstr "verzió 0.0.0.0"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+msgid "version Form"
+msgstr "verzió Űrlap"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_localhost
+msgid "version localhost"
+msgstr "localhost verzió"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_tree_view
+msgid "version tree"
+msgstr "Verzió fa"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "versions"
+msgstr "verziók"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_experiment
+msgid "website_version.experiment"
+msgstr "website_version.experiment"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_experiment_version
+msgid "website_version.experiment.version"
+msgstr "website_version.experiment.version"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_goals
+msgid "website_version.goals"
+msgstr "website_version.goals"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_version
+msgid "website_version.version"
+msgstr "website_version.version"

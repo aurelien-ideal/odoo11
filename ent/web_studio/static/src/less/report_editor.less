@@ -1,0 +1,32 @@
+.o_web_studio_client_action.o_report_editor {
+    .o-flex-display();
+    .o_report_iframe {
+        .o-flex(1, 1, auto);
+        position: initial;
+    }
+
+    .o_web_studio_sidebar {
+        .o-flex(0, 0, @o-web-studio-sidebar-width);
+        overflow: auto;
+    }
+    .o_ace_view_editor {
+        .o-flex(0, 0, auto);
+    }
+
+    .o_report_editor_unavailable {
+        width: 100%;
+        padding-top: 10%;
+        text-align: center;
+        background-color: @o-web-studio-bg-light;
+        font-size: x-large;
+    }
+}
+
+.o_web_studio_report_kanban {
+    .o_kanban_image > i {
+        font-size: 5em;
+    }
+    .oe_kanban_details > div {
+        .text-overflow();
+    }
+}

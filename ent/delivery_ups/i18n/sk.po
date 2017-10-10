@@ -1,0 +1,303 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_ups
+#
+# Translators:
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 12:08+0000\n"
+"PO-Revision-Date: 2016-02-11 10:48+0000\n"
+"Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>\n"
+"Language-Team: Slovak (http://www.transifex.com/odoo/odoo-9/language/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_delivery_carrier
+msgid "Carrier"
+msgstr "Prepavca"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Centimeters"
+msgstr "Centimetre"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_packaging_id
+#, fuzzy
+msgid "Default Packaging Type"
+msgstr "UPS typ balenia"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_dimension_unit:0
+msgid "Inches"
+msgstr "Palce"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Kilograms"
+msgstr "Kilogramy"
+
+#. module: delivery_ups
+#: model:ir.model,name:delivery_ups.model_product_packaging
+#, fuzzy
+msgid "Packaging"
+msgstr "Výška balíka"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:207
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Prosím poskytnite aspoň jednu položku na poslanie."
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_package_weight_unit:0
+msgid "Pounds"
+msgstr "Libry"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:171
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Zásielka N° %s bola zrušená"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:135
+#, python-format
+msgid "Shipment created into UPS <br/> <b>Tracking Number : </b>%s"
+msgstr "Zásielka vytvorená v UPS <br/> <b>Sledovacie číslo : </b>%s"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/delivery_ups.py:142
+#, python-format
+msgid "Shipping label for packages"
+msgstr "Sprievodka pre balíky"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:182
+#, python-format
+msgid ""
+"The address of your company is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Adresa vašej spoločnosti chýba alebo je nesprávna.\n"
+"(Chýbajúce pole(polia) : %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:192
+#, python-format
+msgid ""
+"The address of your warehouse is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Adresa vášho skladiska chýba alebo je nesprávna.\n"
+"(Chýbajúce pole(polia) : %s)"
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:212
+#, python-format
+msgid ""
+"The delivery cannot be done because the weight of your product is missing."
+msgstr "Doručenie nemožno vykonať, pretože chýba váha vášho produktu."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:209
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is "
+"missing."
+msgstr ""
+"Odhadovaná cena nemôže by vypočítaná, pretože chýba váha vášho produktu."
+
+#. module: delivery_ups
+#: code:addons/delivery_ups/models/ups_request.py:202
+#, python-format
+msgid ""
+"The recipient address is missing or wrong.\n"
+"(Missing field(s) : %s)"
+msgstr ""
+"Adresa príjemcu chýba alebo je nesprávna.\n"
+"(Chýbajúce pole(polia) : %s)"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day"
+msgstr "UPD druhý deň"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 2nd Day AM"
+msgstr "UPS druhý deň doobeda"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS 3-day Select"
+msgstr "UPS 3-dňový výber"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_access_number
+msgid "UPS AccessLicenseNumber"
+msgstr "UPS AccessLicenseNumber"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_be
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_be_product_product
+msgid "UPS BE"
+msgstr "UPS BE"
+
+#. module: delivery_ups
+#: model:ir.ui.view,arch_db:delivery_ups.view_delivery_carrier_form_with_provider_ups
+msgid "UPS Configuration"
+msgstr "UPS konfigurácia"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Ground"
+msgstr "UPS povrch"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day"
+msgstr "UPS ďalší deň"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day AM"
+msgstr "UPS ďalší deň doobeda"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Next Day Air Saver"
+msgstr "UPS Ďalší deň Air Saver"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_passwd
+msgid "UPS Password"
+msgstr "UPS heslo"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Saver"
+msgstr "UPS šetrič"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_default_service_type
+msgid "UPS Service Type"
+msgstr "UPS typ služby"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_shipper_number
+msgid "UPS Shipper Number"
+msgstr "UPS číslo odosielateľa"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Standard"
+msgstr "UPS štandard"
+
+#. module: delivery_ups
+#: model:delivery.carrier,name:delivery_ups.delivery_carrier_ups_us
+#: model:product.product,name:delivery_ups.delivery_carrier_ups_us_product_product
+msgid "UPS US"
+msgstr "UPS US"
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_username
+msgid "UPS Username"
+msgstr "UPS pouźívateľské meno"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Expedited"
+msgstr "UPS Worldwide Expedited"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express"
+msgstr "UPS"
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Freight"
+msgstr "UPS Worldwide Express Freight "
+
+#. module: delivery_ups
+#: selection:delivery.carrier,ups_default_service_type:0
+msgid "UPS Worldwide Express Plus"
+msgstr "UPS Worldwide Express Plus "
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_dimension_unit
+msgid "Units for UPS Package Size"
+msgstr "Jednotky pre veľkosť UPS balíčka "
+
+#. module: delivery_ups
+#: model:ir.model.fields,field_description:delivery_ups.field_delivery_carrier_ups_package_weight_unit
+msgid "Ups package weight unit"
+msgstr "UPC jJednotka hmotnosti balíčka"
+
+#~ msgid "10KG Box"
+#~ msgstr "10KG Box"
+
+#~ msgid "25KG Box"
+#~ msgstr "25KG Box"
+
+#~ msgid "Express Box"
+#~ msgstr "Expres box"
+
+#~ msgid "Fixed height if not provided on the product packaging."
+#~ msgstr "Fixná výška ak nie je poskytnutá na balení produktu."
+
+#~ msgid "Fixed length if not provided on the product packaging."
+#~ msgstr "Fixná dĺžka ak nie je poskytnutá na balení produktu."
+
+#~ msgid "Fixed width if not provided on the product packaging."
+#~ msgstr "Fixná šírka ak nie je poskytnutá na balení produktu."
+
+#~ msgid "Flat Pack"
+#~ msgstr "Ploché balenie"
+
+#~ msgid "Medium Express Box"
+#~ msgstr "Stredný expres box"
+
+#~ msgid "Package Height"
+#~ msgstr "Výška balíka"
+
+#~ msgid "Package Length"
+#~ msgstr "Dĺžka balíka"
+
+#~ msgid "Package Width"
+#~ msgstr "Šírka balíka"
+
+#~ msgid "Package/customer supplied"
+#~ msgstr "Balík/dodaný zákazníkom"
+
+#~ msgid "Pallet"
+#~ msgstr "Paleta"
+
+#~ msgid "Small Express Box"
+#~ msgstr "Malý expres box"
+
+#~ msgid "Test Mode"
+#~ msgstr "Testovací režim"
+
+#~ msgid "UPS Letter"
+#~ msgstr "UPS dopis"
+
+#~ msgid "UPS Packaging Type"
+#~ msgstr "UPS typ balenia"
+
+#~ msgid "UPS Pak"
+#~ msgstr "UPS Pak"
+
+#~ msgid "UPS Tube"
+#~ msgstr "UPS tuba"
+
+#~ msgid "Uncheck this box to use production UPS Web Services"
+#~ msgstr "Zrušte označenie tohto políčka pre používanie UPS web služby"

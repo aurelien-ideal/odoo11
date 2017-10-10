@@ -1,0 +1,40 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * helpdesk_sale_timesheet
+# 
+# Translators:
+# Cas Vissers <casvissers@brahoo.nl>, 2017
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Erwin van der Ploeg <erwin@odooexperts.nl>, 2017\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: helpdesk_sale_timesheet
+#: model:ir.model.fields,field_description:helpdesk_sale_timesheet.field_helpdesk_ticket_is_overdue
+msgid "Is overdue"
+msgstr "Is vervallen"
+
+#. module: helpdesk_sale_timesheet
+#: model:ir.model.fields,help:helpdesk_sale_timesheet.field_helpdesk_ticket_is_overdue
+msgid ""
+"It will be overdue if sale order's delivered quantity is exceed than ordered"
+" quantity"
+msgstr ""
+"Deze zal vervallen wanneer de geleverde hoeveelheden op de verkooporder "
+"hoger zijn dan de bestelde hoeveelheden"
+
+#. module: helpdesk_sale_timesheet
+#: model:ir.model,name:helpdesk_sale_timesheet.model_helpdesk_ticket
+msgid "Ticket"
+msgstr "Ticket"

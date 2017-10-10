@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="subscription_pricing" name="subscription Price" inherit_id="website_quote.pricing">
+        <xpath expr="//t[@t-as='line']" position="replace">
+            <t t-set="recurring_products" t-value="[line.recurring_product for line in layout_category['lines']]"/>
+            <t t-set="recurring_products_titles"
+               t-value="(layout_category_size == 1 and page_size == 1) and True in recurring_products and False in recurring_products"/>
+            <t t-foreach="quotation._split_subscription_lines().items()" t-as="template_content">
+                <t t-set="template" t-value="template_content[0]"/>
+                <t t-set="template_lines" t-value="template_content[1]"/>
+                <tr t-if="recurring_products_titles" class="active">
+                    <td colspan="7">Subscription - <t t-esc="template.name"/></td>
+                </tr>
+                <tr t-foreach="layout_category['lines']" t-as="line">
+                    <t t-if="line in template_lines">
+                        <t t-call="website_quote_subscription.order_line_row"/>
+                    </t>
+                </tr>
+            </t>
+            <tr t-if="recurring_products_titles" class="active">
+                <td colspan="7">One-time Fees <small>- These products will not be part of any subscription</small></td>
+            </tr>
+            <tr t-foreach="layout_category['lines']" t-as="line">
+                <t t-if="not line.recurring_product">
+                    <t t-call="website_quote_subscription.order_line_row"/>
+                </t>
+            </tr>
+        </xpath>
+    </template>
+
+    <template id="order_line_row">
+        <td>
+            <span t-field="line.name"/>
+        </td>
+        <td>
+            <div id="quote_qty">
+                <span t-field="line.product_uom_qty"/>
+                <span t-field="line.product_uom"/>
+            </div>
+        </td>
+        <td>
+            <div t-foreach="line.tax_id" t-as="tax">
+                <t t-esc="tax.name"/>
+            </div>
+        </td>
+        <td>
+            <strong t-if="line.discount" class="text-info">
+                <t t-esc="line.discount"/>% discount
+            </strong>
+        </td>
+        <td>
+              <div t-field="line.price_unit"
+                  t-field-options='{"widget": "monetary", "display_currency": quotation.pricelist_id.currency_id}'
+                  t-att-style="line.discount and 'text-decoration: line-through' or ''"
+                  t-att-class="(line.discount and 'text-danger' or '') + 'text-right'"/>
+              <!-- TODO: apply monetary widget formating -->
+              <div t-if="line.discount">
+                  <t t-esc="'%.2f' % ((1-line.discount / 100.0) * line.price_unit)"/>
+              </div>
+        </td>
+        <td>
+            <div class="text-right"
+                t-field="line.price_subtotal"
+                t-field-options='{"widget": "monetary", "display_currency": quotation.pricelist_id.currency_id}'/>
+        </td>
+        <td class="text-center">
+            <a t-attf-href="./update_line/#{ line.id }/?order_id=#{ quotation.id }&amp;unlink=True&amp;token=#{ quotation.access_token }" class="mb8 js_update_line_json hidden-print" t-if="line.option_line_id">
+                <span class="fa fa-trash-o"></span>
+            </a>
+        </td>
+    </template>
+</odoo>

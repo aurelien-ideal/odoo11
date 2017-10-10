@@ -1,0 +1,40 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sale_account_taxcloud
+# 
+# Translators:
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: Martin Trigaux <mat@odoo.com>, 2017\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: sale_account_taxcloud
+#: model:ir.model,name:sale_account_taxcloud.model_account_invoice
+msgid "Invoice"
+msgstr "Factuur"
+
+#. module: sale_account_taxcloud
+#: model:ir.model,name:sale_account_taxcloud.model_sale_order
+msgid "Quotation"
+msgstr "Offerte"
+
+#. module: sale_account_taxcloud
+#: code:addons/sale_account_taxcloud/models/sale_order.py:64
+#, python-format
+msgid ""
+"The tax rates have been updated, you may want to check it before validation"
+msgstr ""
+"De belastingtarieven zijn geüpdatet, u wilt ze mogelijk controleren voor ze "
+"te valideren"

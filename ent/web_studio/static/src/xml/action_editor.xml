@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<div t-name="web_studio.ActionEditor" class="o_web_studio_action_editor">
+    <div class="o_web_studio_views">
+
+            <div class="o_web_studio_view_column">
+                <div class="o_web_studio_view_category" name="general">
+                    <h6><strong>General Views</strong></h6>
+                </div>
+                <div class="o_web_studio_view_category" name="timeline">
+                    <h6><strong>Timeline Views</strong></h6>
+                </div>
+            </div>
+            <!-- <div class="o_web_studio_view_brake"/> -->
+            <div class="o_web_studio_view_column">
+                <div class="o_web_studio_view_category" name="multiple">
+                    <h6><strong>Multiple Records Views</strong></h6>
+                </div>
+                <div class="o_web_studio_view_category" name="reporting">
+                    <h6><strong>Reporting &amp; Presenting Views</strong></h6>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+<t t-name="web_studio.ActionEditorView">
+    <div t-attf-class="o_web_studio_view_type #{!widget.active ? 'o_web_studio_inactive' : ''}" t-att-data-type="widget.view_type">
+        <div class="o_web_studio_thumbnail">
+            <span t-if="!widget.active" class="o_web_studio_view_label">Activate View</span>
+            <span t-if="widget.default_view" class="o_web_studio_default_view fa-stack fa-sm">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-home fa-stack-1x"></i>
+            </span>
+            <img t-att-src="'/web_studio/static/src/img/view_type/' + widget.view_type + '.png'"/>
+        </div>
+        <div class="o_web_studio_name"><t t-esc="widget.view_type"/></div>
+        <i class="dropdown-toggle fa fa-ellipsis-v o_web_studio_more" data-toggle="dropdown"/>
+        <ul class="dropdown-menu" role="menu">
+            <li t-if="widget.can_default">
+                <a href="#" t-att-class="widget.default_view ? 'o_web_studio_view_type_default' : ''" data-action="set_default_view">
+                    <i t-if="widget.default_view" class="fa fa-check" aria-hidden="true"/>
+                    Set as Default
+                </a>
+            </li>
+            <li t-if="widget.can_set_another"><a href="#" data-action="set_another_view">Set another view</a></li>
+            <li t-if="widget.can_be_disabled" class="divider"/>
+            <li t-if="widget.can_be_disabled"><a href="#" data-action="disable_view">Disable</a></li>
+        </ul>
+    </div>
+</t>
+
+</templates>

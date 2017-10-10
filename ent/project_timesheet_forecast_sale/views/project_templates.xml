@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_backend" name="project timesheet forecast assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/project_timesheet_forecast_sale/static/src/less/project_plan.less"/>
+        </xpath>
+    </template>
+
+    <template id="timesheet_plan" inherit_id="sale_timesheet.timesheet_plan" name="Timesheet Plan (Timesheet and Forecast)" priority="35">
+        <xpath expr="//div[hasclass('o_timesheet_plan_content')]" position="inside">
+            <div class="o_project_plan_project_timesheet_forecast">
+                <t t-if="timesheet_forecast_table and timesheet_forecast_table['rows']">
+                    <h3>Timesheet/Forecast</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <t t-foreach="timesheet_forecast_table['header']" t-as="header_val">
+                                    <th t-att-class="'o_right_bordered' if header_val_index in [timesheet_forecast_table['attrs']['timesheet_col_index'], timesheet_forecast_table['attrs']['forecast_col_index']] else ''">
+                                        <span><t t-esc="header_val"/></span>
+                                    </th>
+                                </t>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="timesheet_forecast_table['rows']" t-as="row">
+                                <tr t-att-class="'o_timesheet_forecast_' + row['meta'].get('type')">
+                                    <t t-foreach="row['row_values']" t-as="r_val">
+                                        <td t-att-class="'o_right_bordered' if r_val_index in [timesheet_forecast_table['attrs']['timesheet_col_index'], timesheet_forecast_table['attrs']['forecast_col_index']] else '' + ' text-center' if r_val_index != 0 else ''">
+                                            <t t-if="row['meta'].get('type') == 'sale_order' and r_val_index == 0">
+                                                <a t-att-data-oe-model="row['meta']['res_model']" t-att-data-oe-id="row['meta']['res_id']" class="o_timesheet_plan_redirect">
+                                                    <t t-esc="r_val"/>
+                                                </a>
+                                            </t>
+                                            <t t-if="row['meta'].get('type') != 'sale_order' or r_val_index != 0">
+                                                <span>
+                                                    <t t-esc="r_val"/>
+                                                </span>
+                                            </t>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </t>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

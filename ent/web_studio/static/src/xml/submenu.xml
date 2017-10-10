@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<ul t-name="web_studio.AppSwitcherMenu" class="o_web_studio_appswitcher_menu">
+    <li>
+        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
+            Customizations <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li>
+                <a href="#" class="o_web_studio_change_background">Change Background</a>
+                <span class="hide">
+                    <t t-call="HiddenInputFile">
+                        <t t-set="fileupload_id" t-value="widget.fileupload_id"/>
+                        <t t-set="fileupload_action" t-translation="off">/web/binary/upload_attachment</t>
+                        <input type="hidden" name="model" value="res.company"/>
+                        <input type="hidden" name="id" t-att-value="widget.company_id"/>
+                    </t>
+                </span>
+            </li>
+            <li><a href="#" class="o_web_studio_import">Import</a></li>
+            <li><a href="#" class="o_web_studio_export">Export</a></li>
+        </ul>
+    </li>
+</ul>
+
+<div t-name="web_studio.Menu" class="o_web_studio_menu">
+    <div class="o_web_studio_breadcrumb"/>
+
+    <ul class="o_menu_sections">
+      <li><a href="#" data-toggle="collapse" role="button" aria-expanded="true" data-name="views">Views</a></li>
+      <li t-if="widget.multi_lang">
+        <a href="#" data-toggle="collapse" aria-expanded="true" data-name="translations">Translations</a>
+      </li>
+      <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="automations">Automations</a></li>
+      <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="reports">Reports</a></li>
+      <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="acl">Access Controls</a></li>
+      <li><a href="#" data-toggle="collapse" aria-expanded="true" data-name="filters">Filter Rules</a></li>
+      <li class="o_web_studio_submenu_icons">
+        <div class="o_web_studio_views_icons">
+          <t t-if="_.contains(widget.active_view_types, 'form')">
+            <a href="#" data-name="form"><i class="fa fa-address-card"/></a>
+          </t>
+          <t t-if="_.contains(widget.active_view_types, 'list')">
+            <a href="#" data-name="list"><i class="fa fa-list-ul"/></a>
+          </t>
+          <t t-if="_.contains(widget.active_view_types, 'kanban')">
+            <a href="#" data-name="kanban"><i class="fa fa-th-large"/></a>
+          </t>
+          <t t-if="_.contains(widget.active_view_types, 'calendar')">
+            <a href="#" data-name="calendar"><i class="fa fa-calendar-o"/></a>
+          </t>
+          <t t-if="_.contains(widget.active_view_types, 'graph')">
+            <a href="#" data-name="graph"><i class="fa fa-bar-chart"/></a>
+          </t>
+          <t t-if="_.contains(widget.active_view_types, 'pivot')">
+            <a href="#" data-name="pivot"><i class="fa fa-table"/></a>
+          </t>
+          <t t-if="_.contains(widget.active_view_types, 'grid')">
+            <a href="#" data-name="grid"><i class="fa fa-th"/></a>
+          </t>
+          <t t-if="_.contains(widget.active_view_types, 'gantt')">
+            <a href="#" data-name="gantt"><i class="fa fa-tasks"/></a>
+          </t>
+        </div>
+      </li>
+    </ul>
+
+    <div class="o_web_studio_redo"><button class="btn btn-sm"><i class="fa fa-repeat"/><span>Redo</span></button></div>
+    <div class="o_web_studio_undo"><button class="btn btn-sm"><i class="fa fa-undo"/><span>Undo</span></button></div>
+
+</div>
+
+</templates>

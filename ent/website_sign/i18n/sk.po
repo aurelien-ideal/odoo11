@@ -1,0 +1,1696 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_sign
+#
+# Translators:
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 12:08+0000\n"
+"PO-Revision-Date: 2016-05-15 09:17+0000\n"
+"Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>\n"
+"Language-Team: Slovak (http://www.transifex.com/odoo/odoo-9/language/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. module: website_sign
+#: model:mail.template,body_html:website_sign.website_sign_mail_template
+#, fuzzy
+msgid ""
+"\n"
+"            <link href='http://fonts.googleapis.com/css?family=Lato' "
+"rel='stylesheet' type='text/css'>\n"
+"\n"
+"            <div style=\"width:90%; max-width:600px; margin:auto; font-"
+"size:10pt; padding:20px 0; font-family:'Lato', serif;\">\n"
+"                <div style=\"background-color:#EFEDED; padding: 20px;\">\n"
+"                    % if ctx['template_type'] == \"request\":\n"
+"                        ${ctx['email_from_usr']} (<a href=\"mailto:"
+"${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:"
+"#428BCA; text-decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}"
+"</a>) has requested your signature on this document :\n"
+"                    % endif\n"
+"                    % if ctx['template_type'] == \"follower\":\n"
+"                        ${ctx['email_from_usr']} (<a href=\"mailto:"
+"${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:"
+"#428BCA; text-decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}"
+"</a>) has added you as a Follower of this Signature Request :\n"
+"                    % endif\n"
+"                    % if ctx['template_type'] == \"completed\":\n"
+"                        This document has been completed and signed by "
+"everyone :\n"
+"                    % endif\n"
+"\n"
+"                    <h1 style=\"font-size:1.25em; margin:15px 0 25px 0;\">"
+"${object['reference']}</h1>\n"
+"                    \n"
+"                    <div style=\"margin:0 -15px\">\n"
+"                        <a style=\"float:left; display:inline-block; "
+"margin:0 15px 10px 15px; padding:5px 10px; border-radius: 3px; background-"
+"color:#5C6ED0; text-align:center; text-decoration:none; color:#F7FBFD;\" "
+"href=${ctx['link']}>\n"
+"                            % if ctx['template_type'] == \"request\":\n"
+"                                Sign Document Now\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"follower\":\n"
+"                                View Signature Request\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"completed\":\n"
+"                                View Signed Document\n"
+"                            % endif\n"
+"                        </a>\n"
+"                        \n"
+"                        <div style=\"font-size:0.8em; color:#999999; "
+"margin:0 15px 10px 15px\">\n"
+"                            % if ctx['template_type'] == \"request\":\n"
+"                                <strong style=\"font-weight:bold; color:"
+"black;\">Warning: do not forward this email to other people!</strong><br/>\n"
+"                                They will be able to access this document "
+"and sign it as yourself.\n"
+"                            % endif\n"
+"                            % if ctx['template_type'] == \"follower\":\n"
+"                                You will be notified once the document has "
+"been signed by everyone involved.\n"
+"                            % endif\n"
+"                        </div>\n"
+"                        <div style=\"clear:both;\"/>\n"
+"                    </div>\n"
+"                    \n"
+"                    % if ctx['msgbody']:\n"
+"                    <div style=\"background-color:white; padding:10px;\">\n"
+"                        ${ctx['msgbody']|safe}\n"
+"                    </div>\n"
+"                    % endif\n"
+"                </div>\n"
+"                \n"
+"                <div style=\"font-size:0.8em; margin-top:10px;\">\n"
+"                    <span style=\"color:#428BCA;\">Sent with <strong style="
+"\"font-weight:bold;\">Odoo Sign</strong></span>\n"
+"                </div>\n"
+"            </div>\n"
+"        \n"
+"        "
+msgstr ""
+"\n"
+"<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' "
+"type='text/css'>\n"
+"\n"
+"<div style=\"width:90%; max-width:600px; margin:auto; font-size:10pt; "
+"padding:20px 0; font-family:'Lato', serif;\">\n"
+"<div style=\"background-color:#EFEDED; padding: 20px;\">\n"
+"% if ctx['template_type'] == \"request\":\n"
+"${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?subject=Re: "
+"${ctx['subject']|safe}\" style=\"color:#428BCA; text-decoration:none;\" "
+"target=\"_blank\">${ctx['email_from_mail']}</a>) požiadal o Váš podpis na "
+"tomto dokumente :\n"
+"% endif\n"
+"% if ctx['template_type'] == \"follower\":\n"
+"${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?subject=Re: "
+"${ctx['subject']|safe}\" style=\"color:#428BCA; text-decoration:none;\" "
+"target=\"_blank\">${ctx['email_from_mail']}</a>) Vás pridal ako odberateľa "
+"pre túto Podpisovú žiadosť :\n"
+"% endif\n"
+"% if ctx['template_type'] == \"completed\":\n"
+"Tento dokument bol dokončený a každým podpísaný :\n"
+"% endif\n"
+"\n"
+"<h1 style=\"font-size:1.25em; margin:15px 0 25px 0;\">${object['reference']}"
+"</h1>\n"
+"\n"
+"<div style=\"margin:0 -15px\">\n"
+"<a style=\"float:left; display:inline-block; margin:0 15px 10px 15px; "
+"padding:5px 10px; border-radius: 3px; background-color:#5C6ED0; text-align:"
+"center; text-decoration:none; color:#F7FBFD;\" href=${ctx['link']}>\n"
+"% if ctx['template_type'] == \"request\":\n"
+"Podpísať dokument teraz\n"
+"% endif\n"
+"% if ctx['template_type'] == \"follower\":\n"
+"Zobraziť podpisové žiadosti\n"
+"% endif\n"
+"% if ctx['template_type'] == \"completed\":\n"
+"Zobraziť podpísaný dokument\n"
+"% endif\n"
+"</a>\n"
+"\n"
+"<div style=\"font-size:0.8em; color:#999999; margin:0 15px 10px 15px\">\n"
+"% if ctx['template_type'] == \"request\":\n"
+"<strong style=\"font-weight:bold; color:black;\">Upozornenie: "
+"nepreposielajte tento email ďalším ľuďom!</strong><br/>\n"
+"Budú mať prístup k tomuto dokumentu a vedieť ho podpísať vo Vašom mene.\n"
+"% endif\n"
+"% if ctx['template_type'] == \"follower\":\n"
+"Budete notifikovaný akonáhle bude dokument podpísaný všetkými zúčastnenými.\n"
+"% endif\n"
+"</div>\n"
+"<div style=\"clear:both;\"/>\n"
+"</div>\n"
+"\n"
+"% if ctx['msgbody']:\n"
+"<div style=\"background-color:white; padding:10px;\">\n"
+"${ctx['msgbody']|safe}\n"
+"</div>\n"
+"% endif\n"
+"</div>\n"
+"\n"
+"<div style=\"font-size:0.8em; margin-top:10px;\">\n"
+"<span style=\"color:#428BCA;\">Sent with <strong style=\"font-weight:bold;"
+"\">Odoo Podpis</strong></span><span style=\"color:#999999;\"> - Bezplatné "
+"Open Source digitálne podpisy.</span>\n"
+"</div>\n"
+"</div>"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:214
+#, python-format
+msgid " Filters "
+msgstr "Filtre"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:192
+#, python-format
+msgid " as Favorite"
+msgstr "ako Obľúbené"
+
+#. module: website_sign
+#: model:mail.template,subject:website_sign.website_sign_mail_template
+msgid "${ctx['subject']|safe}"
+msgstr "${ctx['subject']|safe}"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:35
+#, python-format
+msgid ""
+") format(\"woff\");\n"
+"                        font-weight: normal;\n"
+"                        font-style: normal;\n"
+"                    }"
+msgstr ""
+") format(\"woff\");\n"
+"font-weight: normal;\n"
+"font-style: normal;\n"
+"}"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "<br/>(the email access has not been sent)"
+msgstr "<br/>(email prístup nebol odoslaný)"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_item_type_view_form
+msgid "<span>(1.0 = full page size)</span>"
+msgstr "<span>(1.0 = plná veľkosť stránky)</span>"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:32
+#, python-format
+msgid ""
+"@font-face {\n"
+"                        font-family: \"font\";\n"
+"                        src: url(data:font/ttf;base64,"
+msgstr ""
+"@font-face {\n"
+"font-family: \"font\";\n"
+"src: url(data:font/ttf;base64,"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:651
+#, python-format
+msgid "A copy has been sent to the new followers."
+msgstr "Kópia bola odoslaná novým odberateľom."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:390
+#, python-format
+msgid "Add Initials"
+msgstr "Pridať iniciály"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:399
+#, python-format
+msgid "Add on all pages"
+msgstr "Pridať na všetky stránky"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:395
+#, python-format
+msgid "Add once"
+msgstr "Pridať raz"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:85
+#, python-format
+msgid "Adopt Your Signature"
+msgstr "Prijať váš podpis"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:90
+#, python-format
+msgid "Adopt and Sign"
+msgstr "Prijať a Podpísať"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_archived
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_archived
+msgid "Archived"
+msgstr "Archivovaný"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_attachment_id
+msgid "Attachment"
+msgstr "Príloha"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:15
+#, python-format
+msgid "Auto"
+msgstr "Auto"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_auto_field
+msgid "Automatic Partner Field"
+msgstr "Automatické pole partnera"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:21
+#, python-format
+msgid ""
+"By clicking Adopt and Sign, I agree that the chosen signature/initials will "
+"be a valid electronic representation of my hand-written signature/initials "
+"for all purposes when it is used on documents, including legally binding "
+"contracts."
+msgstr ""
+"Kliknutím na Prijať a Podpísať, súhlasim že zvolené podpisy/iniciály budú "
+"platnou elektronickou reprezentáciou môjho ručného podpisu / iniciál, pre "
+"všetky účely kedy sa používa na dokumentoch, vrátane legálne záväzných "
+"zmluvách."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:445
+#: code:addons/website_sign/static/src/js/website_sign_common.js:283
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:93
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:341
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+#, python-format
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1229
+#, python-format
+msgid "Cancel Request"
+msgstr "Zrušiť žiadosť"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:286
+#: selection:signature.request,state:0
+#, python-format
+msgid "Canceled"
+msgstr "Zrušené"
+
+#. module: website_sign
+#: code:addons/website_sign/models/signature_request.py:359
+#, python-format
+msgid "Canceled."
+msgstr "Zrušené."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:13
+#, python-format
+msgid "Clear Signature"
+msgstr "Zmazať podpis"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:226
+#, python-format
+msgid "Click to start"
+msgstr "Kliknite pre začatie"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_color
+msgid "Color"
+msgstr "Farba"
+
+#. module: website_sign
+#: selection:signature.request.item,state:0
+msgid "Completed"
+msgstr "Dokončené"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_completed_document
+msgid "Completed Document"
+msgstr "Dokončený dokument"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_nb_closed
+msgid "Completed Signatures"
+msgstr "Dokončené podpisy"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_kanban
+msgid "Completion:"
+msgstr "Dokončenie:"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1309
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1395
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1407
+#, python-format
+msgid "Create: \""
+msgstr "Vytvoriť: \""
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_create_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_create_uid
+msgid "Created by"
+msgstr "Vytvoril"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_create_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_create_date
+msgid "Created on"
+msgstr "Vytvorené"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:343
+#, python-format
+msgid "Customize Field"
+msgstr "Prispôsobiť pole"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_default_height
+msgid "Default Height"
+msgstr "Predvolená výška"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_default_width
+msgid "Default Width"
+msgstr "Predvolená šírka"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_kanban
+msgid "Delete"
+msgstr "Zmazať"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.digital_signatures_menu
+msgid "Digital Signatures"
+msgstr "Digitálne podpisy"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:978
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1198
+#: model:ir.actions.client,name:website_sign.digital_signatures_dashboard_action
+#, python-format
+msgid "Digital Signatures Documents"
+msgstr "Dokumenty digitálnych podpisov"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:659
+#, python-format
+msgid "Discard"
+msgstr "Vyradiť"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_item_view_form
+msgid "Display"
+msgstr "Zobraziť"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_display_name
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_display_name
+msgid "Display Name"
+msgstr "Zobraziť meno"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:69
+#, python-format
+msgid "Do you also send documents to sign?"
+msgstr "Tiež posielate dokumenty na podpis?"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_page
+msgid "Document Page"
+msgstr "Stránka dokumentu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:66
+#, python-format
+msgid "Document Sign"
+msgstr "Dokument podpis"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_template_id
+msgid "Document Template"
+msgstr "Šablóna dokumentu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:283
+#: model:ir.ui.menu,name:website_sign.signature_request_template_menu
+#, python-format
+msgid "Document Templates"
+msgstr "Šablóny dokumentu"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_request
+msgid "Document To Sign"
+msgstr "Dokument na podpísanie"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.digital_signatures_dashboard_menu
+msgid "Documents"
+msgstr "Dokumenty"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1218
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+#, python-format
+msgid "Download Document"
+msgstr "Stiahnuť dokument"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:77
+#, python-format
+msgid "Download original document"
+msgstr "Stiahnuť pôvodný dokument"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+#: selection:signature.request,state:0 selection:signature.request.item,state:0
+msgid "Draft"
+msgstr "Návrh"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_nb_draft
+msgid "Draft Requests"
+msgstr "Koncepty žiadostí"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:148
+#, python-format
+msgid "Drag & Drop a field in the PDF"
+msgstr "Chytiť & Spustiť pole v PDF"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:16
+#, python-format
+msgid "Draw"
+msgstr "Potiahnuť"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1171
+#, python-format
+msgid "Duplicated Template"
+msgstr "Duplikovaná šablóna"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_form
+msgid "Edit fields"
+msgstr "Upraviť polia"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:128
+#, python-format
+msgid "Edit template name"
+msgstr "Upraviť názov šablóny"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signer_email
+msgid "Email"
+msgstr "Email"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1398
+#, python-format
+msgid "Enter email (and name if you want)"
+msgstr "Zadajte email (a meno ak si želáte)"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1419
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:576
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:619
+#, python-format
+msgid "Error"
+msgstr "Chyba"
+
+#. module: website_sign
+#: code:addons/website_sign/controllers/main.py:184
+#, python-format
+msgid "Everybody Signed."
+msgstr "Všetci podpísali."
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_favorited_ids
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_favorited_ids
+msgid "Favorite of"
+msgstr "Obľúbené"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:215
+#, python-format
+msgid "Favorites Only"
+msgstr "Len obľúbené"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_name
+msgid "Field Name"
+msgstr "Meno poľa"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.signature_item_type_menu
+msgid "Field Types"
+msgstr "Typy polí"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:92
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_reference
+#, python-format
+msgid "Filename"
+msgstr "Názov súboru"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:319
+#, python-format
+msgid "Final Validation"
+msgstr "Finálne schválenie"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_follower_ids
+msgid "Followers"
+msgstr "Odberatelia"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Followers ("
+msgstr "Odberatelia ("
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:5
+#, python-format
+msgid "Full Name"
+msgstr "Celé meno"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:285
+#, python-format
+msgid "Fully Signed"
+msgstr "Plne podpísané"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+msgid "Get Completed Document"
+msgstr "Získať dokončneý dokument"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_height
+msgid "Height"
+msgstr "Výška"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:263
+#, python-format
+msgid "History"
+msgstr "História"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_id_3459
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_id_3428
+msgid "ID"
+msgstr "ID"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:65
+#, python-format
+msgid ""
+"If you leave your document without any fields, the signers will be requested "
+"for an unique signature alongside the document"
+msgstr ""
+"Ak necháte váš dokument bez akýchkoľvek polí, budú signatári požiadaný o "
+"jedinečný podpis popri dokumente"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "In progress"
+msgstr "Prebieha"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_item_view_form
+msgid "Information"
+msgstr "Informácia"
+
+#. module: website_sign
+#: selection:signature.item.type,type:0
+msgid "Initial"
+msgstr "Počiatočné"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:70
+#, python-format
+msgid ""
+"It's easy, incredibly efficient and totally free: you just have to create an "
+"Odoo account."
+msgstr ""
+"Je to jednoduché, neuveriteľne efektívne a úplne zadarmo: stačí si vytvoriť "
+"Odoo účet."
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_request___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item___last_update
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template___last_update
+msgid "Last Modified on"
+msgstr "Posledná modifikácia"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_write_uid
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_write_uid
+msgid "Last Updated by"
+msgstr "Naposledy upravoval"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_write_date
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_write_date
+msgid "Last Updated on"
+msgstr "Naposledy upravované"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_latitude
+msgid "Latitude"
+msgstr "Zemepisná šírka"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:107
+#, python-format
+msgid "Link to Share"
+msgstr "Odkazy na zdieľanie"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:17
+#, python-format
+msgid "Load"
+msgstr "Nahrať"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_longitude
+msgid "Longitude"
+msgstr "Zemepisná dĺžka"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:45
+#, python-format
+msgid "Mandatory field"
+msgstr "Povinné pole"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:192
+#, python-format
+msgid "Mark"
+msgstr "Značka"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:86
+#, python-format
+msgid "Message"
+msgstr "Správa"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.deleted_sign_request
+msgid "Missing signature request"
+msgstr "Chýbajuca podpisová žiadosť"
+
+#. module: website_sign
+#: selection:signature.item.type,type:0
+msgid "Multiline Text"
+msgstr "Viacriadkový text"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:611
+#, python-format
+msgid "Multiple Signature Requests"
+msgstr "Viacero podpisových žiadostí"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "My documents"
+msgstr "Moje dokumenty"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_party_name
+msgid "Name"
+msgstr "Meno"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:57
+#, python-format
+msgid "Need a valid PDF to add signature fields !"
+msgstr "Pre pridanie podpisových polí je treba platné PDF !"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.layout
+msgid "Need to sign? Check your inbox to get your secure access"
+msgstr ""
+"Potrebujete podpísať? Skontrolujte váš inbox pre získanie bezpečného prístupu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:585
+#, python-format
+msgid "New Document"
+msgstr "Nový dokument"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:48
+#, python-format
+msgid "New Template"
+msgstr "Nová šablóna"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1413
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1422
+#, python-format
+msgid "New: "
+msgstr "Nové:"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_template_view_search
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+msgid "No archives"
+msgstr "Žiadne archívy"
+
+#. module: website_sign
+#: model:ir.ui.menu,name:website_sign.signature_item_party_menu
+msgid "Parties"
+msgstr "Strany"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: website_sign
+#: model:ir.model.fields,help:website_sign.field_signature_item_type_auto_field
+msgid "Partner field to use to auto-complete the fields of this type"
+msgstr "Partnerské pole pre použitie na samo dokončenie polí tohto typu"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_placeholder
+msgid "Placeholder"
+msgstr "Vlastník"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.layout
+msgid "Please Review And Act On This Document"
+msgstr "Prosím prezrite a zareagujte na tento dokument"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_posX
+msgid "Position X"
+msgstr "Pozícia X"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_posY
+msgid "Position Y"
+msgstr "Pozícia Y"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:76
+#, python-format
+msgid "Print original document"
+msgstr "Vytlačiť pôvodný dokument"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_progress
+msgid "Progress"
+msgstr "Priebeh"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_required
+msgid "Required"
+msgstr "Povinný"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1263
+#, python-format
+msgid "Resend the invitation"
+msgstr "Preposlať pozvánku"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1190
+#, python-format
+msgid "Resent !"
+msgstr "Preposlať !"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:36
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:55
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_responsible_id
+#, python-format
+msgid "Responsible"
+msgstr "Zodpovedná osoba"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_role_id
+msgid "Role"
+msgstr "Rola"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:127
+#, python-format
+msgid "Saved"
+msgstr "Uložené"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_access_token
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_access_token
+msgid "Security Token"
+msgstr "Bezpečnostný token"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:12
+#, python-format
+msgid "Select Signature Style"
+msgstr "Zvoliť štýl podpisu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1302
+#, python-format
+msgid "Select the responsible"
+msgstr "Zvoliť zodpovedného"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:442
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:643
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:995
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+#, python-format
+msgid "Send"
+msgstr "Poslať"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:438
+#, python-format
+msgid "Send Signature Request"
+msgstr "Poslať žiadosť o podpis"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1225
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:118
+#, python-format
+msgid "Send a copy"
+msgstr "Poslať kópiu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:70
+#, python-format
+msgid "Send a copy to"
+msgstr "Poslať kópiu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:637
+#, python-format
+msgid "Send a copy to third parties"
+msgstr "Poslať kópiu tretím stranám"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:24
+#, python-format
+msgid "Send a note..."
+msgstr "Poslať poznámku..."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:271
+#, python-format
+msgid "Send note"
+msgstr "Poslať poznámku"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Sender"
+msgstr "Odosielateľ"
+
+#. module: website_sign
+#: selection:signature.request,state:0
+msgid "Sent"
+msgstr "Poslané"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_nb_wait
+msgid "Sent Requests"
+msgstr "Odoslané žiadosti"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1001
+#, python-format
+msgid "Share"
+msgstr "Zdieľať"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_share_link
+msgid "Share Link"
+msgstr "Zdieľať odkaz"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:105
+#, python-format
+msgid ""
+"Share this link and Odoo will create a new document per person who clicks on "
+"the link. The link is private, only those that receive the link will be able "
+"to sign it."
+msgstr ""
+"Zdieľajte tento odkaz, a Odoo vytvorí nový dokument za osobu, ktorá klikne "
+"na odkaz. Odkaz je súkromný, iba tí, ktorí dostanú odkaz sa budú môcť "
+"prihlásiť."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:224
+#, python-format
+msgid "Show Archives"
+msgstr "Zobraziť archívy"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Sign Document"
+msgstr "Podpísať dokument"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signature
+#: selection:signature.item.type,type:0
+msgid "Signature"
+msgstr "Podpis"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item
+msgid "Signature Field For Document To Sign"
+msgstr "Podpisové políčko pre Dokument na podpísanie"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item_value
+msgid "Signature Field Value For Document To Sign"
+msgstr "Hodnota podpisového políčka pre Dokument na podpísanie"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_signature_item_id
+msgid "Signature Item"
+msgstr "Položka podpisu"
+
+#. module: website_sign
+#: model:ir.actions.act_window,name:website_sign.signature_item_party_action
+msgid "Signature Item Party"
+msgstr "Účastník položky podpisu "
+
+#. module: website_sign
+#: model:ir.actions.act_window,name:website_sign.signature_item_type_action
+msgid "Signature Item Type"
+msgstr "Typ položky podpisu"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_signature_item_ids
+msgid "Signature Items"
+msgstr "Položky podpisu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:82
+#: model:ir.actions.act_window,name:website_sign.signature_request_action
+#: model:ir.model,name:website_sign.model_signature_request_item
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_signature_request_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signature_request_id
+#, python-format
+msgid "Signature Request"
+msgstr "Podpisová žiadosť"
+
+#. module: website_sign
+#: model:ir.actions.act_window,name:website_sign.signature_request_template_action
+#: model:ir.model,name:website_sign.model_signature_request_template
+msgid "Signature Request Template"
+msgstr "Šablóna posdpisovej žiadosti"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_signature_request_ids
+#: model:ir.ui.menu,name:website_sign.signature_request_menu
+msgid "Signature Requests"
+msgstr "Podpisové žiadosti"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:284
+#, python-format
+msgid "Signatures in Progress"
+msgstr "Prebiehajúce podpisy"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_search
+#: selection:signature.request,state:0
+msgid "Signed"
+msgstr "Podpísané"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Signed ("
+msgstr "Podpísané ("
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signing_date
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Signed on"
+msgstr "Podpísané "
+
+#. module: website_sign
+#: code:addons/website_sign/controllers/main.py:182
+#, python-format
+msgid "Signed."
+msgstr "Podpísané."
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_signer_trigram
+msgid "Signer trigram"
+msgstr "Trigram podpisovateľa"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:495
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_request_item_ids
+#, python-format
+msgid "Signers"
+msgstr "Podpisovatelia"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:61
+#, python-format
+msgid "So you can close the window and come back later."
+msgstr "Takže môžete zatvoriť okno a vrátiť sa neskôr."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:559
+#, python-format
+msgid "Some fields have still to be completed !"
+msgstr "Niektoré polia musia byť ešte dokončené!"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1160
+#, python-format
+msgid "Somebody is already filling a document which uses this template"
+msgstr "Niekto už vypĺňa dokument, ktorý využíva túto šablónu"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:575
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:618
+#, python-format
+msgid "Sorry, an error occured, please try to fill the document again."
+msgstr "Je nám ľúto, stala sa chyba, skúste opäť vyplniť dokument."
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item_type
+msgid "Specialized type for signature fields"
+msgstr "Špecializovaný typ pre podpisové polia"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:374
+#, python-format
+msgid "Start Using Odoo Sign Now"
+msgstr "Začnite používať Odoo Podpis teraz"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_item_state
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_state
+msgid "State"
+msgstr "Stav"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:24
+#, python-format
+msgid "Styles"
+msgstr "Štýly"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:80
+#, python-format
+msgid "Subject"
+msgstr "Predmet"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:581
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:651
+#: code:addons/website_sign/static/src/js/website_sign_common.js:277
+#, python-format
+msgid "Success"
+msgstr "Úspech"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_request_template_id
+msgid "Template"
+msgstr "Šablóna"
+
+#. module: website_sign
+#: selection:signature.item.type,type:0
+msgid "Text"
+msgstr "Text"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:368
+#, python-format
+msgid "Thank You !"
+msgstr "Ďakujeme Vám !"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.deleted_sign_request
+msgid ""
+"The signature access you are trying to reach does not exist. Maybe the "
+"signature request has been deleted or modified. <br/>\n"
+"                    If there still exists a signature request for this "
+"document, check your inbox to get your access!"
+msgstr ""
+"Podpisový prístup ktorý sa snažíte dosiahnuť neexistuje. Možno bola "
+"podpisová žiadosť zmazaná alebo modifikovaná. <br/>\n"
+"Ak stále existuje požiadavka na podpis tohto dokumentu, skontrolujte "
+"emailovú schránku pre získanie prístupu!"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:70
+#, python-format
+msgid "Then you need Odoo Sign."
+msgstr "Potom potrebujete Odoo Podpis."
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.layout
+msgid "This document cannot be filled right now"
+msgstr "Tento dokument nemôže byť teraz vyplnený"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:132
+#, python-format
+msgid ""
+"This template is used by some signature requests.\n"
+"            If you want to edit it,"
+msgstr ""
+"Táto šablóna je používaná niektorými podpisovými žiadosťami.\n"
+"Ak ju chcete upraviť,"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+msgid ""
+"This will delete all the already completed documents of this request and "
+"disable every sent accesses, are you sure?"
+msgstr ""
+"Toto zmaže všetky už dokončené dokumenty pre túto žiadosť a deaktivuje "
+"všetky poslané prístupy, ste si istý?"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_tip
+msgid "Tip"
+msgstr "Tip"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:112
+#, python-format
+msgid ""
+"To be able to share, there must be only one responsible for all fields !"
+msgstr ""
+"Aby bolo možné zdieľať, musí byť iba jeden zodpovedný pre všetky polia!"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_id
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_type_type
+msgid "Type"
+msgstr "Typ"
+
+#. module: website_sign
+#: model:ir.model,name:website_sign.model_signature_item_party
+msgid "Type of partner which can access a particular signature field"
+msgstr "Typ partnera ktorý môže mať prístup ku konkrétnemu podpisovému políčku"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:192
+#, python-format
+msgid "Unmark"
+msgstr "Odznačiť"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:10
+#, python-format
+msgid "Upload New PDF"
+msgstr "Nahrať nové PDF"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:324
+#, python-format
+msgid "Validate & Send"
+msgstr "Overiť a Poslať"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Validate &amp; Send Completed Document"
+msgstr "Overiť &amp; Poslať dokončený dokument"
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_value_value
+msgid "Value"
+msgstr "Hodnota"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_form
+msgid "View"
+msgstr "Pohľad"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:1219
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+#, python-format
+msgid "View History"
+msgstr "Zobraziť históriu"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.signature_request_view_kanban
+msgid "View Signature Request"
+msgstr "Zobraziť podpisové žiadosti"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "Waiting Signatures ("
+msgstr "Čakajúce podpisy ("
+
+#. module: website_sign
+#: selection:signature.request.item,state:0
+msgid "Waiting for completion"
+msgstr "Čaká na dokončenie"
+
+#. module: website_sign
+#: code:addons/website_sign/models/signature_request.py:335
+#, python-format
+msgid "Waiting for signatures."
+msgstr "Čaká na podpisy."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:559
+#, python-format
+msgid "Warning"
+msgstr "Varovanie"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:61
+#, python-format
+msgid "We will let you know by email once everyone has signed."
+msgstr "My dáme vám vedieť emailom, akonáhle bude podpísaný každý."
+
+#. module: website_sign
+#: model:ir.model.fields,field_description:website_sign.field_signature_item_width
+msgid "Width"
+msgstr "Šírka"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_backend.js:513
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:72
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:120
+#, python-format
+msgid "Write email or search contact..."
+msgstr "Napísať email alebo hľadať kontakt..."
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign.layout
+msgid "You have completed the document"
+msgstr "Dokončili ste tento dokument"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:53
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:55
+#, python-format
+msgid "Your email"
+msgstr "Váš email"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_common.js:277
+#, python-format
+msgid "Your message has been sent."
+msgstr "Vaša správa bola odoslaná."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:47
+#: code:addons/website_sign/static/src/xml/website_sign_frontend.xml:49
+#, python-format
+msgid "Your name"
+msgstr "Vaše meno"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/js/website_sign_frontend.js:369
+#, python-format
+msgid "Your signature has been saved."
+msgstr "Váš podpis bol uložený."
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:134
+#, python-format
+msgid "click here"
+msgstr "kliknite sem"
+
+#. module: website_sign
+#: model:ir.ui.view,arch_db:website_sign._doc_sign
+msgid "comment"
+msgstr "komentár"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_common.xml:33
+#, python-format
+msgid "on"
+msgstr "na"
+
+#. module: website_sign
+#. openerp-web
+#: code:addons/website_sign/static/src/xml/website_sign_backend.xml:134
+#, python-format
+msgid "to start a new template from this one !"
+msgstr "pre začatie novej šablóny z tejto !"
+
+#~ msgid ""
+#~ "\n"
+#~ "            <link href='http://fonts.googleapis.com/css?family=Lato' "
+#~ "rel='stylesheet' type='text/css'>\n"
+#~ "\n"
+#~ "            <div style=\"width:90%; max-width:600px; margin:auto; font-"
+#~ "size:10pt; padding:20px 0; font-family:'Lato', serif;\">\n"
+#~ "                <div style=\"background-color:#EFEDED; padding: 20px;\">\n"
+#~ "                    % if ctx['template_type'] == \"request\":\n"
+#~ "                        ${ctx['email_from_usr']} (<a href=\"mailto:"
+#~ "${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:"
+#~ "#428BCA; text-decoration:none;\" target=\"_blank\">"
+#~ "${ctx['email_from_mail']}</a>) has requested your signature on this "
+#~ "document :\n"
+#~ "                    % endif\n"
+#~ "                    % if ctx['template_type'] == \"follower\":\n"
+#~ "                        ${ctx['email_from_usr']} (<a href=\"mailto:"
+#~ "${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}\" style=\"color:"
+#~ "#428BCA; text-decoration:none;\" target=\"_blank\">"
+#~ "${ctx['email_from_mail']}</a>) has added you as a Follower of this "
+#~ "Signature Request :\n"
+#~ "                    % endif\n"
+#~ "                    % if ctx['template_type'] == \"completed\":\n"
+#~ "                        This document has been completed and signed by "
+#~ "everyone :\n"
+#~ "                    % endif\n"
+#~ "\n"
+#~ "                    <h1 style=\"font-size:1.25em; margin:15px 0 25px 0;\">"
+#~ "${object['reference']}</h1>\n"
+#~ "                    \n"
+#~ "                    <div style=\"margin:0 -15px\">\n"
+#~ "                        <a style=\"float:left; display:inline-block; "
+#~ "margin:0 15px 10px 15px; padding:5px 10px; border-radius: 3px; background-"
+#~ "color:#5C6ED0; text-align:center; text-decoration:none; color:#F7FBFD;\" "
+#~ "href=${ctx['link']}>\n"
+#~ "                            % if ctx['template_type'] == \"request\":\n"
+#~ "                                Sign Document Now\n"
+#~ "                            % endif\n"
+#~ "                            % if ctx['template_type'] == \"follower\":\n"
+#~ "                                View Signature Request\n"
+#~ "                            % endif\n"
+#~ "                            % if ctx['template_type'] == \"completed\":\n"
+#~ "                                View Signed Document\n"
+#~ "                            % endif\n"
+#~ "                        </a>\n"
+#~ "                        \n"
+#~ "                        <div style=\"font-size:0.8em; color:#999999; "
+#~ "margin:0 15px 10px 15px\">\n"
+#~ "                            % if ctx['template_type'] == \"request\":\n"
+#~ "                                <strong style=\"font-weight:bold; color:"
+#~ "black;\">Warning: do not forward this email to other people!</strong><br/"
+#~ ">\n"
+#~ "                                They will be able to access this document "
+#~ "and sign it as yourself.\n"
+#~ "                            % endif\n"
+#~ "                            % if ctx['template_type'] == \"follower\":\n"
+#~ "                                You will be notified once the document "
+#~ "has been signed by everyone involved.\n"
+#~ "                            % endif\n"
+#~ "                        </div>\n"
+#~ "                        <div style=\"clear:both;\"/>\n"
+#~ "                    </div>\n"
+#~ "                    \n"
+#~ "                    % if ctx['msgbody']:\n"
+#~ "                    <div style=\"background-color:white; padding:10px;"
+#~ "\">\n"
+#~ "                        ${ctx['msgbody']|safe}\n"
+#~ "                    </div>\n"
+#~ "                    % endif\n"
+#~ "                </div>\n"
+#~ "                \n"
+#~ "                <div style=\"font-size:0.8em; margin-top:10px;\">\n"
+#~ "                    <span style=\"color:#428BCA;\">Sent with <strong "
+#~ "style=\"font-weight:bold;\">Odoo Sign</strong></span><span style=\"color:"
+#~ "#999999;\"> - Free Open Source Digital Signatures.</span>\n"
+#~ "                </div>\n"
+#~ "            </div>\n"
+#~ "        \n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' "
+#~ "type='text/css'>\n"
+#~ "\n"
+#~ "<div style=\"width:90%; max-width:600px; margin:auto; font-size:10pt; "
+#~ "padding:20px 0; font-family:'Lato', serif;\">\n"
+#~ "<div style=\"background-color:#EFEDED; padding: 20px;\">\n"
+#~ "% if ctx['template_type'] == \"request\":\n"
+#~ "${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?"
+#~ "subject=Re: ${ctx['subject']|safe}\" style=\"color:#428BCA; text-"
+#~ "decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}</a>) "
+#~ "požiadal o Váš podpis na tomto dokumente :\n"
+#~ "% endif\n"
+#~ "% if ctx['template_type'] == \"follower\":\n"
+#~ "${ctx['email_from_usr']} (<a href=\"mailto:${ctx['email_from']}?"
+#~ "subject=Re: ${ctx['subject']|safe}\" style=\"color:#428BCA; text-"
+#~ "decoration:none;\" target=\"_blank\">${ctx['email_from_mail']}</a>) Vás "
+#~ "pridal ako odberateľa pre túto Podpisovú žiadosť :\n"
+#~ "% endif\n"
+#~ "% if ctx['template_type'] == \"completed\":\n"
+#~ "Tento dokument bol dokončený a každým podpísaný :\n"
+#~ "% endif\n"
+#~ "\n"
+#~ "<h1 style=\"font-size:1.25em; margin:15px 0 25px 0;\">"
+#~ "${object['reference']}</h1>\n"
+#~ "\n"
+#~ "<div style=\"margin:0 -15px\">\n"
+#~ "<a style=\"float:left; display:inline-block; margin:0 15px 10px 15px; "
+#~ "padding:5px 10px; border-radius: 3px; background-color:#5C6ED0; text-"
+#~ "align:center; text-decoration:none; color:#F7FBFD;\" href=${ctx['link']}"
+#~ ">\n"
+#~ "% if ctx['template_type'] == \"request\":\n"
+#~ "Podpísať dokument teraz\n"
+#~ "% endif\n"
+#~ "% if ctx['template_type'] == \"follower\":\n"
+#~ "Zobraziť podpisové žiadosti\n"
+#~ "% endif\n"
+#~ "% if ctx['template_type'] == \"completed\":\n"
+#~ "Zobraziť podpísaný dokument\n"
+#~ "% endif\n"
+#~ "</a>\n"
+#~ "\n"
+#~ "<div style=\"font-size:0.8em; color:#999999; margin:0 15px 10px 15px\">\n"
+#~ "% if ctx['template_type'] == \"request\":\n"
+#~ "<strong style=\"font-weight:bold; color:black;\">Upozornenie: "
+#~ "nepreposielajte tento email ďalším ľuďom!</strong><br/>\n"
+#~ "Budú mať prístup k tomuto dokumentu a vedieť ho podpísať vo Vašom mene.\n"
+#~ "% endif\n"
+#~ "% if ctx['template_type'] == \"follower\":\n"
+#~ "Budete notifikovaný akonáhle bude dokument podpísaný všetkými "
+#~ "zúčastnenými.\n"
+#~ "% endif\n"
+#~ "</div>\n"
+#~ "<div style=\"clear:both;\"/>\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "% if ctx['msgbody']:\n"
+#~ "<div style=\"background-color:white; padding:10px;\">\n"
+#~ "${ctx['msgbody']|safe}\n"
+#~ "</div>\n"
+#~ "% endif\n"
+#~ "</div>\n"
+#~ "\n"
+#~ "<div style=\"font-size:0.8em; margin-top:10px;\">\n"
+#~ "<span style=\"color:#428BCA;\">Sent with <strong style=\"font-weight:bold;"
+#~ "\">Odoo Podpis</strong></span><span style=\"color:#999999;\"> - Bezplatné "
+#~ "Open Source digitálne podpisy.</span>\n"
+#~ "</div>\n"
+#~ "</div>"
+
+#~ msgid "&lt;!doctype html&gt;"
+#~ msgstr "&lt;!doctype html&gt;"
+
+#~ msgid "Action Needed"
+#~ msgstr "Potrebná akcia"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "Dátum poslednej správy zaslanej záznamu."
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "Odberatelia (Kanály)"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "Odberatelia (Partneri)"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "Ak zaškrtnuté, nové správy vyžadujú vašu pozornosť."
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "Ak zaškrtnuté, nové správy vyžadujú vašu pozornosť."
+
+#~ msgid "Is Follower"
+#~ msgstr "Je odberateľ"
+
+#~ msgid "Last Message Date"
+#~ msgstr "Dátum poslednej správy"
+
+#~ msgid "Messages"
+#~ msgstr "Správy"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "Správa a história komunikácie"
+
+#~ msgid "Number of Actions"
+#~ msgstr "Počet akcií"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Počet správ ktoré vyžadujú akciu"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "Počet neprečítaných správ"
+
+#~ msgid "Open Digital Signatures Menu"
+#~ msgstr "Otvoriť menu digitálnych podpisov"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Neprečítané správy"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "Počítadlo neprečítaných správ"
+
+#~ msgid "Website Messages"
+#~ msgstr "Správy webovej stránky"
+
+#~ msgid "Website communication history"
+#~ msgstr "História komunikácie webovej stránky"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="cfdi11coa">
+            <catalogocuentas__Catalogo
+                t-att="{
+                    'xsi:schemaLocation': 'www.sat.gob.mx/esquemas/ContabilidadE/1_1/CatalogoCuentas http://www.sat.gob.mx/esquemas/ContabilidadE/1_1/CatalogoCuentas/CatalogoCuentas_1_1.xsd',
+                    'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
+                    'xmlns:catalogocuentas': 'www.sat.gob.mx/esquemas/ContabilidadE/1_1/CatalogoCuentas',
+                    }"
+                Version="1.1"
+                t-att-RFC="vat"
+                t-att-Mes="month"
+                t-att-Anio="year">
+                <t t-foreach="accounts" t-as="account">
+                    <catalogocuentas__Ctas
+                        t-att-CodAgrup="account.get('code')"
+                        t-att-NumCta="account.get('number')"
+                        t-att-Desc="account.get('name')"
+                        t-att-Nivel="account.get('level')"
+                        t-att-Natur="account.get('nature')"/>
+                </t>
+            </catalogocuentas__Catalogo>
+       </template>
+    </data>
+</odoo>

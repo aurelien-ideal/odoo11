@@ -1,0 +1,265 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * voip
+#
+# Translators:
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 12:08+0000\n"
+"PO-Revision-Date: 2016-03-22 06:58+0000\n"
+"Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>\n"
+"Language-Team: Slovak (http://www.transifex.com/odoo/odoo-9/language/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_sip_always_transfer
+msgid ""
+"All your outbound calls will be redirected to your handset when the customer "
+"accepts your call"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_always_transfer
+msgid "Always Redirect to Handset"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_uid
+msgid "Created by"
+msgstr "Vytvoril"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_create_date
+msgid "Created on"
+msgstr "Vytvorené"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_display_name
+msgid "Display Name"
+msgstr "Zobraziť meno"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:57
+#, python-format
+msgid "From "
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_external_phone
+msgid "Handset Extension"
+msgstr ""
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_id
+msgid "ID"
+msgstr "ID"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:58
+#, fuzzy, python-format
+msgid "Incoming call"
+msgstr "Prichádzajúci hovor od"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:88
+#, fuzzy, python-format
+msgid "Incoming call from "
+msgstr "Prichádzajúci hovor od"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator___last_update
+msgid "Last Modified on"
+msgstr "Posledná modifikácia"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_uid
+msgid "Last Updated by"
+msgstr "Naposledy aktualizoval"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_voip_configurator_write_date
+msgid "Last Updated on"
+msgstr "Naposledy aktualizované"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_ring_number
+msgid "Number of Rings"
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:27
+#, python-format
+msgid "One or more parameter is missing. Please check your configuration."
+msgstr ""
+"Jeden alebo viac parametrov chýba. Skontrolujte prosím vašu konfiguráciu."
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.res_user_form
+msgid "PBX Configuration"
+msgstr "PBX konfigurácia"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:153
+#, python-format
+msgid "Please check your configuration.</br> (Reason receives :"
+msgstr "Skontrolujte prosím vašu konfiguráciu.</br> (Dôvod prijíma :"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:281
+#, python-format
+msgid ""
+"Problem during the connection. Check if the application is allowed to access "
+"your microphone from your browser."
+msgstr ""
+"Problém počas spojenia. Skontrolujte či má aplikácia povolený prístup k "
+"vášmu mikrofónu cez váš prehliadač."
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_login
+msgid "SIP Login / Browser's Extension"
+msgstr "SIP prihlásenie / Extenzia prehliadača"
+
+#. module: voip
+#: model:ir.model.fields,field_description:voip.field_res_users_sip_password
+msgid "SIP Password"
+msgstr "SIP heslo"
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:179
+#, fuzzy, python-format
+msgid ""
+"The number is incorrect, the user credentials could be wrong or the "
+"connection cannot be made. Please check your configuration.</br> (Reason "
+"receives :%s)"
+msgstr ""
+"Prihlasovacie údaje môžu byť nesprávne, alebo nie je možné naviazať "
+"spojenie. Prosím skontrolujte vašu konfiguráciu.</br> (Dôvod prijíma :%d"
+
+#. module: voip
+#: model:ir.model.fields,help:voip.field_res_users_sip_ring_number
+msgid ""
+"The number of rings before the call is defined as refused by the customer."
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:51
+#, python-format
+msgid ""
+"The server configuration could be wrong. Please check your configuration."
+msgstr ""
+"Konfigurácia serveru by mohla byť zlá. Skontrolujte prosím vašu konfiguráciu."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:47
+#, python-format
+msgid "The websocket uri could be wrong. Please check your configuration."
+msgstr ""
+"WebSocket URI by mohlo byť nesprávne. Skontrolujte prosím vašu konfiguráciu."
+
+#. module: voip
+#: model:ir.model,name:voip.model_res_users
+msgid "Users"
+msgstr "Používatelia"
+
+#. module: voip
+#: model:ir.ui.view,arch_db:voip.view_voip_user_config
+msgid "VOIP Configuration"
+msgstr ""
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:273
+#, python-format
+msgid "Your browser could not support WebRTC. Please check your configuration."
+msgstr ""
+"Váš prehliadač nemohol podporiť WebRTC. Prosím skontrolujte vašu "
+"konfiguráciu."
+
+#. module: voip
+#. openerp-web
+#: code:addons/voip/static/src/js/sip_js.js:152
+#, python-format
+msgid "the connection cannot be made. "
+msgstr "spojenie nemožno uskutočniť."
+
+#. module: voip
+#: model:ir.model,name:voip.model_voip_configurator
+msgid "voip.configurator"
+msgstr "voip.configurator"
+
+#~ msgid "Always redirect to physical phone"
+#~ msgstr "Vždy presmerovať na fyzický telefón"
+
+#~ msgid "Incomming call from "
+#~ msgstr "Prichádzajúci hovor od"
+
+#~ msgid "Invoice"
+#~ msgstr "Faktúra"
+
+#~ msgid "Last Online Sale Order"
+#~ msgstr "Posledná online objednávka predaja"
+
+#~ msgid "Message for Invoice"
+#~ msgstr "Správa pre faktúru"
+
+#~ msgid "Message for Purchase Order"
+#~ msgstr "Správa pre nákupnú objednávku"
+
+#~ msgid "Message for Sales Order"
+#~ msgstr "Správa pre predajnú objednávku"
+
+#~ msgid "Message for Stock Picking"
+#~ msgstr "Správa pre skladový odber"
+
+#~ msgid "Number of rings"
+#~ msgstr "Počet zazvonení"
+
+#~ msgid "Purchase Order"
+#~ msgstr "Objednávka"
+
+#~ msgid "Sales Order"
+#~ msgstr "Objednávka predaja"
+
+#~ msgid ""
+#~ "Selecting the \"Warning\" option will notify user with the message, "
+#~ "Selecting \"Blocking Message\" will throw an exception with the message "
+#~ "and block the flow. The Message has to be written in the next field."
+#~ msgstr ""
+#~ "Zvolenie možnosti \"Varovanie\" notifikuje používateľa správou, Zvolenie "
+#~ "\"Blokovanie správy\" hodí výnimku so správou a zablokuje tok. Správa "
+#~ "musí byť napísaná v ďalšom poli."
+
+#~ msgid "Stock Picking"
+#~ msgstr "Skladový výber"
+
+#~ msgid "The extension of  your office's phone."
+#~ msgstr "Extenzia vášho kancelárskeo telefónu."
+
+#~ msgid "The number of rings before cancelling the call"
+#~ msgstr "Poçet zvonení pred zrušením hovoru"
+
+#~ msgid ""
+#~ "The user credentials could be wrong or the connection cannot be made. "
+#~ "Please check your configuration.</br> (Reason receives :%d"
+#~ msgstr ""
+#~ "Prihlasovacie údaje môžu byť nesprávne, alebo nie je možné naviazať "
+#~ "spojenie. Prosím skontrolujte vašu konfiguráciu.</br> (Dôvod prijíma :%d"
+
+#~ msgid "Website tags"
+#~ msgstr "Menovky webstránky"

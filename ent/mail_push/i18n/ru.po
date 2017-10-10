@@ -1,0 +1,145 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mail_push
+# 
+# Translators:
+# Evgeny <transingularity@gmail.com>, 2017
+# Максим Дронь <dronmax@gmail.com>, 2017
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2017
+# Denis Trepalin <zekarious@gmail.com>, 2017
+# SV <sv@grimmette.ru>, 2017
+# Masha Koc <mariya.kos.ua@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Masha Koc <mariya.kos.ua@gmail.com>, 2017\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "<i class=\"fa fa-fw fa-arrow-right\"/>Generate API and Sender ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "API Key"
+msgstr "Ключ API"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_uid
+msgid "Created by"
+msgstr "Создано"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_date
+msgid "Created on"
+msgstr "Создан"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_name
+msgid "Device Name"
+msgstr "Имя устройства"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_partner_device_identity_ids
+#: model:ir.model.fields,field_description:mail_push.field_res_users_device_identity_ids
+msgid "Device identities"
+msgstr "Идентификаторы устройств"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_channel
+msgid "Discussion channel"
+msgstr "Канал обсуждения"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_display_name
+msgid "Display Name"
+msgstr "Отображаемое Имя"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "Get notifications on Android phones"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP маршрутизация"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_id
+msgid "ID"
+msgstr "Номер"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device___last_update
+msgid "Last Modified on"
+msgstr "Последнее изменение"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_date
+msgid "Last Updated on"
+msgstr "Последнее обновление"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "Mobile App"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_service_type
+msgid "Notification Service"
+msgstr "Служба уведомлений"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_config_settings_mail_push_notification
+msgid "Notifications"
+msgstr "Уведомления"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_partner_id
+msgid "Partner"
+msgstr "Партнёр"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_config_settings_fcm_project_id
+msgid "Sender ID"
+msgstr "Отправитель ID"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_config_settings_fcm_api_key
+msgid "Server API Key"
+msgstr "Ключ API сервера"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_subscription_id
+msgid "Subscription ID"
+msgstr "ID подписки"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_push_device
+msgid "mail_push.device"
+msgstr "mail_push.device"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"

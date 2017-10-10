@@ -1,0 +1,102 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_timesheet_forecast_sale
+# 
+# Translators:
+# UAB "Draugiški sprendimai" <transifex@draugiskisprendimai.lt>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Rolandas <info@paninfo.lt>, 2017
+# digitouch UAB <digitouchagencyeur@gmail.com>, 2017
+# Rytis Štreimikis <r.streimikis@hotmail.lt>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: Rytis Štreimikis <r.streimikis@hotmail.lt>, 2017\n"
+"Language-Team: Lithuanian (https://www.transifex.com/odoo/teams/41243/lt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/models/project.py:26
+#, python-format
+msgid "%s (%s remaining hours)"
+msgstr ""
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Done"
+msgstr "Atlikti"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model.fields,field_description:project_timesheet_forecast_sale.field_project_forecast_effective_hours
+msgid "Effective hours"
+msgstr "Faktinis valandų skaičius"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:216
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:230
+#, python-format
+msgid "Forecast"
+msgstr "Prognozė"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Forecasted"
+msgstr ""
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Name"
+msgstr "Pavadinimas"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Planned"
+msgstr "Suplanuota"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model.fields,field_description:project_timesheet_forecast_sale.field_project_forecast_percentage_hours
+msgid "Progress"
+msgstr "Eiga"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_project_project
+msgid "Project"
+msgstr "Projektas"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Remaining"
+msgstr "Likutis"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_sale_order_line
+#: model:ir.model.fields,field_description:project_timesheet_forecast_sale.field_project_forecast_order_line_id
+msgid "Sales Order Line"
+msgstr "Pardavimo užsakymo eilutė"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_project_task
+msgid "Task"
+msgstr "Užduotis"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.ui.view,arch_db:project_timesheet_forecast_sale.timesheet_plan
+msgid "Timesheet/Forecast"
+msgstr ""
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"

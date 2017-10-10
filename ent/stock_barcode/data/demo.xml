@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="product.product_product_6" model="product.product">
+            <field name="barcode">054398267125</field> <!-- iPad Mini -->
+        </record>
+        <record id="product.product_delivery_01" model="product.product">
+            <field name="barcode">204539674215</field> <!--  -->
+        </record>
+        <record id="product.product_product_22" model="product.product">
+            <field name="barcode">420196872340</field> <!-- Processor Core i5 2.70 Ghz -->
+        </record>
+        <record id="stock.product_icecream" model="product.product">
+            <field name="barcode">601647855631</field> <!-- Ice Cream -->
+        </record>
+
+        <record id="stock.stock_location_stock" model="stock.location">
+            <field name="barcode">LOC-01-00-00</field> <!-- WH/Stock -->
+        </record>
+        <record id="stock.stock_location_components" model="stock.location">
+            <field name="barcode">LOC-01-01-00</field> <!-- WH/Stock/Shelf 1 -->
+        </record>
+        <record id="stock.location_refrigerator_small" model="stock.location">
+            <field name="barcode">LOC-01-01-01</field> <!-- WH/Stock/Shelf 1/Small Refrigerator -->
+        </record>
+        <record id="stock.stock_location_14" model="stock.location">
+            <field name="barcode">LOC-01-02-00</field> <!-- WH/Stock/Shelf 2 -->
+        </record>
+        <record id="stock.stock_location_shop0" model="stock.location">
+            <field name="barcode">LOC-02-00-00</field> <!-- Chic/Stock -->
+        </record>
+
+        <record id="demo_package" model="stock.quant.package" />
+
+        <record id="stock.lot_icecream_0" model="stock.production.lot">
+            <field name="ref">LOT-000001</field> <!-- Lot0 for Ice cream -->
+        </record>
+        <record id="stock.lot_icecream_1" model="stock.production.lot">
+            <field name="ref">LOT-000002</field> <!-- Lot1 for Ice cream -->
+        </record>
+
+        <record id="stock_barcode.stock_barcode_action_main_menu" model="ir.actions.client">
+            <field name="params" eval="{'message_demo_barcodes': True}" />
+        </record>
+
+    </data>
+</odoo>

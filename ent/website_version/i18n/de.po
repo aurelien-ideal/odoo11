@@ -1,0 +1,1434 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_version
+# 
+# Translators:
+# Gab_Odoo <gab@odoo.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Ermin Trevisan <trevi@twanda.com>, 2017
+# Christian Oechsner <carinachristian@gmail.com>, 2017
+# Wolfgang Taferner <wolfgang.transifex@service.wt-io-it.at>, 2017
+# Fabian Liesch <fabian.liesch@gmail.com>, 2017
+# Philipp Hug <philipp@hug.cx>, 2017
+# darenkster <inactive+darenkster@transifex.com>, 2017
+# Ralf Hilgenstock <rh@dialoge.info>, 2017
+# JackTheHunter <Maximilian.N98@gmail.com>, 2017
+# Tina Rittmüller <tr@ife.de>, 2017
+# Renzo Meister <info@jamotion.ch>, 2017
+# Mathias Neef <mn@copado.de>, 2017
+# Anja Funk <anja.funk@afimage.de>, 2017
+# Niki Waibel <niki.waibel@gmail.com>, 2017
+# Christian Körner <fipes.de@gmail.com>, 2017
+# Marvin Elia Hoppe <marvin_elia@web.de>, 2017
+# Henry Mineehen <info@mineehen.de>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: Henry Mineehen <info@mineehen.de>, 2017\n"
+"Language-Team: German (https://www.transifex.com/odoo/teams/41243/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:206
+#, python-format
+msgid " Now you can manage this experiment by clicking on Manage A/B tests."
+msgstr ""
+"Jetzt können Sie dieses Experiment verwalten indem Sie auf Verwalte A/B "
+"Tests klicken."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:215
+#, python-format
+msgid "\"/google_account/authentication\""
+msgstr "\"/google_account/authentication\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:138
+#: code:addons/website_version/static/src/xml/version_templates.xml:150
+#, python-format
+msgid "\"Admin\""
+msgstr "Administrator"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:197
+#, python-format
+msgid "\"Analytics API\""
+msgstr "Analytik API"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:214
+#, python-format
+msgid "\"Authorized redirect URIs\""
+msgstr "Autorisierte Weiterleitungs-URIs"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:198
+#, python-format
+msgid "\"Calendar API\""
+msgstr "Kalender API"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:191
+#, python-format
+msgid "\"Create Project\""
+msgstr "Projekt erstellen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:142
+#, python-format
+msgid "\"Tracking Code\""
+msgstr "Tracking Code"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:146
+#, python-format
+msgid "\"Tracking ID\""
+msgstr "Tracking ID"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:154
+#, python-format
+msgid "\"View ID\""
+msgstr "Ansicht ID"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:150
+#, python-format
+msgid "\"View Settings\""
+msgstr "Ansicht Einstellungen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:56
+#: code:addons/website_version/static/src/xml/version_templates.xml:302
+#: code:addons/website_version/static/src/xml/version_templates.xml:317
+#: code:addons/website_version/static/src/xml/version_templates.xml:336
+#: code:addons/website_version/static/src/xml/version_templates.xml:367
+#: code:addons/website_version/static/src/xml/version_templates.xml:384
+#: code:addons/website_version/static/src/xml/version_templates.xml:400
+#: code:addons/website_version/static/src/xml/version_templates.xml:445
+#, python-format
+msgid "&times;"
+msgstr "&times;"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:216
+#, python-format
+msgid "'Create Client ID'"
+msgstr "\"Client ID erstellen\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:207
+#, python-format
+msgid "'Create New Client ID'"
+msgstr "\"Neue Client ID erstellen\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:207
+#, python-format
+msgid "'Credentials'"
+msgstr "\"Legitimation\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:213
+#, python-format
+msgid "'Web Application'"
+msgstr "\"Web-Anwendung\""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "(Sync)"
+msgstr "(Synchronisieren)"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:207
+#, python-format
+msgid "(from menu APIs and auth) and click on button"
+msgstr "(von der Menü API und Authorisierung) und klicken Sie auf den Button"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#, python-format
+msgid ") that you need to insert in the 2 fields below !"
+msgstr ") die Sie in die folgenden zwei Felder eintragen müssen!"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid "7654321"
+msgstr "7654321"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "<b>Master</b>"
+msgstr "<b>Master</b>"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:449
+#, python-format
+msgid ""
+"A version allows to modify several pages, without publishing the changes directly.\n"
+"                    You can also launch A/B tests to analyse the performance of different versions."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:33
+#, python-format
+msgid ""
+"All the modifications you will do, will be saved in this version. Drag the "
+"Cover block and drop it in your page."
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "All versions"
+msgstr "Alle Versionen"
+
+#. module: website_version
+#: code:addons/website_version/models/google_management.py:47
+#, python-format
+msgid "An exception occured during the google analytics request: %s"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:57
+#, python-format
+msgid "Are you sure you want to publish your modifications?"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:47
+#, python-format
+msgid "Authorize Google"
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+msgid "Banner Odoo Image"
+msgstr "Banner Odoo Bild"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:404
+#, python-format
+msgid ""
+"By publishing this version, you will overwrite the following master pages:"
+msgstr ""
+"Durch die Veröffentlichung dieser Version überschreiben Sie die folgenden "
+"Master Pages."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:291
+#: code:addons/website_version/static/src/xml/version_templates.xml:372
+#: code:addons/website_version/static/src/xml/version_templates.xml:389
+#: code:addons/website_version/static/src/xml/version_templates.xml:434
+#: code:addons/website_version/static/src/xml/version_templates.xml:465
+#, python-format
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:39
+#, python-format
+msgid "Click in the content text and start editing it."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:137
+#: code:addons/website_version/static/src/xml/version_templates.xml:141
+#: code:addons/website_version/static/src/xml/version_templates.xml:149
+#: code:addons/website_version/static/src/xml/version_templates.xml:190
+#, python-format
+msgid "Click on"
+msgstr "Klicke auf"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on <b>\"Admin\"</b> and click on <b>\"View Settings\"</b>.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Klicken Sie auf <b>\"Admin\"</b> und klicken Sie auf <b>\"Einstellungen ansehen\"</b>.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on <b>\"Admin\"</b>.\n"
+"                                    <br/><br/>"
+msgstr ""
+"Klicken Sie auf <b>\"Admin\"</b>.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on <b>\"Tracking Code\"</b>.\n"
+"                                    <br/><br/>"
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on Authorize Google.\n"
+"                                    <br/><br/>"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:17
+#, python-format
+msgid "Click on New version"
+msgstr "Klick Sie auf neue Version"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:63
+#, python-format
+msgid "Click on Publish Version"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:67
+#, python-format
+msgid "Click on Publish button"
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Click on Save.\n"
+"                                    <br/><br/>"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:83
+#, python-format
+msgid "Click on delete version button"
+msgstr "Klicken Sie auf den Button \"Version  löschen\""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+#: model:ir.ui.view,arch_db:website_version.homepage_localhost
+#: model:ir.ui.view,arch_db:website_version.website2_homepage_other
+msgid "Click to customize this text"
+msgstr "Klicken Sie hier, um den Text anzupassen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#: code:addons/website_version/static/src/xml/version_templates.xml:230
+#, python-format
+msgid "Client ID"
+msgstr "Client ID"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#: code:addons/website_version/static/src/xml/version_templates.xml:237
+#, python-format
+msgid "Client Secret"
+msgstr "Client Secret"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:356
+#, python-format
+msgid "Close"
+msgstr "Schließen"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_color
+msgid "Color Index"
+msgstr "Farbkennzeichnung"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:287
+#, python-format
+msgid "Configure"
+msgstr "Konfigurieren"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:29
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:71
+#, python-format
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:87
+#, python-format
+msgid ""
+"Confirm. Felicitation, you are now able to edit and manage your versions."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:189
+#, python-format
+msgid "Connect on your google account and go to"
+msgstr "Melden Sie sich mit Ihrem Google Konto an und gehen Sie zu"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+#: model:ir.ui.view,arch_db:website_version.homepage_localhost
+#: model:ir.ui.view,arch_db:website_version.website2_homepage_other
+msgid "Contact us"
+msgstr "Kontaktieren Sie uns"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:145
+#: code:addons/website_version/static/src/xml/version_templates.xml:153
+#, python-format
+msgid "Copy the"
+msgstr "Kopiere"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Copy the <b>\"Tracking ID\"</b> and paste it in the field Google Analytics key.\n"
+"                                    <br/><br/>"
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"Copy the <b>\"View ID\"</b> and paste it in the field View ID.\n"
+"                                    <br/><br/>"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:464
+#, python-format
+msgid "Create"
+msgstr "Anlegen"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_create_date
+msgid "Create Date"
+msgstr "Erstellt am"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_create_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_create_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_create_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_create_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_create_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "Creation :"
+msgstr "Erstellung:"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:45
+#, python-format
+msgid ""
+"Customize any block through this menu. Try to change the background of the "
+"banner."
+msgstr ""
+"Passen Sie Ihre Blöcke über dieses Menü an. Versuchen Sie dabei den "
+"Hintergrund Ihres Banners zu ändern."
+
+#. module: website_version
+#: model:website_version.goals,name:website_version.goal_bounces
+msgid "Decrease Bounces"
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "Delete"
+msgstr "Löschen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:371
+#, python-format
+msgid "Delete Version"
+msgstr "Lösche Version"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:79
+#, python-format
+msgid "Delete Version Test"
+msgstr "Lösche Version Test"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_google_management_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_display_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:50
+#, python-format
+msgid "Drag the <em>'Features'</em> block and drop it below the banner."
+msgstr "Ziehen Sie den <em>'Funktionen'</em>Block direkt unter das Banner."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Duplicate Version"
+msgstr "Dupliziere Version"
+
+#. module: website_version
+#: selection:website_version.experiment,state:0
+msgid "Ended"
+msgstr "Beendet"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Exp"
+msgstr "Exp"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_experiment_id
+msgid "Experiment"
+msgstr "Experiment"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Experiment Form"
+msgstr "Experiment Formular"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:63
+#, python-format
+msgid "Experiment Name"
+msgstr "Experiment Name"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_experiment_version_ids
+msgid "Experiment Version"
+msgstr "Experiment Version"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_tree_view
+msgid "Experiment tree"
+msgstr "Experiment Struktur"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_version_form_view
+msgid "Experiment_page Form"
+msgstr "Experiment_page Formular"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.action_experiment
+#: model:ir.ui.menu,name:website_version.menu_action_experiment
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "Experiments"
+msgstr "Experimente"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_version_form_view
+msgid "Features"
+msgstr "Funktionen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:213
+#, python-format
+msgid "Fill in the Name of application and check that the platform is well on"
+msgstr ""
+"Tragen Sie den Namen der Anwendung ein und überprüfen Sie, ob die Plattform "
+"funktioniert"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_frequency
+msgid "Frequency"
+msgstr "Frequenz"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:163
+#: code:addons/website_version/static/src/xml/version_templates.xml:252
+#, python-format
+msgid "GA Key"
+msgstr "GA Schlüssel"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:21
+#, python-format
+msgid "Give a clever name to retrieve it easily."
+msgstr "Vergeben Sie einen klugen Namen um es einfach wiederzufinden."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:131
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+#, python-format
+msgid "Go to"
+msgstr "Gehe zu"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.google_analytics_configuration
+msgid "Google Analytics Configuration"
+msgstr "Google Analytics Konfiguration"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_google_ref
+msgid "Google Reference"
+msgstr "Google Referenz"
+
+#. module: website_version
+#: model:ir.actions.act_url,name:website_version.action_analytic
+msgid "Google analytics"
+msgstr "Google Analytics"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_google_management_authorization
+msgid "Google authorization"
+msgstr "Google Autorisierung"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_google_id
+msgid "Google id"
+msgstr "Google ID"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_google_index
+msgid "Google index"
+msgstr "Google Index"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+#: model:ir.ui.view,arch_db:website_version.version_search
+msgid "Group By"
+msgstr "Gruppieren nach"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP-Routing"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_tuto_google_analytics
+msgid "How to get GA key and View ID"
+msgstr "Wie Sie einen GA key und Ansicht ID bekommen"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid "How to get the Google Analytics Key and the View ID"
+msgstr "Wie Sie einen Google Analytics key und Ansicht ID bekommen"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_google_management_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_id
+msgid "ID"
+msgstr "ID"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:206
+#, python-format
+msgid "In the menu on left side, select the sub menu"
+msgstr "Wählen Sie im Menü auf der linken Seite das Untermenü"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:197
+#, python-format
+msgid ""
+"In the menu on left side, select the sub menu APIs (from menu APIs and auth)"
+" and activate"
+msgstr ""
+"Im Menü auf der linken Seite, wählen Sie die API aus dem Untermenü und "
+"aktivieren diese (Menü: APIs and auth)"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_google_management___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals___last_update
+#: model:ir.model.fields,field_description:website_version.field_website_version_version___last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_write_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_write_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_write_uid
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert durch"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_write_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_write_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_write_date
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:270
+#, python-format
+msgid "Launch"
+msgstr "In Betrieb nehmen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:57
+#, python-format
+msgid "Launch A/B Tests"
+msgstr "Starte A/B Tests"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Launch A/B tests"
+msgstr "Starte A/B Tests"
+
+#. module: website_version
+#: selection:website_version.experiment.version,frequency:0
+msgid "Less"
+msgstr "Weniger"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "List Modified Pages"
+msgstr "Geänderte Seiten anzeigen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:346
+#, python-format
+msgid "List of pages that have been modified in version"
+msgstr "Auflistung von Seiten mit veränderter Version"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:41
+#, python-format
+msgid "Manage A/B tests"
+msgstr "Verwalte A/B Tests"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:85
+#: model:ir.ui.view,arch_db:website_version.homepage_default_2
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+#, python-format
+msgid "Master"
+msgstr "Vorlage"
+
+#. module: website_version
+#: selection:website_version.experiment.version,frequency:0
+msgid "Medium"
+msgstr "Medium"
+
+#. module: website_version
+#: selection:website_version.experiment.version,frequency:0
+msgid "More"
+msgstr "Mehr"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_goals_name
+msgid "Name"
+msgstr "Name"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:446
+#: code:addons/website_version/static/src/xml/version_templates.xml:455
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+#, python-format
+msgid "New Version"
+msgstr "Neue Version"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:75
+#, python-format
+msgid "Now we will delete the version you have just published."
+msgstr ""
+"Jetzt werden wir die von Ihnen gerade veröffentlichte Version löschen."
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_goal_id
+msgid "Objective"
+msgstr "Ziel"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:71
+#, python-format
+msgid "Objective:"
+msgstr "Ziel:"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:115
+#: code:addons/website_version/static/src/xml/version_templates.xml:248
+#, python-format
+msgid ""
+"Odoo uses Google Analytics to track the performances of an A/B testing "
+"experiment comparing several versions."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:306
+#: code:addons/website_version/static/src/xml/version_templates.xml:325
+#, python-format
+msgid "Ok"
+msgstr "Ok"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#, python-format
+msgid "Once done, you will have the both informations ("
+msgstr "Sobald dies erledigt ist, haben Sie beide Informationen ("
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "PPP"
+msgstr "PPP"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_page
+msgid "Page"
+msgstr "Seite"
+
+#. module: website_version
+#: model:website_version.goals,name:website_version.goal_pageviews
+msgid "Page Views"
+msgstr ""
+
+#. module: website_version
+#: selection:website_version.experiment,state:0
+msgid "Paused"
+msgstr "Pausiert"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:388
+#: code:addons/website_version/static/src/xml/version_templates.xml:433
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+#: model:ir.ui.view,arch_db:website_version.view_view_form_extend
+#, python-format
+msgid "Publish"
+msgstr "Veröffentlichen"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Publish Version"
+msgstr "Veröffentliche Version"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:425
+#, python-format
+msgid "Publish and copy the current version"
+msgstr "Veröffentliche und kopiere die aktuelle Version"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:419
+#, python-format
+msgid "Publish version"
+msgstr "Veröffentliche Version"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:55
+#, python-format
+msgid "Publish your page by clicking on the <em>'Save'</em> button."
+msgstr ""
+"Veröffentlichen Sie Ihre Seite mit Klicken auf den Button  "
+"<em>'Speichern'</em>."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid "Return at Top"
+msgstr "Zurück zum Anfang"
+
+#. module: website_version
+#: selection:website_version.experiment,state:0
+msgid "Running"
+msgstr "Laufend"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:19
+#, python-format
+msgid "Save"
+msgstr "Speichern"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:26
+#, python-format
+msgid "Save as New Version"
+msgstr "Als neue Version speichern"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:47
+#, python-format
+msgid "Save on %s"
+msgstr "Speichere als %s"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+msgid "Search Experiment"
+msgstr "Suche Experiment"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_search
+msgid "Search version"
+msgstr "Suche Version"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_sequence
+msgid "Sequence"
+msgstr "Nummernfolge"
+
+#. module: website_version
+#: model:website_version.goals,name:website_version.goal_sessionDuration
+msgid "Session Duration"
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+msgid "Snap"
+msgstr ""
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+msgid "State"
+msgstr "Bundesland"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:42
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+#, python-format
+msgid "Statistics"
+msgstr "Statistik"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_state
+msgid "Status"
+msgstr "Status"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:255
+#: code:addons/website_version/static/src/js/widget.js:42
+#, python-format
+msgid ""
+"The Google Management API key needs to be configured before you can use it, "
+"do you want to do it now?"
+msgstr ""
+"Der Google Management API key muss konfiguriert werden, bevor Sie ihn "
+"benutzen können. Möchten Sie dies nun tun?"
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:121
+#, python-format
+msgid "The experiment you try to create has a bad format."
+msgstr ""
+"Das Experiment was Sie versuchen zu erstellen hat ein falsches Format."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:351
+#: code:addons/website_version/static/src/xml/version_templates.xml:413
+#, python-format
+msgid "There is no difference with Master"
+msgstr "Es unterscheidet sich nicht von der Vorlage"
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:54
+#, python-format
+msgid ""
+"This experiment contains a view which is already used in another running "
+"experience"
+msgstr ""
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:63
+#, python-format
+msgid "This experiment must have versions which are in the same website"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:23
+#: code:addons/website_version/static/src/js/menu_version.js:54
+#: code:addons/website_version/static/src/js/menu_version.js:127
+#: code:addons/website_version/static/src/js/menu_version.js:196
+#, python-format
+msgid "This field is required"
+msgstr "Dieses Feld wird benötigt"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/edit_version.js:36
+#: code:addons/website_version/static/src/js/menu_version.js:68
+#, python-format
+msgid "This name already exists."
+msgstr "Dieser Name ist bereits vorhanden."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+msgid ""
+"This will overwrite the current Master version of your website with this "
+"one."
+msgstr ""
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_name
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_name
+msgid "Title"
+msgstr "Titel"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:180
+#, python-format
+msgid "To get your Client ID and your Client Secret, follow these steps"
+msgstr ""
+"Um Ihre Client ID und Client Secret zu erhalten, führen sie folgende "
+"Schritte aus"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:122
+#, python-format
+msgid "To get your GA Key and your View ID"
+msgstr "Um Ihren GA Key und View ID zu bekommen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:22
+#: code:addons/website_version/static/src/xml/version_templates.xml:284
+#, python-format
+msgid "Toggle Dropdown"
+msgstr "Auswahlfeld umschalten"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:276
+#: code:addons/website_version/static/src/xml/version_templates.xml:277
+#: code:addons/website_version/static/src/xml/version_templates.xml:280
+#, python-format
+msgid "Validate"
+msgstr "Bestätigen"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:26
+#, python-format
+msgid "Validate the version name"
+msgstr "Überprüfen Sie den Version Namen"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_ir_ui_view_version_id
+#: model:ir.model.fields,field_description:website_version.field_website_page_version_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_version_id
+#: model:ir.ui.view,arch_db:website_version.user_navbar_version
+msgid "Version"
+msgstr "Version"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_version_number
+msgid "Version Number"
+msgstr "Versionsnummer"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:337
+#, python-format
+msgid "Version:"
+msgstr "Version:"
+
+#. module: website_version
+#: model:ir.ui.menu,name:website_version.menu_website_version_root
+msgid "Versioning"
+msgstr "Versionierung"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.action_version
+#: model:ir.ui.menu,name:website_version.menu_action_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Versions"
+msgstr "Versionen"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.experiment_form_view
+msgid "Versions in experiment"
+msgstr "Versionen in Experiment"
+
+#. module: website_version
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_view_ids
+msgid "View"
+msgstr "Ansicht"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:170
+#: code:addons/website_version/static/src/xml/version_templates.xml:258
+#: model:ir.model.fields,field_description:website_version.field_website_google_analytics_view_id
+#, python-format
+msgid "View ID"
+msgstr "Ansicht ID"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website
+#: model:ir.model.fields,field_description:website_version.field_website_version_experiment_website_id
+#: model:ir.model.fields,field_description:website_version.field_website_version_version_website_id
+#: model:ir.ui.view,arch_db:website_version.experiment_search
+#: model:ir.ui.view,arch_db:website_version.version_search
+msgid "Website"
+msgstr "Website"
+
+#. module: website_version
+#: model:ir.ui.menu,name:website_version.menu_website_view
+msgid "Website Domain"
+msgstr "Website Domain"
+
+#. module: website_version
+#: model:ir.actions.act_window,name:website_version.action_website_view
+msgid "Websites"
+msgstr "Websites"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:60
+#, python-format
+msgid ""
+"Well done, you created a version of your homepage. Now we will publish your "
+"version in production."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:198
+#, python-format
+msgid "When it's done, check that the button of"
+msgstr "Nach Erledigung prüfen Sie den Schalter"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/website_version.tour.versioning.js:13
+#, python-format
+msgid "You can create a version for every page of your website."
+msgstr "Sie können eine Version für jede Seite Ihrer Website erstellen."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:216
+#, python-format
+msgid "You can now click on"
+msgstr "Sie können jetzt anklicken"
+
+#. module: website_version
+#: code:addons/website_version/models/version.py:28
+#, python-format
+msgid ""
+"You cannot delete a version which is in a running or paused experiment."
+msgstr ""
+"Sie können nicht eine Version löschen, die in einem laufenden oder "
+"pausierten Experiment vorhanden ist."
+
+#. module: website_version
+#: sql_constraint:website_version.version:0
+msgid ""
+"You cannot have multiple versions with the same name in the same domain!"
+msgstr ""
+"Sie können nicht mehrfache Versionen mit dem gleichen Namen in der selben "
+"Domain benutzen!"
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:132
+#, python-format
+msgid "You cannot modify an ended experiment."
+msgstr "Sie können ein beendetes Experiment nicht verändern."
+
+#. module: website_version
+#: code:addons/website_version/models/google_management.py:119
+#, python-format
+msgid "You must configure your account."
+msgstr "Sie müssen Ihren Account konfigurieren."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:237
+#: code:addons/website_version/static/src/js/menu_version.js:268
+#, python-format
+msgid "You must fill all the fields."
+msgstr "Sie müssen alle Felder ausfüllen."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:106
+#, python-format
+msgid ""
+"You must have at least one version for this page to create a new experiment."
+msgstr ""
+
+#. module: website_version
+#: code:addons/website_version/models/experiment.py:123
+#, python-format
+msgid "You must select at least one version in your experiment."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:200
+#, python-format
+msgid "You must select at least one version which is not Master."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:111
+#, python-format
+msgid ""
+"You need Administration/Settings rights to configure Google Analytics "
+"access."
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:214
+#, python-format
+msgid ""
+"You should now configure the allowed pages on which you will be redirected. "
+"To do it, you need to complete the field"
+msgstr ""
+"Sie können hier die zugelassenen Seiten auf die Sie weitergeleitet werden "
+"weiter,  konfigurieren. Hierzu müssen Sie nur den Eintrag in dieses Feld "
+"ausfüllen."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/js/menu_version.js:247
+#: code:addons/website_version/static/src/js/widget.js:38
+#, python-format
+msgid ""
+"You will be redirected to Google to authorize access to your Analytics "
+"Account!"
+msgstr ""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:220
+#, python-format
+msgid "and"
+msgstr "und"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:150
+#, python-format
+msgid "and click on"
+msgstr "und klicken Sie auf"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:131
+#, python-format
+msgid "and connect you."
+msgstr "und Sie verbinden."
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+msgid ""
+"and connect you.\n"
+"                                    <br/><br/>"
+msgstr ""
+"und Sie verbinden.\n"
+"                                    <br/><br/>"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:191
+#, python-format
+msgid "and enter a project name."
+msgstr "und geben Sie einen Projekt Namen ein."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:146
+#, python-format
+msgid "and paste it in the field Google Analytics key."
+msgstr "und fügen Sie es in das Feld Google Analytics key ein."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:154
+#, python-format
+msgid "and paste it in the field View ID."
+msgstr "und fügen Sie es in das Feld Ansicht ID ein."
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:214
+#, python-format
+msgid "and set as value  (your own domain followed by"
+msgstr "und als Wert einsetzen (Ihre eigene Domain gefolgt durch)"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:197
+#, python-format
+msgid "by clicking on button \"OFF\"."
+msgstr "durch Klick auf den Button \"OFF\""
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:346
+#, python-format
+msgid ""
+"compared to master. If you publish this version, all pages will be updated "
+"at once."
+msgstr ""
+"verglichen mit der Vorlage. Wenn Sie diese Version veröffentlichen werden "
+"alle Seiten auf einmal aktualisiert."
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_google_management
+msgid "google.management"
+msgstr "google.management"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:189
+#, python-format
+msgid "https://console.developers.google.com"
+msgstr "https://console.developers.google.com"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:131
+#: model:ir.ui.view,arch_db:website_version.view_website_form_extend
+#, python-format
+msgid "https://www.google.com/analytics/"
+msgstr "https://www.google.com/analytics/"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_ir_qweb
+msgid "ir.qweb"
+msgstr "ir.qweb"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"
+
+#. module: website_version
+#. openerp-web
+#: code:addons/website_version/static/src/xml/version_templates.xml:198
+#, python-format
+msgid "is well in green and with text \"ON\""
+msgstr "Sieht in Grün mit weißem Text \"On\"  schick aus"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "on"
+msgstr "an"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.website2_homepage_other
+msgid "version 0.0.0.0"
+msgstr "Version 0.0.0.0"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_form_view
+msgid "version Form"
+msgstr "Version Formular"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.homepage_localhost
+msgid "version localhost"
+msgstr "Version localhost"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.version_tree_view
+msgid "version tree"
+msgstr "Versionen Liste"
+
+#. module: website_version
+#: model:ir.ui.view,arch_db:website_version.view_experiment_kanban
+msgid "versions"
+msgstr "Versionen"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_experiment
+msgid "website_version.experiment"
+msgstr ""
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_experiment_version
+msgid "website_version.experiment.version"
+msgstr "website_version.experiment.version"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_goals
+msgid "website_version.goals"
+msgstr "website_version.goals"
+
+#. module: website_version
+#: model:ir.model,name:website_version.model_website_version_version
+msgid "website_version.version"
+msgstr "website_version.version"

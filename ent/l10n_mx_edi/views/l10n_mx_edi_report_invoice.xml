@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_common_l10n_mx_edi" inherit_id="web.report_assets_pdf">
+        <xpath expr="." position="inside">
+            <link href="/l10n_mx_edi/static/src/less/report.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+    <!-- QWeb Reports -->
+    <record id="account.account_invoices" model="ir.actions.report">
+        <field name="attachment">object.l10n_mx_edi_is_required() and object.l10n_mx_edi_cfdi_name.replace('.xml', '.pdf') or (object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')</field>
+    </record>
+    <template id="report_invoice_document_mx" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[1]" position="before">
+            <t t-if="not o.l10n_mx_edi_cfdi_uuid and o.l10n_mx_edi_is_required()">
+                <div class="btn btn-danger">
+                    <h1>A signature of this invoice is required, but it is not signed.</h1>
+                </div>
+            </t>
+            <t t-if="o.l10n_mx_edi_cfdi_uuid">
+                <!--New global variables-->
+                <t t-set="xml" t-value="o.l10n_mx_edi_get_xml_etree()"/>
+                <t t-set="tfd" t-value="o.l10n_mx_edi_get_tfd_etree(xml)"/>
+                <t t-set="tfd_original_string" t-value="o._get_l10n_mx_edi_cadena()"/>
+            </t>
+        </xpath>
+        <xpath expr="//div[@name='invoice_address']" position="inside">
+            <t t-if="o.l10n_mx_edi_cfdi_uuid">
+                <span t-if="o.partner_id.vat != o.l10n_mx_edi_cfdi_supplier_rfc">XML VAT: <span t-esc="o.l10n_mx_edi_cfdi_supplier_rfc"></span></span>
+            </t>
+        </xpath>
+        <xpath expr="//div[@name='reference']" position="after">
+            <t t-if="o.l10n_mx_edi_cfdi_uuid">
+                <div class="col-xs-2">
+                    <strong>Payment Method:</strong>
+                    <p t-esc="' - '.join([o.l10n_mx_edi_payment_method_id.code, o.l10n_mx_edi_payment_method_id.name])"/>
+                </div>
+                <div class="col-xs-2">
+                    <strong>Payment Type:</strong>
+                    <p t-esc="xml.get('formaDePago', xml.get('MetodoPago'))"/>
+                </div>
+                <div class="col-xs-2" t-if="xml.get('NumCtaPago')">
+                    <strong>Bank Account:</strong>
+                    <p t-esc="xml.get('NumCtaPago')"/>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//p[@t-if='o.comment']" position="before">
+            <t t-if="o.l10n_mx_edi_cfdi_uuid">
+                <p>
+                    <span t-esc="o.l10n_mx_edi_amount_to_text()"/>
+                </p>
+            </t>
+        </xpath>
+        <xpath expr="//p[@t-if='o.fiscal_position_id.note']" position="after">
+            <t t-if="o.l10n_mx_edi_cfdi_uuid">
+                <div class="row" id='complement'>
+                    <div class="barcode col-xs-3">
+                        <img t-att-src="'/report/barcode/QR/%s' % quote_plus('?') + keep_query(
+                                re=o.l10n_mx_edi_cfdi_supplier_rfc, rr=o.l10n_mx_edi_cfdi_customer_rfc,
+                                tt=o.l10n_mx_edi_cfdi_amount, id=o.l10n_mx_edi_cfdi_uuid)"/>
+                    </div>
+                    <div class="complement-details col-xs-9">
+                        <div class="digital-stamp">
+                            <span>Digital stamp of the emitter</span>
+                        </div>
+                        <div class="digital-stamp-content">
+                            <span t-esc="xml.get('sello', xml.get('Sello', 'No identificado'))"/>
+                        </div>
+                        <div class="digital-stamp">
+                            <span>Digital stamp SAT</span>
+                        </div>
+                        <div class="digital-stamp-content">
+                            <span t-esc="tfd.get('selloSAT', tfd.get('SelloSAT', 'No identificado'))"/>
+                        </div>
+                        <div class="digital-stamp">
+                            <span>Original chain complement of digital certification SAT</span>
+                        </div>
+                        <div class="digital-stamp-content">
+                            <span class="nowrap" t-esc="tfd_original_string"/>
+                        </div>
+                        <div t-if="xml.Emisor.xpath('cfdi:ExpedidoEn', namespaces=xml.nsmap)" class="digital-stamp">
+                            <span>Issued from</span>
+                        </div>
+                        <div t-if="xml.Emisor.xpath('cfdi:ExpedidoEn', namespaces=xml.nsmap)" class="digital-stamp-content">
+                            <span t-esc="' | '.join([ '%s: %s' % (key, value) for key, value in xml.Emisor.ExpedidoEn.items()])"/>
+                        </div>
+                        <div class="digital-stamp">
+                            <span>Extra Info</span>
+                        </div>
+                        <div class="digital-stamp-content">
+                            <span>Emitter certificate:</span> <span t-esc="xml.get('noCertificado', xml.get('NoCertificado'))"/>
+                            <span> | Expedition place:</span> <span t-esc="xml.get('LugarExpedicion')"/>
+                            <span> | Fiscal Regime:</span>
+                                <t t-if="xml.get('version', '') == '3.2'"> <span t-esc="xml.Emisor.RegimenFiscal.get('Regimen')"/></t>
+                                <t t-if="xml.get('Version', '') == '3.3'"> <span t-esc="xml.Emisor.get('RegimenFiscal', '')"/></t>
+                            <span> | Emission Date:</span> <span t-esc="xml.get('fecha', xml.get('Fecha', '')).replace('T', ' ')"/>
+                            <span> | Certification Date:</span> <span t-esc="tfd.get('FechaTimbrado', '').replace('T', ' ')"/>
+                            <span> | Fiscal Folio:</span> <span t-esc="tfd.get('UUID')"/>
+                        </div>
+                        <div class="digital-stamp-content text-center">
+                            <strong>This document is a printed representation of a CFDI</strong>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

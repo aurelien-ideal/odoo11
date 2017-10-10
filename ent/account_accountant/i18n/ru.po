@@ -1,0 +1,288 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_accountant
+# 
+# Translators:
+# Denis Baranov <baranov@itlibertas.com>, 2017
+# SV <sv@grimmette.ru>, 2017
+# Максим Дронь <dronmax@gmail.com>, 2017
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Алексей Кулагин <alekseik120988.kulagin@yandex.ru>, 2017
+# Viktor Pogrebniak <vp@aifil.ru>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:49+0000\n"
+"PO-Revision-Date: 2017-10-02 11:49+0000\n"
+"Last-Translator: Viktor Pogrebniak <vp@aifil.ru>, 2017\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: account_accountant
+#: model:ir.ui.menu,name:account_accountant.menu_account_group
+msgid "Account Groups"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.ui.menu,name:account_accountant.account_tag_menu
+msgid "Account Tags"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Account used when transferring between banks"
+msgstr "Счёт используется для переводов между банками"
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_partner_view_form
+msgid "Accounting"
+msgstr "Бухгалтерский учёт"
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_res_config_settings_use_anglo_saxon
+msgid "Anglo-Saxon Accounting"
+msgstr "Англо-саксонской учет"
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.view_account_change_lock_date
+msgid "Cancel"
+msgstr "Отменить"
+
+#. module: account_accountant
+#: model:ir.model,name:account_accountant.model_account_change_lock_date
+msgid "Change lock date"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_create_uid
+msgid "Created by"
+msgstr "Создано"
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_create_date
+msgid "Created on"
+msgstr "Создан"
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_display_name
+msgid "Display Name"
+msgstr "Отображаемое Имя"
+
+#. module: account_accountant
+#: model:ir.ui.menu,name:account_accountant.menu_account_financial_reports_tree
+msgid "Financial Reports"
+msgstr "Финансовые отчеты"
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Fiscal Period Closing"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Fiscal Year"
+msgstr "Учетный год"
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_res_config_settings_fiscalyear_last_day
+msgid "Fiscalyear Last Day"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_res_config_settings_fiscalyear_last_month
+msgid "Fiscalyear Last Month"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_id
+msgid "ID"
+msgstr "Номер"
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Inter-Banks Transfers"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,help:account_accountant.field_res_config_settings_transfer_account_id
+msgid ""
+"Intermediary account used when moving money from a liquidity account to "
+"another"
+msgstr ""
+"Посреднический счет используется при движении денег со счета ликвидности на "
+"другой "
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Last Day"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date___last_update
+msgid "Last Modified on"
+msgstr "Последнее изменение"
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_write_date
+msgid "Last Updated on"
+msgstr "Последнее обновление"
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Last day of your fiscal year, for automatic opening entries"
+msgstr ""
+
+#. module: account_accountant
+#. openerp-web
+#: code:addons/account_accountant/static/src/js/tour.js:26
+#, python-format
+msgid "Let's start with a new customer invoice."
+msgstr "Давайте создадим счёт для клиента."
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_fiscalyear_lock_date
+#: model:ir.model.fields,field_description:account_accountant.field_res_config_settings_fiscalyear_lock_date
+msgid "Lock Date for All Users"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_account_change_lock_date_period_lock_date
+#: model:ir.model.fields,field_description:account_accountant.field_res_config_settings_period_lock_date
+msgid "Lock Date for Non-Advisers"
+msgstr "Дата Блокировки для Неконсультантов"
+
+#. module: account_accountant
+#: model:ir.ui.menu,name:account_accountant.menu_action_change_lock_date
+msgid "Lock Dates"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.actions.act_window,name:account_accountant.action_view_account_change_lock_date
+msgid "Lock your Fiscal Period"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Lock your fiscal period"
+msgstr ""
+
+#. module: account_accountant
+#. openerp-web
+#: code:addons/account_accountant/static/src/js/tour.js:17
+#, python-format
+msgid "Make your system ready to invoice in a few steps."
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,help:account_accountant.field_account_change_lock_date_fiscalyear_lock_date
+#: model:ir.model.fields,help:account_accountant.field_res_config_settings_fiscalyear_lock_date
+msgid ""
+"No users, including Advisers, can edit accounts prior to and inclusive of "
+"this date. Use it for fiscal year locking for example."
+msgstr ""
+"Никакие пользователи, включая Советников, не могут отредактировать счета до "
+"и включительно этой даты. Используйте его, например, для закрытия "
+"финансового года."
+
+#. module: account_accountant
+#: model:ir.model.fields,help:account_accountant.field_res_config_settings_period_lock_date
+msgid ""
+"Only users with the 'Adviser' role can edit accounts prior to and inclusive "
+"of this date. Use it for period locking inside an open fiscal year, for "
+"example."
+msgstr ""
+"Только пользователи с ролью 'Советник', могут отредактировать счета до и "
+"включительно этой даты. Используйте его, например,  для блокировки периода "
+"внутри открытого финансового года."
+
+#. module: account_accountant
+#: model:ir.model.fields,help:account_accountant.field_account_change_lock_date_period_lock_date
+msgid ""
+"Only users with the Adviser role can edit accounts prior to and inclusive of"
+" this date. Use it for period locking inside an open fiscal year, for "
+"example."
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.ui.menu,name:account_accountant.menu_product_product_categories
+msgid "Product Categories"
+msgstr "Категории продуктов"
+
+#. module: account_accountant
+#. openerp-web
+#: code:addons/account_accountant/static/src/js/tour.js:13
+#, python-format
+msgid ""
+"Ready to discover your new favorite <b>accounting app</b>? Get started by "
+"clicking here."
+msgstr ""
+"Готовы открыть ваше любимое <b>бухгалтерское приложение</b>? Начните, нажав "
+"сюда."
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.res_config_settings_view_form
+msgid "Record cost of goods sold in your journal entries"
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.ui.view,arch_db:account_accountant.view_account_change_lock_date
+msgid "Save"
+msgstr "Сохранить"
+
+#. module: account_accountant
+#: model:ir.model.fields,help:account_accountant.field_res_config_settings_fiscalyear_last_day
+#: model:ir.model.fields,help:account_accountant.field_res_config_settings_fiscalyear_last_month
+msgid ""
+"The last day of the month will be taken if the chosen day doesn't exist."
+msgstr ""
+
+#. module: account_accountant
+#: model:ir.model.fields,field_description:account_accountant.field_res_config_settings_transfer_account_id
+msgid "Transfer Account"
+msgstr "Трансфертный Счет"
+
+#. module: account_accountant
+#. openerp-web
+#: code:addons/account_accountant/static/src/js/tour.js:31
+#, python-format
+msgid ""
+"Use the path to quickly click back to <b>previous screens</b>, without "
+"reloading the page."
+msgstr ""
+"Кликните на путь, чтобы быстро вернуться к <b>предыдущим экранам</b> без "
+"перезагрузки страницы."
+
+#. module: account_accountant
+#. openerp-web
+#: code:addons/account_accountant/static/src/js/tour.js:21
+#, python-format
+msgid "When you're ready, close this planner to continue the tour."
+msgstr ""
+
+#. module: account_accountant
+#. openerp-web
+#: code:addons/account_accountant/static/src/js/tour.js:35
+#, python-format
+msgid ""
+"Your reports are available in real time. <i>No need to close a fiscal year "
+"to get a Profit &amp; Loss statement or view the Balance Sheet.</i>"
+msgstr ""
+"Ваши отчеты доступны в режиме реального времени. <i>Нет необходимости "
+"закрывать финансовый год, чтобы сформировать отчёт о прибыли и убытках или "
+"посмотреть баланс.</i>"
+
+#. module: account_accountant
+#: model:ir.model,name:account_accountant.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product.product_uom_cm" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_CMT"/>
+    </record>
+    <record id="product.product_uom_qt" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_QTR"/>
+    </record>
+    <record id="product.product_uom_day" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_E49"/>
+    </record>
+    <record id="product.product_uom_dozen" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_DPC"/>
+    </record>
+    <record id="product.product_uom_floz" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_OZA"/>
+    </record>
+    <record id="product.product_uom_gram" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_GRM"/>
+    </record>
+    <record id="product.product_uom_gal" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_A76"/>
+    </record>
+    <record id="product.product_uom_hour" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_LH"/>
+    </record>
+    <record id="product.product_uom_kgm" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_KGM"/>
+    </record>
+    <record id="product.product_uom_km" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_KMT"/>
+    </record>
+    <record id="product.product_uom_lb" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_LBR"/>
+    </record>
+    <record id="product.product_uom_litre" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_LTR"/>
+    </record>
+    <record id="product.product_uom_meter" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_MTR"/>
+    </record>
+    <record id="product.product_uom_mile" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_M52"/>
+    </record>
+    <record id="product.product_uom_oz" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_ONZ"/>
+    </record>
+    <record id="product.product_uom_foot" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_FOT"/>
+    </record>
+    <record id="product.product_uom_inch" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_INH"/>
+    </record>
+    <record id="product.product_uom_ton" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_NT"/>
+    </record>
+    <record id="product.product_uom_unit" model="product.uom">
+        <field name="l10n_mx_edi_code_sat_id" ref="l10n_mx_edi.prod_code_sat_H87"/>
+    </record>
+</odoo>

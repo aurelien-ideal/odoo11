@@ -1,0 +1,103 @@
+<odoo>
+    <!-- Quality Control From Manufacturing -->
+
+    <!-- For [FURN001] Computer Desk-->
+    <record id="quality_point_dummy" model="quality.point">
+        <field name="product_id" ref="mrp.product_product_computer_desk"/>
+        <field name="product_tmpl_id" ref="mrp.product_product_computer_desk_product_template"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_5"/>
+        <field name="test_type_id" ref="quality_mrp.test_type_dummy"/>
+        <field name="note">Please ensure you are using the new SRX679 screwdriver.</field>
+        <field name="title">Choice of screwdriver</field>
+        <field name="worksheet">scroll</field>
+        <field name="worksheet_page">1</field>
+    </record>
+
+    <record id="quality_point_component_registration" model="quality.point">
+        <field name="product_id" ref="mrp.product_product_computer_desk"/>
+        <field name="product_tmpl_id" ref="mrp.product_product_computer_desk_product_template"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_5"/>
+        <field name="test_type_id" ref="quality_mrp.test_type_register_consumed_materials"/>
+        <field name="note">Please enter the table head serial number.</field>
+        <field name="title">Component Registration: Table Head</field>
+        <field name="component_id" ref="mrp.product_product_computer_desk_head"/>
+        <field name="worksheet">scroll</field>
+        <field name="worksheet_page">1</field>
+    </record>
+
+    <record id="quality_point_picture" model="quality.point">
+        <field name="product_id" ref="mrp.product_product_computer_desk"/>
+        <field name="product_tmpl_id" ref="mrp.product_product_computer_desk_product_template"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_5"/>
+        <field name="test_type_id" ref="quality_mrp.test_type_picture"/>
+        <field name="note">Take a picture of the table head serial number.</field>
+        <field name="title">Picture of the SN</field>
+        <field name="worksheet">scroll</field>
+        <field name="worksheet_page">1</field>
+    </record>
+
+    <record id="quality_point_pass_fail" model="quality.point">
+        <field name="product_id" ref="mrp.product_product_computer_desk"/>
+        <field name="product_tmpl_id" ref="mrp.product_product_computer_desk_product_template"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_5"/>
+        <field name="test_type_id" ref="quality.test_type_passfail"/>
+        <field name="note">Check the fastenings are in good condition.</field>
+        <field name="title">Quality check</field>
+        <field name="worksheet">scroll</field>
+        <field name="worksheet_page">2</field>
+    </record>
+
+    <record id="quality_point_measure" model="quality.point">
+        <field name="product_id" ref="mrp.product_product_computer_desk"/>
+        <field name="product_tmpl_id" ref="mrp.product_product_computer_desk_product_template"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_5"/>
+        <field name="test_type_id" ref="quality.test_type_measure"/>
+        <field name="note">Please measure the angle formed by the two adjacent wooden panels at the bottom left-hand corner.</field>
+        <field name="norm">90</field>
+        <field name="norm_unit">degrees</field>
+        <field name="tolerance_min">88</field>
+        <field name="tolerance_max">92</field>
+        <field name="title">Measure the Angle</field>
+        <field name="worksheet">scroll</field>
+        <field name="worksheet_page">3</field>
+    </record>
+
+    <record id="quality_point_dummy_2" model="quality.point">
+        <field name="product_id" ref="mrp.product_product_computer_desk"/>
+        <field name="product_tmpl_id" ref="mrp.product_product_computer_desk_product_template"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_5"/>
+        <field name="test_type_id" ref="quality_mrp.test_type_dummy"/>
+        <field name="note">Please attach the legs to the table as shown below.</field>
+        <field name="title">Table Legs</field>
+        <field name="worksheet">scroll</field>
+        <field name="worksheet_page">4</field>
+    </record>
+
+    <record id="quality_point_component_registration_2" model="quality.point">
+        <field name="product_id" ref="mrp.product_product_computer_desk"/>
+        <field name="product_tmpl_id" ref="mrp.product_product_computer_desk_product_template"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_5"/>
+        <field name="test_type_id" ref="quality_mrp.test_type_register_consumed_materials"/>
+        <field name="note">Please encode the table legs lot number(s).</field>
+        <field name="title">Component Registration: Table Legs</field>
+        <field name="component_id" ref="mrp.product_product_computer_desk_leg"/>
+        <field name="worksheet">scroll</field>
+        <field name="worksheet_page">4</field>
+    </record>
+
+    <!-- Quality Control From WorkOrder -->
+    <!-- For [PCSC234] Computer SC234 -->
+    <record id="quality_point4" model="quality.point">
+        <field name="product_id" ref="product.product_product_3"/>
+        <field name="product_tmpl_id" ref="product.product_product_3_product_template"/>
+        <field name="operation_id" ref="mrp.mrp_routing_workcenter_0"/>
+        <field name="picking_type_id" ref="mrp.picking_type_manufacturing"/>
+    </record>
+</odoo>

@@ -1,0 +1,1322 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * hr_appraisal
+# 
+# Translators:
+# Osama Ahmaro <osamaahmaro@gmail.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# amrnegm <amrnegm.01@gmail.com>, 2016
+# hoxhe aits <hoxhe0@gmail.com>, 2016
+# Mohammed Ibrahim <m.ibrahim@mussder.com>, 2016
+# Mustafa Rawi <mustafa@cubexco.com>, 2016
+# Akram Alfusayal <akram_ma@hotmail.com>, 2016
+# Ali zuaby <ali@zuaby.net>, 2016
+# SaFi J. <safi2266@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-07 09:57+0000\n"
+"PO-Revision-Date: 2016-09-07 09:57+0000\n"
+"Last-Translator: SaFi J. <safi2266@gmail.com>, 2016\n"
+"Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: hr_appraisal
+#: model:mail.template,body_html:hr_appraisal.send_appraisal_template
+msgid ""
+"\n"
+"                \n"
+"                <div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
+"                    <p>Dear ${ctx.get('employee').name},</p>\n"
+"                    % if ctx.get('employee').id == object.employee_id.id:\n"
+"                        <p>Please fill out the following survey related to your appraisal.</p>\n"
+"                    % else:\n"
+"                        <p>Please fill out the following survey related to ${object.employee_id.name}'s appraisal.</p>\n"
+"                    % endif\n"
+"                    <p><a href=\"__URL__\">Click here to access the survey.</a></p>\n"
+"                    <p>Post your response for the appraisal till : ${object.date_close}</p>\n"
+"                    <p>Thank you for your participation.</p>\n"
+"                </div>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid ") Answers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid ") Sent Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "<strong><span>Final Interview: </span></strong>"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_1
+msgid "Ability to cope with multidisciplinarity of team"
+msgstr "القدرة على التعامل مع تعدد التخصصات من فريق ."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_6
+msgid "Ability to follow and complete work as instructed"
+msgstr "القدرة على متابعة واستكمال العمل وفقا للتعليمات "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_5
+msgid "Ability to manage planning resources, risks, budgets and deadlines"
+msgstr ""
+"القدرة على إدارة تخطيط الموارد، والمخاطر، والميزانيات والمواعيد النهائية ."
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_action_plan
+msgid "Action Plan"
+msgstr "خطة الاجراء"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_1
+msgid ""
+"Actions by Executive management show genuine interest in the well-being of "
+"employees"
+msgstr ""
+"الإجراءات من قبل الإدارة التنفيذية تظهر إهتمام حقيقي في رفاه الموظفين "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_active
+msgid "Active"
+msgstr "نشط"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_13
+msgid ""
+"Adaptability: Ability to adapt oneself to organizational changes while "
+"keeping efficiency"
+msgstr ""
+"القدرة على التكيف: القدرة على التكيف مع نفسه إلى التغييرات التنظيمية مع "
+"الحفاظ على الكفاءة  "
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_3
+msgid "Additional Comments"
+msgstr "التعليقات الإضافية"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_7
+msgid "Additional comments"
+msgstr "تعليقات اضافية"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_11
+msgid "Analytical and synthetic mind"
+msgstr "العقل التحليلي والاصطناعي"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_survey_completed_ids
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Answers"
+msgstr "الإجابات"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.open_view_hr_appraisal_tree
+#: model:ir.actions.act_window,name:hr_appraisal.open_view_hr_appraisal_tree2
+#: model:ir.model.fields,field_description:hr_appraisal.field_survey_user_input_appraisal_id
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_root
+#: model:ir.ui.menu,name:hr_appraisal.menu_open_view_hr_appraisal_tree
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_tree
+msgid "Appraisal"
+msgstr "التقييم"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.action_appraisal_report_all
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_graph
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_pivot
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Appraisal Analysis"
+msgstr "تحليل التقييم"
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_new
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_new
+msgid "Appraisal Created"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_date_close
+msgid "Appraisal Deadline"
+msgstr "الموعد النهائي للتقييم"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Appraisal Form..."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_frequency_unit
+msgid "Appraisal Frequency"
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:118
+#, python-format
+msgid "Appraisal Meeting For %s"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.opinion_1
+msgid "Appraisal Process"
+msgstr "عملية التقييم"
+
+#. module: hr_appraisal
+#: model:mail.template,subject:hr_appraisal.send_appraisal_template
+msgid "Appraisal Regarding"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_frequency
+msgid "Appraisal Repeat Every"
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_sent
+#, python-format
+msgid "Appraisal Sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_appraisal_report
+msgid "Appraisal Statistics"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_collaborators_ids
+msgid "Appraisal collaborators ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_colleagues_ids
+msgid "Appraisal colleagues ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_3
+msgid "Appraisal for Period"
+msgstr "التقييم عن فترة"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_manager_ids
+msgid "Appraisal manager ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_sent
+msgid "Appraisal sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.hr_appraisal_action_from_department
+msgid "Appraisal to start"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_department_view_kanban
+msgid "Appraisal(s)"
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:161
+#, python-format
+msgid "Appraisal(s) form have been sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_count
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_department_view_kanban
+msgid "Appraisals"
+msgstr "تقييمات"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_department_appraisals_to_process_count
+msgid "Appraisals to Process"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_5
+msgid "Appraiser"
+msgstr "المقيم"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "At the conclusion of the appraisal time period"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "At the outset of the appraisal time period"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "At the supervisor's appraisal date"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#, python-format
+msgid "Cancelled"
+msgstr "ملغى "
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,help:hr_appraisal.open_view_hr_appraisal_tree
+msgid "Click to create a new appraisal."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_appraisal
+msgid "Collaborator"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_survey_id
+msgid "Collaborator's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_collaborators
+msgid "Collaborators"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_ids
+msgid "Collaborators ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_survey_id
+msgid "Colleague's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_colleagues
+msgid "Colleagues"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_ids
+msgid "Colleagues ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_color
+msgid "Color Index"
+msgstr "اللون"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_9
+msgid ""
+"Communication skills (written & verbally): clearness, concision, exactitude"
+msgstr "مهارات الاتصال (كتابة وشفهيا): الوضوح، الإيجاز، الدقة"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_3
+msgid ""
+"Compared to similar jobs in other companies where I could work, my total "
+"compensation..."
+msgstr ""
+"بالمقارنة مع وظائف مماثلة في شركات أخرى يمكن العمل بها، مجموع التعويض..."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_3
+msgid ""
+"Compliance to internal rules and processes (timesheets completion, etc.)"
+msgstr "الامتثال للقواعد والإجراءات الداخلية (إتمام الجداول الزمنية، إلخ.)"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_4
+msgid "Continuous Improvement"
+msgstr "تحسن مستمر"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_create_date
+msgid "Create Date"
+msgstr "تاريخ الإنشاء"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Creation Month"
+msgstr "إنشاء شهر"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_14
+msgid "Creativity and forward looking aptitude"
+msgstr "الإبداع وأهلية التطلع للمستقبل"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"Critical or key elements of performance and professional development needs "
+"(if any), should also be noted at this time"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_8
+msgid "Customer commitment"
+msgstr "التزام العميل"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_1_2
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_4
+msgid "Date of review"
+msgstr "تاريخ المراجعة"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_deadline
+msgid "Deadline"
+msgstr "الموعد النهائي"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Deadline:"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_7
+msgid "Decision making"
+msgstr "صناعة القرار"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_2
+msgid "Delegation: Ability to efficiently assign tasks to other people"
+msgstr "توكيل: القدرة على إسناد المهام إلى أشخاص آخرين بكفاءة"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Delete"
+msgstr "حذف"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_1
+msgid "Demonstrates genuine concern for me as a person"
+msgstr "يدل على اهتمام صادق بالنسبة لي كشخص ."
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_department_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Did not meet standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_display_name
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+#, python-format
+msgid "Done"
+msgstr "منتهي"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Edit"
+msgstr "تحرير"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_3
+msgid "Effectiveness"
+msgstr "فعالية"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_mail_template_id
+msgid "Email Template for Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_employee
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_employee_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_self
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_appraisal
+msgid "Employee Appraisal"
+msgstr "تقييم الموظف"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_1
+#: model:survey.survey,title:hr_appraisal.appraisal_form
+msgid "Employee Appraisal Form"
+msgstr "نموذج تقييم موظف"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_5
+msgid "Employee Comments"
+msgstr "تعليقات الموظف "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_employee
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: hr_appraisal
+#: model:survey.survey,title:hr_appraisal.opinion_form
+msgid "Employee Opinion Form"
+msgstr "نموذج رأي الموظف"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_3
+msgid "Employee Performance in Key Areas"
+msgstr "أداء الموظف في المجالات الرئيسية"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_appraisal
+msgid "Employee appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_colleagues_survey_id
+msgid "Employee's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Employee's Name"
+msgstr "اسم الموظف"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_1
+msgid "Engagement"
+msgstr "التفاعل"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_2
+msgid "Enthusiasm & implication toward projects/assignments"
+msgstr "الحماس والتضمين نحو المشاريع/المهام"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.opinion_2
+msgid "Evaluation"
+msgstr "تقييم"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_calendar_event
+msgid "Event"
+msgstr "الحدث"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Exceeds standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Extended Filters..."
+msgstr "الفلاتر التفصيلية..."
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Final Evaluation"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_date_final_interview
+msgid "Final Interview"
+msgstr "المقابلة النهائية"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Final Interview Date"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Group by..."
+msgstr "تجميع حسب..."
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"His direct reports will be invited through Odoo to express a feedback on "
+"their supervisor's leadership and to give their opinion about their own "
+"engagement and effectiveness, the continuous improvement and openness in "
+"action in thecompany..."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_department
+msgid "Hr Department"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_1
+msgid "I am proud to tell others I work here"
+msgstr "أنا فخور لأن أقول للآخرين أنا أعمل هنا"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_5
+msgid ""
+"I am willing to put in a great deal of effort beyond what is expected to "
+"help my workgroup succeed"
+msgstr ""
+"أنا على استعداد لوضع قدر كبير من الجهد يتجاوز ما هو متوقع لأساعد على نجاح "
+"زملائي في مجموعة العمل "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_4
+msgid "I believe the information that I get from the person I report to."
+msgstr "أنا أصدق المعلومات التي أحصل عليها من الشخص الذي أرجع اليه \"المسؤول\"."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_2
+msgid ""
+"I consistently acquire new knowledge, skills or understanding through "
+"contact with my supervisor. He helps me growing my compete"
+msgstr ""
+"أنا اكتساب باستمرار المعرفة الجديدة والمهارات والفهم من خلال الاتصال مع "
+"المشرف الخاص بى . انه يساعدني فى نمو المنافسه الخاصه بى "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_2
+msgid "I have enough work"
+msgstr "لدي ما يكفي من العمل"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_2
+msgid ""
+"I have the same opportunity to succeed as others with similar experiences, "
+"performance and educational background"
+msgstr ""
+"لدي نفس الفرصة لتحقيق النجاح وغيرهم من ذوي الخبرات المماثله والأداء والخلفية"
+" التعليمية "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_5_1
+msgid "I know the company's values and live them"
+msgstr "أنا على علم بقيم المؤسسة وأعيش عليها"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_3
+msgid ""
+"I mostly work on value-added tasks for the company, the products or the "
+"services"
+msgstr ""
+"أنا أعمل في الغالب على المهام ذات قيمة مضافة للشركة، والمنتجات أو الخدمات "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_4
+msgid "I understand the company strategy and how my workgroup supports it"
+msgstr "أنا أفهم استراتيجية الشركة وكيف يعتمد عملى عليها ."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_3
+msgid ""
+"I would prefer to remain with this company even if a comparable job were "
+"available in another company"
+msgstr ""
+"أنا أفضل البقاء مع هذه الشركة حتى لو كانت الوظيفة قابلة للمقارنة في شركة "
+"أخرى "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_1
+msgid "I'm efficient at work and my achievements are successful"
+msgstr "أنا على الكفاءة في العمل وانجازاتي تكون ناجحة "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_4
+msgid ""
+"Identify professional, performance, or project objectives you recommend for employee’s continued career development\n"
+"over the coming year."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_4
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_5
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_3_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_3_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_5_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_1_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_1_2
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_2
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_3
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_4
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_5
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_6
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_7
+msgid "If other, please specify:"
+msgstr "اذا كان هنالك غير ذلك، يرجى التحديد:"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_action_plan
+msgid ""
+"If the evaluation does not meet the expectations, you can propose an action "
+"plan"
+msgstr "إذا كان التقييم لا يقابل التوقعات، يمكنك اقتراح خطة عمل "
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "In progress Evaluations"
+msgstr "في مرحلة التقييم"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_5
+msgid "Initiative and self autonomy"
+msgstr "المبادرة و الحكم الذاتي "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_final_interview
+msgid "Interview"
+msgstr "المقابلة"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"It is the joint responsibility of the employee and the supervisor (appraiser) to establish a feasible work plan for the\n"
+"coming year, including major employee responsibilities and corresponding benchmarks against which results will be\n"
+"evaluated."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"It is the primary responsibility of the supervisor to gather the necessary input from the appropriate sources of feedback\n"
+"(internal and/or external customers, peers). In case of collaboration with Odoo SA Belgium, the supervisor must\n"
+"receive completed evaluation form from the employee's Belgian project manager."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal___last_update
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_2
+msgid "Leadership"
+msgstr "قيادة"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_3
+msgid ""
+"Leadership: create a challenging and motivating work environment aligned "
+"with the company's strategy"
+msgstr "القيادة: خلق بيئة عمل صعبة ومحفزة تتماشى مع استراتيجية الشركة "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_4
+msgid "Leadership: sustain subordinates in their professional growth"
+msgstr "القيادة: الحفاظ على المرؤوسين في نموهم المهني"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_3
+msgid ""
+"Listens and takes into account all ideas and do his best to put in place the"
+" best of these"
+msgstr ""
+"يستمع ويأخذ في الاعتبار جميع الأفكار ويبذل قصارى جهده لوضع أفضل من هذه "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_appraisal
+#: model:res.groups,name:hr_appraisal.group_hr_appraisal_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_ids
+msgid "Manager ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_survey_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_manager_survey_id
+msgid "Manager's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_manager
+msgid "Managers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Meet standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_meeting_id
+msgid "Meeting"
+msgstr "إجتماع"
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_meeting
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_meeting
+msgid "Meeting Scheduled"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_6
+msgid "Miscellaneous"
+msgstr "متفرقات"
+
+#. module: hr_appraisal
+#: selection:hr.employee,appraisal_frequency_unit:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Month"
+msgstr "شهر"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_5_2
+msgid ""
+"My best achievements have been communicated to the community, internally or "
+"to customers"
+msgstr "أفضل إنجازاتى تم إتصالها مع المجتمع ، داخليا أو للعملاء "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_2
+msgid "My job provides me with a sense of personal accomplishment"
+msgstr "عملي يوفرلى الشعور بالإنجاز الشخصي "
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_1
+msgid ""
+"My work contributes towards the continuous improvement of the company, our "
+"services or products"
+msgstr "عملي يسهم في تحسين مستمر للشركة، لدينا منتجات أو خدمات "
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_tree
+#: model:survey.question,question:hr_appraisal.appraisal_1_1
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_1_1
+msgid "Name of your direct supervisor"
+msgstr "اسم المشرف المباشر "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_date
+msgid "Next Appraisal Date"
+msgstr "تاريخ التقييم القادم"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_count_completed_survey
+msgid "Number of Answers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_count_sent_survey
+msgid "Number of Sent Forms"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_1
+msgid "Objectives"
+msgstr "أهداف"
+
+#. module: hr_appraisal
+#: model:res.groups,name:hr_appraisal.group_hr_appraisal_user
+msgid "Officer"
+msgstr "Officer"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_5
+msgid "Openness"
+msgstr "انفتاح"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_4
+msgid ""
+"Our workgroup identifies and reduces waste of time in our activities and "
+"processes"
+msgstr "لدينا مجموعة عمل يحدد ويقلل من هدر الوقت في الأنشطة والعمليات "
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "Overall Purpose Of Employee Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_3
+msgid ""
+"Overall, I believe the quality of products and/or services my workgroup "
+"delivers is improving"
+msgstr "عموما، أعتقد أن جودة المنتجات و / أو خدماتي مجموعة العمل يسلم يتحسن "
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_periodic_appraisal
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_configuration
+msgid "Periodic Appraisal"
+msgstr "التقييم الدوري"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_periodic_appraisal_created
+msgid "Periodic Appraisal has been created"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Periodicity"
+msgstr "الدورية"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_2
+msgid "Personal Performance Objectives"
+msgstr "أهداف الأداء الشخصي"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Plan"
+msgstr "خطّة"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_2
+msgid "Position Title"
+msgstr "لقب المنصب"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_1
+msgid "Professional Development Objectives"
+msgstr "أهداف التنمية المهنية"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_4
+msgid "Professional Development and Performance Plan"
+msgstr "التنمية المهنية وخطة الأداء"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_3
+msgid "Project Objectives"
+msgstr "أهداف المشروع"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_12
+msgid "Promptness and attendance record"
+msgstr "الدقة في الوقت وسجل الحضور"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_related_partner_id
+msgid "Related partner id"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Repeat Every"
+msgstr "كل تكرار"
+
+#. module: hr_appraisal
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_report
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_2
+msgid "Results"
+msgstr "نتائج"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_1
+msgid ""
+"Results of the bottom-up survey and mitigation actions to face technical, "
+"organizational, structural and/or relational issues"
+msgstr ""
+"نتائج المسح والتخفيف من الإجراءات من أسفل إلى أعلى لمواجهة القضايا التقنية "
+"والتنظيمية والهيكلية و / أو علائقية "
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Schedule The Final Interview"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Search Appraisal"
+msgstr "البحث عن تقييم"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Select Appraisal Reviewer..."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_survey_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_self_survey_id
+msgid "Self Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Send Appraisal Form To"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_survey_sent_ids
+msgid "Sent Forms"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Significantly below standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"Significantly exceeds standards and expectations required of the position"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Start Appraisal and Send Forms"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_state
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_state
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Status"
+msgstr "الحاله "
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_3_1
+msgid "Subject"
+msgstr "الموضوع"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_3_2
+msgid "Supervisors only"
+msgstr "المشرفين فقط"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_survey_user_input
+msgid "Survey User Input"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_4
+msgid ""
+"Taking everything into account, how satisfied are you with your current job?"
+msgstr "أخذ كل شيء في الاعتبار، ما مدى رضاك ​​عن عملك الحالي؟"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_4
+msgid ""
+"Team spirit: ability to work efficiently with peers, manage the conflicts "
+"with diplomacy"
+msgstr ""
+"روح الفريق: القدرة على العمل بكفاءة مع الأقران، إدارة الغختلافات بدبلوماسية"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_10
+msgid "Technical skills regarding to the job requirements"
+msgstr "المهارات التقنية المتعلقة بمتطلبات الوظيفة"
+
+#. module: hr_appraisal
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_4
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_5
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_3_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_3_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_5_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_1_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_1_2
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_2
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_3
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_4
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_5
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_6
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_7
+msgid "The answer you entered has an invalid format."
+msgstr "الجواب الذي أدخلته يحتوي على تنسيق غير صالح."
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"The appraiser should rate the employee's major work accomplishments and "
+"performance according to the metric provided below"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+msgid ""
+"The appraiser should rate the employee’s major work accomplishments and performance according to the metric provided\n"
+"below:"
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_employee.py:76
+#, python-format
+msgid "The date of the next appraisal cannot be in the past"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_employee_appraisal_date
+msgid ""
+"The date of the next appraisal is computed by the appraisal plan's dates "
+"(first appraisal + periodicity)."
+msgstr "تاريخ التقييم التالي يحسب بتاريخ خطة التقييم (أول تقييم + دورياً)"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The employee may choose to offer comments or explanation regarding the "
+"completed review."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The employee will be responsible for completing a draft of the Appraisal Form as a tool for self-appraisal and a starting\n"
+"point for the supervisor’s evaluation. The employee can add examples of achievements for each criterion.\n"
+"Once the form had been filled, the employee send it to his supervisor."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"The employees will send back their anonymous answers to Odoo. The data will "
+"be handled by the HR manager and a brief summary of the data will be sent to"
+" the concerned supervisor, to his team and to the supervisor's supervisor."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The supervisor send the form to the HR department in India and in Belgium"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The supervisor synthesizes and integrates all input into the completed appraisal. The motivation of the evaluation\n"
+"is explained in the ad hoc fields."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_color
+msgid "This color will be used in the kanban view."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_collaborators_appraisal
+msgid "This employee will be appraised by his collaborators"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_colleagues_appraisal
+msgid "This employee will be appraised by his colleagues"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_manager_appraisal
+msgid "This employee will be appraised by his managers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_employee_appraisal
+msgid "This employee will do a self-appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_4
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_5
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_3_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_3_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_5_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_1_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_1_2
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_2
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_3
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_4
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_5
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_6
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_7
+msgid "This question requires an answer."
+msgstr "هذا السؤال يحتاج إلى إجابة."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_15
+msgid "Time management: projects/tasks are completed on time"
+msgstr "إدارة الوقت: يتم الانتهاء من المشاريع/المهام في الوقت المحدد"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#, python-format
+msgid "To Start"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"To assist employees in their professional growth, through the identification of strengths and opportunities for\n"
+"development"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "To initiate a clear and open communication of performance expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_5_1
+msgid ""
+"Use the following space to make any comments regarding the above performance"
+" evaluation."
+msgstr "استخدام المساحة التالية لإجراء أية تعليقات بشأن تقييم الأداء أعلاه."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_2
+msgid ""
+"What I did several months ago is still of use to the company, the services "
+"or the products today"
+msgstr "ماذا فعلت قبل عدة أشهر لا يزال مفيد للشركة، الخدمات أو المنتجات اليوم"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_2
+msgid "Work Plan"
+msgstr "خطة عمل"
+
+#. module: hr_appraisal
+#: selection:hr.employee,appraisal_frequency_unit:0
+msgid "Year"
+msgstr "السنة"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:205
+#, python-format
+msgid "You cannot delete appraisal which is in '%s' state"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,help:hr_appraisal.open_view_hr_appraisal_tree
+msgid ""
+"You will be able to choose which forms will be sent (Employee,Managers,Collaborators or Colleagues),\n"
+"            to whom and the evaluation deadline. Once you have defined it,\n"
+"            change the stage to send it and view the results."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_collaborators_survey_id
+msgid "collaborate's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"

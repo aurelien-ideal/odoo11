@@ -1,0 +1,224 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_be_coda
+#
+# Translators:
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-07 14:56+0000\n"
+"PO-Revision-Date: 2015-09-22 09:49+0000\n"
+"Last-Translator: Yenthe Van Ginneken <yenthespam@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/odoo/odoo-9/language/nl/)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:133
+#, python-format
+msgid ""
+"\n"
+"Movement data records of type 2.%s are not supported "
+msgstr ""
+"\n"
+"Beweging van records met type 2.%s zijn niet ondersteund"
+
+#. module: l10n_be_coda
+#: model:ir.model,name:l10n_be_coda.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Bankafschrift"
+
+#. module: l10n_be_coda
+#: model:ir.actions.act_window,name:l10n_be_coda.action_account_bank_statement_line_coda
+msgid "Bank Statement Lines"
+msgstr "Bankafschriftregels"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Bank Transaction"
+msgstr "Bank transactie"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.account_bank_statement_import_coda
+msgid "Belgium Coded Statement of Account (.CODA)"
+msgstr "België gecodeerd bankafschrift (.CODA)"
+
+#. module: l10n_be_coda
+#: model:ir.model.fields,field_description:l10n_be_coda.field_account_bank_statement_coda_note
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_coda_form
+msgid "CODA Notes"
+msgstr "CODA notities"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_form
+msgid "CODA Statement Line"
+msgstr "CODA afschriften"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:38
+#, python-format
+msgid "CODA V%s statements are not supported, please contact your bank"
+msgstr ""
+"CODA V%s afschriften zijn niet ondersteund, gelieve uw bank te contacteren."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:149
+#, python-format
+msgid ""
+"CODA parsing error on information data record 3.2, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"CODA valideer fout op informatie van record 3.2, seq nr %s.\n"
+"Rapporteer aub dit probleem via uw Odoo ondersteuningskanaal."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:153
+#, python-format
+msgid ""
+"CODA parsing error on information data record 3.3, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"CODA parse fout op informatie van data item 3.3, seq nr %s.\n"
+"Rapporteer dit probleem aub via het Odoo ondersteuningskanaal."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:110
+#, python-format
+msgid ""
+"CODA parsing error on movement data record 2.2, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"CODA parse fout op beweging van record 2.2, seq nr %s.\n"
+"Rapporteer dit probleem via je Odoo ondersteuningskanaal aub."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:116
+#, python-format
+msgid ""
+"CODA parsing error on movement data record 2.3, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"CODA parse fout op beweging gegevens van record 2.3, seq nr %s.\n"
+"Rapporteer aub dit probleem via uw Odoo ondersteuningskanaal."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:213
+#, python-format
+msgid "Communication"
+msgstr "Kenmerk"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:193
+#, python-format
+msgid "Counter Party"
+msgstr "Tegenpartij"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:203
+#, python-format
+msgid "Counter Party Account"
+msgstr "Tegenpartij rekening"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:208
+#, python-format
+msgid "Counter Party Address"
+msgstr "Tegenpartij adres"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Credit"
+msgstr "Credit"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Credit Transactions."
+msgstr "Afboekingen"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Debit"
+msgstr "Debet"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Debit Transactions."
+msgstr "Bijboekingen"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:38
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:53
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:58
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:60
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:110
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:116
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:133
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:149
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:153
+#, python-format
+msgid "Error"
+msgstr "Fout"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Extended Filters..."
+msgstr "Uitgebreide filters..."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:53
+#, python-format
+msgid "Foreign bank accounts with BBAN structure are not supported "
+msgstr ""
+"Buitenlandse bankrekeningen met een BBAN structuur worden niet ondersteund."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:58
+#, python-format
+msgid "Foreign bank accounts with IBAN structure are not supported "
+msgstr "Buitenlandse bankaccounts met IBAN structuur zijn niet ondersteund."
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Group By"
+msgstr "Groeperen op"
+
+#. module: l10n_be_coda
+#: model:ir.model,name:l10n_be_coda.model_account_bank_statement_import
+msgid "Import Bank Statement"
+msgstr "Importeer bankafschriften"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_form
+msgid "Notes"
+msgstr "Notities"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Partner"
+msgstr "Relatie"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Search Bank Transactions"
+msgstr "Zoeken in banktransacties"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Statement"
+msgstr "Bankafschrift"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_account_bank_statement_line_coda_tree
+msgid "Statement lines"
+msgstr "Mutatieregels"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:60
+#, python-format
+msgid "Unsupported bank account structure "
+msgstr "Niet ondersteunde bankaccount structuur"

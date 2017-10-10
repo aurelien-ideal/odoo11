@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="account_sepa_direct_debit_generate_xml_form">
+            <field name="name">sdd.generate.xml.wizard.form</field>
+            <field name="model">sdd.generate.xml.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Pay with mandate">
+                    <sheet>
+                        <group>
+                            <field name="required_collection_date"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string="Generate XML" name="validate_btn" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="account_sepa_direct_debit_download_xml_form">
+            <field name="name">sdd.download.xml.wizard.form</field>
+            <field name="model">sdd.download.xml.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Download SEPA Direct Debit XML">
+                    <sheet>
+                        <h2 attrs="{'invisible':[('payment_ids', '=', [])]}">
+                            Generated file (click to download):
+                            <field name="xml_filename" invisible="1"/>
+                            <field name="xml_file" readonly="1" filename="xml_filename"/>
+                        </h2>
+
+                        <h2 attrs="{'invisible':[('payment_ids', '!=', [])]}">
+                            Unable to generate any data for the selected payments.
+                        </h2>
+
+                        <div attrs="{'invisible':[('payments_in_exception', '=', [])]}">
+                            <h1>Payments in exception</h1>
+
+                            <p>
+                            The following payments could not be translated to
+                            SEPA Direct Debit XML. Either they do not belong to the company you
+                            are currently connected on, they are not related to
+                            any mandate, they have already been collected in a
+                            previously generated file or the bank encoded of their
+                            customer account does not have any BIC number defined.
+                            </p>
+
+                            <field name="payments_in_exception" readonly="1"/>
+                        </div>
+
+                        <div attrs="{'invisible':[('payment_ids', '=', [])]}">
+                            <h1>Payments in this file</h1>
+
+                            <field name="payment_ids" readonly="1" context="{'tree_view_ref':'account_sepa_direct_debit.sdd_account_payment_with_mandates_tree'}"/>
+                        </div>
+                    </sheet>
+                    <footer>
+                        <button string="Close" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

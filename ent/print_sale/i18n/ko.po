@@ -1,0 +1,241 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_sale
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 11:35+0000\n"
+"PO-Revision-Date: 2016-01-25 08:56+0000\n"
+"Last-Translator: Martin Trigaux\n"
+"Language-Team: Korean (http://www.transifex.com/odoo/odoo-9/language/ko/)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<b> Credit error :</b> Your Provider Credit account is negative. Please "
+"refill your provider account to send documents."
+msgstr ""
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<span class=\"oe_form_field oe_inline\"><b>Bad Postal Address :</b> At least "
+"one of the document you want to send has not a correct postal address.</span>"
+msgstr ""
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Black & White"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Cancel"
+msgstr "취소"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Colour"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_uid
+msgid "Created by"
+msgstr "작성자"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_date
+msgid "Created on"
+msgstr "작성일"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_currency_id
+msgid "Currency"
+msgstr "유통"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_display_name
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_display_name
+msgid "Display Name"
+msgstr "표시 이름"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ir_attachment_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Documents"
+msgstr "문서"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_environment
+msgid "Environment"
+msgstr "환경"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_id
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ink
+msgid "Ink"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_is_sendable
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_is_sendable
+msgid "Is sendable"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard___last_update
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard___last_update
+msgid "Last Modified on"
+msgstr "최근 수정"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_uid
+msgid "Last Updated by"
+msgstr "최근 갱신한 사람"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_date
+msgid "Last Updated on"
+msgstr "최근 갱신 날짜"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_print_document_partner_line_wizard_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_line_wizard_view_tree
+msgid "Lines"
+msgstr "명세"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_paper_weight
+msgid "Paper Weight"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_print_document_partner_wizard_id
+msgid "Print Order Wizard"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_id
+msgid "Print Provider"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Printing details"
+msgstr ""
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Production"
+msgstr "생산"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_balance
+msgid "Provider Credit"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_partner_id
+msgid "Recipient partner"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Recipients"
+msgstr "받는 사람"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_sale_order
+msgid "Sales Order"
+msgstr "판매 주문"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send"
+msgstr "보내기"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_document_partner_action_multi
+msgid "Send Documents by post"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.sale_order_view_form_inherit_print_sale
+msgid "Send Letter"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_print_sale
+msgid "Send by Post"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_multi_print_sale
+msgid "Send by post"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send documents to partner Wizard"
+msgstr ""
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Test"
+msgstr "시험"
+
+#. module: print_sale
+#: code:addons/print_sale/models/sale_order.py:17
+#, python-format
+msgid ""
+"This sale order was sent by post with the provider %(provider_name)s at the "
+"following address.                     <br/><br/> %(partner_name)s <br/> "
+"%(partner_street)s <br/> %(partner_city)s "
+"%(partner_zip)s                     <br/>%(partner_country)sprovider_name<i>"
+"%s</i>"
+msgstr ""
+
+#. module: print_sale
+#: code:addons/print_sale/wizard/print_document_partner_wizard.py:73
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account."
+msgstr ""
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "or"
+msgstr "또는"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_line_wizard
+msgid "print.document.partner.line.wizard"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_wizard
+msgid "print.document.partner.wizard"
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_order_line_wizard
+msgid "print.order.line.wizard"
+msgstr ""

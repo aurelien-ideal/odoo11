@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="action_account_report_de_partner_vat_intra" model="ir.actions.client">
+            <field name="name">Partner VAT Intra</field>
+            <field name="tag">account_report</field>
+            <field name="context" eval="{'model': 'l10n.de.report.partner.vat.intra'}" />
+        </record>
+
+        <menuitem id="menu_action_account_report_de_partner_vat_intra" name="Partner VAT Intra" action="action_account_report_de_partner_vat_intra" parent="l10n_de.account_reports_de_statements_menu"/>
+</odoo>

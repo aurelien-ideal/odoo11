@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_batch_deposit
+#
+# Translators:
+# Aleksandar Vangelovski <aleksandarv@hbee.eu>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 11:34+0000\n"
+"PO-Revision-Date: 2015-11-02 12:04+0000\n"
+"Last-Translator: Aleksandar Vangelovski <aleksandarv@hbee.eu>\n"
+"Language-Team: Macedonian (http://www.transifex.com/odoo/odoo-9/language/"
+"mk/)\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/account_payment.py:40
+#, python-format
+msgid ""
+"All payments to print as a deposit slip must belong to the same journal."
+msgstr ""
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_amount
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+msgid "Amount"
+msgstr "Износ"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,help:account_batch_deposit.field_account_journal_batch_deposit_sequence_id
+msgid "Automatically generates references for batch deposits."
+msgstr ""
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_journal_id
+msgid "Bank"
+msgstr "Банка"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Bank Journal"
+msgstr "Банкарски дневник"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Банкарски извод"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Ставка од Банкарски извод"
+
+#. module: account_batch_deposit
+#: model:ir.actions.act_window,name:account_batch_deposit.action_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_batch_deposit
+#: model:ir.ui.menu,name:account_batch_deposit.menu_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.account_journal_dashboard_kanban_view_inherited
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Batch Deposit"
+msgstr "Групен депозит"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_journal_batch_deposit_sequence_id
+msgid "Batch Deposit Sequence"
+msgstr "Секвенца на групен депозит"
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/account_journal.py:41
+#, python-format
+msgid "Batch Deposits Sequence"
+msgstr "Секвенца на групни депозити"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_payment_batch_deposit_id
+msgid "Batch deposit id"
+msgstr "ИБ на групен депозит"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_journal_batch_deposit_payment_method_selected
+msgid "Batch deposit payment method selected"
+msgstr "Избран плаќачки метод на групен депозит"
+
+#. module: account_batch_deposit
+#: model:ir.actions.act_window,help:account_batch_deposit.action_batch_deposit
+msgid ""
+"Batch deposits allows you to group received checks before you deposit them "
+"to the bank.\n"
+"                    The amount deposited to your bank will then appear as a "
+"single transaction on your bank statement.\n"
+"                    When you proceed with the reconciliation, simply select "
+"the corresponding batch deposit to reconcile the payments."
+msgstr ""
+"Групните депозити ви овозможуваат да ги групирате добиените уплатници пред "
+"да ги депозирате во банка.\n"
+"Износот депозиран во вашата банка тогаш ќе биде прикажан како единечна "
+"трансакција на вашиот извод од банка.\n"
+"Кога ќе продолжете со порамнувањето, едноставно одберете го соодветниот "
+"групен депозит за да се порамни со плаќањата."
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/account_journal_dashboard.py:13
+#: model:ir.actions.server,name:account_batch_deposit.action_account_create_batch_deposit
+#, python-format
+msgid "Create Batch Deposit"
+msgstr "Креирај групен депозит"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_create_uid
+msgid "Created by"
+msgstr "Креирано од"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_create_date
+msgid "Created on"
+msgstr "Креирано на"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_currency_id
+msgid "Currency id"
+msgstr "ИБ на валута"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Customer"
+msgstr "Купувач"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_date
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+msgid "Date"
+msgstr "Датум"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_display_name
+#: model:ir.model.fields,field_description:account_batch_deposit.field_report_account_batch_deposit_print_batch_deposit_display_name
+msgid "Display Name"
+msgstr "Прикажи име"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Group By"
+msgstr "Групирај по"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_id
+#: model:ir.model.fields,field_description:account_batch_deposit.field_report_account_batch_deposit_print_batch_deposit_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_batch_deposit
+#. openerp-web
+#: code:addons/account_batch_deposit/static/src/js/account_reconciliation_widgets.js:94
+#, python-format
+msgid "Incorrect Operation"
+msgstr "Неточна операција"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_journal
+msgid "Journal"
+msgstr "Дневник"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit___last_update
+#: model:ir.model.fields,field_description:account_batch_deposit.field_report_account_batch_deposit_print_batch_deposit___last_update
+msgid "Last Modified on"
+msgstr "Последна промена на"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_write_uid
+msgid "Last Updated by"
+msgstr "Последно ажурирање од"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_write_date
+msgid "Last Updated on"
+msgstr "Последно ажурирање на"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.print_batch_deposit
+msgid "Memo"
+msgstr "Мемо"
+
+#. module: account_batch_deposit
+#: selection:account.batch.deposit,state:0
+msgid "New"
+msgstr "Ново"
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_account_payment
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_payment_ids
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Payments"
+msgstr "Плаќања"
+
+#. module: account_batch_deposit
+#: code:addons/account_batch_deposit/account_payment.py:36
+#, python-format
+msgid ""
+"Payments to print as a deposit slip must have 'Batch Deposit' selected as "
+"payment method, not be part of an existing batch deposit and not have "
+"already been reconciled"
+msgstr ""
+"За да се испринтаат плаќања како депозит, мора да: се има \"Групен депозит\" "
+"селектирано како плаќачки метод, да не бидат дел од веќе постоечки групен "
+"депозит и да не бидат веќе порамнети."
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Print"
+msgstr "Печати"
+
+#. module: account_batch_deposit
+#: model:ir.actions.report.xml,name:account_batch_deposit.action_print_batch_deposit
+msgid "Print Batch Deposit"
+msgstr "Испечати групен депозит"
+
+#. module: account_batch_deposit
+#: model:ir.actions.server,name:account_batch_deposit.action_account_print_batch_deposit
+msgid "Print Batch Deposits"
+msgstr "Испечати групни депозити"
+
+#. module: account_batch_deposit
+#: selection:account.batch.deposit,state:0
+msgid "Printed"
+msgstr "Испечатено"
+
+#. module: account_batch_deposit
+#: selection:account.batch.deposit,state:0
+msgid "Reconciled"
+msgstr "Порамнето"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_name
+msgid "Reference"
+msgstr "Референца"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Register Payment"
+msgstr "Регистрирај плаќање"
+
+#. module: account_batch_deposit
+#. openerp-web
+#: code:addons/account_batch_deposit/static/src/xml/account_reconciliation.xml:8
+#, python-format
+msgid "Select a Batch Deposit"
+msgstr "Селектирај групен депозит"
+
+#. module: account_batch_deposit
+#. openerp-web
+#: code:addons/account_batch_deposit/static/src/js/account_reconciliation_widgets.js:91
+#, python-format
+msgid ""
+"Some journal items from the selected batch deposit are already selected in "
+"another reconciliation : "
+msgstr ""
+"Некои ставки во дневникот од селектираниот групен депозит, се веќе "
+"селектирани во друго порамнување :"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,field_description:account_batch_deposit.field_account_batch_deposit_state
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "State"
+msgstr "Држава"
+
+#. module: account_batch_deposit
+#: model:ir.model.fields,help:account_batch_deposit.field_account_journal_batch_deposit_payment_method_selected
+msgid ""
+"Technical feature used to know whether batch deposit was enabled as payment "
+"method."
+msgstr ""
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "Total"
+msgstr "Вкупно"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_search
+msgid "Unreconciled"
+msgstr "Непорамнето"
+
+#. module: account_batch_deposit
+#: model:ir.ui.view,arch_db:account_batch_deposit.view_batch_deposit_form
+msgid "auto ..."
+msgstr ""
+
+#. module: account_batch_deposit
+#: model:ir.model,name:account_batch_deposit.model_report_account_batch_deposit_print_batch_deposit
+msgid "report.account_batch_deposit.print_batch_deposit"
+msgstr ""

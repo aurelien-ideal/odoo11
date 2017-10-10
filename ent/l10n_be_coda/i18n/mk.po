@@ -1,0 +1,212 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_be_coda
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-07 14:56+0000\n"
+"PO-Revision-Date: 2015-11-03 12:43+0000\n"
+"Last-Translator: Martin Trigaux\n"
+"Language-Team: Macedonian (http://www.transifex.com/odoo/odoo-9/language/"
+"mk/)\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:133
+#, python-format
+msgid ""
+"\n"
+"Movement data records of type 2.%s are not supported "
+msgstr ""
+
+#. module: l10n_be_coda
+#: model:ir.model,name:l10n_be_coda.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Банкарски извод"
+
+#. module: l10n_be_coda
+#: model:ir.actions.act_window,name:l10n_be_coda.action_account_bank_statement_line_coda
+msgid "Bank Statement Lines"
+msgstr "Ставки на банкарски извод"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Bank Transaction"
+msgstr "Банкарска трансакција"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.account_bank_statement_import_coda
+msgid "Belgium Coded Statement of Account (.CODA)"
+msgstr ""
+
+#. module: l10n_be_coda
+#: model:ir.model.fields,field_description:l10n_be_coda.field_account_bank_statement_coda_note
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_coda_form
+msgid "CODA Notes"
+msgstr ""
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_form
+msgid "CODA Statement Line"
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:38
+#, python-format
+msgid "CODA V%s statements are not supported, please contact your bank"
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:149
+#, python-format
+msgid ""
+"CODA parsing error on information data record 3.2, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:153
+#, python-format
+msgid ""
+"CODA parsing error on information data record 3.3, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:110
+#, python-format
+msgid ""
+"CODA parsing error on movement data record 2.2, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:116
+#, python-format
+msgid ""
+"CODA parsing error on movement data record 2.3, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:213
+#, python-format
+msgid "Communication"
+msgstr "Комуникација"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:193
+#, python-format
+msgid "Counter Party"
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:203
+#, python-format
+msgid "Counter Party Account"
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:208
+#, python-format
+msgid "Counter Party Address"
+msgstr ""
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Credit"
+msgstr "Побарување"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Credit Transactions."
+msgstr "Трансакции на побарување."
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Debit"
+msgstr "Задолжување"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Debit Transactions."
+msgstr "Трансакции на задолжување"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:38
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:53
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:58
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:60
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:110
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:116
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:133
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:149
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:153
+#, python-format
+msgid "Error"
+msgstr "Грешка"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Extended Filters..."
+msgstr "Проширени филтри..."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:53
+#, python-format
+msgid "Foreign bank accounts with BBAN structure are not supported "
+msgstr ""
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:58
+#, python-format
+msgid "Foreign bank accounts with IBAN structure are not supported "
+msgstr ""
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Group By"
+msgstr "Групирај по"
+
+#. module: l10n_be_coda
+#: model:ir.model,name:l10n_be_coda.model_account_bank_statement_import
+msgid "Import Bank Statement"
+msgstr "Импортирај банкарски извод"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_form
+msgid "Notes"
+msgstr "Белешки"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Partner"
+msgstr "Партнер"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Search Bank Transactions"
+msgstr "Барај банкарски трансакции"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_filter
+msgid "Statement"
+msgstr "Извод"
+
+#. module: l10n_be_coda
+#: model:ir.ui.view,arch_db:l10n_be_coda.view_account_bank_statement_line_coda_tree
+msgid "Statement lines"
+msgstr "Ставки на извод"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_coda_import.py:60
+#, python-format
+msgid "Unsupported bank account structure "
+msgstr ""

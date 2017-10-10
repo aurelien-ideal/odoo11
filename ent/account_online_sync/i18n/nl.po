@@ -1,0 +1,480 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_online_sync
+# 
+# Translators:
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
+# Cas Vissers <casvissers@brahoo.nl>, 2017
+# Xavier Symons <xsy@openerp.com>, 2017
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Stephan Van Dyck <stephan.vandyck@vanroey.be>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Stephan Van Dyck <stephan.vandyck@vanroey.be>, 2017\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"<i class=\"fa fa-plus-circle\" aria-hidden=\"true\"/> <span> Add a new bank "
+"to the system</span>"
+msgstr ""
+"<i class=\"fa fa-plus-circle\" aria-hidden=\"true\"/> <span> Voeg een nieuwe"
+" bank aan het systeem toe</span>"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"<strong>Well done!</strong>\n"
+"                  Your banking institution is now synchronized with Odoo and a total of"
+msgstr ""
+"<strong>Goed gedaan!</strong>\n"
+"Uw bank is nu gekoppeld aan Odoo en een totaal van"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_account_number
+msgid "Account Number"
+msgstr "Rekeningnummer"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_account_online_journal_ids
+msgid "Account Online Journal"
+msgstr "Rekening online dagboek"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_account_online_provider_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_account_online_provider_id
+msgid "Account Online Provider"
+msgstr "Bankrekening online provider"
+
+#. module: account_online_sync
+#: model:ir.actions.server,name:account_online_sync.online_sync_cron_ir_actions_server
+#: model:ir.cron,cron_name:account_online_sync.online_sync_cron
+#: model:ir.cron,name:account_online_sync.online_sync_cron
+msgid "Account: Journal online sync"
+msgstr "Rekening: Dagboek online sync"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_action_required
+msgid "Action Required"
+msgstr "Actie vereist"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Additional information"
+msgstr "Aanvullende informatie"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:59
+#, python-format
+msgid "An error occurred during online synchronization"
+msgstr "Een fout is opgetreden tijdens de online synchronisatie"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Associate to journal"
+msgstr "Koppel aan dagboek"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_balance
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Bank Accounts"
+msgstr "Bankrekeningen"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Bankafschrift"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Bankafschriftregel"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,help:account_online_sync.action_online_provider_account
+msgid "Click to add an online bank to the system."
+msgstr "Klik om een online bank toe te voegen aan het systeem."
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Close"
+msgstr "Sluiten"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_status_code
+msgid "Code to identify problem"
+msgstr "Code om probleem te identificeren"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_company_id
+msgid "Company"
+msgstr "Bedrijf"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_bank_journal_form_inherit_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Configure"
+msgstr "Configureren"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_count_account_online_journal
+msgid "Count Account Online Journal"
+msgstr "Tel rekening online dagboek"
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create bi-monthly statements"
+msgstr "Maak één afschrift per twee maanden"
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create daily statements"
+msgstr "Maak dagelijks een afschrift"
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create monthly statements"
+msgstr "Maak maandelijks een afschrift"
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create one statement per synchronization"
+msgstr "Maak een afschrift per synchronisatie"
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create weekly statements"
+msgstr "Maak elke week een afschrift"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_bank_statement_creation
+msgid "Creation of bank statement"
+msgstr "Aanmaak van bank afschrift"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_sync_date
+msgid "Fetch transaction from"
+msgstr "Haal transacties op van"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_provider_identifier
+msgid ""
+"ID of the banking institution in third party server used for debugging "
+"purpose"
+msgstr "ID van de bank op de externe server gebruikt voor debug mogelijkheden"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_provider_account_identifier
+msgid "ID used to identify provider account in third party server"
+msgstr "ID gebruikt om provider account te identificeren op de externe server"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_journal
+msgid "Interface for online account journal"
+msgstr "Interface voor online rekening dagboek"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_journal
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_journal_ids
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_journal_id
+msgid "Journal"
+msgstr "Dagboek"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_last_refresh
+msgid "Last Refresh"
+msgstr "Laatste vernieuwing"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_last_sync
+msgid "Last synchronization"
+msgstr "Laatste synchronisatie"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Manual Refresh"
+msgstr "Handmatig verversen"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_message
+msgid "Message"
+msgstr "Bericht"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_provider_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_name
+msgid "Name"
+msgstr "Naam"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Next sync:"
+msgstr "Volgende sync:"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_next_synchronization
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_next_refresh
+msgid "Next synchronization"
+msgstr "Volgende synchronisatie"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_number_added
+msgid "Number Added"
+msgstr "Nummer toegevoegd"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_account_online_journal_id
+msgid "Online Account"
+msgstr "Online rekening"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line_online_identifier
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_online_identifier
+msgid "Online Identifier"
+msgstr "Online identifier"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,name:account_online_sync.action_online_provider_account
+msgid "Online Provider Account"
+msgstr "Online provider rekening"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Online Sync configuration"
+msgstr "Online synchronisatie configuratie"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,name:account_online_sync.action_account_online_wizard_form
+#: model:ir.ui.menu,name:account_online_sync.menu_action_online_provider_account
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Online Synchronization"
+msgstr "Online synchronisatie"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_account_online_journal_id
+msgid "Online account"
+msgstr "Online account"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:269
+#, python-format
+msgid "Opening statement: first synchronization"
+msgstr "Initieel afschrift: eerste synchronisatie"
+
+#. module: account_online_sync
+#: selection:account.online.provider,provider_type:0
+msgid "Plaid"
+msgstr "Plaid"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Problem during synchronization"
+msgstr "Problemen tijdens synchronisatie"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_account_identifier
+msgid "Provider Account Identifier"
+msgstr "Provider rekening identificatie"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_identifier
+msgid "Provider Identifier"
+msgstr "Provider identificatie"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_type
+msgid "Provider Type"
+msgstr "Type aanbieder"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_provider
+msgid "Provider for online account synchronization"
+msgstr "Provider for online rekening synchronisatie"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_status_code
+msgid "Status Code"
+msgstr "Status code"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_synchronization_status
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_status
+msgid "Synchronization status"
+msgstr "Synchronisatie status"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Synchronize now"
+msgstr "Synchroniseer nu"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_message
+msgid "Techhnical message from third party provider that can help debugging"
+msgstr "Technisch bericht van externe provider die kan helpen met debuggen"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:60
+#, python-format
+msgid "The following error happened during the synchronization: %s"
+msgstr "De volgende fout is opgetreden tijdens synchronisatie: %s"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_journal_bank_statement_creation
+msgid ""
+"This field is used for the online synchronization:\n"
+"                                                    depending on the option selected, newly fetched transactions\n"
+"                                                    will be put inside previous statement or in a new one"
+msgstr ""
+"Dit veld wordt gebruikt voor de online synchronisatie:\n"
+"gebaseerd op de geselecteerde optie, worden nieuw opgehaalde transacties\n"
+"in het vorige of een nieuw afschrift gezet"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_action_required
+msgid "True if user needs to take action by updating account"
+msgstr ""
+"Waar wanneer de gebruiker actie moet ondernemen door het bijwerken van "
+"rekening"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:127
+#, python-format
+msgid "Unimplemented"
+msgstr "Niet geïmplementeerd"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Update Credentials"
+msgstr "Bijwerken inloggegevens"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_journal_synchronization_status
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_status
+msgid "Update status of provider account"
+msgstr "Update status van provider rekening"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "View problem"
+msgstr "Weergave probleem"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_wizard
+msgid "Wizard for online account synchronization"
+msgstr "Wizard voor online rekening synchronisatie"
+
+#. module: account_online_sync
+#: selection:account.online.provider,provider_type:0
+msgid "Yodlee"
+msgstr "Yodlee"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_balance
+msgid "balance of the account sent by the third party provider"
+msgstr "balans van de rekening gestuurd door de externe provider"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"bank accounts have been retrieved.\n"
+"                  You can associate those bank accounts to a journal in order to automatically retrieve the latest statements from your bank."
+msgstr ""
+"bankrekening zijn opgehaald.\n"
+"U kunt deze bankrekening koppelen aan een dagboek om automatisch bankafschriften op te halen van uw bank."
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_online_identifier
+msgid "id use to identify account in provider system"
+msgstr "id gebruikt om uw rekening te identificeren in provider systeem"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_provider_name
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_name
+msgid "name of the banking institution"
+msgstr "naam van de bank"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_wizard_number_added
+msgid "number of accounts added from call to new_institution"
+msgstr "aantal rekeningen toevoegen uit call van nieuwe_institutie"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:315
+#, python-format
+msgid "online sync"
+msgstr "online sync"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_wizard_count_account_online_journal
+msgid ""
+"technical field used to hide account_online_journal_id if no institution has"
+" been loaded in the system"
+msgstr ""
+"technisch veld gebruikt om rekening_online_dagboek_id te verbergen wanneer "
+"geen bank is geladen in het systeem"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-extend="UserMenu.Actions">
+        <t t-jquery="li:last" t-operation="after">
+            <li>
+                <a href="#" class="hidden" data-menu="shortcut">Add to Home Screen</a>
+            </li>
+            <li>
+                <a href="#" class="hidden" data-menu="switch"> Switch/Add Account</a>
+            </li>
+        </t>
+    </t>
+
+</templates>

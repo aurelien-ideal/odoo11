@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+<template id="assets_backend" name="account_reports_followup_assets" inherit_id="web.assets_backend">
+    <xpath expr="." position="inside">
+        <script type="text/javascript" src="/account_reports_followup/static/src/js/account_reports_followup.js"></script>
+    </xpath>
+</template>
+<template id='template_followup_report' inherit_id='account_reports.template_followup_report'>
+    <xpath expr="//div[hasclass('alert','alert-warning','o_account_reports_followup-no-action')]" position='attributes'>
+        <attribute name='t-if'>partner != False and partner.id not in partner.get_partners_in_need_of_action_and_update().keys() and context.get('print_mode') != True</attribute>
+    </xpath>
+        <xpath expr="//h2" position='inside'>
+            <div class='pull-right' t-if="context.get('print_mode') != True and report.get('followup_line')"><small><t t-esc="report['followup_line'].name"/></small></div>
+        </xpath>
+        <xpath expr="//span[@id='action-buttons']" position='replace'>
+            <t t-if="report.get('followup_line')">
+                <span t-if='context.get("print_mode") != True' id='action-buttons' class='o_account_reports_followup_not_clicked no_print'>
+                    <button t-att-class="'btn followup-letter ' + (report['followup_line'].send_letter and 'btn-primary' or 'btn-info')" action="print_followup" t-att-data-partner="partner.id">Print Letter</button>
+                    <button t-att-class="'btn followup-email ' + (report['followup_line'].send_email and 'btn-primary' or 'btn-info')" t-att-data-partner="partner.id">Send by email</button>
+                    <button class="btn btn-default o_account_reports_followup-set-next-action" t-att-data-partner="partner.id">Log a Note</button>
+                    <button t-if="report['followup_line'].manual_action" class="btn btn-primary followup-action" t-att-data-partner="partner.id"><t t-esc="report['followup_line'].manual_action_note"/></button>
+                    <button class="btn btn-primary o_account_reports_followup_done" t-att-data-partner="partner.id">Done</button>
+                    <button t-if="options.get('type_followup', False) == 'action' and options.get('partners_to_show')" class="btn btn-default o_account_reports_followup_skip" t-att-data-id="partner.id">Do it Later</button>
+                </span>
+            </t>
+            <t t-if="not report.get('followup_line')">
+                <span t-if='context.get("print_mode") != True' id='action-buttons' class='o_account_reports_followup_not_clicked no_print'>
+                    <button class="btn btn-primary followup-letter" action="print_followup" t-att-data-partner="partner.id">Print Letter</button>
+                    <button class="btn btn-primary followup-email" t-att-data-partner="partner.id">Send by email</button>
+                    <button class="btn btn-default o_account_reports_followup-set-next-action" t-att-data-partner="partner.id">Log a Note</button>
+                    <button class="btn btn-primary o_account_reports_followup_done" t-att-data-partner="partner.id">Done</button>
+                    <button t-if="options.get('type_followup', False) == 'action' and options.get('partners_to_show')" class="btn btn-default o_account_reports_followup_skip" t-att-data-id="partner.id">Do it Later</button>
+                </span>
+            </t>
+        </xpath>
+</template>
+</data>
+</odoo>

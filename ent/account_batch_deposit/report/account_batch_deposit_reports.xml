@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report id="action_print_batch_deposit"
+        string="Print Batch Deposit"
+        model="account.batch.deposit"
+        name="account_batch_deposit.print_batch_deposit"
+        file="account_batch_deposit.print_batch_deposit"
+        report_type="qweb-pdf"
+        paperformat="base.paperformat_batch_deposit"/>
+</odoo>

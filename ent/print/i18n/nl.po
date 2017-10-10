@@ -1,0 +1,672 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print
+# 
+# Translators:
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Eric Geens <ericgeens@yahoo.com>, 2017
+# Cas Vissers <casvissers@brahoo.nl>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Cas Vissers <casvissers@brahoo.nl>, 2017\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: print
+#: model:mail.template,body_html:print.print_user_notify_failed_email_template
+msgid ""
+"\n"
+"                <body>\n"
+"                      <p>Dear ${object.partner_id.name},</p>\n"
+"\n"
+"                      <p>During the last process of \"Print and Send\" documents, some mistakes appear. Here is a list of the failed Print Order you authored.</p>\n"
+"                      <p>Please, some errors have been detected. You can find them in <i>Settings > Print Orders</i>.</p>\n"
+"\n"
+"                      % if ctx.get('print_errors'):\n"
+"                            <p>\n"
+"                            Print Order ID  |    Error Message <br/>\n"
+"                            -------------------------------------- <br/>\n"
+"                                  % for print_order_id, error_text in ctx.get('print_errors'):\n"
+"                                        ${print_order_id}    |    ${error_text} <br/>\n"
+"                                  % endfor\n"
+"                            </p>\n"
+"                      % endif\n"
+"                </body>\n"
+"              \n"
+"            "
+msgstr ""
+"\n"
+"<body>\n"
+"<p>Beste ${object.partner_id.name},</p>\n"
+"\n"
+"<p>Tijdens het laatste proces van *Afdrukken en Verzenden* documenten lijken er fouten opgetreden. Hier is een lijst van de mislukte printorders die u heeft goedgekeurd.</p>\n"
+"<p>U kan deze fouten vinden onder <i>Instellingen > Print orders</i>.</p>\n"
+"% if ctx.get('print_errors'):\n"
+"<p>\n"
+"Print Order ID | Error Message <br/>\n"
+"-------------------------------------- <br/>\n"
+"% for print_order_id, error_text in ctx.get('print_errors'):\n"
+"${print_order_id} | ${error_text} <br/>\n"
+"% endfor\n"
+"</p>\n"
+"% endif\n"
+"</body>"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid ""
+"<b> Credit error :</b> Your Provider Credit account is negative. Please "
+"refill your provider account to send documents."
+msgstr ""
+"<b> Krediet fout:</b> Het saldo op uw rekening is negatief. U dient uw "
+"rekening bij uw verstrekker aan te zuiveren vooraleer u terug documenten kan"
+" versturen."
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.view_print_provider_kanban
+msgid "<strong>Environment</strong>"
+msgstr "<strong>Omgeving</strong>"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.view_print_provider_kanban
+msgid "<strong>Name</strong>"
+msgstr "<strong>Naam</strong>"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.view_print_provider_kanban
+msgid "<strong>Provider</strong>"
+msgstr "<strong>Provider</strong>"
+
+#. module: print
+#: code:addons/print/wizard/print_order_wizard.py:70
+#, python-format
+msgid "At least one of the document you want to send contains a mistake."
+msgstr "Minstens één van de documenten die u wilt verzenden bevat een fout."
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_user_id
+msgid "Author"
+msgstr "Auteur"
+
+#. module: print
+#: selection:print.order,ink:0 selection:print.order.wizard,ink:0
+msgid "Black & White"
+msgstr "Zwart & wit"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid "Cancel"
+msgstr "Annuleer"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_city
+msgid "City"
+msgstr "Gemeente"
+
+#. module: print
+#: selection:print.order,ink:0 selection:print.order.wizard,ink:0
+msgid "Colour"
+msgstr "Kleur"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Compute price"
+msgstr "Bereken prijs"
+
+#. module: print
+#: model:ir.model,name:print.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_price
+msgid "Cost to Deliver"
+msgstr "Kost om te leveren"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_country_id
+msgid "Country"
+msgstr "Land"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_create_uid
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_create_uid
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_create_uid
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_create_uid
+#: model:ir.model.fields,field_description:print.field_print_provider_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_create_date
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_create_date
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_create_date
+#: model:ir.model.fields,field_description:print.field_print_provider_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_create_date
+msgid "Creation Date"
+msgstr "Aanmaakdatum"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_provider_balance
+msgid "Credit"
+msgstr "Credit"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_currency_id
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_provider_currency_id
+#: model:ir.model.fields,field_description:print.field_print_provider_currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_mixin_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_display_name
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_display_name
+#: model:ir.model.fields,field_description:print.field_print_provider_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_res_name
+msgid "Document"
+msgstr "Document"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Document Detail"
+msgstr "Document detail"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_res_sendable
+msgid "Document sensable"
+msgstr "Document sensable"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Draft"
+msgstr "Concept"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_provider_environment
+#: model:ir.model.fields,field_description:print.field_print_provider_environment
+msgid "Environment"
+msgstr "Omgeving"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_error_message
+msgid "Error"
+msgstr "Fout"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_error_message
+msgid "Error Message"
+msgstr "Foutmelding"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Failed"
+msgstr "Mislukt"
+
+#. module: print
+#: model:mail.template,subject:print.print_user_notify_failed_email_template
+msgid "Failed Print Orders"
+msgstr "Mislukte afgedrukte orders"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Group By..."
+msgstr "Groepeer op..."
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_mixin_id
+#: model:ir.model.fields,field_description:print.field_print_order_id
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_id
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_id
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_id
+#: model:ir.model.fields,field_description:print.field_print_provider_id
+msgid "ID"
+msgstr "ID"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_ink
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_ink
+msgid "Ink"
+msgstr "Inkt"
+
+#. module: print
+#: model:ir.model,name:print.model_account_invoice
+msgid "Invoice"
+msgstr "Factuur"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_res_partner_has_address
+#: model:ir.model.fields,field_description:print.field_res_users_has_address
+msgid "Is address valid"
+msgstr "Is adres valide"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_account_invoice_print_is_sendable
+#: model:ir.model.fields,field_description:print.field_print_mixin_print_is_sendable
+#: model:ir.model.fields,field_description:print.field_sale_order_print_is_sendable
+msgid "Is sendable"
+msgstr "Is verzendbaar"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_mixin___last_update
+#: model:ir.model.fields,field_description:print.field_print_order___last_update
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard___last_update
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard___last_update
+#: model:ir.model.fields,field_description:print.field_print_order_wizard___last_update
+#: model:ir.model.fields,field_description:print.field_print_provider___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_account_invoice_print_sent_date
+#: model:ir.model.fields,field_description:print.field_print_mixin_print_sent_date
+#: model:ir.model.fields,field_description:print.field_sale_order_print_sent_date
+msgid "Last Postal Sent Date"
+msgstr "Laatste verzenddatum per post"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_last_send_date
+msgid "Last Send Date"
+msgstr "Laatste verzenddatum"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_write_uid
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_write_uid
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_write_uid
+#: model:ir.model.fields,field_description:print.field_print_order_write_uid
+#: model:ir.model.fields,field_description:print.field_print_provider_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_write_date
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_write_date
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_write_date
+#: model:ir.model.fields,field_description:print.field_print_order_write_date
+#: model:ir.model.fields,field_description:print.field_print_provider_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_print_order_line_wizard_ids
+msgid "Lines"
+msgstr "Lijnen"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_res_model
+msgid "Model Name"
+msgstr "Modelnaam"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "My Print Orders"
+msgstr "Mijn afdrukorders"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_name
+#: model:ir.model.fields,field_description:print.field_print_provider_name
+msgid "Name"
+msgstr "Naam"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_nbr_pages
+msgid "Number of Pages"
+msgstr "Aantal pagina's"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_res_id
+msgid "Object ID"
+msgstr "Object ID"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Order Information"
+msgstr "Order informatie"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+msgid "Orders"
+msgstr "Orders"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Orders Failed"
+msgstr "Mislukte orders"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Orders Waiting"
+msgstr "Wachtende orders"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_attachment_id
+msgid "PDF"
+msgstr "PDF"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_paper_weight
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_paper_weight
+msgid "Paper Weight"
+msgstr "Papiergewicht"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Partner"
+msgstr "Relatie"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_partner_has_address
+msgid "Partner has an addess"
+msgstr "Relatie heeft een adres"
+
+#. module: print
+#: code:addons/print/wizard/print_order_wizard.py:71
+#, python-format
+msgid ""
+"Please check the document is in a correct state, and that its partner has a "
+"correct postal address."
+msgstr ""
+"Controleer aub of het document zich in de juiste status bevind en dat de "
+"relatie een juist adres heeft."
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Postal Order"
+msgstr "Post order"
+
+#. module: print
+#: model:ir.ui.menu,name:print.root_print_menu
+msgid "Postal Printings"
+msgstr "Post prints"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_provider_view_form
+#: model:ir.ui.view,arch_db:print.print_provider_view_tree
+msgid "Postal Provider"
+msgstr "Post aanbieder"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid "Postal Wizard Order"
+msgstr "Post wizard order"
+
+#. module: print
+#: model:ir.model,name:print.model_print_mixin
+msgid "Print Mixin (Printable Object)"
+msgstr "Afdruk Mixin (afdrukbaar object)"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order
+#: model:ir.model.fields,field_description:print.field_print_order_sendnow_wizard_print_order_ids
+msgid "Print Order"
+msgstr "Order afdrukken"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_line_wizard_view_tree
+msgid "Print Order Lines"
+msgstr "Orderregels afdrukken"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order_wizard
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_print_order_wizard_id
+msgid "Print Order Wizard"
+msgstr "Order afdruk wizard"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_action
+#: model:ir.ui.menu,name:print.print_order_menu
+#: model:ir.ui.view,arch_db:print.print_order_view_tree
+msgid "Print Orders"
+msgstr "Orders afdrukken"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_provider_action
+#: model:ir.model,name:print.model_print_provider
+#: model:ir.model.fields,field_description:print.field_print_order_provider_id
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_provider_id
+#: model:ir.ui.menu,name:print.print_provider_menu
+msgid "Print Provider"
+msgstr "Afdrukprovider"
+
+#. module: print
+#: model:ir.actions.server,name:print.ir_cron_print_scheduler_action_ir_actions_server
+#: model:ir.cron,cron_name:print.ir_cron_print_scheduler_action
+#: model:ir.cron,name:print.ir_cron_print_scheduler_action
+msgid "Print: queue manager"
+msgstr "Print: queue beheerder"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Printing Detail"
+msgstr "Afdrukdetails"
+
+#. module: print
+#: selection:print.provider,environment:0
+msgid "Production"
+msgstr "Productie"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_provider_provider
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Provider"
+msgstr "Provider"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_provider_balance
+msgid "Provider Credit"
+msgstr "Krediet bij dienstenverstrekker"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_provider_view_form
+msgid "Provider Information"
+msgstr "Leveranciersinformatie"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Ready"
+msgstr "Gereed"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Recipient Address"
+msgstr "Adres ontvanger"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_partner_id
+#: model:ir.model.fields,field_description:print.field_print_order_partner_id
+msgid "Recipient partner"
+msgstr "Ontvanger relatie"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_report_id
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_report_id
+msgid "Report"
+msgstr "Rapportage"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Reset to Draft"
+msgstr "Terugzetten naar concept"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_line_wizard_res_id
+msgid "Resource ID"
+msgstr "Resource ID"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_wizard_res_model
+msgid "Resource Model"
+msgstr "Resource model"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_wizard_view_form
+msgid "Send"
+msgstr "Verzenden"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_wizard_action_multi_print
+msgid "Send Invoices by post"
+msgstr "Verzend facturen via post"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.account_invoice_view_form_inherit_print
+msgid "Send Letter"
+msgstr "Verzend brief"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Send Now"
+msgstr "Nu verzenden"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_sendnow_wizard_view_form
+msgid "Send Now Postal Wizard Order"
+msgstr "Verzend nu via post wizard order"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_sendnow_action_multi
+msgid "Send Now by post"
+msgstr "Verzend nu via post"
+
+#. module: print
+#: model:ir.actions.act_window,name:print.print_order_wizard_action
+msgid "Send by Post"
+msgstr "Verzenden via post"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_sent_date
+msgid "Sending Date"
+msgstr "Verzenddatum"
+
+#. module: print
+#: selection:print.order,state:0
+msgid "Sent"
+msgstr "Verzonden"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_state_id
+msgid "State"
+msgstr "Staat / Provincie"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_state
+#: model:ir.ui.view,arch_db:print.print_order_view_search
+msgid "Status"
+msgstr "Status"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_street
+msgid "Street"
+msgstr "Straat"
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_street2
+msgid "Street2"
+msgstr "Straat2"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "Technical Informations"
+msgstr "Technische informatie"
+
+#. module: print
+#: selection:print.provider,environment:0
+msgid "Test"
+msgstr "Test"
+
+#. module: print
+#: model:ir.model.fields,help:print.field_print_order_wizard_provider_currency_id
+#: model:ir.model.fields,help:print.field_print_provider_currency_id
+msgid ""
+"The currency will be used for amount, balance account, print order price, "
+"..."
+msgstr ""
+"De valuta wordt gebruikt voor bedrag, balansrekening, print volgorde prijs, "
+"..."
+
+#. module: print
+#: code:addons/print/models/print_provider.py:226
+#, python-format
+msgid ""
+"The document has no associated PDF : you have to give select an Attachment "
+"file, or set up the Object ID and Model Name fields."
+msgstr ""
+"Dit document heeft geen gekoppelde PDF: U moet een bestand bijlage toevoegen"
+" of de velden object ID en model naam opzetten."
+
+#. module: print
+#: code:addons/print/models/print_provider.py:221
+#, python-format
+msgid ""
+"The document you want to print and send is not printable. There is no report"
+" action (ir.actions.report) for the model %s."
+msgstr ""
+"Het document dat u wilt afdrukken en verzenden is niet afdrukbaar. Er is "
+"geen rapport actie (ir.actions.report.xml) voor het model %s."
+
+#. module: print
+#: code:addons/print/wizard/print_order_wizard.py:68
+#, python-format
+msgid "The document you want to send contains a mistake."
+msgstr "Het document dat u wilt verzenden bevat een fout."
+
+#. module: print
+#: code:addons/print/models/account_invoice.py:26
+#, python-format
+msgid ""
+"This invoice was sent by post with the provider %(provider_name)s at the "
+"following address.                     <br/><br/> %(partner_name)s <br/> "
+"%(partner_street)s <br/> %(partner_city)s %(partner_zip)s"
+"                     <br/>%(partner_country)sprovider_name<i>%s</i>"
+msgstr ""
+"De factuur is verzonden via post met de aanbieder %(provider_name)s naar het"
+" volgende adres. <br/><br/> %(partner_name)s <br/> %(partner_street)s <br/> "
+"%(partner_city)s %(partner_zip)s "
+"<br/>%(partner_country)sprovider_name<i>%s</i>"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_provider_view_form
+msgid "Update"
+msgstr "Bijwerken"
+
+#. module: print
+#: model:ir.ui.view,arch_db:print.print_order_view_form
+msgid "When the error is resolved, please click on 'Reset to draft'."
+msgstr "Klik op 'Terugzetten naar concept' als de fout is opgelost aub."
+
+#. module: print
+#: model:ir.model.fields,field_description:print.field_print_order_partner_zip
+msgid "Zip"
+msgstr "Postcode"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order_line_wizard
+msgid "print.order.line.wizard"
+msgstr "print.order.line.wizard"
+
+#. module: print
+#: model:ir.model,name:print.model_print_order_sendnow_wizard
+msgid "print.order.sendnow.wizard"
+msgstr "print.order.sendnow.wizard"

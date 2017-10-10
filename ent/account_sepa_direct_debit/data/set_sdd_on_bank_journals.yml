@@ -1,0 +1,8 @@
+-
+  Adds SDD payment method to each existing bank journal.
+-
+  !python {model: account.journal, id: False}: |
+    all_bank_journals = self.search([('type','=','bank')])
+    sdd_payment_method = self.env.ref('account_sepa_direct_debit.payment_method_sdd')
+    for bank_journal in all_bank_journals:
+      bank_journal.write({'inbound_payment_method_ids':[(4, sdd_payment_method.id, 0)]})

@@ -1,0 +1,1394 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * hr_appraisal
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 12:08+0000\n"
+"PO-Revision-Date: 2016-01-13 15:44+0000\n"
+"Last-Translator: Martin Trigaux\n"
+"Language-Team: Mongolian (http://www.transifex.com/odoo/odoo-9/language/"
+"mn/)\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: hr_appraisal
+#: model:mail.template,body_html:hr_appraisal.send_appraisal_template
+msgid ""
+"\n"
+"                \n"
+"                <div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, "
+"Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
+"                    <p>Dear ${ctx.get('employee').name},</p>\n"
+"                    % if ctx.get('employee').id == object.employee_id.id:\n"
+"                        <p>Please fill out the following survey related to "
+"your appraisal.</p>\n"
+"                    % else:\n"
+"                        <p>Please fill out the following survey related to "
+"${object.employee_id.name}'s appraisal.</p>\n"
+"                    % endif\n"
+"                    <p><a href=\"__URL__\">Click here to access the survey.</"
+"a></p>\n"
+"                    <p>Post your response for the appraisal till : ${object."
+"date_close}</p>\n"
+"                    <p>Thank you for your participation.</p>\n"
+"                </div>\n"
+"                \n"
+"            "
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid ") Answers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid ") Sent Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "<strong><span>Final Interview: </span></strong>"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_1
+msgid "Ability to cope with multidisciplinarity of team"
+msgstr "Багийн олон талт сахилга батыг тэсвэрлэх чадвар"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_6
+msgid "Ability to follow and complete work as instructed"
+msgstr "Ажлын зааврын дагуу хийж гүйцэтгэх чадвар"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_5
+msgid "Ability to manage planning resources, risks, budgets and deadlines"
+msgstr "Нөөц, эрсдэл, төсөв, товлосон хугацааны төлөвлөлтийг удирдах чадвар"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_action_plan
+msgid "Action Plan"
+msgstr "Үйлдлийн төлөвлөгөө"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_1
+msgid ""
+"Actions by Executive management show genuine interest in the well-being of "
+"employees"
+msgstr "Ажилтны сайн сайхны төлөө менежментийн багийн зүгээс арга хэмжээнүүд"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_13
+msgid ""
+"Adaptability: Ability to adapt oneself to organizational changes while "
+"keeping efficiency"
+msgstr ""
+"Дасан зохицох чадвар: Оновчтой ажиллах байдлаа алдалгүйгээр байгууллагын "
+"өөрчлөлтөнд өөрийгөө дасгах чадвар"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_3
+msgid "Additional Comments"
+msgstr "Нэмэлт сэтгэгдлүүд"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_7
+msgid "Additional comments"
+msgstr "Нэмэлт сэтгэгдлүүд"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_11
+msgid "Analytical and synthetic mind"
+msgstr "Шинжлэх болон нэгтгэх сэтгэхүй"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_survey_completed_ids
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Answers"
+msgstr "Хариултууд"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.open_view_hr_appraisal_tree
+#: model:ir.actions.act_window,name:hr_appraisal.open_view_hr_appraisal_tree2
+#: model:ir.model.fields,field_description:hr_appraisal.field_survey_user_input_appraisal_id
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_root
+#: model:ir.ui.menu,name:hr_appraisal.menu_open_view_hr_appraisal_tree
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_tree
+msgid "Appraisal"
+msgstr "Үнэлэх"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.action_appraisal_report_all
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_graph
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_pivot
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Appraisal Analysis"
+msgstr "Үнэлгээний Шинжилгээ"
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_new
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_new
+msgid "Appraisal Created"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_date_close
+msgid "Appraisal Deadline"
+msgstr "Үнэлгээний Эцсийн Хугацаа"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Appraisal Form..."
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:117
+#, python-format
+msgid "Appraisal Meeting For %s"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.opinion_1
+msgid "Appraisal Process"
+msgstr "Үнэлгээний процесс"
+
+#. module: hr_appraisal
+#: model:mail.template,subject:hr_appraisal.send_appraisal_template
+msgid "Appraisal Regarding"
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_sent
+#, python-format
+msgid "Appraisal Sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_appraisal_report
+msgid "Appraisal Statistics"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_collaborators_ids
+msgid "Appraisal collaborators ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_colleagues_ids
+msgid "Appraisal colleagues ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_3
+msgid "Appraisal for Period"
+msgstr "Үнэлгээний мөчлөг"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_manager_ids
+msgid "Appraisal manager ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_sent
+msgid "Appraisal sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,name:hr_appraisal.hr_appraisal_action_from_department
+msgid "Appraisal to start"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_department_view_kanban
+msgid "Appraisal(s)"
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:160
+#, python-format
+msgid "Appraisal(s) form have been sent"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_count
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_department_view_kanban
+msgid "Appraisals"
+msgstr "Үнэлгээнүүд"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_department_appraisals_to_process_count
+msgid "Appraisals to Process"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_5
+msgid "Appraiser"
+msgstr "Үнэлэгч"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "At the conclusion of the appraisal time period"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "At the outset of the appraisal time period"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "At the supervisor's appraisal date"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Cancel"
+msgstr "Цуцлах"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#, python-format
+msgid "Cancelled"
+msgstr "Цуцлагдсан"
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,help:hr_appraisal.open_view_hr_appraisal_tree
+msgid "Click to create a new appraisal."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_appraisal
+msgid "Collaborator"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_survey_id
+msgid "Collaborator's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_collaborators
+msgid "Collaborators"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_collaborators_ids
+msgid "Collaborators ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_survey_id
+msgid "Colleague's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_colleagues
+msgid "Colleagues"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_colleagues_ids
+msgid "Colleagues ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_color
+msgid "Color Index"
+msgstr "Өнгөний Индекс"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_9
+msgid ""
+"Communication skills (written & verbally): clearness, concision, exactitude"
+msgstr "Харилцааны чадвар (бичгийн & ярианы): тодорхой, товч, яг таг"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_company_id
+msgid "Company"
+msgstr "Компани"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_3
+msgid ""
+"Compared to similar jobs in other companies where I could work, my total "
+"compensation..."
+msgstr ""
+"Миний ажиллаж чадах өөр компани дахь ижил ажлын цалинтай миний цалинг "
+"харьцуулбал..."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_3
+msgid ""
+"Compliance to internal rules and processes (timesheets completion, etc.)"
+msgstr "Дотоод дүрэм болон процесстой нийцэх байдал (цагийн хуудас бөглөх, гм)"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_4
+msgid "Continuous Improvement"
+msgstr "Тогтмол сайжруулалт"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_create_date
+msgid "Create Date"
+msgstr "Үүсгэх огноо"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_create_uid
+msgid "Created by"
+msgstr "Үүсгэгч"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_create_date
+msgid "Created on"
+msgstr "Үүсгэсэн"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Creation Month"
+msgstr "Үүсгэсэн сар"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_14
+msgid "Creativity and forward looking aptitude"
+msgstr "Бүтээлч болон урагш тэмүүлэх"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"Critical or key elements of performance and professional development needs "
+"(if any), should also be noted at this time"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_8
+msgid "Customer commitment"
+msgstr "Захиалагчид өгсөн амлалт"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_1_2
+msgid "Date"
+msgstr "Огноо"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_4
+msgid "Date of review"
+msgstr "Шүүмжийн огноо"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_deadline
+msgid "Deadline"
+msgstr "Дуусгах огноо"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Deadline:"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_7
+msgid "Decision making"
+msgstr "Шийдвэр гаргах"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_2
+msgid "Delegation: Ability to efficiently assign tasks to other people"
+msgstr "Ацаглах: Даалгавруудыг бусдад оновчтойгоор оноох чадвар"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Delete"
+msgstr "Устгах"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_1
+msgid "Demonstrates genuine concern for me as a person"
+msgstr "Хувь хүнийхээ хувьд үлгэр дууриалал үзүүлдэг"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_department
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_department_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_department_id
+msgid "Department"
+msgstr "Хэлтэс"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Did not meet standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_display_name
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_display_name
+msgid "Display Name"
+msgstr "Дэлгэцийн Нэр"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+#, python-format
+msgid "Done"
+msgstr "Дууссан"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Edit"
+msgstr "Засах"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_3
+msgid "Effectiveness"
+msgstr "Ашигт ажиллагаа"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_mail_template_id
+msgid "Email Template for Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_employee
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_employee_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_self
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Employee"
+msgstr "Ажилтан"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_hr_appraisal
+msgid "Employee Appraisal"
+msgstr "Ажилчны үнэлгээ"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_1
+#: model:survey.survey,title:hr_appraisal.appraisal_form
+msgid "Employee Appraisal Form"
+msgstr "Ажилтны Үнэлгээний Маягт"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_5
+msgid "Employee Comments"
+msgstr "Ажилтны сэтгэгдлүүд"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_employee
+msgid "Employee Name"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.survey,title:hr_appraisal.opinion_form
+msgid "Employee Opinion Form"
+msgstr "Ажилтны Саналын Маягт"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_3
+msgid "Employee Performance in Key Areas"
+msgstr "Түлхүүр хэсгүүд дахь Ажилтны Гүйцэтгэл"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_colleagues_survey_id
+msgid "Employee's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Employee's Name"
+msgstr "Ажилтны нэр"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_1
+msgid "Engagement"
+msgstr "Оролцоо"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_2
+msgid "Enthusiasm & implication toward projects/assignments"
+msgstr "Төсөл/үүрэг даалгаврыг урагш ахиулах эрмэлзэл, зүтгэл, оролдлого"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.opinion_2
+msgid "Evaluation"
+msgstr "Үнэлгээ"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_calendar_event
+msgid "Event"
+msgstr "Үйл явдал"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Exceeds standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Extended Filters..."
+msgstr "Өргөтгөсөн Шүүлтүүр..."
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Final Evaluation"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_date_final_interview
+msgid "Final Interview"
+msgstr "Төгсгөлийн ярилцлага"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Final Interview Date"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Group By"
+msgstr "Бүлэглэх"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Group by..."
+msgstr "Бүлэглэх..."
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"His direct reports will be invited through Odoo to express a feedback on "
+"their supervisor's leadership and to give their opinion about their own "
+"engagement and effectiveness, the continuous improvement and openness in "
+"action in thecompany..."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_1
+msgid "I am proud to tell others I work here"
+msgstr "Би бусдад энд ажилладагаа хэлэхдээ бахархалтай байдаг"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_5
+msgid ""
+"I am willing to put in a great deal of effort beyond what is expected to "
+"help my workgroup succeed"
+msgstr ""
+"Миний ажлын хэсгийн амжилтанд хувь нэмрээ оруулахаар хүлээлтээс хэтэрсэн их "
+"хэмжээний хүч хөдөлмөрөө оруулах хүсэл сонирхолтой байдаг"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_4
+msgid "I believe the information that I get from the person I report to."
+msgstr "Би тайлагнадаг хүнээсээ авдаг мэдээлэлдээ итгэдэг."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_2
+msgid ""
+"I consistently acquire new knowledge, skills or understanding through "
+"contact with my supervisor. He helps me growing my compete"
+msgstr ""
+"Би тогтмол шинэ мэдлэг, ур чадвар, ойлголтыг удирдагчтайгаа харилцахдаа олж "
+"авч байдаг. Тэр миний өсөлт, хөгжилтөнд туслаж өрсөлдөх чадварыг "
+"нэмэгдүүлдэг."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_2
+msgid "I have enough work"
+msgstr "Надад хангалттай ажил бий"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_2
+msgid ""
+"I have the same opportunity to succeed as others with similar experiences, "
+"performance and educational background"
+msgstr ""
+"Надтай ижил туршлага, гүйцэтгэл, боловсролын суурьтай хүмүүстэй ижил боломж "
+"надад бий"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_5_1
+msgid "I know the company's values and live them"
+msgstr "Компанийн үнэт зүйлийг би мэддэг, мөрддөг."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_3
+msgid ""
+"I mostly work on value-added tasks for the company, the products or the "
+"services"
+msgstr ""
+"Компанийн, бүтээгдэхүүний, үйлчилгээний нэмүү өртөгт ажлууд дээр би голдуу "
+"ажилладаг"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_6_4
+msgid "I understand the company strategy and how my workgroup supports it"
+msgstr ""
+"Би компанийн стратегийг ойлгодог, манай ажлын хэсэг яаж үүнийг дэмждэгийг "
+"мөн ойлгодог"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_3
+msgid ""
+"I would prefer to remain with this company even if a comparable job were "
+"available in another company"
+msgstr ""
+"Өөр компанид ижил төстэй ажил байсан ч би энэ компанидаа үлдэхийг илүүд үзнэ"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_3_1
+msgid "I'm efficient at work and my achievements are successful"
+msgstr ""
+"Би ажил дээрээ үр бүтээлтэй байдаг бөгөөд миний хүрэх үр дүн амжилттай байдаг"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_4
+msgid ""
+"Identify professional, performance, or project objectives you recommend for "
+"employee’s continued career development\n"
+"over the coming year."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_4
+#: model:survey.question,comments_message:hr_appraisal.appraisal_1_5
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_2_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_3_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_3_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_1
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_2
+#: model:survey.question,comments_message:hr_appraisal.appraisal_4_3
+#: model:survey.question,comments_message:hr_appraisal.appraisal_5_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_1_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_1_2
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_1
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_2
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_3
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_4
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_5
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_6
+#: model:survey.question,comments_message:hr_appraisal.opinion_2_7
+#, fuzzy
+msgid "If other, please specify:"
+msgstr "Хэрэв бусад бол тодорхой:"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_action_plan
+msgid ""
+"If the evaluation does not meet the expectations, you can propose an action "
+"plan"
+msgstr ""
+"Хэрэв үнэлгээ хүлээлтэнд хүрээгүй бол авах арга хэмжээний төлөвлөгөөг та "
+"санал болгож болно"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "In progress Evaluations"
+msgstr "Хийгдэж байгаа Дүгнэлтүүд"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_5
+msgid "Initiative and self autonomy"
+msgstr "Санаачлага болон бие даалт"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_final_interview
+msgid "Interview"
+msgstr "Ярилцлага"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"It is the joint responsibility of the employee and the supervisor "
+"(appraiser) to establish a feasible work plan for the\n"
+"coming year, including major employee responsibilities and corresponding "
+"benchmarks against which results will be\n"
+"evaluated."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"It is the primary responsibility of the supervisor to gather the necessary "
+"input from the appropriate sources of feedback\n"
+"(internal and/or external customers, peers). In case of collaboration with "
+"Odoo SA Belgium, the supervisor must\n"
+"receive completed evaluation form from the employee's Belgian project "
+"manager."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal___last_update
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report___last_update
+msgid "Last Modified on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_write_uid
+msgid "Last Updated by"
+msgstr "Сүүлийн засвар хийсэн"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_write_date
+msgid "Last Updated on"
+msgstr "Сүүлийн засвар хийсэн огноо"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_2
+msgid "Leadership"
+msgstr "Манлайлал"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_3
+msgid ""
+"Leadership: create a challenging and motivating work environment aligned "
+"with the company's strategy"
+msgstr ""
+"Манлайлал: компаний стратегитай нийцсэн сорилттой бөгөөд өдөөлттэй ажлын "
+"орчинг үүсгэх"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_4
+msgid "Leadership: sustain subordinates in their professional growth"
+msgstr "Манлайлал: мэргэжлийн хөгжилд нь тогтвортой зохицуулалт"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_2_3
+msgid ""
+"Listens and takes into account all ideas and do his best to put in place the "
+"best of these"
+msgstr ""
+"Бүх санааг сонсож анхааралдаа авдаг бөгөөд үүний шилдгийг хэрэгжүүлэхээр "
+"чадах бүхнээ хийдэг"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_appraisal
+msgid "Manager"
+msgstr "Менежер"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_ids
+msgid "Manager ids"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_manager_survey_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_manager_survey_id
+msgid "Manager's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_by_manager
+msgid "Managers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Meet standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_meeting_id
+msgid "Meeting"
+msgstr "Уулзалт"
+
+#. module: hr_appraisal
+#: model:mail.message.subtype,description:hr_appraisal.mt_appraisal_meeting
+#: model:mail.message.subtype,name:hr_appraisal.mt_appraisal_meeting
+msgid "Meeting Scheduled"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_6
+msgid "Miscellaneous"
+msgstr "Олон төрлийн"
+
+#. module: hr_appraisal
+#: selection:hr.employee,appraisal_frequency_unit:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Month"
+msgstr "Сар"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_5_2
+msgid ""
+"My best achievements have been communicated to the community, internally or "
+"to customers"
+msgstr ""
+"Миний хамгийн сайн хүрсэн үр дүн коммюнити болон дотоод гадаад захиалагчдад "
+"дамжуулагдан хүрсэн."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_2
+msgid "My job provides me with a sense of personal accomplishment"
+msgstr "Миний ажил хувийн амжилтын утгыг өгдөг."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_1
+msgid ""
+"My work contributes towards the continuous improvement of the company, our "
+"services or products"
+msgstr ""
+"Миний ажил компанийн, бүтээгдэхүү үйлчилгээний сайжруулалтад тогтмол хувь "
+"нэмэр болдог."
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_tree
+#: model:survey.question,question:hr_appraisal.appraisal_1_1
+msgid "Name"
+msgstr "Нэр"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_1_1
+msgid "Name of your direct supervisor"
+msgstr "Шууд удирдлагын нэр"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_date
+msgid "Next Appraisal Date"
+msgstr "Дараагийн Үнэлгээний Огноо"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_count_completed_survey
+msgid "Number of Answers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_count_sent_survey
+msgid "Number of Sent Forms"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_1
+msgid "Objectives"
+msgstr "Зорилтууд"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.opinion_2_5
+msgid "Openness"
+msgstr "Нээлттэй байдал"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_4
+msgid ""
+"Our workgroup identifies and reduces waste of time in our activities and "
+"processes"
+msgstr ""
+"Манай ажлын бүлэг үйл ажиллагааны болон процессийн үргүй цагийг илрүүлж "
+"багасгаж байдаг"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "Overall Purpose Of Employee Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_3
+msgid ""
+"Overall, I believe the quality of products and/or services my workgroup "
+"delivers is improving"
+msgstr ""
+"Эцсийн эцэст бүтээгдэхүүний чанар, үйлчилгээний чанарт итгэдэг бөгөөд манай "
+"ажлын хэсэг сайжруулалт хийдэг гэдэгт итгэдэг."
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_periodic_appraisal
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_configuration
+msgid "Periodic Appraisal"
+msgstr "Тогтмол хугацааны үнэлгээ"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_periodic_appraisal_created
+msgid "Periodic Appraisal has been created"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Periodicity"
+msgstr "Тогтмол хугацаат"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_2
+msgid "Personal Performance Objectives"
+msgstr "Хувийн Гүйцэтгэлийн зорилт"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Plan"
+msgstr "Төлөвлөгөө"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_1_2
+msgid "Position Title"
+msgstr "Ажлын байрны нэр"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_1
+msgid "Professional Development Objectives"
+msgstr "Мэргэжлийн хөгжлийн зорилт"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_4
+msgid "Professional Development and Performance Plan"
+msgstr "Мэргэжлийн хөгжил болон гүйцэтгэлийн төлөвлөгөө"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_4_3
+msgid "Project Objectives"
+msgstr "Төслийн зорилт"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_12
+msgid "Promptness and attendance record"
+msgstr "Оролцоо, ирцийн бичлэг"
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_related_partner_id
+msgid "Related partner id"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_frequency
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_frequency_unit
+msgid "Repeat Every"
+msgstr "Тутамд давтах"
+
+#. module: hr_appraisal
+#: model:ir.ui.menu,name:hr_appraisal.menu_hr_appraisal_report
+msgid "Reports"
+msgstr "Тайлан"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_2_2
+msgid "Results"
+msgstr "Үр дүн"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_2_1
+msgid ""
+"Results of the bottom-up survey and mitigation actions to face technical, "
+"organizational, structural and/or relational issues"
+msgstr ""
+"Доороос дээш судалгааний үр дүн болон технкийн, байгууллагын, бүтэцийн, "
+"харилцааны асуудлуудыг залруулах арга хэмжээнүүд"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "Schedule The Final Interview"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_search
+msgid "Search Appraisal"
+msgstr "Үнэлгээг Хайх"
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Select Appraisal Reviewer..."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_employee_survey_id
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_self_survey_id
+msgid "Self Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_employee_view_form
+msgid "Send Appraisal Form To"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_survey_sent_ids
+msgid "Sent Forms"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid "Significantly below standards and expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"Significantly exceeds standards and expectations required of the position"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.view_hr_appraisal_form
+msgid "Start Appraisal and Send Forms"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_report_state
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_appraisal_state
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+msgid "Status"
+msgstr "Төлөв"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_3_1
+msgid "Subject"
+msgstr "Сэдэв"
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_3_2
+msgid "Supervisors only"
+msgstr "Зөвхөн удирдагчид"
+
+#. module: hr_appraisal
+#: model:ir.model,name:hr_appraisal.model_survey_user_input
+msgid "Survey User Input"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_1_4
+msgid ""
+"Taking everything into account, how satisfied are you with your current job?"
+msgstr ""
+"Бүх зүйлийг анхааралдаа авч одоогийн ажилдаа хэр сэтгэл ханамжтай байна вэ?"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_4
+msgid ""
+"Team spirit: ability to work efficiently with peers, manage the conflicts "
+"with diplomacy"
+msgstr ""
+"Багийн сэтгэл: хамтран ажиллагстайгаа үр бүтээлтэй ажиллаж зөрчлийг дипломат "
+"аргаар шийдвэрлэдэг"
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_10
+msgid "Technical skills regarding to the job requirements"
+msgstr "Ажлын шаардлагад холбогдох техникийн ур чадвар"
+
+#. module: hr_appraisal
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_4
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_1_5
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_2_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_3_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_3_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_1
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_2
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_4_3
+#: model:survey.question,validation_error_msg:hr_appraisal.appraisal_5_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_1_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_1_2
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_1
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_2
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_3
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_4
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_5
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_6
+#: model:survey.question,validation_error_msg:hr_appraisal.opinion_2_7
+msgid "The answer you entered has an invalid format."
+msgstr "Таны оруулсан хариулт буруу форматтай байна."
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:192
+#, python-format
+msgid ""
+"The appraisal deadline must be in the future to allow employees to answer "
+"the survey."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"The appraiser should rate the employee's major work accomplishments and "
+"performance according to the metric provided below"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_3
+msgid ""
+"The appraiser should rate the employee’s major work accomplishments and "
+"performance according to the metric provided\n"
+"below:"
+msgstr ""
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_employee.py:76
+#, python-format
+msgid "The date of the next appraisal cannot be in the past"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_employee_appraisal_date
+msgid ""
+"The date of the next appraisal is computed by the appraisal plan's dates "
+"(first appraisal + periodicity)."
+msgstr ""
+"Үнэлгээний төлөвлөгөөний огноогоор тооцоологдсон дараагийн үнэлгээний огноо "
+"(анхны үнэлгээ + тогмол хугацаа)"
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The employee may choose to offer comments or explanation regarding the "
+"completed review."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The employee will be responsible for completing a draft of the Appraisal "
+"Form as a tool for self-appraisal and a starting\n"
+"point for the supervisor’s evaluation. The employee can add examples of "
+"achievements for each criterion.\n"
+"Once the form had been filled, the employee send it to his supervisor."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.opinion_1
+msgid ""
+"The employees will send back their anonymous answers to Odoo. The data will "
+"be handled by the HR manager and a brief summary of the data will be sent to "
+"the concerned supervisor, to his team and to the supervisor's supervisor."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The supervisor send the form to the HR department in India and in Belgium"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"The supervisor synthesizes and integrates all input into the completed "
+"appraisal. The motivation of the evaluation\n"
+"is explained in the ad hoc fields."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_color
+msgid "This color will be used in the kanban view."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_collaborators_appraisal
+msgid "This employee will be appraised by his collaborators"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_colleagues_appraisal
+msgid "This employee will be appraised by his colleagues"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_manager_appraisal
+msgid "This employee will be appraised by his managers"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,help:hr_appraisal.field_hr_appraisal_employee_appraisal
+msgid "This employee will do a self-appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_4
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_1_5
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_2_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_3_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_3_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_1
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_2
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_4_3
+#: model:survey.question,constr_error_msg:hr_appraisal.appraisal_5_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_1_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_1_2
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_1
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_2
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_3
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_4
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_5
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_6
+#: model:survey.question,constr_error_msg:hr_appraisal.opinion_2_7
+msgid "This question requires an answer."
+msgstr "Энэ асуултанд хариулт заавал шаардлагатай."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.arow_3_1_15
+msgid "Time management: projects/tasks are completed on time"
+msgstr "Цагийн зохион байгуулалт: төсөл/даалгавруудыг хугацаандаа дуусгадаг"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:212
+#: selection:hr.appraisal,state:0 selection:hr.appraisal.report,state:0
+#: model:ir.ui.view,arch_db:hr_appraisal.view_appraisal_report_search
+#, python-format
+msgid "To Start"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid ""
+"To assist employees in their professional growth, through the identification "
+"of strengths and opportunities for\n"
+"development"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.page,description:hr_appraisal.appraisal_1
+msgid "To initiate a clear and open communication of performance expectations"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:survey.question,question:hr_appraisal.appraisal_5_1
+msgid ""
+"Use the following space to make any comments regarding the above performance "
+"evaluation."
+msgstr ""
+"Дээрх гүйцэтгэлийн үнэлгээний дагууд ямарваа сэтгэгдэл байгаа бол доорх зайд "
+"бичнэ үү."
+
+#. module: hr_appraisal
+#: model:survey.label,value:hr_appraisal.oprow_2_4_2
+msgid ""
+"What I did several months ago is still of use to the company, the services "
+"or the products today"
+msgstr ""
+"Миний хэдэн сарын өмнө хийсэн зүйл маань одоо ч компани, бүтээгдэхүүн "
+"үйлчилгээнд хэрэглэгдсээр байгаа"
+
+#. module: hr_appraisal
+#: model:survey.page,title:hr_appraisal.appraisal_2
+msgid "Work Plan"
+msgstr "Ажлын Төлөвлөгөө"
+
+#. module: hr_appraisal
+#: selection:hr.employee,appraisal_frequency_unit:0
+msgid "Year"
+msgstr "Жил"
+
+#. module: hr_appraisal
+#: code:addons/hr_appraisal/models/hr_appraisal.py:206
+#, python-format
+msgid "You cannot delete appraisal which is in '%s' state"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.actions.act_window,help:hr_appraisal.open_view_hr_appraisal_tree
+msgid ""
+"You will be able to choose which forms will be sent (Employee,Managers,"
+"Collaborators or Colleagues),\n"
+"            to whom and the evaluation deadline. Once you have defined it,\n"
+"            change the stage to send it and view the results."
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.model.fields,field_description:hr_appraisal.field_hr_employee_appraisal_collaborators_survey_id
+msgid "collaborate's Appraisal"
+msgstr ""
+
+#. module: hr_appraisal
+#: model:ir.ui.view,arch_db:hr_appraisal.hr_appraisal_kanban
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"
+
+#~ msgid "Action Needed"
+#~ msgstr "Үйлдэл Шаардлагатай"
+
+#~ msgid "Date of the last message posted on the record."
+#~ msgstr "Бичлэгт хамгийн сүүлд илгээгдсэн зурвасын огноо."
+
+#~ msgid "Followers"
+#~ msgstr "Дагагчид"
+
+#~ msgid "Followers (Channels)"
+#~ msgstr "Дагагчид (Сувагууд)"
+
+#~ msgid "Followers (Partners)"
+#~ msgstr "Дагагчид (Харилцагчид)"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr ""
+#~ "Хэрэв тэмдэглэгдсэн бол таныг шинэ зурвасуудад анхаарал хандуулахыг "
+#~ "шаардана."
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "Хэрэв сонгосон бол, шинэ зурвасуудад анхаарал хандуулахыг шаардана."
+
+#~ msgid "If other, precise:"
+#~ msgstr "Хэрэв бусад бол тодорхой:"
+
+#~ msgid "Is Follower"
+#~ msgstr "Дагагч эсэх"
+
+#~ msgid "Last Message Date"
+#~ msgstr "Сүүлийн зурвасын огноо"
+
+#~ msgid "Messages"
+#~ msgstr "Зурвасууд"
+
+#~ msgid "Number of Actions"
+#~ msgstr "Үйлдлийн тоо"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Үйлдэл шаардлагатай зурвасын тоо"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "Уншаагүй зурвасын тоо"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Уншаагүй Зурвасууд"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "Уншаагүй зурвасын тоолуур"
+
+#~ msgid "Website Messages"
+#~ msgstr "Вебсайтын зурвасууд"
+
+#~ msgid "Website communication history"
+#~ msgstr "Вебсайтын харилцааны түүх"
+
+#, fuzzy
+#~ msgid "Active"
+#~ msgstr "Зорилтууд"
+
+#, fuzzy
+#~ msgid "Hr Department"
+#~ msgstr "Хэлтэс"

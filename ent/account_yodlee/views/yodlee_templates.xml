@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+  <t t-name="YodleeLoginTemplate">
+    <div>
+      <div class="js_wait_updating_account alert alert-warning hidden" role="alert">
+        Please wait while we are updating your account...
+        This process can take several minutes...
+      </div>
+      <t t-if="help">
+          <div class="well">
+            <p t-att-title="widget.loginHelp"><t t-esc="widget.help"/></p>
+          </div>
+      </t>
+      <form class="form-horizontal js_online_sync_form">
+      <t t-set="lastFieldChoice" t-value=""/>
+      <t t-foreach="widget.loginForm.row" t-as="input">
+          <div class="form-group">
+            <t t-if="input.fieldRowChoice == lastFieldChoice">
+              <div class="col-sm-12">
+                OR
+              </div>
+            </t>
+            <t t-set="labelColWidth"> col-sm-2</t>
+            <t t-if="widget.loginForm.formType == 'image'">
+              <t t-set="labelColWidth"> col-sm-12</t>
+            </t>
+            <label t-attf-class="{{labelColWidth}}"><t t-esc="input.label"/><t t-if="input.field[0].isOptional === false"> (*)</t></label>
+            <t t-foreach="input.field" t-as="field">
+              <!-- Change col-sm attribute based on length of input.field -->
+              <t t-set="colWidth"> col-sm-2</t>
+              <t t-if="field_size == 1">
+                <t t-set="colWidth"> col-sm-4</t>
+              </t>
+              <t t-if="widget.loginForm.formType == 'image'">
+                <div class="col-sm-12">
+                  <img t-attf-src="data:image/png;base64, #{field.image}" alt="captcha"/>
+                </div>
+              </t>
+              <div t-attf-class="{{colWidth}}" t-att-data-type="widget.loginForm.formType">
+                <t t-if="field.type == 'text' || field.type == 'password'">
+                  <input t-att-field-id="field.id" t-att-row-id="input.id" t-att-field-row-choice="input.fieldRowChoice" t-att-type="field.type" t-att-isOptional="field.isOptional" class="form-control js_online_sync_input"/>
+                </t>
+                <t t-if="field.type == 'option'">
+                  <select t-att-field-id="field.id" t-att-row-id="input.id" t-att-field-row-choice="input.fieldRowChoice" t-att-isOptional="field.isOptional" class="form-control js_online_sync_input">
+                    <t t-foreach="field.option" t-as="v">
+                      <option t-att-value="v.optionValue"><t t-esc="v.displayText"/></option>
+                    </t>
+                  </select>
+                </t>
+              </div>
+            </t> 
+            <t t-set="lastFieldChoice" t-value="input.fieldRowChoice"/>
+          </div>
+      </t>
+      </form>
+      <div class="footer">
+        <button class="js_process_next_step btn btn-primary" type="button">Continue</button>
+        <t t-if="widget.loginForm.formType == 'image'">
+          <button class="js_new_captcha btn btn-default" type="button">Get new captcha</button>
+        </t>
+        <t t-if="widget.loginForm.formType == 'questionAndAnswer'">
+          <button class="js_new_captcha btn btn-default" type="button">Refresh</button>
+        </t>
+        <button class="js_process_cancel btn btn-default" type="button">Cancel</button>
+      </div>
+    </div>
+  </t>
+
+</templates>

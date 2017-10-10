@@ -1,0 +1,150 @@
+@o_app_switcher_menu_shadow: 0 1px 0 fade(black, 45%);
+
+.o_app_switcher_background {
+    // Fallback for browsers that doesn't support css gradients
+    background-position: center;
+    background-image: url(/web_enterprise/static/src/img/application-switcher-bg.jpg);
+    .o-background-size(cover);
+
+    // Prefer css gradient over images
+    .o-skew-gradient(#77717e, #c9a8a9);
+
+    // When applied on webclient (note: we do not specify the webclient class
+    // here to avoid breaking studio custom style)
+    &:not(.o_app_switcher_background_custom) .o_main_navbar {
+        background-color: transparent;
+        border-color: transparent;
+
+        .open .dropdown-toggle {
+            background-color: fade(black, 10%);
+        }
+        .oe_topbar_avatar {
+            box-shadow: @o_app_switcher_menu_shadow;
+        }
+
+        &, & > ul > li {
+            > a {
+                text-shadow: @o_app_switcher_menu_shadow;
+
+                &:hover, &:focus {
+                    background-color: fade(black, 0%);
+                }
+            }
+        }
+    }
+}
+
+.o_application_switcher {
+    font-size: @odoo-font-size-base-touch;
+
+    .o_menu_search.o_bar_hidden input {
+        cursor: default;
+    }
+
+    .o_application_switcher_scrollable {
+
+        .o_apps {
+            margin-top: 10px;
+
+            .user-select(none);
+
+            .o_app {
+                background: transparent;
+                border: 1px solid transparent;
+                border-radius: 3%;
+                text-decoration: none;
+                text-align: center;
+                outline: none;
+                .o-transition(all, 0.3s);
+
+                .o_app_icon {
+                    border-radius: 4%;
+                    .o-transition(all, 0.1s);
+                    box-shadow: 0 7px 15px -10px black;
+                    -webkit-filter: grayscale(25%);
+                    filter: grayscale(25%);
+
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
+
+                .o_caption {
+                    .o-text-overflow(block);
+                    margin-top: 8px;
+                    color: white;
+                    font-weight: 400;
+                    text-shadow: 0 1px 1px fade(black, 45%);
+                }
+
+                &:focus, &.o_focused, &:hover {
+                    .o_app_icon {
+                        -webkit-filter: grayscale(0%);
+                        filter: grayscale(0%);
+                        box-shadow: 0 8px 15px -10px black;
+                        .o-transform(translateY(-1px));
+                    }
+                }
+            }
+        }
+
+        .o_menuitems {
+            margin-bottom: 40px;
+
+            .o_menuitem {
+                padding: 2px;
+                .o-text-overflow();
+                color: @odoo-brand-lightsecondary;
+                margin-bottom: 3px;
+                @media (min-width: @screen-sm-min) {
+                    font-size: 20px;
+                }
+                outline: none;
+                width: 100%;
+                @media (max-width: @screen-xs-max) {
+                    padding: 5px 0;
+                }
+                &:hover {
+                    color: white;
+                }
+                &:focus, &.o_focused {
+                    background-color: fade(white, 5%);
+                }
+            }
+        }
+
+        .o_no_result {
+            color: @odoo-brand-lightsecondary;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        .o_application_switcher_footer {
+            .user-select(none);
+            > img {
+                width: 96px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.database_expiration_panel {
+    text-align: center;
+    max-width: 768px;
+    width: 100%;
+    .alert {
+        @media (min-width: @screen-md-min) {
+            margin-top: 25px;
+        }
+        margin-bottom: 0px;
+    }
+}
+
+.database_expiration_panel a i {
+    margin: 0 0.2em;
+}
+
+.oe_instance_register_form, .oe_instance_success, .oe_instance_error, .oe_subscription_updated {
+    display: none;
+}

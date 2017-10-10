@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="website_sign_mail_template" model="mail.template">
+        <field name="name">Document Sign Request</field>
+        <field name="model_id" ref="website_sign.model_signature_request"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="email_from">${ctx['email_from']|safe}</field>
+        <field name="email_to">${ctx['email_to']|safe}</field>
+        <field name="subject">${ctx['subject']|safe}</field>
+        <field name="body_html"><![CDATA[
+            <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+            <div style="width:90%; max-width:600px; margin:auto; font-size:10pt; padding:20px 0; font-family:'Lato', serif;">
+                <div style="background-color:#EFEDED; padding: 20px;">
+                    % if ctx['template_type'] == "request":
+                        ${ctx['email_from_usr']} (<a href="mailto:${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}" style="color:#428BCA; text-decoration:none;" target="_blank">${ctx['email_from_mail']}</a>) has requested your signature on this document :
+                    % endif
+                    % if ctx['template_type'] == "follower":
+                        ${ctx['email_from_usr']} (<a href="mailto:${ctx['email_from']}?subject=Re: ${ctx['subject']|safe}" style="color:#428BCA; text-decoration:none;" target="_blank">${ctx['email_from_mail']}</a>) has added you as a Follower of this Signature Request :
+                    % endif
+                    % if ctx['template_type'] == "completed":
+                        This document has been completed and signed by everyone :
+                    % endif
+
+                    <h1 style="font-size:1.25em; margin:15px 0 25px 0;">${object['reference']}</h1>
+                    
+                    <div style="margin:0 -15px">
+                        <a style="float:left; display:inline-block; margin:0 15px 10px 15px; padding:5px 10px; border-radius: 3px; background-color:#5C6ED0; text-align:center; text-decoration:none; color:#F7FBFD;" href=${ctx['link']}>
+                            % if ctx['template_type'] == "request":
+                                Sign Document Now
+                            % endif
+                            % if ctx['template_type'] == "follower":
+                                View Signature Request
+                            % endif
+                            % if ctx['template_type'] == "completed":
+                                View Signed Document
+                            % endif
+                        </a>
+                        
+                        <div style="font-size:0.8em; color:#999999; margin:0 15px 10px 15px">
+                            % if ctx['template_type'] == "request":
+                                <strong style="font-weight:bold; color:black;">Warning: do not forward this email to other people!</strong><br/>
+                                They will be able to access this document and sign it as yourself.
+                            % endif
+                            % if ctx['template_type'] == "follower":
+                                You will be notified once the document has been signed by everyone involved.
+                            % endif
+                        </div>
+                        <div style="clear:both;"/>
+                    </div>
+                    
+                    % if ctx['msgbody']:
+                    <div style="background-color:white; padding:10px;">
+                        ${ctx['msgbody']|safe}
+                    </div>
+                    % endif
+                </div>
+                
+                <div style="font-size:0.8em; margin-top:10px;">
+                    <span style="color:#428BCA;">Sent with <strong style="font-weight:bold;">Odoo Sign</strong></span>
+                </div>
+            </div>
+        ]]>
+        </field>
+    </record>
+</odoo>

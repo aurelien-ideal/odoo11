@@ -1,0 +1,237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_sale
+# 
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2017
+# Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2017
+# Yoshi Tashiro <tashiro@roomsfor.hk>, 2017
+# Manami Hashi <manami@roomsfor.hk>, 2017
+# Aefgh Threenine <aefgh3962@gmail.com>, 2017
+# SHIMIZU Taku <shimizu.taku@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: SHIMIZU Taku <shimizu.taku@gmail.com>, 2017\n"
+"Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<b> Credit error :</b> Your Provider Credit account is negative. Please "
+"refill your provider account to send documents."
+msgstr "<b>クレジットエラー:</b>プロバイダのクレジットアカウントはマイナスです。 書類を送るには、プロバイダの口座に入金してください。"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<span class=\"oe_form_field oe_inline\"><b>Bad Postal Address :</b> At least"
+" one of the document you want to send has not a correct postal "
+"address.</span>"
+msgstr ""
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Black & White"
+msgstr "白黒"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Colour"
+msgstr "色"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_uid
+msgid "Created by"
+msgstr "作成者"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_date
+msgid "Created on"
+msgstr "作成日"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_currency_id
+msgid "Currency"
+msgstr "通貨"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_display_name
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_display_name
+msgid "Display Name"
+msgstr "表示名"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ir_attachment_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Documents"
+msgstr "ドキュメント"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_environment
+msgid "Environment"
+msgstr "環境"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_id
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ink
+msgid "Ink"
+msgstr "インク"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_is_sendable
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_is_sendable
+msgid "Is sendable"
+msgstr "送信可能です"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard___last_update
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard___last_update
+msgid "Last Modified on"
+msgstr "最終更新日"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_uid
+msgid "Last Updated by"
+msgstr "最終更新者"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_date
+msgid "Last Updated on"
+msgstr "最終更新日"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_print_document_partner_line_wizard_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_line_wizard_view_tree
+msgid "Lines"
+msgstr "明細"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_paper_weight
+msgid "Paper Weight"
+msgstr "文鎮"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_print_document_partner_wizard_id
+msgid "Print Order Wizard"
+msgstr "印刷順序ウィザード"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_id
+msgid "Print Provider"
+msgstr "印刷プロバイダー"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Printing details"
+msgstr ""
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Production"
+msgstr "製造"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_balance
+msgid "Provider Credit"
+msgstr "プロバイダクレジット"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_sale_order
+msgid "Quotation"
+msgstr "見積"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_partner_id
+msgid "Recipient partner"
+msgstr "取引先の宛先"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Recipients"
+msgstr "宛先"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send"
+msgstr "送信"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_document_partner_action_multi
+msgid "Send Documents by post"
+msgstr "郵送で書類を送る"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.sale_order_view_form_inherit_print_sale
+msgid "Send Letter"
+msgstr "レターを送る"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_print_sale
+msgid "Send by Post"
+msgstr "郵送する"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_multi_print_sale
+msgid "Send by post"
+msgstr "郵送する"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send documents to partner Wizard"
+msgstr "取引先に書類送付するウィザード"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Test"
+msgstr "テスト"
+
+#. module: print_sale
+#: code:addons/print_sale/models/sale_order.py:23
+#, python-format
+msgid ""
+"This sales order was sent by post with the provider %(provider_name)s at the"
+" following address.                     <br/><br/> %(partner_name)s <br/> "
+"%(partner_street)s <br/> %(partner_city)s %(partner_zip)s"
+"                     <br/>%(partner_country)sprovider_name<i>%s</i>"
+msgstr ""
+
+#. module: print_sale
+#: code:addons/print_sale/wizard/print_document_partner_wizard.py:67
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account."
+msgstr ""
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_line_wizard
+msgid "print.document.partner.line.wizard"
+msgstr "print.document.partner.line.wizard"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_wizard
+msgid "print.document.partner.wizard"
+msgstr "print.document.partner.wizard"

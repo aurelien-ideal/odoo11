@@ -1,0 +1,27 @@
+<odoo>
+    <record id="action_project_forecast_assign" model="ir.actions.act_window">
+        <field name="name">Assign user on a task</field>
+        <field name="res_model">project.forecast.assignment</field>
+        <field name="target">new</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="view_project_forecast_assign" model="ir.ui.view">
+        <field name="name">Assign user on a task</field>
+        <field name="model">project.forecast.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Assign user on task">
+                <sheet>
+                    <field name="project_id" invisible="1"/>
+                    <group col="4">
+                        <field name="task_id"/>
+                        <field name="employee_id"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button type="object" string="Create" name="create_assignment" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

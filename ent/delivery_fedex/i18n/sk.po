@@ -1,0 +1,383 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_fedex
+#
+# Translators:
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 11:34+0000\n"
+"PO-Revision-Date: 2016-02-11 07:32+0000\n"
+"Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>\n"
+"Language-Team: Slovak (http://www.transifex.com/odoo/odoo-9/language/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ", click on \"Get Production Key\" and follow all the steps."
+msgstr ", kliknite na \"Získať produkčný kľúč\" a následujte všetky kroky."
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"<br/>According to your needs, you will need to contact different "
+"certifications :"
+msgstr ""
+"<br/>Podľa vašic potrieb, budete musieť kontaktovať rôzne certifikácie:"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_account_number
+msgid "Account Number"
+msgstr "Číslo účtu"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services with Label Certification"
+msgstr "Pokročilé služby s deklarovaným certifikátom"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services without Label Certification"
+msgstr "Pokročilé služby bez deklarovaného certifikátu"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "BUSINESS_SERVICE_CENTER"
+msgstr "BUSINESS_SERVICE_CENTER"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_delivery_carrier
+msgid "Carrier"
+msgstr "Prepavca"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Certification Process"
+msgstr "Proces certifikácie"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "DROP_BOX"
+msgstr "DROP_BOX"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_default_packaging_id
+msgid "Default Package Type"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_key
+msgid "Developer Key"
+msgstr "Vývojársky kľúč"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "EPL2"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY"
+msgstr "FEDEX_2_DAY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY_AM"
+msgstr "FEDEX_2_DAY_AM"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_GROUND"
+msgstr "FEDEX_GROUND"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FIRST_OVERNIGHT"
+msgstr "FIRST_OVERNIGHT"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "FedEx Web Services \"Move to Production\""
+msgstr "FedEx web služby \"Presunúť do výroby\""
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Configuration"
+msgstr "Fedex kondigurácia"
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_inter
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_inter_product_product
+msgid "Fedex International"
+msgstr "Fedex International"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Tutorial"
+msgstr "Fedex inštruktáž"
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_us
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_us_product_product
+msgid "Fedex US"
+msgstr "Fedex US"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Website"
+msgstr "Fedex webstránka"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_droppoff_type
+msgid "Fedex drop-off type"
+msgstr "Fedex typ vyloženia"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_stock_type
+msgid "Fedex label stock type"
+msgstr "Fedex typ štítkov"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_service_type
+msgid "Fedex service type"
+msgstr "Fedex typ služby "
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_weight_unit
+msgid "Fedex weight unit"
+msgstr "Fedex jednotka váhy"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Go to"
+msgstr "Ísť na"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_ECONOMY"
+msgstr "INTERNATIONAL_ECONOMY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_PRIORITY"
+msgstr "INTERNATIONAL_PRIORITY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "KG"
+msgstr "KG"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "LB"
+msgstr "LB"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_file_type
+msgid "Label File Type"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_meter_number
+msgid "Meter Number"
+msgstr "Číslo metra"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Once your account is created, go to"
+msgstr "Po vytvorení účtu, prejdite na"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X6"
+msgstr "PAPER_4X6"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X8"
+msgstr "PAPER_4X8"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X9"
+msgstr "PAPER_4X9"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_7X4.75"
+msgstr "PAPER_7X4.75"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_BOTTOM_HALF_LABEL"
+msgstr "PAPER_8.5X11_BOTTOM_HALF_LABEL"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_TOP_HALF_LABEL"
+msgstr "PAPER_8.5X11_TOP_HALF_LABEL"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_LETTER"
+msgstr "PAPER_LETTER"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PDF"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PNG"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "PRIORITY_OVERNIGHT"
+msgstr "PRIORITY_OVERNIGHT"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_product_packaging
+msgid "Packaging"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_password
+msgid "Password"
+msgstr "Heslo"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REGULAR_PICKUP"
+msgstr "REGULAR_PICKUP"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REQUEST_COURIER"
+msgstr "REQUEST_COURIER"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "STANDARD_OVERNIGHT"
+msgstr "STANDARD_OVERNIGHT"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "STATION"
+msgstr "STATION"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_LEADING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_TRAILING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X8"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_LEADING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_TRAILING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:333
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Zásielka N° %s bola zrušená"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:252
+#: code:addons/delivery_fedex/models/delivery_fedex.py:294
+#, python-format
+msgid "Shipment created into Fedex <br/> <b>Tracking Number : </b>%s"
+msgstr "Zásielka vytvorená vo Fedex <br/> <b>Sledovacie číslo : </b>%s"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:256
+#, python-format
+msgid "Shipping label for package %s"
+msgstr "Prepravný štítok pre balík %s"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Standard Services"
+msgstr "Štandardné služby"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "The last step is the"
+msgstr "Posledný krok je"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"These certifications usually require that you contact the FedEx support team "
+"by email."
+msgstr ""
+"Tieto certifikácie obvykle vyžadujú aby ste sa obrátili na tím podpory FedEx "
+"emailom."
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "ZPLII"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "to create a FedEx account of the following type:"
+msgstr "vytvoriť účet FedEx nasledujúceho typu:"
+
+#~ msgid "FEDEX_10KG_BOX"
+#~ msgstr "FEDEX_10KG_BOX"
+
+#~ msgid "FEDEX_25KG_BOX"
+#~ msgstr "FEDEX_25KG_BOX"
+
+#~ msgid "FEDEX_BOX"
+#~ msgstr "FEDEX_BOX"
+
+#~ msgid "FEDEX_ENVELOPE"
+#~ msgstr "FEDEX_ENVELOPE"
+
+#~ msgid "FEDEX_PAK"
+#~ msgstr "FEDEX_PAK"
+
+#~ msgid "FEDEX_TUBE"
+#~ msgstr "FEDEX_TUBE"
+
+#~ msgid "Fedex packaging type"
+#~ msgstr "Fedex typ balenia"
+
+#~ msgid "Test Mode"
+#~ msgstr "Testovací režim"
+
+#~ msgid "Uncheck this box to use production Fedex Web Services"
+#~ msgstr ""
+#~ "Zrušte označenie tohto políčka pre používanie produkcie FedEx Web služby"
+
+#~ msgid "YOUR_PACKAGING"
+#~ msgstr "YOUR_PACKAGING "

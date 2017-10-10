@@ -1,0 +1,764 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_mx_edi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~14+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-09 14:02+0000\n"
+"PO-Revision-Date: 2017-03-09 14:02+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<span>Digital stamp SAT</span>"
+msgstr "<span>Sello digital de SAT</span>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<span>Digital stamp of the emitter</span>"
+msgstr "<span>Sello digital del emisor</span>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<span>Extra Info</span>"
+msgstr "<span>Información Extra</span>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<span>Issued from</span>"
+msgstr "<span>Emitido en</span>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<span>Original chain complement of digital certification SAT</span>"
+msgstr "<span>Cadena original del complemento del certificado digital del SAT</span>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<strong>Bank Account:</strong>"
+msgstr "<strong>Cuenta Bancaria:</strong>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<strong>Payment Method:</strong>"
+msgstr "<strong>Método de Pago:</strong>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<strong>Payment Type:</strong>"
+msgstr "<strong>Tipo de Pago:</strong>"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "<strong>This document is a printed representation of a CFDI</strong>"
+msgstr "<strong>Este documento es una representación impresa de un CFDI</strong>"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:421
+#, python-format
+msgid "A delay of 2 hours has to be respected before to cancel"
+msgstr "Un retraso de 2 horas tiene que ser respetado antes de cancelar"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "A signature of this invoice is required, but it is not signed."
+msgstr "Se requiere una firma de esta factura, pero no está firmada."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_res_partner_l10n_mx_edi_addenda
+msgid "A view representing the addenda"
+msgstr "Una vista que representa la addenda"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_partner_l10n_mx_edi_addenda
+#: model:ir.ui.view,arch_db:l10n_mx_edi.res_partner_form_inherit_l10n_mx_edi
+msgid "Addenda"
+msgstr "Addenda"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_journal_l10n_mx_address_issued_id
+msgid "Address Issued"
+msgstr "Dirección de emisión"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_date_start
+msgid "Available date"
+msgstr "Fecha disponible"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:773
+#, python-format
+msgid "CFDI document generated (may be not signed)"
+msgstr "Documento de CFDI generado (puede no estar firmado)"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_name
+msgid "CFDI name"
+msgstr "Nombre del CFDI"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_pac_status:0
+#: selection:account.invoice,l10n_mx_edi_sat_status:0
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_certificate_id
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_content
+msgid "Certificate"
+msgstr "Certificado"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_key
+msgid "Certificate Key"
+msgstr "Clave del certificado"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_certificate_key
+msgid "Certificate Key in der format"
+msgstr "Clave del certificado en formato der"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_password
+msgid "Certificate Password"
+msgstr "Contraseña del certificado"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_certificate_content
+msgid "Certificate in der format"
+msgstr "Certificado en formato der"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_company_l10n_mx_edi_certificate_ids
+msgid "Certificates"
+msgstr "Certificados"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi
+msgid "Cfdi content"
+msgstr "Contenido del cfdi"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_payment_method_code
+msgid "Code defined by the SAT by this payment method. This value will be set in the XML node \"metodoDePago\"."
+msgstr "Código definido por el SAT para este método de pago. Este valor se asignara en el nodo XML \"metodoDePago\"."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:486
+#: code:addons/l10n_mx_edi/models/account_invoice.py:519
+#, python-format
+msgid "Code: "
+msgstr "Código: "
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_partner_l10n_mx_edi_colony
+msgid "Colony Name"
+msgstr "Nombre de Colonia"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.res_company_form_inherit_l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.res_partner_form_inherit_l10n_mx_edi
+msgid "Colony..."
+msgstr "Colonia..."
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "Configure the Authorized Certification Provider (PAC)."
+msgstr "Configure el Proveedor Autorizado de Certificación (PAC)."
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "Configure your SAT certificates."
+msgstr "Configure sus certificados SAT."
+
+#. module: l10n_mx_edi
+#: model:ir.actions.act_window,help:l10n_mx_edi.certificate_list_action
+msgid "Create the first certificate"
+msgstr "Crear el primer certificado"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_create_uid
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_create_date
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_customer_rfc
+msgid "Customer RFC"
+msgstr "RFC del cliente"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_display_name
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "Electronic invoicing (MX)"
+msgstr "Facturación Electrónica (MX)"
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_mail_template
+msgid "Email Templates"
+msgstr "Plantillas de correo electrónico"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac_test_env
+#: model:ir.model.fields,help:l10n_mx_edi.field_res_company_l10n_mx_edi_pac_test_env
+msgid "Enable the usage of test credentials"
+msgstr "Habilitar el uso de credenciales de prueba"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:292
+#, python-format
+msgid "Error during the process: %s"
+msgstr "Error durante el proceso: %s"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_date_end
+msgid "Expiration date"
+msgstr "Fecha de caducidad"
+
+#. module: l10n_mx_edi
+#: selection:res.company,l10n_mx_edi_pac:0
+msgid "Finkok"
+msgstr "Finkok"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_uuid
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_uuid
+msgid "Fiscal Folio"
+msgstr "Folio Fiscal"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_uuid
+msgid "Folio in electronic invoice, is returned by SAT when send to stamp."
+msgstr "Folio en facturación electrónica, es devuelto por SAT cuando se envía a firmar."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_id
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_ir_ui_view_l10n_mx_edi_addenda_flag
+msgid "If True, the view is an addenda for the Mexican EDI invoicing."
+msgstr "Si es verdadero, la vista es una addenda para la facturación Mexicana."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_payment_method_active
+msgid "If this payment method is not used by the company could be deactivated."
+msgstr "Si este método de pago no es usado por la compañía puede ser desactivado."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_payment_method_id
+msgid "Indicates the way the invoice was/will be paid, where the options could be: Cash, Nominal Check, Credit Card, etc. Leave empty if unkown and the XML will show \"Unidentified\"."
+msgstr "Indica la forma en que se pagó o se pagará la factura, donde las opciones podrían ser: Efectivo, Cheque, Tarjeta de Crédito, etc. Deje vacía si no conoce la forma de pago y el XML mostrará \"No Identificado\"."
+
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_ir_ui_view_l10n_mx_edi_addenda_flag
+msgid "Is an addenda?"
+msgstr "Es una addenda?"
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_company_l10n_mx_edi_colony
+msgid "L10N Mx Edi Colony"
+msgstr "Colonia"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_company_l10n_mx_edi_locality
+msgid "L10N Mx Edi Locality"
+msgstr "Localidad"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate___last_update
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_write_uid
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_write_date
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_partner_l10n_mx_edi_locality
+msgid "Locality Name"
+msgstr "Nombre de la Localidad"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.res_company_form_inherit_l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.res_partner_form_inherit_l10n_mx_edi
+msgid "Locality..."
+msgstr "Localidad..."
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "MX Certificates"
+msgstr "Certificados MX"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_certificate_ids
+msgid "MX Certificates*"
+msgstr "Certificados MX*"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "MX PAC"
+msgstr "PAC MX"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac_password
+msgid "MX PAC password*"
+msgstr "Contraseña PAC MX*"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac_test_env
+msgid "MX PAC test environment*"
+msgstr "Entorno de Prueba*"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac_username
+msgid "MX PAC username*"
+msgstr "Nombre de usuario de PAC MX*"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac
+msgid "MX PAC*"
+msgstr "MX PAC*"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.view_l10n_mx_edi_ir_ui_view_form_inherit
+msgid "MX parameters"
+msgstr "Parámetros MX"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:488
+#: code:addons/l10n_mx_edi/models/account_invoice.py:521
+#, python-format
+msgid "Message: "
+msgstr "Mensaje: "
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_payment_method_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:698
+#, python-format
+msgid "No PAC credentials specified."
+msgstr "No se especificaron credenciales de PAC."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:700
+#, python-format
+msgid "No PAC specified."
+msgstr "PAC no especificado"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:690
+#, python-format
+msgid "No valid certificate found"
+msgstr "No se ha encontrado ningún certificado válido"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_sat_status:0
+msgid "Not Found"
+msgstr "No encontrado"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_sat_status:0
+msgid "Not Synced Yet"
+msgstr "No sincronizado aún"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_company_l10n_mx_edi_pac
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "PAC"
+msgstr "PAC"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_company_l10n_mx_edi_pac_password
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "PAC password"
+msgstr "Contraseña del PAC"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_pac_status
+msgid "PAC status"
+msgstr "Estado del PAC"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_company_l10n_mx_edi_pac_test_env
+msgid "PAC test environment"
+msgstr "Entorno de Prueba"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_res_company_l10n_mx_edi_pac_username
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "PAC username"
+msgstr "Nombre de usuario PAC"
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_partner_bank_id
+msgid "Partner bank"
+msgstr "Banco asociado"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_certificate_password
+msgid "Password for the Certificate Key"
+msgstr "Contraseña para la clave del certificado"
+
+#. module: l10n_mx_edi
+#: model:ir.actions.act_window,name:l10n_mx_edi.action_l10n_mx_payment_method
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_payment_method_id
+#: model:ir.ui.view,arch_db:l10n_mx_edi.view_l10n_mx_payment_method_form
+#: model:ir.ui.view,arch_db:l10n_mx_edi.view_l10n_mx_payment_method_tree
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.menu,name:l10n_mx_edi.cfd_22_metodos_pago
+msgid "Payment Method Codes (MX)"
+msgstr "Códigos de los métodos de Pagos (MX)"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_payment_method_name
+msgid "Payment method, is found in the SAT catalog."
+msgstr "Método de Pago, se encuentra en el catalogo de SAT."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:703
+#, python-format
+msgid "Please check your configuration: "
+msgstr "Compruebe su configuración: "
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_pac_status
+msgid "Refers to the status of the invoice inside the PAC."
+msgstr "Se refiere al estado de la factura dentro del PAC."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_sat_status
+msgid "Refers to the status of the invoice inside the SAT system."
+msgstr "Se refiere al estado de la factura dentro del sistema SAT."
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_pac_status:0
+#: model:ir.ui.view,arch_db:l10n_mx_edi.view_l10n_mx_edi_invoice_form_inherit
+msgid "Retry"
+msgstr "Reintentar"
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_l10n_mx_edi_certificate
+msgid "SAT Digital Sail"
+msgstr "Sello Digital SAT"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_sat_status
+msgid "SAT status"
+msgstr "Estado en el SAT"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_l10n_mx_edi_certificate_serial_number
+msgid "Serial number"
+msgstr "Número de serie"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_pac_status:0
+msgid "Signed"
+msgstr "Firmado"
+
+#. module: l10n_mx_edi
+#: selection:res.company,l10n_mx_edi_pac:0
+msgid "Solucion Factible"
+msgstr "Solución Factible"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_sat_status:0
+msgid "State not defined"
+msgstr "Estado no definido"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_supplier_rfc
+msgid "Supplier RFC"
+msgstr "RFC del Proveedor"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac
+#: model:ir.model.fields,help:l10n_mx_edi.field_res_company_l10n_mx_edi_pac
+msgid "The PAC that will sign/cancel the invoices"
+msgstr "El PAC que firmará/cancelará las facturas"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_name
+msgid "The attachment name of the CFDI."
+msgstr "El nombre del archivo adjunto del CFDI."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_partner_bank_id
+msgid "The bank account the client will pay from. Leave empty if unkown and the XML will show \"Unidentified\"."
+msgstr "La cuenta bancaria con la que el cliente pagará. Deje vacía si no la conoce y el XML mostrará \"No Identificada\"."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:513
+#: code:addons/l10n_mx_edi/models/account_invoice.py:536
+#, python-format
+msgid "The cancel service has been called with success"
+msgstr "El servicio de cancelación se ha llamado con éxito"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:516
+#, python-format
+msgid "The cancel service requested failed"
+msgstr "El servicio de cancelación solicitado falló"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/certificate.py:164
+#, python-format
+msgid "The certificate content is invalid."
+msgstr "El contenido del certificado no es válido."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/certificate.py:170
+#, python-format
+msgid "The certificate is expired since %s"
+msgstr "El certificado ha expirado desde %s"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/certificate.py:176
+#, python-format
+msgid "The certificate key and/or password is/are invalid."
+msgstr "La clave del certificado y/o la contraseña es/son inválidos."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_certificate_id
+msgid "The certificate used during the generation of the cfdi."
+msgstr "El certificado utilizado durante la generación del cfdi."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:732
+#, python-format
+msgid "The cfdi generated is not valid"
+msgstr "El cfdi generado no es válido"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi
+msgid "The cfdi xml content encoded in base64."
+msgstr "El contenido xml del cfdi codificado en base64."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:481
+#, python-format
+msgid "The content of the attachment has been updated"
+msgstr "El contenido del archivo adjunto se ha actualizado"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_customer_rfc
+msgid "The customer tax identification number."
+msgstr "El número de identificación fiscal del cliente."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_certificate_date_end
+msgid "The date on which the certificate expires"
+msgstr "Fecha en la que el certificado expira"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_certificate_date_start
+msgid "The date on which the certificate starts to be valid"
+msgstr "Fecha en la que el certificado empieza a ser válido"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "The parameters to configure the MX PAC."
+msgstr "Los parámetros para configurar el PAC MX."
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.account_config_settings_account_mx_inherit
+msgid "The parameters to configure the MX certificate."
+msgstr "Los parámetros para configurar el certificado MX."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac_password
+#: model:ir.model.fields,help:l10n_mx_edi.field_res_company_l10n_mx_edi_pac_password
+msgid "The password used to request the seal from the PAC"
+msgstr "La contraseña utilizada para solicitar el sello del PAC"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_l10n_mx_edi_certificate_serial_number
+msgid "The serial number to add to electronic documents"
+msgstr "El número de serie para agregar a los documentos electrónicos"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:471
+#, python-format
+msgid "The sign service has been called with success"
+msgstr "El servicio de firma ha sido llamado con éxito"
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:483
+#, python-format
+msgid "The sign service requested failed"
+msgstr "El servicio de firma solicitado fallo"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_supplier_rfc
+msgid "The supplier tax identification number."
+msgstr "El número de identificación fiscal del proveedor."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_amount
+msgid "The total amount reported on the cfdi."
+msgstr "El monto total reportado en el cfdi."
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_config_settings_l10n_mx_edi_pac_username
+#: model:ir.model.fields,help:l10n_mx_edi.field_res_company_l10n_mx_edi_pac_username
+msgid "The username used to request the seal from the PAC"
+msgstr "El nombre de usuario utilizado para solicitar el sello de la PAC"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_pac_status:0
+msgid "To cancel"
+msgstr "Para cancelar"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.view_l10n_mx_edi_invoice_filter_inherit
+msgid "To cancel by PAC"
+msgstr "Cancelar por PAC"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_pac_status:0
+msgid "To sign"
+msgstr "Para firmar"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.view_l10n_mx_edi_invoice_filter_inherit
+msgid "To sign by PAC"
+msgstr "Firmar por PAC"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,field_description:l10n_mx_edi.field_account_invoice_l10n_mx_edi_cfdi_amount
+msgid "Total Amount"
+msgstr "Monto Total"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_invoice_l10n_mx_edi_uuid
+msgid "Unused field to remove in master"
+msgstr "Campo no utilizado, eliminar en master"
+
+#. module: l10n_mx_edi
+#: model:ir.actions.server,name:l10n_mx_edi.update_pac_status_server_action
+msgid "Update PAC status"
+msgstr "Actualizar estado en el PAC"
+
+#. module: l10n_mx_edi
+#: model:ir.model.fields,help:l10n_mx_edi.field_account_journal_l10n_mx_address_issued_id
+msgid "Used in multiple-offices environments to fill, with the given address, the node \"ExpedidoEn\" in the XML for invoices of this journal. If empty, the node won't be added."
+msgstr "Utilizado en entornos de multi sucursales, para indicar la dirección del nodo \"ExpedidoEn\" en el XML para facturas de este diario. Si está vacío, no se agregará el nodo."
+
+#. module: l10n_mx_edi
+#: code:addons/l10n_mx_edi/models/account_invoice.py:144
+#, python-format
+msgid "Using General Public VAT because no vat found"
+msgstr "Usando RFC Publico porque no se encontró RFC"
+
+#. module: l10n_mx_edi
+#: selection:account.invoice,l10n_mx_edi_sat_status:0
+msgid "Valid"
+msgstr "Valido"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.certificate_form_view
+msgid "Validity"
+msgstr "Validez"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.report_invoice_document_mx
+msgid "XML VAT:"
+msgstr "XML RFC:"
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_account_config_settings
+msgid "account.config.settings"
+msgstr "account.config.setting"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.certificate_form_view
+msgid "certificate Form"
+msgstr "Formulario de certificado"
+
+#. module: l10n_mx_edi
+#: model:ir.ui.view,arch_db:l10n_mx_edi.certificate_tree_view
+msgid "certificate Tree"
+msgstr "certificados Tree"
+
+#. module: l10n_mx_edi
+#: model:ir.actions.act_window,name:l10n_mx_edi.certificate_list_action
+msgid "certificates"
+msgstr "certificados"
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_ir_ui_view
+msgid "ir.ui.view"
+msgstr "ir.ui.view"
+
+#. module: l10n_mx_edi
+#: model:ir.model,name:l10n_mx_edi.model_l10n_mx_edi_payment_method
+msgid "l10n_mx_edi.payment.method"
+msgstr "l10n_mx_edi.payment.method"
+

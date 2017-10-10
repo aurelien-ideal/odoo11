@@ -1,0 +1,133 @@
+.o_web_studio_client_action {
+    .o_web_studio_view_editor .o_web_studio_view_renderer .o_search_view {
+        &.o_web_studio_search_view_editor {
+            min-width: 700px;
+            max-width: 900px;
+            position: relative;
+            padding: 0 @grid-gutter-width/2;
+            .o-flex-display();
+
+            > .o_web_studio_search_sample_ui {
+                border-radius: @border-radius-small;
+                box-shadow: 0 15px 15px -9px fade(black, 55%);
+                background: fade(white, 95%);
+                padding: 20px 15px;
+                height: 125px;
+                z-index: -1;
+                .o-position-absolute(15px,15px,0,15px);
+                hr {
+                    border-top-color: inherit; 
+                    border-top-width: 2px;
+                    margin-top: 10px;
+                }
+                i {
+                    display: block;
+                    font-size: 1.5em;
+                }
+            }
+
+            .o_web_studio_blurred_childs > *{
+                opacity: 0.1;
+            }
+
+            .o_web_studio_search_sub_item_icon {
+                padding: 12px 0 0 15%;
+                width: 25%;
+                .o-flex-display();
+                .o-align-items(baseline);
+
+                > i {
+                    font-size: 1.5em;
+                    .o-flex(1,1,auto);
+                }
+            }
+
+            > .o_web_studio_search_sub_item {
+                margin: 85px 15px 10px 10px;
+                border: none;
+                .o-flex(1, 1, auto);
+
+                .o_list_view.table, thead, thead .caret, thead th {
+                    background-color: transparent;
+                    border-width: 6px;
+                    font-weight: normal;
+                    font-size: 1.1em;
+                }
+
+                &.o_web_studio_search_list_editable {
+                    border-collapse: inherit;
+                    overflow: visible;
+                    tbody {
+                        box-shadow: 0 5px 15px -2px fade(black, 25%);
+                        outline: 1px solid fade(black, 20%);
+                        background: white;
+                    }
+
+                    tr:not(.o_web_studio_hook) {
+                        td {
+                            font-weight: bold;
+                            font-size: 0.9em;
+                            padding: 5px 15px
+                        }
+                        &.o_web_studio_separator td {
+                            padding: 0;
+                            
+                            hr {
+                                margin: 5px 0;
+                            }                
+                        }
+                    }
+                }
+            }
+
+            .o_web_studio_search_autocompletion_container {
+                .o-position-absolute(175px, 15px);
+                max-width: 320px;
+
+                table {
+                    border: 10px solid @o-web-studio-bg-light;
+                    border-width: 5px 10px 15px;
+                    border-collapse: separate;
+                    border-radius: 2px;
+
+                    thead, tbody > tr:nth-of-type(odd) {
+                        background-color: @o-web-studio-bg-light;
+                    }
+                }
+            }
+
+            .o_web_studio_hovered {
+                outline: 1px dashed @odoo-brand-optional;
+                cursor: pointer;
+            }
+            .o_clicked {
+                outline: 1px solid @odoo-brand-optional;
+            }
+            .o_web_studio_hook {
+                :first-child {
+                    line-height: 0px;
+                }
+                > td {
+                    padding: 0;
+                }
+                span.o_web_studio_hook_separator {
+                    display: block;
+                    position: relative;
+                    padding: 4px 0;
+                    border: 0px dashed transparent;
+                    .o-transition(all, 0.2s, 0s, cubic-bezier(0.215, 0.610, 0.355, 1.000));
+                }
+            }
+            .o_web_studio_hook.o_web_studio_nearest_hook {
+                cursor: pointer !important;
+                outline: none;
+                span.o_web_studio_hook_separator {
+                    background-color: fade(@odoo-brand-optional, 2%);
+                    border: 1px dashed fade(@odoo-brand-optional, 50%);
+                    padding: 20px;
+                    margin: 4px 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,265 @@
+// ------------------------------------------------------------------
+// Bootstrap variables
+// ------------------------------------------------------------------
+
+//== Grid
+@grid-gutter-width: @odoo-horizontal-padding*2;
+
+//== Colors
+@brand-primary: @odoo-brand-primary;
+@brand-success: #00a04a;
+@brand-info: #87c0d1;
+@brand-warning: #f0ad4e;
+@brand-danger: #dc6965;
+
+//== Greyscale
+@gray-base: #000;
+@gray-darker: #1e2124;
+@gray-dark: #2f3136;
+@gray: lighten(@gray-base, 33.5%);
+@gray-light: lighten(@gray-base, 46.7%);
+@gray-lighter: @odoo-color-silver;
+
+//== Titles
+@font-size-h1: @odoo-font-size-base + 19px;
+@font-size-h2: @odoo-font-size-base + 7px;
+@font-size-h3: @odoo-font-size-base + 3px;
+@font-size-h4: @odoo-font-size-base + 2px;
+@font-size-h5: @odoo-font-size-base + 1px;
+@font-size-h6: @odoo-font-size-base;
+
+//== Scaffolding
+@body-bg: @odoo-brand-secondary;
+@text-color: @odoo-main-text-color;
+@link-color: darken(@odoo-brand-optional, 5%);
+@link-hover-decoration: none;
+
+//== Typography
+@font-family-sans-serif: Roboto;
+@font-family-serif: Roboto;
+@font-size-base: @odoo-font-size-base;
+@headings-font-weight: 400;
+@headings-color: @gray-dark;
+
+//== Components
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
+@component-active-bg: @gray-lighter;
+@component-active-color: @odoo-brand-optional;
+
+//== Badges
+@badge-bg: transparent;
+@badge-color: @odoo-brand-optional;
+@badge-line-height: @line-height-base;
+
+//== Breadcrumbs
+@breadcrumb-active-color: @odoo-brand-secondary;
+@breadcrumb-bg: @odoo-control-panel-background-color;
+@breadcrumb-color: @odoo-brand-secondary;
+@breadcrumb-padding-horizontal: 0;
+@breadcrumb-padding-vertical: 0;
+
+//== Buttons
+@btn-font-weight: 500;
+
+@btn-default-bg: white;
+@btn-default-border: white;
+@btn-default-color: @link-color;
+
+@btn-primary-bg: @odoo-brand-optional;
+@btn-primary-border: @odoo-brand-optional;
+@btn-primary-color: white;
+
+@btn-icon-bg: white;
+@btn-icon-border: white;
+@btn-icon-color: @odoo-main-text-color;
+
+@btn-success-border: @btn-success-bg;
+@btn-info-border: @btn-info-bg;
+@btn-warning-border: @btn-warning-bg;
+@btn-danger-border: @btn-danger-bg;
+
+//== Dropdowns
+@dropdown-bg: white;
+@dropdown-border: @gray-lighter-dark;
+@dropdown-divider-bg: @gray-lighter-dark;
+@dropdown-link-color: @odoo-main-text-color;
+@dropdown-link-hover-color: @gray-dark;
+@dropdown-link-hover-bg: @gray-lighter-dark;
+@dropdown-link-active-color: @component-active-color;
+@dropdown-link-active-bg: @component-active-bg;
+@dropdown-link-disabled-color: @gray-light;
+@dropdown-header-color: @gray-light;
+
+//== Modals
+@modal-sm: 300px;
+@modal-md: 650px;
+@modal-lg: 980px;
+@modal-inner-padding: @odoo-horizontal-padding;
+@modal-title-padding: @odoo-horizontal-padding;
+
+//== Navs
+@nav-link-padding: 5px 10px;
+
+//== Navbar
+@navbar-height: @odoo-navbar-height - 2;
+@navbar-margin-bottom: 0;
+@navbar-inverse-bg: @odoo-brand-primary;
+@navbar-inverse-link-color: white;
+@navbar-inverse-link-hover-bg: @odoo-navbar-inverse-link-hover-bg;
+@navbar-inverse-toggle-hover-bg: @odoo-brand-primary;
+
+//== Tabs
+@nav-tabs-border-color: transparent;
+@nav-tabs-link-hover-border-color: gray-light;
+@nav-tabs-active-link-hover-bg: @gray-lighter;
+@nav-tabs-active-link-hover-color: @odoo-brand-optional;
+@nav-tabs-active-link-hover-border-color: transparent;
+
+//== Tables
+// List views always have the table-condensed class, maybe we should remove it
+// (and consider it does not exist) and change the default table paddings
+@table-condensed-cell-padding: 5px;
+@table-bg: white;
+@table-bg-accent: @gray-lighter;
+@table-bg-hover: @gray-lighter-dark;
+@table-bg-active: @table-bg-hover;
+@table-border-color: @gray-lighter-dark;
+
+//== Well
+@well-bg: @odoo-color-silver;
+@well-border: @odoo-color-silver;
+
+//== Alerts
+@alert-link-font-weight: bold;
+@alert-success-border: @alert-success-text;
+@alert-info-border: @alert-info-text;
+@alert-warning-border: @alert-warning-text;
+@alert-danger-border: @alert-danger-text;
+
+// ------------------------------------------------------------------
+// Bootstrap components rules (non exposed features variables)
+// ------------------------------------------------------------------
+
+//== Titles
+@media (max-width: @screen-xs-max) {
+    h1 {
+        font-size: @font-size-h1 * 3 / 4;
+    }
+    h2, h3, h4, h5, h6 {
+        font-size: @odoo-font-size-base-touch;
+    }
+}
+
+//== Alerts
+.alert {
+    &.alert-info, &.alert-success, &.alert-warning, &.alert-danger {
+        border-width: 0 0 0 3px;
+    }
+    a {
+        font-weight: @alert-link-font-weight;
+    }
+}
+
+//== Well
+.well {
+    box-shadow: none;
+}
+
+//== Badges
+.badge {
+    border: 1px solid @odoo-brand-optional;
+    margin: 1px 2px 1px 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+//== Buttons
+
+// Mixin to define variations for btn-links and muted btn-links
+.o-btn-link-variant(@color, @color-active) {
+    text-transform: none;
+    .o-hover-text-color(@default-color: @color, @hover-color: @color-active);
+
+    &, &:hover, &:focus, &:active, &.active {
+        border-color: transparent;
+        background-color: transparent
+    }
+
+    &.text-muted, .text-muted {
+        .o-hover-opacity();
+        .o-hover-text-color(@default-color: @text-muted, @hover-color: @color-active);
+    }
+}
+
+.btn-icon {
+    .button-variant(@btn-icon-color; @btn-icon-bg; @btn-icon-border);
+
+    &.active {
+        &, &:hover, &:focus {
+            background-color: @gray-lighter-dark;
+            color: @headings-color;
+        }
+    }
+}
+
+.btn, .btn-sm, .btn-group > .btn {
+    border-radius: 0px;
+    border: none;
+    &:hover, &:active, &:focus, &:active:focus {
+        outline: none;
+    }
+}
+
+.btn-primary.active, .btn-default.active, .btn-icon.active {
+    .box-shadow(none);
+}
+
+.btn-primary, .btn-default {
+    text-transform: uppercase;
+}
+
+
+.btn-link {
+    font-weight: @btn-font-weight;
+
+    &.btn-default {
+        .o-btn-link-variant(@text-color, @headings-color);
+    }
+    &.btn-success, &.text-success {
+        .o-btn-link-variant(@text-color, @brand-success);
+    }
+    &.btn-warning, &.text-warning {
+        .o-btn-link-variant(@text-color, @brand-warning);
+    }
+    &.btn-danger, &.text-danger {
+        .o-btn-link-variant(@text-color, @brand-danger);
+    }
+    &.btn-info, &.text-info {
+        .o-btn-link-variant(@text-color, darken(@brand-info, 20%));
+    }
+}
+
+//== Navbar
+.navbar .navbar-toggle {
+    border-color: transparent;
+}
+
+//== Labels
+.label {
+    border-radius: 0;
+    font-size: 1em; // Override 75% of .label
+}
+
+//== Popover
+.popover {
+    border-radius: @border-radius-base;
+}
+
+//== Printing improvements
+@media print {
+    .table-responsive {
+        overflow-x: initial;
+    }
+}

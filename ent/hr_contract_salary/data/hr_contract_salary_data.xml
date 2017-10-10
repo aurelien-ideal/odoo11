@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="signature.item.party" id="signature_item_party_job_responsible">
+        <field name="name">HR Responsible</field>
+    </record>
+
+    <data>
+        <record id="mail_template_send_offer" model="mail.template">
+            <field name="name">Your Salary Package</field>
+            <field name="model_id" ref="hr_contract.model_hr_contract"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="subject">${object.company_id.name} : Job Offer - ${object.name}</field>
+            <field name="lang">${object.employee_id.address_home_id.lang}</field>
+            <field name="body_html" type="xml">
+                <div>
+                    <h2>Congratulations!</h2>
+                    <p>You can configure your salary package by clicking on the link below.</p>
+                    <br/><br/>
+                    <center>
+                        <a href="${ctx.get('salary_package_url')}" target="_blank" style="background-color: #1abc9c; padding: 20px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 16px;" class="o_default_snippet_text">Configure your package</a>
+                        <br/><br/><br/>
+                    </center>
+
+                </div>
+            </field>
+        </record>
+
+        <record id="mail_template_data_notification_email_send_offer" model="mail.template">
+            <field name="name">Senf Offer Notification Email</field>
+            <field name="subject">${object.subject}</field>
+            <field name="model_id" ref="mail.model_mail_message"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html" type="xml">
+                <html>
+                <head></head>
+                % set record = ctx.get('record')
+                % set company = record and record.company_id or user.company_id
+                <body style="margin: 0; padding: 0;">
+                <table border="0" width="100%" cellpadding="0" bgcolor="#ededed" style="padding: 20px; background-color: #ededed" summary="o_mail_notification">
+                    <tbody>
+
+                      <!-- HEADER -->
+                      <tr>
+                        <td align="center" style="min-width: 590px;">
+                          <table width="590" border="0" cellpadding="0" bgcolor="#875A7B" style="min-width: 590px; background-color: rgb(135,90,123); padding: 20px;">
+                            <tr>
+                              <td valign="middle">
+                                  <span style="font-size:20px; color:white; font-weight: bold;">
+                                      ${object.record_name}
+                                  </span>
+                              </td>
+                              <td valign="middle" align="right">
+                                  <img src="/logo.png?company=${company.id}" style="padding: 0px; margin: 0px; height: auto; width: 80px;" alt="${company.name}"/>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <!-- CONTENT -->
+                      <tr>
+                        <td align="center" style="min-width: 590px;">
+                          <table width="590" border="0" cellpadding="0" bgcolor="#ffffff" style="min-width: 590px; background-color: rgb(255, 255, 255); padding: 20px;">
+                            <tbody>
+                              <td valign="top" style="font-family:Arial,Helvetica,sans-serif; color: #555; font-size: 14px;">
+                                ${object.body | safe}
+                              </td>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <!-- FOOTER -->
+                      <tr>
+                        <td align="center" style="min-width: 590px;">
+                          <table width="590" border="0" cellpadding="0" bgcolor="#875A7B" style="min-width: 590px; background-color: rgb(135,90,123); padding: 20px;">
+                            <tr>
+                              <td valign="middle" align="left" style="color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;">
+                                ${company.name}<br/>
+                                ${company.phone or ''}
+                              </td>
+                              <td valign="middle" align="right" style="color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;">
+                                % if company.email:
+                                <a href="mailto:${company.email}" style="text-decoration:none; color: white;">${company.email}</a><br/>
+                                % endif
+                                % if company.website:
+                                    <a href="${company.website}" style="text-decoration:none; color: white;">
+                                        ${company.website}
+                                    </a>
+                                % endif
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                            Powered by <a target="_blank" href="https://www.odoo.com">Odoo</a>.
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                </body>
+                </html>
+            </field>
+        </record>
+    </data>
+
+
+
+</odoo>

@@ -1,0 +1,480 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_online_sync
+# 
+# Translators:
+# Murat Kaplan <muratk@projetgrup.com>, 2017
+# Fırat Kaya <firat.kaya@mechsoft.com.tr>, 2017
+# Nurettin Emre Ozbakir <emre.ozbakir@gamareklam.com>, 2017
+# Ediz Duman <neps1192@gmail.com>, 2017
+# Hüseyin Cem Aras <hcemaras@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Hüseyin Cem Aras <hcemaras@gmail.com>, 2017\n"
+"Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"<i class=\"fa fa-plus-circle\" aria-hidden=\"true\"/> <span> Add a new bank "
+"to the system</span>"
+msgstr ""
+"<I class = \"fa fa-plus-circle\" aria-hidden = \"true\" /> <span> Sisteme "
+"yeni bir banka ekleyin </ span>"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"<strong>Well done!</strong>\n"
+"                  Your banking institution is now synchronized with Odoo and a total of"
+msgstr ""
+"<Strong> Harika! </ Strong>\n"
+"                  Bankanız şimdi Odoo ile senkronize edildi ve toplamda"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_account_number
+msgid "Account Number"
+msgstr "Hesap Numarası"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_account_online_journal_ids
+msgid "Account Online Journal"
+msgstr "Online Hesap Yevmiyesi"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_account_online_provider_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_account_online_provider_id
+msgid "Account Online Provider"
+msgstr "Online Hesap Sağlayıcısı"
+
+#. module: account_online_sync
+#: model:ir.actions.server,name:account_online_sync.online_sync_cron_ir_actions_server
+#: model:ir.cron,cron_name:account_online_sync.online_sync_cron
+#: model:ir.cron,name:account_online_sync.online_sync_cron
+msgid "Account: Journal online sync"
+msgstr "Muhasebe: Online muhasebe yevmiye senkronizasyonu"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_action_required
+msgid "Action Required"
+msgstr "Eylem Gerekli"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Additional information"
+msgstr "Ek bilgi"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:59
+#, python-format
+msgid "An error occurred during online synchronization"
+msgstr "Çevrimiçi eşitleme sırasında bir hata oluştu"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Associate to journal"
+msgstr "Yevmiye ile ilişkilendir"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_balance
+msgid "Balance"
+msgstr "Bakiye"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Bank Accounts"
+msgstr "Banka Hesapları"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Banka Hesap Özeti"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Banka Hesap Özeti Kalemi"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,help:account_online_sync.action_online_provider_account
+msgid "Click to add an online bank to the system."
+msgstr "Sistemde çevrimiçi bir banka eklemek için tıklayın."
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Close"
+msgstr "Kapat"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_status_code
+msgid "Code to identify problem"
+msgstr "Sorunu belirlemek için kod"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_company_id
+msgid "Company"
+msgstr "Firma"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_bank_journal_form_inherit_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Configure"
+msgstr "Yapılandırma"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_count_account_online_journal
+msgid "Count Account Online Journal"
+msgstr "Online Muhasebe Yevmiyesi Say"
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create bi-monthly statements"
+msgstr ""
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create daily statements"
+msgstr ""
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create monthly statements"
+msgstr ""
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create one statement per synchronization"
+msgstr ""
+
+#. module: account_online_sync
+#: selection:account.journal,bank_statement_creation:0
+msgid "Create weekly statements"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_bank_statement_creation
+msgid "Creation of bank statement"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_sync_date
+msgid "Fetch transaction from"
+msgstr "Şuradan alınıyor:"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_provider_identifier
+msgid ""
+"ID of the banking institution in third party server used for debugging "
+"purpose"
+msgstr ""
+"Hata ayıklama amacına yönelik kullanılan üçüncü taraf sunucu banka "
+"kuruluşunun kimliği"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_provider_account_identifier
+msgid "ID used to identify provider account in third party server"
+msgstr ""
+"Üçüncü taraf sunucuda sağlayıcı hesabını tanımlamak için kullanılan kimlik "
+"numarası"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_journal
+msgid "Interface for online account journal"
+msgstr "Çevrimiçi hesap yevmiyesi için arayüz"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_journal
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_journal_ids
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_journal_id
+msgid "Journal"
+msgstr "Journal"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard___last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_last_refresh
+msgid "Last Refresh"
+msgstr "Son Yenileme"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_last_sync
+msgid "Last synchronization"
+msgstr "Son senkronizasyon"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Manual Refresh"
+msgstr "Elle Yenile"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_message
+msgid "Message"
+msgstr "Mesaj"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_provider_name
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_name
+msgid "Name"
+msgstr "İsim"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Next sync:"
+msgstr "Sonraki senkronizasyon:"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_next_synchronization
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_next_refresh
+msgid "Next synchronization"
+msgstr "Sonraki senkronizasyon"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_number_added
+msgid "Number Added"
+msgstr "Sayı Eklendi"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_account_online_journal_id
+msgid "Online Account"
+msgstr "Çevrimiçi Hesap"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line_online_identifier
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_online_identifier
+msgid "Online Identifier"
+msgstr "Çevrimiçi Tanımlayıcı"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,name:account_online_sync.action_online_provider_account
+msgid "Online Provider Account"
+msgstr "Online Sağlayıcı Hesabı"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid "Online Sync configuration"
+msgstr "Çevrimiçi senkronizasyon yapılandırması"
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,name:account_online_sync.action_account_online_wizard_form
+#: model:ir.ui.menu,name:account_online_sync.menu_action_online_provider_account
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Online Synchronization"
+msgstr "Çevrimiçi Senkronizasyon"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_wizard_account_online_journal_id
+msgid "Online account"
+msgstr "Online hesap"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:269
+#, python-format
+msgid "Opening statement: first synchronization"
+msgstr "Açılış Kaydı: ilk senkronizasyon"
+
+#. module: account_online_sync
+#: selection:account.online.provider,provider_type:0
+msgid "Plaid"
+msgstr "Kareli"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Problem during synchronization"
+msgstr "Senkronizasyon sırasında sorun"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_account_identifier
+msgid "Provider Account Identifier"
+msgstr "Sağlayıcı Hesap Kimliği"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_identifier
+msgid "Provider Identifier"
+msgstr "Sağlayıcı Doğrulama"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_provider_type
+msgid "Provider Type"
+msgstr "Sağlayıcı Tipi"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_provider
+msgid "Provider for online account synchronization"
+msgstr "Çevrimiçi hesap senkronizasyonu sağlayıcısı"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_status_code
+msgid "Status Code"
+msgstr "Durum Kodu"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_synchronization_status
+#: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_status
+msgid "Synchronization status"
+msgstr "Senkronizasyon durumu"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Synchronize now"
+msgstr "Şimdi senkronize et"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_message
+msgid "Techhnical message from third party provider that can help debugging"
+msgstr ""
+"Hata ayıklamaya yardımcı olabilecek üçüncü taraf sağlayıcıdan gelen Teknik "
+"mesaj"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:60
+#, python-format
+msgid "The following error happened during the synchronization: %s"
+msgstr "Senkronizasyon sırasında aşağıdaki hata oluştu:% s"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_journal_bank_statement_creation
+msgid ""
+"This field is used for the online synchronization:\n"
+"                                                    depending on the option selected, newly fetched transactions\n"
+"                                                    will be put inside previous statement or in a new one"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_action_required
+msgid "True if user needs to take action by updating account"
+msgstr "Kullanıcının hesabı güncelleyerek işlem yapması gerekiyorsa doğrudur"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:127
+#, python-format
+msgid "Unimplemented"
+msgstr "Uygulanmayan"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.online_provider_account_form_view
+msgid "Update Credentials"
+msgstr "Kimlik Bilgilerini Güncelle"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_journal_synchronization_status
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_status
+msgid "Update status of provider account"
+msgstr "Sağlayıcı hesabının durumunu güncelleme"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "View problem"
+msgstr "Problemi görüntüle"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_online_wizard
+msgid "Wizard for online account synchronization"
+msgstr "Çevrimiçi hesap senkronizasyonu sihirbazı"
+
+#. module: account_online_sync
+#: selection:account.online.provider,provider_type:0
+msgid "Yodlee"
+msgstr "Yodlee"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_balance
+msgid "balance of the account sent by the third party provider"
+msgstr "Üçüncü taraf sağlayıcı tarafından gönderilen hesabın bakiyesi"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
+msgid ""
+"bank accounts have been retrieved.\n"
+"                  You can associate those bank accounts to a journal in order to automatically retrieve the latest statements from your bank."
+msgstr ""
+"Banka hesapları alındı.\n"
+"                  Bankanızdan en yeni bildirimleri otomatik olarak almak için bu banka hesaplarını bir yevmiye ile ilişkilendirebilirsiniz."
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_online_identifier
+msgid "id use to identify account in provider system"
+msgstr "Sağlayıcı sisteminde hesabı tanımlamak için kimlik kullanır"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_journal_provider_name
+#: model:ir.model.fields,help:account_online_sync.field_account_online_provider_name
+msgid "name of the banking institution"
+msgstr "Bankacılık kurumunun adı"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_wizard_number_added
+msgid "number of accounts added from call to new_institution"
+msgstr "New_institution çağrısından eklenen hesapların sayısı"
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:315
+#, python-format
+msgid "online sync"
+msgstr "Çevrimiçi senkronizasyon"
+
+#. module: account_online_sync
+#: model:ir.model.fields,help:account_online_sync.field_account_online_wizard_count_account_online_journal
+msgid ""
+"technical field used to hide account_online_journal_id if no institution has"
+" been loaded in the system"
+msgstr ""
+"Sistemde herhangi bir kurum yüklenmemişse account_online_journal_id'yi "
+"gizlemek için kullanılan teknik alan"

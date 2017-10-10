@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="website_sign.signature_item_custom_dialog">
+        <div>
+            <div class="form-group clearfix" groups="base.group_no_one">
+                <label for="o_sign_name" class="col-md-2">Field Name</label>
+                <div class="col-md-10">
+                    <input type="text" id="o_sign_name" class="o_input"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="o_sign_responsible_select_input" class="col-md-2">Responsible</label>
+                <div class="o_sign_responsible_select col-md-10">
+                    <select id="o_sign_responsible_select_input"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <div class="checkbox">
+                        <label for="o_sign_required_field">
+                            <input type="checkbox" id="o_sign_required_field"/> Mandatory field
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="website_sign.initial_all_pages_dialog">
+        <div class="form-group">
+            <label for="responsible_select_initials_input" class="col-md-2">Responsible</label>
+            <div class="o_sign_responsible_select_initials col-md-10">
+                <select id="responsible_select_initials_input"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="website_sign.create_signature_request_dialog">
+        <div class="form-horizontal">
+            <p class="o_sign_warning_message_no_field">
+                <em>If you leave your document without any fields, the signers will be requested for an unique signature alongside the document</em>
+            </p>
+
+            <div class="o_sign_request_signers">
+                <div class="form-group">
+                    <label for="o_sign_followers_select" class="col-md-3">Send a copy to</label>
+                    <div class="col-md-9">
+                        <input type="hidden" id="o_sign_followers_select" placeholder="Write email or search contact..." multiple="multiple"/>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="form-group">
+                <label for="signature_request_subject_input" class="col-md-3">Subject</label>
+                <div class="col-md-9">
+                    <input type="text" class="o_sign_subject_input o_input" placeholder="Signature Request"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sign_message_textarea" class="col-md-3">Message</label>
+                <div class="col-md-9">
+                    <textarea class="o_sign_message_textarea o_input" rows="4"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sign_reference_input" class="col-md-3">Filename</label>
+                <div class="col-md-9">
+                    <div class="input-group">
+                        <input type="text" class="o_sign_reference_input o_input" aria-describedby="o_sign_pdf_ext"/>
+                        <span class="input-group-addon" id="o_sign_pdf_ext"><t t-esc="widget.attachment.datas_fname.substr(widget.attachment.datas_fname.lastIndexOf('.'))"/></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="website_sign.share_template_dialog">
+        <div>
+            <p>Share this link and Odoo will create a new document per person who clicks on the link. The link is private, only those that receive the link will be able to sign it.</p>
+
+            <label for="o_sign_share_link_input" class="col-md-3">Link to Share</label>
+            <div class="col-md-9">
+                <input id="o_sign_share_link_input" type="text" class="o_input" readonly="readonly"/>
+            </div>
+
+            <p>To be able to share, there must be only one responsible for all fields !</p>
+        </div>
+    </t>
+
+    <div t-name="website_sign.add_followers_dialog" class="form-horizontal">
+        <div class="form-group">
+            <label for="o_sign_followers_select" class="col-md-3">Send a copy</label>
+            <div class="col-md-9">
+                <input type="hidden" id="o_sign_followers_select" placeholder="Write email or search contact..." multiple="multiple"/>
+            </div>
+        </div>
+    </div>
+
+    <t t-name="website_sign.template">
+        <div class="text-center clearfix">
+            <div class="o_sign_template_saved_info alert alert-success pull-right"><span class="fa fa-check"/> Saved</div>
+            <span t-if="!widget.has_signature_requests" class="fa fa-pencil" title="Edit template name"/>
+            <input type="text" class="o_sign_template_name_input o_input" t-att-value="widget.signature_request_template.attachment_id.name"/>
+        </div>
+
+        <div t-if="widget.has_signature_requests &amp;&amp; widget.isPDF" class="text-center">
+            This template is used by some signature requests.
+            If you want to edit it, <button type="button" class="o_sign_duplicate_signature_template btn btn-link">click here</button> to start a new template from this one !
+        </div>
+
+        <div t-if="!widget.isPDF" class="o_sign_image_document">
+            <t t-set="webimage" t-value="new RegExp('image.*(gif|jpe|jpg|png)').test(widget.signature_request_template.attachment_id.mimetype)"/>
+            <img t-if="webimage" class="img img-responsive" t-attf-src="/web/image/{{widget.signature_request_template.attachment_id.id}}"/>
+            <div t-if="!webimage" class="o_image" t-att-data-mimetype="widget.signature_request_template.attachment_id.mimetype"/>
+        </div>
+
+        <iframe t-if="widget.isPDF" class="o_sign_pdf_iframe"/>
+    </t>
+
+    <t t-name="website_sign.type_buttons">
+        <t t-foreach="signature_item_types" t-as="item_type">
+            <button type="button" class="o_sign_field_type_button" t-att-data-item-type-id="item_type.id" title="Drag &amp; Drop a field in the PDF"><t t-esc="item_type.name"/></button>
+        </t>
+    </t>
+</templates>

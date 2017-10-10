@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="quality_mrp.test_type_dummy" model="quality.point.test_type">
+        <field name="name">Dummy</field>
+        <field name="technical_name">dummy</field>
+    </record>
+
+    <record id="quality_mrp.test_type_picture" model="quality.point.test_type">
+        <field name="name">Take a Picture</field>
+        <field name="technical_name">picture</field>
+    </record>
+
+    <record id="quality_mrp.test_type_register_consumed_materials" model="quality.point.test_type">
+        <field name="name">Register Consumed Materials</field>
+        <field name="technical_name">register_consumed_materials</field>
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+<odoo>
+    <record id="mail_activity_type_view_form_inherit" model="ir.ui.view">
+        <field name="name">mail.activity.type.view.form.inherit</field>
+        <field name="model">mail.activity.type</field>
+        <field name="inherit_id" ref="mail.mail_activity_type_view_form"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='next_type_ids']" position="after">
+                    <field name="create_voip_phonecall"/>
+                </xpath>
+            </data>
+        </field>
+    </record>
+</odoo>

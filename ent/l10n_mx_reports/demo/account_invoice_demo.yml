@@ -1,0 +1,39 @@
+-
+  Invoices
+-
+  !record {model: account.invoice, id: account_invoice_diot_0}:
+    company_id: base.main_company
+    partner_id: base.res_partner_1
+    type: 'in_invoice'
+    invoice_line_ids:
+      - product_id: product.product_product_3
+        price_unit: 100.0
+        uom_id: product.product_uom_unit
+        quantity: 1
+        name: PC Assemble SC234
+        sequence: 15
+      - product_id: product.product_product_5
+        price_unit: 100.0
+        uom_id: product.product_uom_unit
+        quantity: 1
+        name: PC Assemble + Custom (PC on Demand)
+        sequence: 20
+-
+  !python {model: ir.model.data, id: False} : |
+      invoice_id = self.env['account.invoice'].browse(ref('account_invoice_diot_0'))
+      invoice_line_ids = invoice_id.invoice_line_ids
+      account_id = self.env['account.account'].search([('code', '=', '201.01.01')], limit=1)
+      line_account_id = self.env['account.account'].search([('code', '=', '501.01.01')], limit=1)
+      tax_line_id_1 = self.env['account.tax'].search([('name', '=', 'IVA(0%) COMPRAS')], limit=1)
+      tax_line_id_2 = self.env['account.tax'].search([('name', '=', 'IVA(16%) COMPRAS')], limit=1)
+      if account_id:
+          invoice_id.account_id = account_id.id
+      if line_account_id:
+          invoice_line_ids[0].account_id = line_account_id.id
+          invoice_line_ids[1].account_id = line_account_id.id
+      if tax_line_id_1:
+          invoice_line_ids[0].invoice_line_tax_ids = [(6, 0, [tax_line_id_2.id])]
+      if tax_line_id_2:
+          invoice_line_ids[1].invoice_line_tax_ids = [(6, 0, [tax_line_id_1.id])]
+      invoice_id.compute_taxes()
+      invoice_id.action_invoice_open()

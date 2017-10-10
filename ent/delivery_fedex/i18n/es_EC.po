@@ -1,0 +1,387 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_fedex
+#
+# Translators:
+# Jesus Alan Ramos Rodriguez <alan.ramos@jarsa.com.mx>, 2015
+# Rick Hunter <rick_hunter_ec@yahoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 11:34+0000\n"
+"PO-Revision-Date: 2016-02-09 05:14+0000\n"
+"Last-Translator: Rick Hunter <rick_hunter_ec@yahoo.com>\n"
+"Language-Team: Spanish (Ecuador) (http://www.transifex.com/odoo/odoo-9/"
+"language/es_EC/)\n"
+"Language: es_EC\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ", click on \"Get Production Key\" and follow all the steps."
+msgstr ""
+", presione en \"Obtener Clave de Producción\" y siga los siguientes pasos."
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"<br/>According to your needs, you will need to contact different "
+"certifications :"
+msgstr ""
+"<br/>Acorde a sus necesidades, endrá que ponerse en contacto con diferentes "
+"certificaciones:"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_account_number
+msgid "Account Number"
+msgstr "Número de cuenta"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services with Label Certification"
+msgstr "Servicios avanzados con Certificación de Etiqueta"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Advanced Services without Label Certification"
+msgstr "Servicios avanzados sin Certificación de Etiqueta"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "BUSINESS_SERVICE_CENTER"
+msgstr "BUSINESS_SERVICE_CENTER"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_delivery_carrier
+msgid "Carrier"
+msgstr "Transportista"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Certification Process"
+msgstr "Proceso de certificación"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "DROP_BOX"
+msgstr "DROP_BOX"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_default_packaging_id
+msgid "Default Package Type"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_key
+msgid "Developer Key"
+msgstr "Clave de Desarrollo"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "EPL2"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY"
+msgstr "FEDEX_2_DAY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_2_DAY_AM"
+msgstr "FEDEX_2_DAY_AM"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FEDEX_GROUND"
+msgstr "FEDEX_GROUND"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "FIRST_OVERNIGHT"
+msgstr "FIRST_OVERNIGHT"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "FedEx Web Services \"Move to Production\""
+msgstr "FedEx Web Services \"Move to Production\""
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Configuration"
+msgstr "Configuración de Fedex"
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_inter
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_inter_product_product
+msgid "Fedex International"
+msgstr "Fedex International"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Tutorial"
+msgstr "Tutorial Fedex "
+
+#. module: delivery_fedex
+#: model:delivery.carrier,name:delivery_fedex.delivery_carrier_fedex_us
+#: model:product.product,name:delivery_fedex.delivery_carrier_fedex_us_product_product
+msgid "Fedex US"
+msgstr "Fedex US"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Fedex Website"
+msgstr "Sitio web Fedex"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_droppoff_type
+msgid "Fedex drop-off type"
+msgstr "Tipo Fedex drop-off "
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_stock_type
+msgid "Fedex label stock type"
+msgstr "Inventario de Tipo de etiqueta  Fedex"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_service_type
+msgid "Fedex service type"
+msgstr "Tipo de Servicio Fedex"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_weight_unit
+msgid "Fedex weight unit"
+msgstr "Unidades de peso Fedex"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Go to"
+msgstr "ir a"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_ECONOMY"
+msgstr "INTERNATIONAL_ECONOMY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "INTERNATIONAL_PRIORITY"
+msgstr "INTERNATIONAL_PRIORITY"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "KG"
+msgstr "KG"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_weight_unit:0
+msgid "LB"
+msgstr "LB"
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_label_file_type
+msgid "Label File Type"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_meter_number
+msgid "Meter Number"
+msgstr "Número de Metros"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Once your account is created, go to"
+msgstr "Una vez que su cuenta ha sido creada, ir hacia"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X6"
+msgstr "PAPER_4X6"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X8"
+msgstr "PAPER_4X8"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_4X9"
+msgstr "PAPER_4X9"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_7X4.75"
+msgstr "PAPER_7X4.75"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_BOTTOM_HALF_LABEL"
+msgstr "PAPER_8.5X11_BOTTOM_HALF_LABEL"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_8.5X11_TOP_HALF_LABEL"
+msgstr "PAPER_8.5X11_TOP_HALF_LABEL"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "PAPER_LETTER"
+msgstr "PAPER_LETTER"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PDF"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "PNG"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "PRIORITY_OVERNIGHT"
+msgstr "PRIORITY_OVERNIGHT"
+
+#. module: delivery_fedex
+#: model:ir.model,name:delivery_fedex.model_product_packaging
+msgid "Packaging"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.model.fields,field_description:delivery_fedex.field_delivery_carrier_fedex_developer_password
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REGULAR_PICKUP"
+msgstr "REGULAR_PICKUP"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "REQUEST_COURIER"
+msgstr "REQUEST_COURIER"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_service_type:0
+msgid "STANDARD_OVERNIGHT"
+msgstr "STANDARD_OVERNIGHT"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_droppoff_type:0
+msgid "STATION"
+msgstr "STATION"
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_LEADING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X6.75_TRAILING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X8"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_LEADING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_stock_type:0
+msgid "STOCK_4X9_TRAILING_DOC_TAB"
+msgstr ""
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:333
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "El envío Nº %s ha sido cancelado"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:252
+#: code:addons/delivery_fedex/models/delivery_fedex.py:294
+#, python-format
+msgid "Shipment created into Fedex <br/> <b>Tracking Number : </b>%s"
+msgstr "Envío creado en Fedex <br/> <b>Número de rastreo: </b>%s"
+
+#. module: delivery_fedex
+#: code:addons/delivery_fedex/models/delivery_fedex.py:256
+#, python-format
+msgid "Shipping label for package %s"
+msgstr "Etiqueta de envío para el paquete %s"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "Standard Services"
+msgstr "Servicios Estándar"
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "The last step is the"
+msgstr "El último paso es el "
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid ""
+"These certifications usually require that you contact the FedEx support team "
+"by email."
+msgstr ""
+"Estas certificaciones por lo general requieren que se comunique con el "
+"equipo de soporte de FedEx por correo electrónico."
+
+#. module: delivery_fedex
+#: selection:delivery.carrier,fedex_label_file_type:0
+msgid "ZPLII"
+msgstr ""
+
+#. module: delivery_fedex
+#: model:ir.ui.view,arch_db:delivery_fedex.view_delivery_carrier_form_with_provider_fedex
+msgid "to create a FedEx account of the following type:"
+msgstr "para crear una cuenta FedEx del siguiente tipo:"
+
+#~ msgid "FEDEX_10KG_BOX"
+#~ msgstr "FEDEX_10KG_BOX"
+
+#~ msgid "FEDEX_25KG_BOX"
+#~ msgstr "FEDEX_25KG_BOX"
+
+#~ msgid "FEDEX_BOX"
+#~ msgstr "FEDEX_BOX"
+
+#~ msgid "FEDEX_ENVELOPE"
+#~ msgstr "FEDEX_ENVELOPE"
+
+#~ msgid "FEDEX_PAK"
+#~ msgstr "FEDEX_PAK"
+
+#~ msgid "FEDEX_TUBE"
+#~ msgstr "FEDEX_TUBE"
+
+#~ msgid "Fedex packaging type"
+#~ msgstr "Tipo de Empaque Fedex"
+
+#~ msgid "Test Mode"
+#~ msgstr "Modo Prueba"
+
+#~ msgid "Uncheck this box to use production Fedex Web Services"
+#~ msgstr ""
+#~ "Desactive esta opción para usar los Servicios Web de Fedex en producción"
+
+#~ msgid "YOUR_PACKAGING"
+#~ msgstr "YOUR_PACKAGING"

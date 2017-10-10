@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+
+<t t-name="web_studio.NewReportDialog">
+    <div class="o_web_studio_report_template_dialog">
+        <div t-foreach="widget.templates" t-as="template" class="o_web_studio_report_template_item" t-att-data-template="template.name">
+            <div><t t-esc="template.label"/></div>
+            <div class="o_web_studio_report_template_description"><t t-esc="template.description"/></div> 
+        </div>
+    </div>
+</t>
+
+</templates>

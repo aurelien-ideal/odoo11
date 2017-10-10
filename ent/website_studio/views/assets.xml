@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <template id="assets_backend" name="Website Studio Assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/website_studio/static/src/js/form_manager.js"></script>
+            <script type="text/javascript" src="/website_studio/static/src/js/submenu.js"></script>
+
+            <link href="/website_studio/static/src/less/form_manager.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+</data>
+</odoo>

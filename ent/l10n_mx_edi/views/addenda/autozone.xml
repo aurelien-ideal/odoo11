@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <template id="l10n_mx_edi_addenda_autozone" name="Addenda Autozone">
+            <Addenda>
+                <ADDENDA10
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    DEPTID="DEPTID"
+                    VERSION="VERSION"
+                    BUYER="BUYER"
+                    VENDOR_ID="VENDOR_ID"
+                    POID="POID"
+                    PODATE="PODATE"
+                    t-att-EMAIL="record.company_id.partner_id.email"/>
+            </Addenda>
+        </template>
+        <record id="l10n_mx_edi_addenda_autozone" model="ir.ui.view">
+            <field name="l10n_mx_edi_addenda_flag">True</field>
+        </record>
+    </data>
+</odoo>

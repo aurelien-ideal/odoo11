@@ -1,0 +1,279 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mail_github
+# 
+# Translators:
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Martin Trigaux <mat@odoo.com>, 2017\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "(with"
+msgstr "(met"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid ") on repository"
+msgstr ") op repository"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid ", by"
+msgstr ", door"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "<b>State :</b>"
+msgstr "<b>Fase:</b>"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "<b>Title :</b>"
+msgstr "<b>Titel:</b>"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
+msgid ""
+"After that you can choose the events you want to follow in the channels. Be "
+"careful, only <i>Commit comment, Issues, Issue comment, Gollum, Pull "
+"request, Pull request review, Pull request review comment</i> and "
+"<i>Push</i> events are supported."
+msgstr ""
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_channel_ids
+msgid "Channels"
+msgstr "Kanalen"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
+msgid "Channels allowed to follow repositories."
+msgstr "Kanalen die toestemming hebben om repositories te volgen."
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "Commit"
+msgstr "Commit"
+
+#. module: mail_github
+#: model:ir.model.fields,help:mail_github.field_mail_channel_github_name
+msgid ""
+"Complete name of the github repository. e.i.: my-username/my-public-repo"
+msgstr ""
+"Volledig naam van de Github repository, bijvoorbeeld: mijn-gebruikersnaam"
+"/mijn-publieke-repo"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_create_uid
+msgid "Created by"
+msgstr "Aangemaakt door"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_create_date
+msgid "Created on"
+msgstr "Aangemaakt op"
+
+#. module: mail_github
+#: model:ir.model,name:mail_github.model_mail_channel
+msgid "Discussion channel"
+msgstr "Discussiekanaal"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_enabled
+msgid "Enable listening to Github repositories"
+msgstr "Sta luisteren naar Github repositories toe"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_res_users_github_login
+msgid "GitHub Login"
+msgstr "Github login"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.mail_channel_view_form
+msgid "Github"
+msgstr "Github"
+
+#. module: mail_github
+#: model:ir.actions.act_window,name:mail_github.mail_channel_github_action
+#: model:ir.ui.menu,name:mail_github.mail_channel_menu_github
+msgid "Github Repositories"
+msgstr "Github repositories"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "Issue"
+msgstr "Issue"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_write_uid
+msgid "Last Updated by"
+msgstr "Laatst bijgewerkt door"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_write_date
+msgid "Last Updated on"
+msgstr "Laatst bijgewerkt op"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
+msgid ""
+"Once the repository is created in Odoo, create it on Github. Then, copy "
+"'Payload URL' and 'Secret' in Github interface."
+msgstr ""
+"Eenmaal de repository is aangemaakt in Odoo maakt u deze op Github aan. "
+"Kopieer vervolgens de 'Payload URL' en 'Geheim' in de Github interface."
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "PR"
+msgstr "PR"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_url_token
+msgid "Payload URL"
+msgstr "Payload URL"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_repo_ids
+msgid "Repositories"
+msgstr "Repositories"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_github_repository_id
+msgid "Repository ID"
+msgstr "Repository ID"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
+msgid "Repository full name: user/repository."
+msgstr "Volledige naam repository: gebruiker/repository."
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_name
+msgid "Repository name"
+msgstr "Repository naam"
+
+#. module: mail_github
+#: model:ir.model.fields,field_description:mail_github.field_mail_channel_github_secret
+msgid "Secret"
+msgstr "Geheim"
+
+#. module: mail_github
+#: model:ir.model.fields,help:mail_github.field_mail_channel_github_repo_ids
+msgid "The Github repositories the channel will follow"
+msgstr "De Github repositories die het kanaal zal volgen"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
+msgid "The signature to be pasted when setting up the webhook on Github"
+msgstr "De signatuur om te plakken wanneer u de webhook op Github opzet"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.mail_channel_github_view_form
+msgid ""
+"The webhook 'Content Type' should be set to <b>application/x-www-form-"
+"urlencoded</b>."
+msgstr ""
+
+#. module: mail_github
+#: model:ir.model.fields,help:mail_github.field_mail_channel_github_url_token
+msgid "URL to put as the payload target when configuring GitHub webhook"
+msgstr ""
+"URL om in te geven als payload wanneer u de Github webhook configureert"
+
+#. module: mail_github
+#: model:ir.model,name:mail_github.model_res_users
+msgid "Users"
+msgstr "Gebruikers"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "commented"
+msgstr "opmerking"
+
+#. module: mail_github
+#: code:addons/mail_github/controllers/main.py:174
+#, python-format
+msgid "commit"
+msgstr "commit"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "commit(s) on"
+msgstr "commit(s) op"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "created a new"
+msgstr "heeft een nieuwe aangemaakt"
+
+#. module: mail_github
+#: code:addons/mail_github/controllers/main.py:197
+#, python-format
+msgid "issue"
+msgstr "issue"
+
+#. module: mail_github
+#: model:ir.model,name:mail_github.model_mail_channel_github
+msgid "mail.channel.github"
+msgstr "mail.channel.github"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "modified the following"
+msgstr "heeft het volgende gewijzigd"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "modifies wiki pages on repository"
+msgstr "wijzigt wiki pagina's op repositories"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "on repository"
+msgstr "op repository"
+
+#. module: mail_github
+#: code:addons/mail_github/controllers/main.py:211
+#: code:addons/mail_github/controllers/main.py:218
+#, python-format
+msgid "pull request"
+msgstr "pull request"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "push"
+msgstr "push"
+
+#. module: mail_github
+#: model:ir.ui.view,arch_db:mail_github.message_github_notification
+msgid "remove the following"
+msgstr "verwijder het volgende"

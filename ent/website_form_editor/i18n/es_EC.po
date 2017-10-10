@@ -1,0 +1,138 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_form_editor
+#
+# Translators:
+# Rick Hunter <rick_hunter_ec@yahoo.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 11:35+0000\n"
+"PO-Revision-Date: 2015-12-18 15:04+0000\n"
+"Last-Translator: Rick Hunter <rick_hunter_ec@yahoo.com>\n"
+"Language-Team: Spanish (Ecuador) (http://www.transifex.com/odoo/odoo-9/"
+"language/es_EC/)\n"
+"Language: es_EC\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_form_editor
+#. openerp-web
+#: code:addons/website_form_editor/static/src/xml/website_form_editor.xml:11
+#, python-format
+msgid "&times;"
+msgstr "&times;"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.s_website_form
+msgid ""
+"<span class=\"btn btn-primary btn-lg o_website_form_send\">Send</span>\n"
+"                        <span id=\"o_website_form_result\"/>"
+msgstr ""
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Add a custom field"
+msgstr "Añadir un campo personalizado"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Add a model field"
+msgstr "Añadir un campo del modelo"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Change Form Parameters"
+msgstr "Formulario de Cambiar parámetros"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Checkbox"
+msgstr "Casilla de verificación"
+
+#. module: website_form_editor
+#. openerp-web
+#: code:addons/website_form_editor/static/src/xml/website_form_editor.xml:21
+#, python-format
+msgid "Close"
+msgstr "cerrar"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Date"
+msgstr "Fecha"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Date &amp; Time"
+msgstr "Fecha &amp; Hora"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Decimal Number"
+msgstr "Número decimal"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "File Upload"
+msgstr "Cargar Archivo"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Hidden"
+msgstr "Oculto"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Long Text"
+msgstr "Longitud del texto"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Multiple Checkboxes"
+msgstr "Múltiples casillas de selección"
+
+#. module: website_form_editor
+#. openerp-web
+#: code:addons/website_form_editor/static/src/xml/website_form_editor.xml:202
+#, python-format
+msgid "No matching record !"
+msgstr "¡Sin registros similares!"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Number"
+msgstr "Número"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Radio Buttons"
+msgstr "Botones de Radio"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Required"
+msgstr "Requerido"
+
+#. module: website_form_editor
+#. openerp-web
+#: code:addons/website_form_editor/static/src/xml/website_form_editor.xml:22
+#, python-format
+msgid "Save"
+msgstr "Grabar"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Selection"
+msgstr "Selección"
+
+#. module: website_form_editor
+#: model:ir.ui.view,arch_db:website_form_editor.snippet_options
+msgid "Text"
+msgstr "Texto"
+
+#~ msgid "Send"
+#~ msgstr "Enviar"

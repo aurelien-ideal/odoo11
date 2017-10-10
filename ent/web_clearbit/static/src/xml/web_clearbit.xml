@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <ul t-name="web_clearbit.dropdown" class="o_clearbit_dropdown dropdown-menu">
+        <li t-foreach="suggestions" t-as="info">
+            <a href="#"
+                t-attf-class="o_clearbit_suggestion clearfix#{info_index == 0 and ' active' or ''}"
+                t-att-data-index="info_index">
+                <img t-att-src="info['logo']" onerror="this.src='/web/static/src/img/placeholder.png'"/>
+                <div class="o_clearbit_info">
+                    <strong><t t-esc="info['name'] or '&#160;'"/></strong>
+                    <div><t t-esc="info['domain']"/></div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</templates>

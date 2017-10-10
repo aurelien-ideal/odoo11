@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_quote_subscription_website_quote_subscription,website_quote_subscription.website_quote_subscription,model_website_quote_subscription_website_quote_subscription,,1,0,0,0

@@ -1,0 +1,290 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_docsaway
+#
+# Translators:
+# ANDRES FELIPE NEGRETE GOMEZ <psi@nubark.com>, 2016
+# Mateo Tibaquirá <nestormateo@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 12:08+0000\n"
+"PO-Revision-Date: 2016-02-17 19:07+0000\n"
+"Last-Translator: Felipe Palomino <omega@nubark.com>\n"
+"Language-Team: Spanish (Colombia) (http://www.transifex.com/odoo/odoo-9/"
+"language/es_CO/)\n"
+"Language: es_CO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+", and create an account. Once you are logged in, click on 'Login', then go "
+"to 'My Account'."
+msgstr ""
+", y crea una cuenta. Una vez haya iniciado sesión, haga clic en 'Entrar', y "
+"vaya a 'Mi Cuenta'."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_order_view_form_inherit_print_docsaway
+msgid "DocsAway Details"
+msgstr "Detalles de DocsAway"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Account"
+msgstr "Cuenta Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_email
+msgid "Docsaway Account Email"
+msgstr "Cuenta Email Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_status
+msgid "Docsaway Approved"
+msgstr "Docsaway Aprobado"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Configuration"
+msgstr "Configuración de Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_courier
+msgid "Docsaway Courier"
+msgstr "Mensajería Docsaway"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Docsaway Help"
+msgstr "Ayuda de Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_key
+msgid "Docsaway Installation Key"
+msgstr "Clave de Instalación Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_name
+msgid "Docsaway Name"
+msgstr "Nombre Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_order_docsaway_courier
+msgid "Docsaway Printer ID."
+msgstr "ID Impresora Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_reference
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_reference
+msgid "Docsaway Reference"
+msgstr "Referencia Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_order_docsaway_reference
+msgid "Docsaway Reference Order."
+msgstr "Orden de Referencia de Docsaway."
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_station
+msgid "Docsaway Station"
+msgstr "Estación Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_order_docsaway_station
+#: model:ir.model.fields,help:print_docsaway.field_print_order_docsaway_zone
+msgid "Docsaway Station ID."
+msgstr "ID Estación Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_order_docsaway_status
+#, fuzzy
+msgid "Docsaway Transaction Status."
+msgstr "Estado Traducción Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_provider_docsaway_volume
+msgid "Docsaway Volume"
+msgstr "Volumen Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,field_description:print_docsaway.field_print_order_docsaway_zone
+msgid "Docsaway Zone"
+msgstr "Zona Docsaway"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_email
+msgid ""
+"Docsaway account email. Required to contact DocsAway server, it can be found "
+"into docsaway account preference (on docsaway.com)"
+msgstr ""
+"Cuenta de correo electrónico Docsaway . Necesario para contactar con el "
+"servidor DocsAway, que se puede encontrar en docsaway preferencia cuenta (en "
+"docsaway.com)"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_key
+msgid ""
+"Docsaway account installation key. Required to contact DocsAway server, it "
+"can be found into docsaway account preference (on docsaway.com)"
+msgstr ""
+"Clave de instalación cuenta Docsaway. Necesario para contactar con el "
+"servidor DocsAway, que se puede encontrar en docsaway preferencia cuenta (en "
+"docsaway.com)"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Failed request."
+msgstr "Error en la petición."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "Go to"
+msgstr "Ir a"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#, python-format
+msgid "Host unreachable."
+msgstr "Host inalcanzable."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In Email Document &gt; Settings, setup your account : Active must be set on "
+"'ON' to receive document, and the Module Mode should be in LIVE to really "
+"send the document. Check TEST to use docsaway as a sandbox."
+msgstr ""
+"Email documento & gt; Configuración, configurar su cuenta: Activo se deben "
+"establecer en \"ON\" para recibir el documento, y el modo de módulo deben "
+"estar en REAL para enviar realmente el documento. Compruebe TEST para "
+"utilizar docsaway como un sandbox o entorno limitado."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In General &gt; Add funds, you can add money on your provider credit. Note "
+"that docsaway only use Australian dollar as currency."
+msgstr ""
+"En General &gt; Añadir fondos, usted puede añadir dinero en su crédito de "
+"proveedor. Note que docsaway sólo usa Dolar australiano como moneda."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In General &gt; Preference, you will find your Docsaway email and Docsaway "
+"key. Copy/paste them to the 'DocsAway Details' tab of the postal provider "
+"you want to configure."
+msgstr ""
+"En general & gt; Preferencia, usted encontrará su correo electrónico y la "
+"clave Docsaway. Copiar / pegar los mismos a la pestaña 'DocsAway Detalles' "
+"del proveedor de correo que desea configurar."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"In History, you can find the sent document in TEST or LIVE environment. This "
+"can help you to test your account. Be carfull to correctly setup the "
+"environment in your postal provider in Odoo."
+msgstr ""
+"En la historia, se puede encontrar el documento enviado en PRUEBA o REAL. "
+"Esto puede ayudar a poner a prueba su cuenta. Tenga cuidado y configure "
+"correctamente el entorno en su proveedor de servicios postales en Odoo."
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_name
+msgid "Name of the docsaway account."
+msgstr "Nombre de la cuenta docsaway."
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_volume
+msgid "Number of pages printed by Docsaway."
+msgstr "Número de páginas impresas por Docsaway."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:71
+#, python-format
+msgid ""
+"Please configure your DocsAway Print Provider Account. See in Settings > "
+"Print Provider. More information on www.docsaway.com ."
+msgstr ""
+"Por favor, configure su cuenta de proveedor de impresión DocsAway. Ver en "
+"Ajustes> proveedor de impresión. Más información sobre www.docsaway.com."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:95
+#: code:addons/print_docsaway/models/print_docsaway.py:98
+#, python-format
+msgid "Please try again later."
+msgstr "Por favor, inténtelo de nuevo más tarde."
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order
+msgid "Print Order"
+msgstr "Imprimir Orden"
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_provider
+msgid "Print Provider"
+msgstr "Proveedor de Impresión"
+
+#. module: print_docsaway
+#: model:ir.model.fields,help:print_docsaway.field_print_provider_docsaway_reference
+msgid "Reference code of Docsaway account."
+msgstr "Código de referencia de la cuenta Docsaway."
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid ""
+"The 'Update' button will update this field, once your Docsaway Configuration "
+"is set up."
+msgstr ""
+"El botón \"Actualizar\" actualizará este campo, una vez que su configuración "
+"Docsaway se establezca."
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:105
+#, python-format
+msgid "Unknown Error"
+msgstr "Error Desconocido"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:56
+#, python-format
+msgid ""
+"You must configure your Docsaway Account : the Docsaway Email and Docsaway "
+"Key are required. You will find them on www.docsaway.com"
+msgstr ""
+"Debe configurar su cuenta de Docsaway: El correo electrónico de Docsaway y "
+"la clave Docsaway es requerida.. Usted los encontrará en www.docsaway.com"
+
+#. module: print_docsaway
+#: code:addons/print_docsaway/models/print_docsaway.py:61
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account, since you "
+"are in Production Mode."
+msgstr ""
+"Su crédito es demasiado bajo. Por favor, configure su cuenta (> "
+"Configuración > Proveedor de Impresión), y poner algún crédito en su cuenta, "
+"ya que esta en el Modo de Impresión."
+
+#. module: print_docsaway
+#: model:ir.model,name:print_docsaway.model_print_order_wizard
+msgid "print.order.wizard"
+msgstr "print.order.wizard"
+
+#. module: print_docsaway
+#: model:ir.ui.view,arch_db:print_docsaway.print_provider_view_form_inherit_print_docsaway
+msgid "www.docsaway.com"
+msgstr "www.docsaway.com"
+
+#~ msgid "Docsaway Transation Status."
+#~ msgstr "Estado Traducción Docsaway"

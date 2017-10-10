@@ -1,0 +1,138 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk_forum
+# 
+# Translators:
+# Karolina Tonković <karolina.tonkovic@storm.hr>, 2016
+# Ivica Dimjašević <ivica.dimjasevic@storm.hr>, 2016
+# Davor Bojkić <davor.bojkic@storm.hr>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-19 12:58+0000\n"
+"PO-Revision-Date: 2016-09-19 12:58+0000\n"
+"Last-Translator: Davor Bojkić <davor.bojkic@storm.hr>, 2016\n"
+"Language-Team: Croatian (https://www.transifex.com/odoo/teams/41243/hr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "<span>By </span>"
+msgstr "<span>Od </span>"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "Click here to view more result..."
+msgstr "Kliknite za prikaz više rezultata..."
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_ticket_forum_post_id
+msgid "Forum Post"
+msgstr "Objava foruma"
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_ticket_use_website_helpdesk_forum
+msgid "Help Center Active"
+msgstr "Podrška aktivna"
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_team_forum_id
+msgid "Help Center Forum"
+msgstr "Forum za podršku"
+
+#. module: website_helpdesk_forum
+#: model:ir.model.fields,field_description:website_helpdesk_forum.field_helpdesk_team_forum_url
+msgid "Help Center Forum URL"
+msgstr "URL foruma za podršku"
+
+#. module: website_helpdesk_forum
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:62
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:83
+#, python-format
+msgid "Help Center not active for this team."
+msgstr "Podrška nije aktivna za ovaj tim."
+
+#. module: website_helpdesk_forum
+#: model:ir.model,name:website_helpdesk_forum.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "Tim podrške"
+
+#. module: website_helpdesk_forum
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:85
+#, python-format
+msgid "No post associated to this ticket."
+msgstr "Nema objava pridruženih ovoj prijavi."
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.website_helpdesk_forum_team_page
+msgid "No question yet."
+msgstr "Još nema pitanja."
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_ticket_view_form_inherit_website_helpdesk_forum
+msgid "Open Post"
+msgstr "Otvori objavu"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.website_helpdesk_forum_team_page
+msgid "Popular Questions"
+msgstr "Popularna pitanja"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "Question has accepted answer"
+msgstr "Pitanje je prihvatilo odgovor"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "Redirect to external link"
+msgstr "Preusmjeren na vanjski link"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_team_view_form_inherit_website_helpdesk_forum
+msgid "Save this page to activate the feature"
+msgstr "Spremite stranicu za aktivaciju ove opcije"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_ticket_view_form_inherit_website_helpdesk_forum
+msgid "Share on the Forum"
+msgstr "Podijeli na forumu"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_team_view_form_inherit_website_helpdesk_forum
+msgid ""
+"The related forum is:<br/>\n"
+"                        ⇒"
+msgstr ""
+"POvezani forum je:<br/>\n"
+"=>"
+
+#. module: website_helpdesk_forum
+#: model:ir.model,name:website_helpdesk_forum.model_helpdesk_ticket
+msgid "Ticket"
+msgstr "Prijava"
+
+#. module: website_helpdesk_forum
+#: code:addons/website_helpdesk_forum/models/helpdesk.py:76
+#, python-format
+msgid "Ticket has been shared on the %s forum."
+msgstr "Prijava problema je podjeljena na %s forumu."
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.forum_posts_page
+msgid "View"
+msgstr "Pogled"
+
+#. module: website_helpdesk_forum
+#: model:ir.ui.view,arch_db:website_helpdesk_forum.helpdesk_team_view_form_inherit_website_helpdesk_forum
+msgid ""
+"View the Help Center:<br/>\n"
+"                    ⇒"
+msgstr ""
+"Pregledaj centar podrške:<br/>\n"
+"=>"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.sale.subscription.asset</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale_subscription.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='revenue_type']" position="replace">
+                <div class="content-group" attrs="{'invisible': [('module_sale_subscription_asset', '=', False)]}">
+                    <div class="mt16">
+                        <button name="%(account_deferred_revenue.action_account_asset_asset_list_normal_sale)d" icon="fa-arrow-right" type="action" string="Revenue Types" class="btn-link"/>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,469 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * delivery_usps
+#
+# Translators:
+# Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-29 12:08+0000\n"
+"PO-Revision-Date: 2016-03-25 17:37+0000\n"
+"Last-Translator: Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>\n"
+"Language-Team: Slovak (http://www.transifex.com/odoo/odoo-9/language/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Abandon"
+msgstr "Prerušiť"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Account Validated"
+msgstr "Účet overený"
+
+#. module: delivery_usps
+#: model:ir.model,name:delivery_usps.model_delivery_carrier
+msgid "Carrier"
+msgstr "Prepavca"
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_account_validated
+msgid "Check this box if your account is validated by USPS"
+msgstr "Zaškrtnite toto políčko ak je váš účet overený USPS"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:63
+#, python-format
+msgid "Company phone number is invalid. Please insert a US phone number."
+msgstr ""
+"Telefónne číslo spoločnosti je neplatné. Prosím vložte platné US telefónne "
+"číslo."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_content_type
+msgid "Content Type"
+msgstr "Typ obsahu"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_delivery_nature
+msgid "Delivery Nature"
+msgstr "Charakter dodania"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Documents"
+msgstr "Dokumenty"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "Domestic"
+msgstr "Domáce"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Express"
+msgstr "Expres"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "First Class"
+msgstr "Prvá trieda"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Flat"
+msgstr "Plochý"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate"
+msgstr "Jednotná sadzba"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Flat Rate Box"
+msgstr "Box jednotnej sadzby"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Flat Rate Envelope"
+msgstr "Obálka jednotnej sadzby"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "From Company"
+msgstr "Od spoločnosti"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Gift"
+msgstr "Dar"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_delivery_nature:0
+msgid "International"
+msgstr "Medzinárodný"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Large"
+msgstr "Veľké"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Large Envelope"
+msgstr "Veľká obálka"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Large Flat Rate Box"
+msgstr "Veľký box jednotnej sadzby"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Legal Flat Rate Envelope"
+msgstr "Právna obálka s jednotnou sadzbou"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Letter"
+msgstr "Dopis"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_machinable
+msgid "Machinable"
+msgstr "Spracovateľné"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_first_class_mail_type
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_mail_type
+msgid "Mail Type"
+msgstr "Typ pošty"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Medium Flat Rate Box"
+msgstr "Stredný box s jendotnou sadzbou"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Merchandise"
+msgstr "Tovar"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_intl_non_delivery_option
+msgid "Non delivery option"
+msgstr "Nedoručovacia možnosť"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Non-rectangular"
+msgstr "Neštvorcové"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_mail_type:0
+msgid "Package"
+msgstr "Balík"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Package Service"
+msgstr "Balíková služba"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_girth
+msgid "Package girth (in inches)"
+msgstr "Obvod balíka (v palcoch)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_height
+msgid "Package height (in inches)"
+msgstr "Výška balíka (v palcoch)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_length
+msgid "Package length (in inches)"
+msgstr "Dĺžka balíka (v palcoch)"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_custom_container_width
+msgid "Package width (in inches)"
+msgstr "Šírka balíka (v palcoch)"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+#: selection:delivery.carrier,usps_international_regular_container:0
+msgid "Padded Flat Rate Envelope"
+msgstr "Vypchaná obálka jednotnej sadzby"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Parcel"
+msgstr "Zásielka"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:80
+#, python-format
+msgid "Please Change the Service Max. weight of this Service is 4 pounds"
+msgstr "Prosím zmenťe službu max. hmotnosť tejto služby sú 4 libry"
+
+#. module: delivery_usps
+#: model:ir.model.fields,help:delivery_usps.field_delivery_carrier_usps_machinable
+msgid "Please check on USPS website to ensure that your package is machinable."
+msgstr ""
+"Prosím skontrolujte na webstránke USPS aby ste sa ubezpečili že váš balík je "
+"spracovateľný."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:68
+#, python-format
+msgid "Please enter a valid ZIP code in recipient address"
+msgstr "Prosím zadajte platné PSČ v adrese príjemcu"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:61
+#, python-format
+msgid "Please enter a valid ZIP code in your Company address"
+msgstr "Prosím zadajte platné PSČ v adrese vašej spoločnosti"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:75
+#, python-format
+msgid "Please provide at least one item to ship."
+msgstr "Prosím poskytnite aspoň jednu položku na poslanie."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:59
+#, python-format
+msgid ""
+"Please set country U.S.A in your company address, Service is only available "
+"for U.S.A"
+msgstr ""
+"Prosím zadajte krajinu U.S.A. v adrese vašej spoločnosti, služba je dostupná "
+"iba pre U.S.A."
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_first_class_mail_type:0
+msgid "Postcard"
+msgstr "Pohľadnica"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_service:0
+msgid "Priority"
+msgstr "Priorita"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Rectangular"
+msgstr "Štvorcové"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Redirect"
+msgstr "Presmerovať"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_redirect_partner_id
+msgid "Redirect Partner"
+msgstr "Persmerovať partnera"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_size_container:0
+msgid "Regular"
+msgstr "Bežná"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_container:0
+msgid "Regular < 12 inch"
+msgstr "Prvidelné < 12 palcov"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+#: selection:delivery.carrier,usps_intl_non_delivery_option:0
+msgid "Return"
+msgstr "Návrat"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_content_type:0
+msgid "Sample"
+msgstr "Vzorka"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:151
+#, python-format
+msgid "Shipment N° %s has been cancelled"
+msgstr "Zásielka N° %s bola zrušená"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/delivery_usps.py:128
+#, python-format
+msgid "Shipment created into USPS <br/> <b>Tracking Number : </b>%s"
+msgstr "Zásielka vytvorená v USPS  <br/> <b>Sledovacie číslo : </b>%s"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Box"
+msgstr "Malý box s jendotnou sadzbou"
+
+#. module: delivery_usps
+#: selection:delivery.carrier,usps_domestic_regular_container:0
+msgid "Small Flat Rate Envelope"
+msgstr "Malá obálka s jednotnou sadzbou"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:161
+#, python-format
+msgid "The USPS service selected (%s) cannot be used to deliver this package."
+msgstr ""
+"Zvolená USPS služba (%s) nemôźe byť použitá na doručenieho tohto balíka. "
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:57
+#, python-format
+msgid ""
+"The address of your company is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr ""
+"Adresa vašej spoločnosti chýba alebo je nesprávna (Chýbajúce pole(polia) : \n"
+"%s)"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:78
+#, python-format
+msgid ""
+"The estimated price cannot be computed because the weight of your product is "
+"missing."
+msgstr ""
+"Odhadovaná cena nemôže by vypočítaná, pretože chýba váha vášho produktu."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:367
+#, python-format
+msgid ""
+"The recepient address can't be found. Please check that your recepient has "
+"an existing address."
+msgstr ""
+"Adresa príjemcu sa nedá nájsť. Prosím skontrolujte či má váś príjemca "
+"existujúcu\n"
+"adresu."
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:66
+#, python-format
+msgid ""
+"The recipient address is missing or wrong (Missing field(s) :  \n"
+" %s)"
+msgstr ""
+"Adresa príjmateľa chýba alebo je nesprávna (Chýbajúce pole(polia) : \n"
+"%s)"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.usps_shipping_request
+msgid "To Company"
+msgstr "Spoločnosti"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_container
+msgid "Type of container"
+msgstr "Typ kontajnera"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_domestic_regular_container
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_international_regular_container
+msgid "Type of regular container"
+msgstr "Typ regulŕneho kontajnera"
+
+#. module: delivery_usps
+#: model:ir.ui.view,arch_db:delivery_usps.view_delivery_carrier_form_with_provider_usps
+msgid "USPS Configuration"
+msgstr "USPS konfigurácia"
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_domestic
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_domestic_product_product
+#, fuzzy
+msgid "USPS Domestic Flat Rate Envelope"
+msgstr "USPS domáci box s pevnou sadzbou"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:72
+#, python-format
+msgid ""
+"USPS Domestic is used only to ship  inside of the U.S.A. Please change the "
+"delivery method into USPS International."
+msgstr ""
+"USPS domáce sa pouźíva iba na prepravu v rámci U.S.A.. Prosím zmenťe "
+"doručovaciu metódu na USPS medzinárodné."
+
+#. module: delivery_usps
+#: model:delivery.carrier,name:delivery_usps.delivery_carrier_usps_international
+#: model:product.product,name:delivery_usps.delivery_carrier_usps_international_product_product
+msgid "USPS International Flat Rate Box"
+msgstr "USPS medzinárodné box s pevnou sadzbou"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:70
+#, python-format
+msgid ""
+"USPS International is used only to ship  outside of the U.S.A. Please change "
+"the delivery method into USPS Domestic."
+msgstr ""
+"USPS medzinárodné sa pouźíva iba na prepravu v rámci U.S.A.. Prosím zmenťe "
+"doručovaciu metódu na USPS domáce."
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_service
+msgid "USPS Service"
+msgstr "USPS služba"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_username
+msgid "USPS User ID"
+msgstr "USPS ID používateľa"
+
+#. module: delivery_usps
+#: model:ir.model.fields,field_description:delivery_usps.field_delivery_carrier_usps_size_container
+msgid "Usps size container"
+msgstr "USPS veľkosť kontajnera"
+
+#. module: delivery_usps
+#: code:addons/delivery_usps/models/usps_request.py:369
+#, python-format
+msgid "Your company or recipient zip code is incorrect."
+msgstr "Vaša spoločnosť alebo psč príjemcu nie su správne."
+
+#~ msgid "Test Mode"
+#~ msgstr "Testovací režim"
+
+#~ msgid "USPS Domestic Flat Rate Box"
+#~ msgstr "USPS domáci box s pevnou sadzbou"
+
+#~ msgid "USPS Password"
+#~ msgstr "USPS heslo"
+
+#~ msgid "Uncheck this box to use production UPS Web Services"
+#~ msgstr "Zrušte označenie tohto políčka pre používanie UPS web služby"
+
+#, fuzzy
+#~ msgid "DHL Configuration"
+#~ msgstr "USPS konfigurácia"
+
+#, fuzzy
+#~ msgid "First-Class"
+#~ msgstr "Prvá trieda"
+
+#, fuzzy
+#~ msgid "Label File Type"
+#~ msgstr "Typ pošty"

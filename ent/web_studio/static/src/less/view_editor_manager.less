@@ -1,0 +1,65 @@
+.o_web_studio_client_action {
+    .o_web_studio_view_editor {
+        .o-flex-display();
+        height: 100%;
+
+        .o_web_studio_view_renderer {
+            .o-flex(1, 1, auto);
+            overflow: auto;
+            min-width: 0;
+
+            .o_web_studio_no_preview {
+                padding: 20px;
+                color: @o-web-studio-bg-light;
+                font-size: x-large;
+            }
+            .o_web_studio_show_invisible {
+                opacity: 1;
+                outline: 1px solid @o-web-studio-bg-lighter;
+                background: repeating-linear-gradient(
+                    45deg,
+                    white,
+                    white 5px,
+                    @o-web-studio-bg-lighter 5px,
+                    @o-web-studio-bg-lighter 10px
+                );
+                background-attachment: fixed;
+            }
+            .o_notebook li.o_web_studio_show_invisible {
+                outline: none;
+                border: 1px solid @o-web-studio-bg-lighter;
+                border-bottom-width: 0;
+            }
+            .o_web_studio_widget_empty {
+                background-color: @o-web-studio-bg-lighter;
+                color: @o-web-studio-text-inactive;
+            }
+            .o_web_studio_list_view_editor, > div.table-responsive, .o_kanban_view {
+                padding: 12px;
+            }
+
+            // TO REMOVE: hack to display old views in studio (for missing renderers)
+            .o_web_studio_old_view_renderer {
+                position: relative;
+                height: 100%;
+                .o_view_manager_content {
+                    position: relative; // override position: absolute
+                    .o_calendar_sidebar_container {
+                        display: none;
+                    }
+                }
+                .o_web_studio_overlay {
+                    .o-position-absolute(0, 0, 0, 0);
+                }
+            }
+        }
+
+        .o_web_studio_sidebar {
+            .o-flex(0, 0, @o-web-studio-sidebar-width);
+            overflow: auto;
+        }
+        .o_ace_view_editor {
+            .o-flex(0, 0, auto);
+        }
+    }
+}

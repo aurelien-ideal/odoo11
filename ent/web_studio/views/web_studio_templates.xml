@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<data>
+    <template id="assets_backend" name="Web Studio Assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/web_studio/static/src/js/action_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/action_editor_sidebar.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/action_editor_view.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/action_manager.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/app_creator.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/app_switcher.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/bus.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/edit_menu.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/icon_creator.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/main.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/menu.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/new_field_dialog.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/new_view_dialog.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/report_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/report_editor_sidebar.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/studio_report_kanban.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/submenu.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/systray_item.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/tour.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/utils.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_components.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editor_manager.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editor_sidebar.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/web_client.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/xml_editor.js"></script>
+
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/abstract_view.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/calendar_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/fields.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/editor_mixin.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/form_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/form_editor_hook.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/gantt_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/graph_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/grid_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/kanban_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/kanban_record_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/list_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/new_buttonbox_dialog.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/pivot_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/view_editors/search_editor.js"></script>
+            <script type="text/javascript" src="/web_studio/static/src/js/renderers/search_renderer.js"></script>
+
+            <link href="/web_studio/static/src/less/main.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/icons.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/mixins.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/action_editor.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/app_creator.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/form_editor.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/icon_creator.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/kanban_view.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/kanban_editor.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/list_editor.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/menu.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/new_field_dialog.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/new_view_dialog.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/report_editor.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/search_editor.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/sidebar.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/submenu.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/view_editor_manager.less" rel="stylesheet" type="text/less"/>
+            <link href="/web_studio/static/src/less/xml_editor.less" rel="stylesheet" type="text/less"/>
+        </xpath>
+    </template>
+
+    <template id="qunit_suite" name="studio_tests" inherit_id="web.qunit_suite">
+        <xpath expr="//t[@t-set='head']" position="inside">
+            <script type="text/javascript" src="/web_studio/static/tests/app_creator_tests.js"></script>
+            <script type="text/javascript" src="/web_studio/static/tests/edit_menu_tests.js"></script>
+            <script type="text/javascript" src="/web_studio/static/tests/view_editor_manager_tests.js"></script>
+        </xpath>
+    </template>
+</data>
+
+</odoo>

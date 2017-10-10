@@ -1,0 +1,259 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_sale
+#
+# Translators:
+# Alejandro Die Sanchis <marketing@domatix.com>, 2015
+# Jose Manuel <admin@jaboweb.com>, 2015
+# Rick Hunter <rick_hunter_ec@yahoo.com>, 2015-2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 11:35+0000\n"
+"PO-Revision-Date: 2016-02-10 17:31+0000\n"
+"Last-Translator: Rick Hunter <rick_hunter_ec@yahoo.com>\n"
+"Language-Team: Spanish (Ecuador) (http://www.transifex.com/odoo/odoo-9/"
+"language/es_EC/)\n"
+"Language: es_EC\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<b> Credit error :</b> Your Provider Credit account is negative. Please "
+"refill your provider account to send documents."
+msgstr ""
+"<b> Error de Crédito: </b> Su cuenta de crédito es negativa con el "
+"proveedor. Por favor, recargue su cuenta para enviar documentos."
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<span class=\"oe_form_field oe_inline\"><b>Bad Postal Address :</b> At least "
+"one of the document you want to send has not a correct postal address.</span>"
+msgstr ""
+"<span class=\"oe_form_field oe_inline\"><b>Dirección postal incorrecta: </b> "
+"Al menos uno de los documentos que desea enviar no tiene una dirección "
+"postal correcta </span>."
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Black & White"
+msgstr "Blanco y negro"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Colour"
+msgstr "Color"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_display_name
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ir_attachment_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_environment
+msgid "Environment"
+msgstr "Entorno"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_id
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ink
+msgid "Ink"
+msgstr "Tinta"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_is_sendable
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_is_sendable
+msgid "Is sendable"
+msgstr "Es enviable"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard___last_update
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_print_document_partner_line_wizard_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_line_wizard_view_tree
+msgid "Lines"
+msgstr "Líneas"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_paper_weight
+msgid "Paper Weight"
+msgstr "Peso del papel"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_print_document_partner_wizard_id
+msgid "Print Order Wizard"
+msgstr "Asistente de impresión de pedido"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_id
+msgid "Print Provider"
+msgstr "Imprimir Proveedor"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Printing details"
+msgstr "Imprimiendo detalles"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Production"
+msgstr "Producción"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_balance
+msgid "Provider Credit"
+msgstr "Proveedor del Crédito"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_partner_id
+msgid "Recipient partner"
+msgstr "Empresa destino"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Recipients"
+msgstr "Destinatarios"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Aviso para pedido de venta"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send"
+msgstr "Enviar"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_document_partner_action_multi
+msgid "Send Documents by post"
+msgstr "Enviar documentos por correo"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.sale_order_view_form_inherit_print_sale
+msgid "Send Letter"
+msgstr "Enviar Carta"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_print_sale
+msgid "Send by Post"
+msgstr "Enviar por Correo Postal"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_multi_print_sale
+msgid "Send by post"
+msgstr "Envíado por correo postal"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send documents to partner Wizard"
+msgstr "Asiste de envío de documento a empresa"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Test"
+msgstr "Prueba"
+
+#. module: print_sale
+#: code:addons/print_sale/models/sale_order.py:17
+#, python-format
+msgid ""
+"This sale order was sent by post with the provider %(provider_name)s at the "
+"following address.                     <br/><br/> %(partner_name)s <br/> "
+"%(partner_street)s <br/> %(partner_city)s "
+"%(partner_zip)s                     <br/>%(partner_country)sprovider_name<i>"
+"%s</i>"
+msgstr ""
+"La orden de venta ha sido enviada a través de %(provider_name)s a la "
+"siguiente dirección. <br/><br/> %(partner_name)s <br/> %(partner_street)s "
+"<br/> %(partner_city)s %(partner_zip)s <br/>"
+"%(partner_country)sprovider_name<i>%s</i>"
+
+#. module: print_sale
+#: code:addons/print_sale/wizard/print_document_partner_wizard.py:73
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account."
+msgstr ""
+"Su crédito es demasiado pequeño. Por favor, configure su cuenta (> "
+"Configuración> Proveedor de impresión), y agregue crédito en su cuenta."
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "or"
+msgstr "o"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_line_wizard
+msgid "print.document.partner.line.wizard"
+msgstr "print.document.partner.line.wizard"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_wizard
+msgid "print.document.partner.wizard"
+msgstr "print.document.partner.wizard"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_order_line_wizard
+msgid "print.order.line.wizard"
+msgstr "print.order.line.wizard"
+
+#~ msgid "Last Postal Sent Date"
+#~ msgstr "Última fecha de envío postal"

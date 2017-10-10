@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_financial_report_l10n_sg" model="account.financial.html.report">
+        <field name="name">Chart of Singapore</field>
+        <field name='parent_id' ref='l10n_sg.account_reports_sg_statements_menu'/>
+        <field name="tax_report" eval="1"/>
+    </record>
+
+    <record id="account_financial_report_sg_01" model="account.financial.html.report.line">
+        <field name="name">Tax Balance To Pay</field>
+        <field name="code">SGTAX_Box8</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = SGTAX_Box6.balance + SGTAX_Box7.balance</field>
+        <field name="financial_report_id" ref="account_financial_report_l10n_sg"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_01" model="account.financial.html.report.line">
+        <field name="name">Tax Received</field>
+        <field name="code">SGTAX_Box6</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = SGTAX_Tax_Received0.balance + SGTAX_Tax_Received7_SR.balance + SGTAX_Tax_Received7_DS.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_01_01" model="account.financial.html.report.line">
+        <field name="name">Tax Received @ 0%</field>
+        <field name="code">SGTAX_Tax_Received0</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_04')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_01_02" model="account.financial.html.report.line">
+        <field name="name">Tax Received @ 7% SR</field>
+        <field name="code">SGTAX_Tax_Received7_SR</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_05')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_01_03" model="account.financial.html.report.line">
+        <field name="name">Tax Received @ 7% DS</field>
+        <field name="code">SGTAX_Tax_Received7_DS</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_06')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02" model="account.financial.html.report.line">
+        <field name="name">Tax Paid</field>
+        <field name="code">SGTAX_Box7</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = SGTAX_Tax_Paid7_TX7.balance + SGTAX_Tax_Paid7_TX_N33.balance + SGTAX_Tax_Paid7_TX_E33.balance + SGTAX_Tax_Paid7_BL.balance + SGTAX_Tax_Paid7_IM.balance + SGTAX_Tax_Paid7_TX_RE.balance + SGTAX_Tax_Paid0_ME.balance + SGTAX_Tax_Paid0_NR.balance + SGTAX_Tax_Paid0_ZP.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_01" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 7% TX7</field>
+        <field name="code">SGTAX_Tax_Paid7_TX7</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_08')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_02" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 7% TX-N33</field>
+        <field name="code">SGTAX_Tax_Paid7_TX_N33</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_09')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_03" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 7% TX-E33</field>
+        <field name="code">SGTAX_Tax_Paid7_TX_E33</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_10')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_04" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 7% BL</field>
+        <field name="code">SGTAX_Tax_Paid7_BL</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_11')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_05" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 7% IM</field>
+        <field name="code">SGTAX_Tax_Paid7_IM</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_12')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_06" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 7% TX-RE</field>
+        <field name="code">SGTAX_Tax_Paid7_TX_RE</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_13')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_07" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 0% ME</field>
+        <field name="code">SGTAX_Tax_Paid0_ME</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_14')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_08" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 0% NR</field>
+        <field name="code">SGTAX_Tax_Paid0_NR</field>
+        <field name="sequence" eval="8"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_15')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_01_02_09" model="account.financial.html.report.line">
+        <field name="name">Tax Paid @ 0% ZP</field>
+        <field name="code">SGTAX_Tax_Paid0_ZP</field>
+        <field name="sequence" eval="9"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_16')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_01_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_02" model="account.financial.html.report.line">
+        <field name="name">MES Purchase Tax</field>
+        <field name="code">SGTAX_MES_Purchase_Tax</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="0"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_17')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="financial_report_id" ref="account_financial_report_l10n_sg"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_03" model="account.financial.html.report.line">
+        <field name="name">Out of Scope Taxes</field>
+        <field name="code">SGTAX_Out_of_Scope_Taxes</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = SGTAX_Out_of_Scope_Purchase_Tax.balance + SGTAX_Out_of_Scope_Sales_Tax.balance</field>
+        <field name="financial_report_id" ref="account_financial_report_l10n_sg"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_03_01" model="account.financial.html.report.line">
+        <field name="name">Out of Scope Purchase Tax</field>
+        <field name="code">SGTAX_Out_of_Scope_Purchase_Tax</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_19')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_03"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_03_02" model="account.financial.html.report.line">
+        <field name="name">Out of Scope Sales Tax</field>
+        <field name="code">SGTAX_Out_of_Scope_Sales_Tax</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_20')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_03"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_04" model="account.financial.html.report.line">
+        <field name="name">Exempted Taxes</field>
+        <field name="code">SGTAX_Exempted_Taxes</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = SGTAX_Exempted_Purchase_Tax.balance + SGTAX_Exempted_Sales_Tax_ES33.balance + SGTAX_Exempted_Sales_Tax_ESN33.balance</field>
+        <field name="financial_report_id" ref="account_financial_report_l10n_sg"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_04_01" model="account.financial.html.report.line">
+        <field name="name">Exempted Purchase Tax</field>
+        <field name="code">SGTAX_Exempted_Purchase_Tax</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_22')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_04_02" model="account.financial.html.report.line">
+        <field name="name">Exempted Sales Tax ES33</field>
+        <field name="code">SGTAX_Exempted_Sales_Tax_ES33</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_23')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_04_03" model="account.financial.html.report.line">
+        <field name="name">Exempted Sales Tax ESN33</field>
+        <field name="code">SGTAX_Exempted_Sales_Tax_ESN33</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_line_id.tag_ids', 'in', [ref('l10n_sg.tag_sg_24')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_04"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05" model="account.financial.html.report.line">
+        <field name="name">Tax Bases</field>
+        <field name="code">SGTAX_Tax_Bases</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="0"/>
+        <field name="formulas">balance = SGTAX_Base_of_Taxed_Sales.balance + SGTAX_Base_of_Taxed_Purchases.balance + SGTAX_Box9.balance + SGTAX_Purchase_Exempted.balance + SGTAX_Purchase_Out_Of_Scope.balance + SGTAX_Sales_Out_Of_Scope.balance</field>
+        <field name="financial_report_id" ref="account_financial_report_l10n_sg"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01" model="account.financial.html.report.line">
+        <field name="name">Base of Taxed Sales</field>
+        <field name="code">SGTAX_Base_of_Taxed_Sales</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = SGTAX_Sales_7_Standard.balance + SGTAX_Box2.balance + SGTAX_Sales_Exempted.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01_01" model="account.financial.html.report.line">
+        <field name="name">Sales 7% Standard</field>
+        <field name="code">SGTAX_Sales_7_Standard</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = SGTAX_Sales_7_Standard_SR.balance + SGTAX_Sales_7_Standard_DS.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_01"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01_01_01" model="account.financial.html.report.line">
+        <field name="name">Sales 7% Standard SR</field>
+        <field name="code">SGTAX_Sales_7_Standard_SR</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_28')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_01_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01_01_02" model="account.financial.html.report.line">
+        <field name="name">Sales 7% Standard DS</field>
+        <field name="code">SGTAX_Sales_7_Standard_DS</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_29')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_01_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01_02" model="account.financial.html.report.line">
+        <field name="name">Sales 0% Standard</field>
+        <field name="code">SGTAX_Box2</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_30')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_01"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01_03" model="account.financial.html.report.line">
+        <field name="name">Sales Exempted</field>
+        <field name="code">SGTAX_Sales_Exempted</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="formulas">balance = SGTAX_Sales_Exempted_ES33.balance + SGTAX_Sales_Exempted_ESN33.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_01"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01_03_01" model="account.financial.html.report.line">
+        <field name="name">Sales Exempted ES33</field>
+        <field name="code">SGTAX_Sales_Exempted_ES33</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_32')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_01_03"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_01_03_02" model="account.financial.html.report.line">
+        <field name="name">Sales Exempted ESN33</field>
+        <field name="code">SGTAX_Sales_Exempted_ESN33</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="3"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_33')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_01_03"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02" model="account.financial.html.report.line">
+        <field name="name">Base of Taxed Purchases</field>
+        <field name="code">SGTAX_Base_of_Taxed_Purchases</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="1"/>
+        <field name="formulas">balance = SGTAX_Purchase_7_Standard_TX7.balance + SGTAX_Purchase_7_Standard_TX_N33.balance + SGTAX_Purchase_7_Standard_TX_E33.balance + SGTAX_Purchase_7_Standard_BL.balance + SGTAX_Purchase_7_Standard_IM.balance + SGTAX_Purchase_7_Standard_TX_RE.balance + SGTAX_Purchase_0_Standard_ME.balance + SGTAX_Purchase_0_Standard_NR.balance + SGTAX_Purchase_0_Standard_ZP.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05"/>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_01" model="account.financial.html.report.line">
+        <field name="name">Purchase 7% Standard TX7</field>
+        <field name="code">SGTAX_Purchase_7_Standard_TX7</field>
+        <field name="sequence" eval="1"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_35')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_02" model="account.financial.html.report.line">
+        <field name="name">Purchase 7% Standard TX-N33</field>
+        <field name="code">SGTAX_Purchase_7_Standard_TX_N33</field>
+        <field name="sequence" eval="2"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_36')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_03" model="account.financial.html.report.line">
+        <field name="name">Purchase 7% Standard TX-E33</field>
+        <field name="code">SGTAX_Purchase_7_Standard_TX_E33</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_37')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_04" model="account.financial.html.report.line">
+        <field name="name">Purchase 7% Standard BL</field>
+        <field name="code">SGTAX_Purchase_7_Standard_BL</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_38')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_05" model="account.financial.html.report.line">
+        <field name="name">Purchase 7% Standard IM</field>
+        <field name="code">SGTAX_Purchase_7_Standard_IM</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_39')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_06" model="account.financial.html.report.line">
+        <field name="name">Purchase 7% Standard TX-RE</field>
+        <field name="code">SGTAX_Purchase_7_Standard_TX_RE</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_40')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_07" model="account.financial.html.report.line">
+        <field name="name">Purchase 0% Standard ME</field>
+        <field name="code">SGTAX_Purchase_0_Standard_ME</field>
+        <field name="sequence" eval="7"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_41')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_08" model="account.financial.html.report.line">
+        <field name="name">Purchase 0% Standard NR</field>
+        <field name="code">SGTAX_Purchase_0_Standard_NR</field>
+        <field name="sequence" eval="8"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_42')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_02_09" model="account.financial.html.report.line">
+        <field name="name">Purchase 0% Standard ZP</field>
+        <field name="code">SGTAX_Purchase_0_Standard_ZP</field>
+        <field name="sequence" eval="9"/>
+        <field name="level" eval="2"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_43')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05_02"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_03" model="account.financial.html.report.line">
+        <field name="name">Purchase Imports Under MES</field>
+        <field name="code">SGTAX_Box9</field>
+        <field name="sequence" eval="3"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_44')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_04" model="account.financial.html.report.line">
+        <field name="name">Purchase Exempted</field>
+        <field name="code">SGTAX_Purchase_Exempted</field>
+        <field name="sequence" eval="4"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_45')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_05" model="account.financial.html.report.line">
+        <field name="name">Purchase Out Of Scope</field>
+        <field name="code">SGTAX_Purchase_Out_Of_Scope</field>
+        <field name="sequence" eval="5"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_46')])]"/>
+        <field name="formulas">balance = sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+    <record id="account_financial_report_sg_05_06" model="account.financial.html.report.line">
+        <field name="name">Sales Out Of Scope</field>
+        <field name="code">SGTAX_Sales_Out_Of_Scope</field>
+        <field name="sequence" eval="6"/>
+        <field name="level" eval="1"/>
+        <field name="domain" eval="[('tax_ids.tag_ids', 'in', [ref('l10n_sg.tag_sg_47')])]"/>
+        <field name="formulas">balance = - sum.balance</field>
+        <field name="parent_id" ref="account_financial_report_sg_05"/>
+        <field name="show_domain">never</field>
+        <field name="special_date_changer">strict_range</field>
+    </record>
+
+</odoo>

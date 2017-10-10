@@ -1,0 +1,54 @@
+.o_web_studio_list_view_editor .o_list_view.table {
+    // Define transparent borders to prevent flickering on hover
+    border-collapse: separate;
+    th, td {
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        &.o_web_studio_hook {
+            border-left: 2px solid transparent;
+        }
+    }
+
+    // Default columns
+    th.o_hover:not(.o_web_studio_hook) {
+        color: black;
+        border-left: 1px dashed @odoo-brand-optional;
+        border-right: 1px dashed @odoo-brand-optional;
+    }
+    td.o_hover:not(.o_web_studio_hook) {
+        border-left: 1px dashed @odoo-brand-optional;
+        border-right: 1px dashed @odoo-brand-optional;
+    }
+
+    th.o_clicked:not(.o_web_studio_hook) {
+        background-color: white;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    td.o_clicked:not(.o_web_studio_hook) {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    // New columns
+    th.o_web_studio_hook {
+        &.o_hover {
+            cursor: pointer !important;
+            border-left: 2px solid @odoo-brand-optional;
+        }
+        > i {
+            visibility: hidden;
+            color: @odoo-brand-optional;
+        }
+    }
+
+    .o_web_studio_hook {
+        &.o_web_studio_nearest_hook {
+            cursor: pointer !important;
+            border-left: 2px solid @odoo-brand-optional;
+            > i {
+                visibility: visible;
+            }
+        }
+    }
+}

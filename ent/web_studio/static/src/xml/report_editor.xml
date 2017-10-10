@@ -1,0 +1,11 @@
+<template>
+
+    <div t-name="web_studio.report_editor" class="o_web_studio_client_action o_report_editor">
+        <iframe class="o_report_iframe" t-att-src="widget.report_url"/>
+    </div>
+
+    <div t-name="web_studio.report_editor_unavailable" class="o_report_editor_unavailable">
+        <p>This report cannot be customized with Odoo Studio.</p>
+    </div>
+
+</template>

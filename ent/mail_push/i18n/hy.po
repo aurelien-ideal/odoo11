@@ -1,0 +1,125 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mail_push
+# 
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-10 09:15+0000\n"
+"PO-Revision-Date: 2016-10-10 09:15+0000\n"
+"Last-Translator: Martin Trigaux <mat@odoo.com>, 2016\n"
+"Language-Team: Armenian (https://www.transifex.com/odoo/teams/41243/hy/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: hy\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.inherited_view_partner_form
+msgid "Cloud Messaging"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_name
+msgid "Device Name"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_partner_device_identity_ids
+msgid "Device identities"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_channel
+msgid "Discussion channel"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.inherited_view_general_configuration
+msgid "Generate API and Sender ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.inherited_view_general_configuration
+msgid "Google Firebase Push Notification"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_ir_http
+msgid "HTTP routing"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_id
+msgid "ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_service_type
+msgid "Notification Service"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_res_partner
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_partner_id
+msgid "Partner"
+msgstr "Գործընկեր"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_base_config_settings_fcm_project_id
+msgid "Sender ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_base_config_settings_fcm_api_key
+msgid "Server API Key"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_subscription_id
+msgid "Subscription ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_base_config_settings
+msgid "base.config.settings"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_push_device
+msgid "mail_push.device"
+msgstr ""

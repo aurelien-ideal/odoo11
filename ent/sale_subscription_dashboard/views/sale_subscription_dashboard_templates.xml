@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="assets_backend" inherit_id="web.assets_backend" active="True">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/sale_subscription_dashboard/static/src/less/sale_subscription_dashboard.less"/>
+            <script type="text/javascript" src="/sale_subscription_dashboard/static/src/js/sale_subscription_dashboard.js"></script>
+        </xpath>
+    </template>
+
+</odoo>

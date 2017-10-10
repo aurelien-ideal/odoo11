@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="print_provider_docsaway" model="print.provider">
+            <field name="name">Docsaway</field>
+            <field name="provider">docsaway</field>
+            <field name="environment">test</field>
+            <field name='docsaway_email'></field>
+            <field name='docsaway_key'></field>
+        </record>
+
+        <function id="provider_default_set"
+            model="ir.default" name="set"
+            eval="('print.order', 'provider_id', ref('print_provider_docsaway'))"/>
+
+    </data>
+</odoo>

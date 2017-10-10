@@ -1,0 +1,143 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mail_push
+# 
+# Translators:
+# Bonny Useful <bonny.useful@gmail.com>, 2017
+# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2017
+# William Surya Permana <zarambie_game@yahoo.com>, 2017
+# Ngalim Siregar <ngalim.siregar@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Ngalim Siregar <ngalim.siregar@gmail.com>, 2017\n"
+"Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "<i class=\"fa fa-fw fa-arrow-right\"/>Generate API and Sender ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "API Key"
+msgstr "API Key"
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_res_partner
+msgid "Contact"
+msgstr "Kontak"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_name
+msgid "Device Name"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_partner_device_identity_ids
+#: model:ir.model.fields,field_description:mail_push.field_res_users_device_identity_ids
+msgid "Device identities"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_channel
+msgid "Discussion channel"
+msgstr "Kanal diskusi"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_display_name
+msgid "Display Name"
+msgstr "Nama Tampilan"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "Get notifications on Android phones"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP routing"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device___last_update
+msgid "Last Modified on"
+msgstr "Terakhir diubah pada"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_uid
+msgid "Last Updated by"
+msgstr "Terakhir diperbarui oleh"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_write_date
+msgid "Last Updated on"
+msgstr "Terakhir diperbarui pada"
+
+#. module: mail_push
+#: model:ir.ui.view,arch_db:mail_push.res_config_settings_view_form
+msgid "Mobile App"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_service_type
+msgid "Notification Service"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_config_settings_mail_push_notification
+msgid "Notifications"
+msgstr "Pemberitahuan"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_partner_id
+msgid "Partner"
+msgstr "Rekanan"
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_config_settings_fcm_project_id
+msgid "Sender ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_res_config_settings_fcm_api_key
+msgid "Server API Key"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model.fields,field_description:mail_push.field_mail_push_device_subscription_id
+msgid "Subscription ID"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_mail_push_device
+msgid "mail_push.device"
+msgstr ""
+
+#. module: mail_push
+#: model:ir.model,name:mail_push.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"

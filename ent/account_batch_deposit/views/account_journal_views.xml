@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_account_journal_form_inherited" model="ir.ui.view">
+            <field name="name">account.journal.form.inherited</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='inbound_payment_method_ids']" position="after">
+                    <field name="batch_deposit_payment_method_selected" invisible="1"/>
+                    <field name="batch_deposit_sequence_id" attrs="{'invisible': [('batch_deposit_payment_method_selected', '=', False)]}"/>
+                </xpath>
+            </field>
+        </record>
+         <record id="view_account_bank_journal_form_inherited_batch_deposit" model="ir.ui.view">
+            <field name="name">account.bank.journal.form.inherited.batch.deposit</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_bank_journal_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='inbound_payment_method_ids']" position="after">
+                    <field name="batch_deposit_payment_method_selected" invisible="1"/>
+                    <field name="batch_deposit_sequence_id" attrs="{'invisible': [('batch_deposit_payment_method_selected', '=', False)]}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="account_journal_dashboard_kanban_view_inherited" model="ir.ui.view">
+            <field name="name">account.journal.dashboard.kanban.inherited</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//t[@t-name='JournalManage']//div[hasclass('o_kanban_manage_new')]" position="inside">
+                    <div t-if="journal_type == 'bank'">
+                        <a type="object" name="open_action_batch_deposit">Batch Deposit</a>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+</odoo>

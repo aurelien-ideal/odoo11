@@ -1,0 +1,105 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_timesheet_forecast_sale
+# 
+# Translators:
+# Olivier Lenoir <olivier.lenoir@free.fr>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Micky Jault <micky037@hotmail.fr>, 2017
+# David Halgand <david.halgand@gmail.com>, 2017
+# Xavier Belmere <Info@cartmeleon.com>, 2017
+# Clo <clo@odoo.com>, 2017
+# Hubert TETARD <htetard@apik-conseils.com>, 2017
+# Natys <support@natys.fr>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: Natys <support@natys.fr>, 2017\n"
+"Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/models/project.py:26
+#, python-format
+msgid "%s (%s remaining hours)"
+msgstr ""
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Done"
+msgstr "Fait"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model.fields,field_description:project_timesheet_forecast_sale.field_project_forecast_effective_hours
+msgid "Effective hours"
+msgstr "Heures effectives"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:216
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:230
+#, python-format
+msgid "Forecast"
+msgstr "Prévisions"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Forecasted"
+msgstr ""
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Name"
+msgstr "Nom"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Planned"
+msgstr "Planifié"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model.fields,field_description:project_timesheet_forecast_sale.field_project_forecast_percentage_hours
+msgid "Progress"
+msgstr "En cours"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_project_project
+msgid "Project"
+msgstr "Projet"
+
+#. module: project_timesheet_forecast_sale
+#: code:addons/project_timesheet_forecast_sale/controllers/project.py:67
+#, python-format
+msgid "Remaining"
+msgstr "Restant"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_sale_order_line
+#: model:ir.model.fields,field_description:project_timesheet_forecast_sale.field_project_forecast_order_line_id
+msgid "Sales Order Line"
+msgstr "Ligne de bons de commande"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_project_task
+msgid "Task"
+msgstr "Tâche"
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.ui.view,arch_db:project_timesheet_forecast_sale.timesheet_plan
+msgid "Timesheet/Forecast"
+msgstr ""
+
+#. module: project_timesheet_forecast_sale
+#: model:ir.model,name:project_timesheet_forecast_sale.model_project_forecast
+msgid "project.forecast"
+msgstr "project.forecast"

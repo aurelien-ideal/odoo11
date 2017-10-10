@@ -1,0 +1,186 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_us_check_printing
+#
+# Translators:
+# Gary Wei <Gary.wei@elico-corp.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-07 14:56+0000\n"
+"PO-Revision-Date: 2016-06-22 13:10+0000\n"
+"Last-Translator: Jeffery Chenn <jeffery9@gmail.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/odoo/odoo-9/"
+"language/zh_CN/)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_margin_left
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_margin_top
+msgid ""
+"Adjust the margins of generated checks to make it fit your printer's "
+"settings."
+msgstr "调整生成的空白以使其符合打印机的设置"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Amount Due"
+msgstr "到期金额"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Check Amount:"
+msgstr "检查总额"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_layout
+msgid "Check Layout"
+msgstr "支票布局"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "Check in middle"
+msgstr "中间的支票"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "Check on bottom"
+msgstr "底部的支票"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "Check on top"
+msgstr "检查顶部"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Description"
+msgstr "说明"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_bottom_display_name
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_middle_display_name
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_top_display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Due Date"
+msgstr "截止日期"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_bottom_id
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_middle_id
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_top_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Invoice Amount"
+msgstr "发票总额"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_bottom___last_update
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_middle___last_update
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_top___last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_margin_left
+msgid "Left Margin"
+msgstr "左边距"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_multi_stub
+msgid "Multi-Pages Check Stub"
+msgstr "多页支票存根"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "None"
+msgstr "无"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Payment"
+msgstr "付款"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_account_payment
+msgid "Payments"
+msgstr "付款"
+
+#. module: l10n_us_check_printing
+#: model:ir.actions.report.xml,name:l10n_us_check_printing.action_print_check_bottom
+msgid "Print Check (Bottom)"
+msgstr "打印支票（底部）"
+
+#. module: l10n_us_check_printing
+#: model:ir.actions.report.xml,name:l10n_us_check_printing.action_print_check_middle
+msgid "Print Check (Middle)"
+msgstr "打印支票（中间）"
+
+#. module: l10n_us_check_printing
+#: model:ir.actions.report.xml,name:l10n_us_check_printing.action_print_check_top
+msgid "Print Check (Top)"
+msgstr "打印支票（顶部）"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_layout
+msgid ""
+"Select the format corresponding to the check paper you will be printing your "
+"checks on.\n"
+"In order to disable the printing feature, select 'None'."
+msgstr ""
+"选择你将要打印的适合支票纸张的格式\n"
+"为了禁用打印功能，请选择'None'"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_multi_stub
+msgid ""
+"This option allows you to print check details (stub) on multiple pages if "
+"they don't fit on a single page."
+msgstr "如果一页不能打印完，该选项能让你在多页面打印支票明细(存根)"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_margin_top
+msgid "Top Margin"
+msgstr "上边距"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.view_res_company_form_inherited
+msgid "US Check Printing"
+msgstr "美式支票打印"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.view_res_company_form_inherited
+msgid "in"
+msgstr "在"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_report_l10n_us_check_printing_print_check_bottom
+msgid "report.l10n_us_check_printing.print_check_bottom"
+msgstr "report.l10n_us_check_printing.print_check_bottom"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_report_l10n_us_check_printing_print_check_middle
+msgid "report.l10n_us_check_printing.print_check_middle"
+msgstr "report.l10n_us_check_printing.print_check_middle"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_report_l10n_us_check_printing_print_check_top
+msgid "report.l10n_us_check_printing.print_check_top"
+msgstr "report.l10n_us_check_printing.print_check_top"

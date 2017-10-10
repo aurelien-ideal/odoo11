@@ -1,0 +1,242 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * print_sale
+# 
+# Translators:
+# Martin Trigaux <mat@odoo.com>, 2017
+# SV <sv@grimmette.ru>, 2017
+# Максим Дронь <dronmax@gmail.com>, 2017
+# Эдуард Манятовский <manyatovskiy@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: Эдуард Манятовский <manyatovskiy@gmail.com>, 2017\n"
+"Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<b> Credit error :</b> Your Provider Credit account is negative. Please "
+"refill your provider account to send documents."
+msgstr ""
+"<b>Ошибка кредитования:</b> Кредит Вашего провайдера отрицательный. "
+"Пополните счёт провайдера и повторите отправку документов."
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid ""
+"<span class=\"oe_form_field oe_inline\"><b>Bad Postal Address :</b> At least"
+" one of the document you want to send has not a correct postal "
+"address.</span>"
+msgstr ""
+"<span class=\"oe_form_field oe_inline\"><b>Не правильный  Почтовый адрес "
+":</b> По крайней мере, один из документов, который вы хотите отправить имеет"
+" не правильный почтовый адрес.</span>"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Black & White"
+msgstr "Чёрно-белый"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Cancel"
+msgstr "Отменить"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,ink:0
+msgid "Colour"
+msgstr "Цвет"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_uid
+msgid "Created by"
+msgstr "Создано"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_create_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_create_date
+msgid "Created on"
+msgstr "Создан"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_currency_id
+msgid "Currency"
+msgstr "Валюта"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_display_name
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_display_name
+msgid "Display Name"
+msgstr "Отображаемое Имя"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ir_attachment_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Documents"
+msgstr "Документы"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_environment
+msgid "Environment"
+msgstr "Окружение"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_id
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_id
+msgid "ID"
+msgstr "Номер"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_ink
+msgid "Ink"
+msgstr "Чернила"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_is_sendable
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_is_sendable
+msgid "Is sendable"
+msgstr "Доступен для отправки"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard___last_update
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard___last_update
+msgid "Last Modified on"
+msgstr "Последнее изменение"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_uid
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_write_date
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_write_date
+msgid "Last Updated on"
+msgstr "Последнее обновление"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_print_document_partner_line_wizard_ids
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_line_wizard_view_tree
+msgid "Lines"
+msgstr "Строк"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_paper_weight
+msgid "Paper Weight"
+msgstr "Плотность бумаги"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_print_document_partner_wizard_id
+msgid "Print Order Wizard"
+msgstr "Мастер печати заказа"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_id
+msgid "Print Provider"
+msgstr "Провайдер печати"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Printing details"
+msgstr "Подробности печати"
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Production"
+msgstr "Производство"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_wizard_provider_balance
+msgid "Provider Credit"
+msgstr "Кредит провайдера"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_sale_order
+msgid "Quotation"
+msgstr "Предложение цен"
+
+#. module: print_sale
+#: model:ir.model.fields,field_description:print_sale.field_print_document_partner_line_wizard_partner_id
+msgid "Recipient partner"
+msgstr "Партнёр-получатель "
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Recipients"
+msgstr "Получатели"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send"
+msgstr "Отправить"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_document_partner_action_multi
+msgid "Send Documents by post"
+msgstr "Отправить Документы по почте"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.sale_order_view_form_inherit_print_sale
+msgid "Send Letter"
+msgstr "Отправить письмо"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_print_sale
+msgid "Send by Post"
+msgstr "Отправить по почте"
+
+#. module: print_sale
+#: model:ir.actions.act_window,name:print_sale.print_order_wizard_action_multi_print_sale
+msgid "Send by post"
+msgstr "Отправить по почте"
+
+#. module: print_sale
+#: model:ir.ui.view,arch_db:print_sale.print_document_partner_wizard_view_form
+msgid "Send documents to partner Wizard"
+msgstr "Отправить документы партнеру в Помошнике "
+
+#. module: print_sale
+#: selection:print.document.partner.wizard,provider_environment:0
+msgid "Test"
+msgstr "Тест"
+
+#. module: print_sale
+#: code:addons/print_sale/models/sale_order.py:23
+#, python-format
+msgid ""
+"This sales order was sent by post with the provider %(provider_name)s at the"
+" following address.                     <br/><br/> %(partner_name)s <br/> "
+"%(partner_street)s <br/> %(partner_city)s %(partner_zip)s"
+"                     <br/>%(partner_country)sprovider_name<i>%s</i>"
+msgstr ""
+
+#. module: print_sale
+#: code:addons/print_sale/wizard/print_document_partner_wizard.py:67
+#, python-format
+msgid ""
+"Your credit provider is too small. Please, configure your account (> "
+"Settings > Print Provider), and put some credit on your account."
+msgstr ""
+"Ваш поставщик кредит слишком мал. Пожалуйста, настройте ваш счет (> "
+"Настройки > Поставщик печати) и поставить некоторые кредит на вашем счету."
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_line_wizard
+msgid "print.document.partner.line.wizard"
+msgstr "print.document.partner.line.wizard"
+
+#. module: print_sale
+#: model:ir.model,name:print_sale.model_print_document_partner_wizard
+msgid "print.document.partner.wizard"
+msgstr "print.document.partner.wizard"

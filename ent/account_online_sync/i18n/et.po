@@ -1,0 +1,292 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_online_sync
+#
+# Translators:
+# Arma Gedonsky <armagedonsky@hot.ee>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-19 11:34+0000\n"
+"PO-Revision-Date: 2016-03-12 20:29+0000\n"
+"Last-Translator: Arma Gedonsky <armagedonsky@hot.ee>\n"
+"Language-Team: Estonian (http://www.transifex.com/odoo/odoo-9/language/et/)\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Pangateatis"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "Pangateatise rida"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_config_online_sync_journal_form
+msgid "Close"
+msgstr "Sulge"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Configure"
+msgstr "Seadista"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_create_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_create_uid
+msgid "Created by"
+msgstr "Loonud"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_create_date
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_create_date
+msgid "Created on"
+msgstr "Loodud"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_display_name
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_display_name
+msgid "Display Name"
+msgstr "Näidatav nimi"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_id
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_id
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_online_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_online_id
+msgid "ID of the Online Institution"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_online_id
+msgid "Id"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_institution_id
+msgid "Institution"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_journal
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_journal_id
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_journal_id
+msgid "Journal"
+msgstr "Päevik"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account___last_update
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution___last_update
+msgid "Last Modified on"
+msgstr "Viimati muudetud"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_write_uid
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_write_uid
+msgid "Last Updated by"
+msgstr "Viimati uuendatud"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_write_date
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_write_date
+msgid "Last Updated on"
+msgstr "Viimati uuendatud"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_last_sync
+msgid "Last synchronization"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_online_account_name
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_name
+msgid "Name"
+msgstr "Nimi"
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+msgid "Next sync:"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_next_synchronization
+msgid "Next synchronization"
+msgstr "Järgmine sünkroniseerimine"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_online_account_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_online_account_id
+#: model:ir.ui.view,arch_db:account_online_sync.online_account_form
+msgid "Online Account"
+msgstr "Online konto"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_bank_statement_line_online_id
+msgid "Online Identifier"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_online_institution_id
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_online_institution_id
+msgid "Online Institution"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_config_online_sync_journal_form
+msgid "Online Sync configuration"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.actions.act_window,name:account_online_sync.action_config_online_sync_journal_form
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_dashboard_inherit_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
+msgid "Online Synchronization"
+msgstr ""
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:202
+#, python-format
+msgid "Opening statement : first synchronization"
+msgstr ""
+
+#. module: account_online_sync
+#: selection:online.institution,type:0
+msgid "Plaid"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_config_online_sync_journal_form
+msgid "Remove online account"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_config_online_sync_journal_form
+msgid "Synchronize"
+msgstr ""
+
+#. module: account_online_sync
+#: sql_constraint:online.institution:0
+msgid "There can be only one record by bank"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_online_institution_type
+msgid "Type"
+msgstr "Tüüp"
+
+#. module: account_online_sync
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_online_type
+#: model:ir.model.fields,field_description:account_online_sync.field_account_journal_onlinesync_config_online_type
+msgid "Type of the Online Institution"
+msgstr ""
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:32
+#: code:addons/account_online_sync/models/online_sync.py:114
+#, python-format
+msgid "Unimplemented"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.ui.view,arch_db:account_online_sync.view_config_online_sync_journal_form
+msgid "Update online institutions (may be slow)"
+msgstr ""
+
+#. module: account_online_sync
+#: selection:online.institution,type:0
+msgid "Yodlee"
+msgstr ""
+
+#. module: account_online_sync
+#: code:addons/account_online_sync/models/online_sync.py:147
+#, python-format
+msgid "You must first choose an institution"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_account_journal_onlinesync_config
+msgid "account.journal.onlinesync.config"
+msgstr ""
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_online_account
+#, fuzzy
+msgid "online.account"
+msgstr "Online konto"
+
+#. module: account_online_sync
+#: model:ir.model,name:account_online_sync.model_online_institution
+msgid "online.institution"
+msgstr ""
+
+#~ msgid "Action Needed"
+#~ msgstr "Vajalik toiming"
+
+#~ msgid "Cancel"
+#~ msgstr "Loobu"
+
+#~ msgid "Continue"
+#~ msgstr "Jätka"
+
+#~ msgid "Followers"
+#~ msgstr "Jälgijad"
+
+#~ msgid "If checked new messages require your attention."
+#~ msgstr "Kui kontrollitud, siis uued sõnumid nõuavad Su tähelepanu."
+
+#~ msgid "If checked, new messages require your attention."
+#~ msgstr "Kui kontrollitud, siis uued sõnumid nõuavad Su tähelepanu"
+
+#~ msgid "Is Follower"
+#~ msgstr "Jälgija"
+
+#~ msgid "Last Message Date"
+#~ msgstr "Viimase sõnumi kuupäev"
+
+#~ msgid "Messages"
+#~ msgstr "Sõnumid"
+
+#~ msgid "Messages and communication history"
+#~ msgstr "Sõnumite ja kommunikatsiooni ajalugu"
+
+#~ msgid "Number of Actions"
+#~ msgstr "Toimingute arv"
+
+#~ msgid "Number of messages which requires an action"
+#~ msgstr "Tegutsemist nõudvate sõnumite arv"
+
+#~ msgid "Number of unread messages"
+#~ msgstr "Lugemata sõnumite arv"
+
+#~ msgid "Online Synchronisation"
+#~ msgstr "Online sünkroniseerimine"
+
+#~ msgid "Unread Messages"
+#~ msgstr "Lugemata sõnumid"
+
+#~ msgid "Unread Messages Counter"
+#~ msgstr "Lugemata sõnumite loendur"
+
+#~ msgid "Website Messages"
+#~ msgstr "Veebilehe sõnumid"
+
+#~ msgid "Website communication history"
+#~ msgstr "Veebilehe suhtluse ajalugu"

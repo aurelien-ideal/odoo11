@@ -1,0 +1,596 @@
+
+.o_form_view {
+    // -------  Form View MIXINS -------------------
+
+    // Define left and right padding according to screen resolution
+    .o-form-sheet-inner-left-padding() {
+        padding-left: @odoo-horizontal-padding;
+        @media screen and (min-width: @screen-md-min) and (max-width: (@o-screen-sidechatter-min - 1px)) {
+            padding-left: @odoo-horizontal-padding*2;
+        }
+    }
+    .o-form-sheet-inner-right-padding() {
+        padding-right: @odoo-horizontal-padding;
+        @media screen and (min-width: @screen-md-min) and (max-width: (@o-screen-sidechatter-min - 1px)) {
+            padding-right: @odoo-horizontal-padding*2;
+        }
+    }
+    // Compensate margins
+    .o-form-sheet-negative-margin() {
+        margin-left: -@odoo-horizontal-padding;
+        margin-right: -@odoo-horizontal-padding;
+        @media screen and (min-width: @screen-md-min) and (max-width: (@o-screen-sidechatter-min - 1px)) {
+            margin-left: -@odoo-horizontal-padding*2;
+            margin-right: -@odoo-horizontal-padding*2;
+        }
+    }
+
+    @media (min-width: @screen-sm-min) {
+        .o-flex-display();
+        .o-flex-flow(column, nowrap);
+        min-height: 100%;
+    }
+
+    // Sheet
+    .o_form_sheet_bg {
+        .o-flex(1, 0, auto);
+        background-color: @odoo-webclient-background-color;
+        border-bottom: 1px solid @gray-lighter-dark;
+
+        > .o_form_sheet {
+            .container;
+            background-color: @odoo-view-background-color;
+            border: 1px solid @gray-lighter-darker;
+            box-shadow: 0 5px 20px -15px black;
+            margin: @odoo-sheet-vpadding*0.2 auto;
+            @media (min-width: @screen-sm-min) {
+                margin: @odoo-sheet-vpadding*0.5 auto;
+            }
+            padding: @odoo-sheet-vpadding;
+            .o-form-sheet-inner-right-padding();
+            .o-form-sheet-inner-left-padding();
+
+            // Selection
+            > .o_selection {
+                float: right;
+            }
+        }
+    }
+
+    // Title & avatar
+    .oe_title {
+        color: @headings-color;
+        @media (max-width: @screen-xxs-max) {
+            word-break: break-all;
+        }
+        @media (min-width: @screen-xs-min) {
+            padding-right: @odoo-innergroup-rpadding;
+        }
+    }
+
+    .oe_avatar {
+        float: right;
+        margin-bottom: 10px;
+
+        > img {
+            max-width: @odoo-avatar-size;
+            max-height: @odoo-avatar-size;
+            vertical-align: top;
+            border: 1px solid @odoo-main-color-muted;
+        }
+
+        + .oe_title {
+            padding-right: @odoo-avatar-size + 10;
+        }
+    }
+
+    // Button box
+    .oe_button_box {
+        position: relative;
+        display: block;
+        margin-bottom: @odoo-sheet-vpadding;
+        margin-top: -@odoo-sheet-vpadding;
+        .o-form-sheet-negative-margin();
+        text-align: right;
+        // Use box-shadow instead of border-bottom because some button boxes are
+        // empty in some cases and we do not want to see a floating border in
+        // that cases.
+        box-shadow: inset 0 -1px 0 @gray-lighter-darker;
+
+        &.o_full .oe_stat_button:not(.o_invisible_modifier) ~ .oe_stat_button {
+            border-left: 1px solid @gray-lighter-darker;
+        }
+        &.o_not_full .oe_stat_button {
+            border-left: 1px solid @gray-lighter-darker;
+        }
+
+        > .btn.oe_stat_button, > .o_dropdown_more {
+            .o-flex(0, 0, auto);
+            width: percentage(1/3); // Adapt the number of visible buttons for each screen width
+            @media (min-width: @screen-sm-min) {
+                width: percentage(1/5);
+            }
+            @media (min-width: @screen-md-min) {
+                width: percentage(1/7);
+            }
+            @media (min-width: @screen-lg-min) {
+                width: percentage(1/8);
+            }
+        }
+
+        .btn.oe_stat_button {
+            height: @odoo-statbutton-height;
+            padding: 0 @odoo-statbutton-spacing 0 0; // padding-left will be achieved through margin-left of content
+            text-align: left;
+            background-color: transparent;
+            opacity: 0.8;
+
+            &:hover, &:focus {
+                background-color: fade(black, 2%);
+                color: inherit;
+                opacity: 1;
+            }
+
+            > .o_button_icon {
+                margin-left: @odoo-statbutton-spacing; // To create the button padding left (firefox bug)
+                display: inline-block;
+                vertical-align: middle;
+                line-height: @odoo-statbutton-height;
+                width: 30%;
+
+                &:before {
+                    font-size: 22px;
+                    vertical-align: middle;
+                }
+            }
+
+            > .o_field_percent_pie {
+                margin-left: @odoo-statbutton-spacing; // To create the button padding left (firefox bug)
+            }
+
+            > .o_stat_info { // contains the value and text
+                display: inline-block;
+                vertical-align: middle;
+                font-weight: 500;
+
+                max-width: 70%;
+                padding-right: @odoo-statbutton-spacing;
+                line-height: 1.3;
+
+                .o_stat_value {
+                    .o-text-overflow(block);
+                    font-weight: 700;
+                    color: @odoo-brand-primary;
+                    line-height: 1.2;
+                }
+                > .o_stat_text {
+                    .o-text-overflow(block);
+                    line-height: 1.2;
+
+                    .o_stat_value {
+                        display: inline;
+                    }
+                }
+            }
+
+            // Some buttons only display text without using StatInfo template
+            > span {
+                .o-text-overflow(block);
+                .o_stat_info; // layout
+                white-space: normal; // text on several lines if needed
+            }
+
+            &.o_button_more {
+                text-align: center;
+                &:after {
+                    margin-left: 5px;
+                    .o-caret-down;
+                }
+            }
+        }
+
+        > .o_dropdown_more {
+            .o-position-absolute(100%, 0);
+            min-width: 0;
+            border: none;
+            border: 1px solid @gray-lighter-dark;
+            margin: 0;
+            padding: 0;
+            > li {
+                padding: 0;
+                > .btn.oe_stat_button {
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid @gray-lighter-dark;
+                }
+            }
+        }
+    }
+
+    // Groups
+    .o_group {
+        // all groups take width 100% in mobile
+        .o-generate-groups(@odoo-form-group-cols);
+        .o-generate-groups(@n, @i: 1) when (@i =< @n) {
+            .o_group_col_@{i} {
+                @media (max-width: @screen-sm-max) {
+                    width: 100%;
+                }
+            }
+            .o-generate-groups(@n, @i + 1);
+        }
+
+        &.o_inner_group {
+            > tbody > tr > td {
+                padding: 0 @odoo-innergroup-rpadding 0 0;
+           }
+            @media (max-width: @screen-xxs-max) { // Not xs max to keep sm layout a bit further
+                .form-break-table();
+            }
+        }
+
+        @media (min-width: @screen-xs-min) {
+            .o_field_widget {
+                &.o_text_overflow {
+                    width: 1px!important; // hack to make the table layout believe it is a small element (so that the table does not grow too much) ...
+                    min-width: 100%;      // ... but in fact it takes the whole table space
+                }
+            }
+
+            .o_form_label {
+                margin-bottom: @odoo-form-spacing-unit;
+            }
+        }
+        @media (max-width: @screen-sm-max) {
+            &.o_label_nowrap .o_form_label {
+                white-space: normal;
+            }
+        }
+        @media (max-width: @screen-xxs-max) {
+            .o_td_label .o_form_label {
+                font-weight: normal;
+            }
+        }
+    }
+
+    // Labels
+    .o_form_label {
+        &.o_form_label_empty, &.o_form_label_false {
+            opacity: 0.5;
+            font-weight: normal;
+        }
+        @media (max-width: @screen-xs-max) {
+            font-size: @odoo-font-size-base-touch;
+        }
+        @media (max-width: @screen-xxs-max) {
+            margin-top: 3px;
+            font-size: @odoo-label-font-size-factor * @odoo-font-size-base-touch;
+            font-weight: normal;
+            color: @odoo-brand-secondary;
+
+            &.o_form_label_empty {
+                display: none;
+            }
+        }
+    }
+
+    // Chatter
+    .oe_chatter {
+        .o-flex(1000, 0, auto);
+        .container;
+        padding: @grid-gutter-width*0.25 0;
+    }
+
+    // Notebooks
+    .o_notebook {
+        > ul.nav.nav-tabs {
+            border-bottom: 1px solid @gray-lighter-darker;
+            .o-form-sheet-negative-margin();
+            .o-form-sheet-inner-left-padding();
+
+            > li {
+                > a {
+                    color: @text-color;
+                    border: none;
+                    background-color: @gray-lighter;
+                    padding: @padding-large-vertical @padding-large-horizontal;
+
+                    &:hover, &:focus, &:active {
+                        outline: none;
+                        color: @link-color;
+                    }
+                }
+
+                &:not(.active) {
+                    margin-bottom: 0; // Override bootstrap negative margin so that active and non-active tab have same height
+                }
+
+                &.active > a {
+                    border: 1px solid @gray-lighter-darker;
+                    border-bottom: 0;
+
+                    &, &:hover, &:focus, &:active {
+                        color: @headings-color;
+                        border-top-color: @odoo-brand-primary;
+                        background-color: white;
+                    }
+                }
+
+                &.disabled > a {
+                    color: @text-muted;
+                }
+            }
+        }
+
+        > .tab-content {
+            border-bottom: 1px solid @gray-lighter-darker;
+
+            > .tab-pane {
+                padding: @odoo-horizontal-padding 0;
+
+                > :first-child {
+                    // Reset margin to 0 and use tab-pane's padding
+                    // to define the distance between panel and content
+                    margin-top: 0;
+
+                    // These elements will appear attached to the tabs
+                    &.oe_form_field_html_text {
+                        .o-form-sheet-negative-margin();
+                        margin-top: -@odoo-horizontal-padding;
+                        border: none;
+
+                        .note-editor.panel {
+                            border: none;
+                        }
+
+                        .note-toolbar.panel-heading {
+                            .o-form-sheet-inner-left-padding();
+                            .o-form-sheet-inner-right-padding();
+                            border-top: none;
+                            padding-top: @odoo-horizontal-padding*0.3;
+                            background: white;
+
+                            .btn-default {
+                                .o-hover-text-color(@text-color, @link-color);
+                            }
+                        }
+
+                        .note-editing-area, .o_readonly {
+                            padding: @panel-body-padding;
+                            .o-form-sheet-inner-left-padding();
+                            .o-form-sheet-inner-right-padding();
+                        }
+
+                        // If immediatly followed by an .oe_clear element, the note-editor it's the 'only'
+                        // tab's element. Reset margins to push the bar at the bottom.
+                        + .oe_clear:last-child {
+                            margin-bottom: -@odoo-horizontal-padding - @odoo-sheet-vpadding - @line-height-computed;
+                        }
+                    }
+
+                    &.o_field_x2many.o_field_x2many_list {
+                        display: block;
+                        width: auto;
+                        .o-form-sheet-negative-margin();
+                        margin-top: -@odoo-horizontal-padding;
+
+                        tr > :first-child {
+                            &, .o_input {
+                                .o-form-sheet-inner-left-padding();
+                            }
+                        }
+                        tr > :last-child {
+                            &, .o_input {
+                                .o-form-sheet-inner-right-padding();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &:last-child > .tab-content {
+            border-bottom: none;
+        }
+    }
+    // Notebooks for small screen
+    @media (max-width: @screen-xs-max) {
+        .o_notebook {
+            position: relative;
+            padding-top:30px;
+            ul.nav-tabs {
+                min-width: 100%;
+                max-width:  calc(~"100% + "@odoo-horizontal-padding);
+                position: absolute;
+                z-index:1;
+                top: 0;
+                overflow-x : auto;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                li {
+                    display: table-cell;
+                    float : none;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .o_cp_buttons {
+            width: 100%;
+            div, .o-kanban-button-new {
+                width: 100%;
+            }
+        }
+    }
+    // One2Many List views
+    .o_field_widget .o_list_view {
+        &.table-striped {
+            // If striped, remove padding
+            > tbody > tr > td {
+                border-top: none;
+            }
+            // Show "border" if tfoot has content only
+            > tfoot > tr {
+                box-shadow: inset 0 1px 0 @gray-lighter-dark;
+                > td {
+                    border:none;
+
+                    &:empty {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // Translate icon
+    .o_field_translate {
+        margin-left: -12px;
+    }
+
+    // Specific style classes
+    .o_group.o_inner_group.oe_subtotal_footer {
+        border-top: 1px solid @gray-lighter-dark;;
+        .oe_subtotal_footer_separator {
+            border-top: 1px solid @gray-lighter-dark;;
+        }
+    }
+
+    // Status Bar
+    .o_form_statusbar {
+        > .o_statusbar_status > .o_arrow_button {
+            font-weight: 500;
+
+            &.btn-primary.disabled {
+                font-weight: bold;
+            }
+
+            // Last element at the right should respect overall padding
+            &:first-of-type {
+                padding-right: @odoo-horizontal-padding;
+            }
+        }
+    }
+
+    @media screen and (min-width: @o-screen-sidechatter-min) {
+        .o-flex-flow(row, nowrap);
+        height: 100%;
+
+        > .o_form_sheet_bg {
+            .o-flex(1, 1, auto); // Side chatter is disabled if this has to shrink but this was added for safety
+            width: @o-form-sheet-min-width + 2 * @odoo-horizontal-padding;
+            // max-width: @container-lg + 2 * @odoo-horizontal-padding; // would be logical but breaks no-chatter form views
+            padding: 0 @odoo-horizontal-padding;
+            overflow: auto;
+            border-bottom: none;
+
+            > :not(.o_form_sheet) {
+                margin-left: -@odoo-horizontal-padding;
+                margin-right: -@odoo-horizontal-padding;
+            }
+            > .o_form_sheet {
+                width: 100%;
+                max-width: @container-lg;
+            }
+        }
+        > .oe_chatter {
+            .o-flex(1, 1, auto); // Side chatter is disabled if this has to shrink but this was added for safety
+            width: @o-chatter-min-width;
+            padding: 0;
+            overflow: auto;
+            border-left: 1px solid @gray-lighter-dark;
+            background-color: white;
+
+            .o_chatter_topbar {
+                margin: 0;
+                padding: 0;
+
+                > .btn, > .o_followers {
+                    padding-top: 0;
+                    padding-bottom:0;
+                    height: @odoo-statusbar-height;
+                    line-height: @odoo-statusbar-height - @padding-base-vertical;
+                }
+                > .btn:first-child {
+                    padding: 0 @odoo-horizontal-padding;
+                    border-left: none!important;
+                }
+                .o_followers {
+                    padding-right: @odoo-horizontal-padding;
+                }
+            }
+            &.o_chatter_composer_active .o_chatter_topbar {
+                > .btn.o_active {
+                    border-width: 0 1px;
+                }
+            }
+            .o_chat_composer {
+                border-width: 1px 0;
+                margin-top: 0;
+            }
+            .o_followers_title_box {
+                margin-left: @odoo-horizontal-padding/2;
+
+                .dropdown-toggle {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.form-break-table() {
+    display: block;
+    margin-bottom: @odoo-form-spacing-unit * 4;
+
+    > tbody {
+        display: block;
+
+        > tr {
+            .o-flex-display();
+            .o-flex-flow(row, wrap);
+
+            > td {
+                .o-flex(1, 0, auto);
+                display: block;
+                max-width: 100%;
+                padding: 0;
+
+                width: auto!important;  // !important is required to override the width computed in JS
+                &.o_td_label {
+                    width: 94%!important; // The label must be on its own line except if the form field is small enough (checkbox)
+                    line-height: @odoo-label-font-size-factor;
+                }
+
+                .o_field_widget {
+                    margin-bottom: @odoo-form-spacing-unit * 2;
+                    &.o_field_boolean {
+                        margin-right: 0;
+                    }
+                }
+
+                .o_input_dropdown {
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Overriden style when form view in modal
+.modal .modal-dialog {
+    .o_form_view {
+        @media (max-width: @screen-sm-max) {
+            .o_group.o_inner_group > tbody > tr > td.o_td_label {
+                min-width: 100px;
+            }
+        }
+    }
+    &.modal-sm .o_form_view {
+        .o_group {
+            .form-break-table();
+        }
+    }
+}

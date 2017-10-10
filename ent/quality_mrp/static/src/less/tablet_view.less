@@ -1,0 +1,185 @@
+@o-wo-tablet-padding: @odoo-horizontal-padding;
+@o-wo-tablet-btn-margin: 2px;
+@o-wo-tablet-bg: #404040; // emulate the pdf reader
+@o-wo-tablet-text: contrast(@o-wo-tablet-bg);
+
+.o_web_client.o_fullscreen {
+    .o_form_view.o_workorder_tablet {
+        .o-flex-display();
+        .o-flex-flow(column, nowrap);
+        padding: 0;
+        background-color: @o-wo-tablet-bg;
+        background-image: url(/web/static/lib/pdfjs/web/images/texture.png);
+        background-repeat: repeat;
+        color: @o-wo-tablet-text;
+
+        font-size: 16px;
+
+        @media (min-width: @screen-lg-min) {
+            font-size: 18px;
+        }
+
+        // Components
+        h1,h2,h3,h4,h5,h6 {
+            color: @o-wo-tablet-text;
+        }
+
+        .btn {
+            font-size: 1em;
+            padding: 0.4em 1em;
+            margin: 0 @o-wo-tablet-btn-margin;
+
+            &.btn-default {
+                color: @o-wo-tablet-text;
+                background-color: @o-wo-tablet-bg;
+                text-transform: capitalize;
+            }
+
+            &.o_workorder_icon_btn {
+                padding: 0.4em;
+
+                &.o_workorder_icon_back {
+                    padding: 0.4em 0.8em;
+                }
+            }
+
+            .o_workorder_btn_icon_small {
+                font-size: 0.8em;
+                margin-top: -1em;
+
+                &.pull-right {
+                    margin-top: 0.5em;
+                }
+            }
+        }
+
+        .o_input {
+            background-color: @o-wo-tablet-bg;
+            color: @o-wo-tablet-text;
+        }
+
+        .o_field_widget {
+            margin-bottom: 0;
+        }
+
+        .o_workorder_bar_content {
+            .o-flex-display();
+            .o-flex-flow(row, nowrap);
+            .o-flex(1, 0, auto);
+            .o-align-items(center);
+
+            &.o_workorder_bar_content_right {
+                .o-justify-content(flex-end);
+            }
+        }
+
+        // Both Top Blocks
+        .workorder_bar, .workorder_actions {
+            .o-flex-display();
+            .o-flex-flow(row, nowrap);
+            background-color: darken(@o-wo-tablet-bg, 5%);
+            background-image: url(/web/static/lib/pdfjs/web/images/texture.png);
+        }
+
+        // First Top Block
+        .workorder_bar {
+            padding: @o-wo-tablet-padding*0.5 @o-wo-tablet-padding;
+            padding-left: @o-wo-tablet-padding - @o-wo-tablet-btn-margin;
+        }
+
+        // Last top Block
+        .workorder_actions {
+            padding: @o-wo-tablet-padding*0.5 @o-wo-tablet-padding - @o-wo-tablet-btn-margin @o-wo-tablet-padding;
+            box-shadow: 0 1px 1px fade(black, 30%);
+            font-size: 1.2em;
+        }
+
+        // Step's info block
+        .o_workorder_data {
+            padding: @o-wo-tablet-padding*0.5 @o-wo-tablet-padding 0;
+            font-size: 0.9em;
+
+            // Final resume table
+            table.o_list_view {
+                color: @text-color;
+            }
+
+            // Add a picture
+            .workorder_picture {
+                .o_field_image {
+                    float: left;
+                    position: relative;
+                    margin-bottom: @o-wo-tablet-padding*0.5;
+
+                    img {
+                        max-width: 70px;
+                    }
+                }
+
+                #workorder_picture_button {
+                    margin-top: 0;
+                    .o-position-absolute(0, @left: 104%);
+                }
+            }
+
+            // Horizontal form
+            .o_workorder_form {
+                padding-bottom: @o-wo-tablet-padding*0.5;
+                .o-justify-content(space-between);
+
+                > div {
+                    .o-flex(1,0,auto);
+                }
+
+                .o_workorder_field {
+                    > div {
+                        .o-inline-flex-display();
+                        .o-align-items(baseline);
+                    }
+
+                    .o_form_label {
+                        opacity: 0.7;
+                        display: inline-block;
+                        font-weight: bold;
+                    }
+                }
+
+                a, a::first-line {
+                    font-weight: bold;
+                    color: @o-wo-tablet-text;
+                }
+            }
+        }
+
+        // PDF Viewer block
+        .workorder_pdf {
+            .o-flex-display();
+            .o-flex(1, 0, auto);
+
+            div.o_field_pdfviewer {
+                margin: 0;
+                height: auto;
+                position: relative;
+                .o-flex-display();
+                .o-flex(1, 0, auto);
+
+                iframe {
+                    display: block;
+                    margin: 0;
+                    .square(100%);
+                    .o-position-absolute(0,0,0,0);
+                }
+            }
+        }
+    }
+
+    // Work order Modal
+    .workorder_menu {
+        .btn {
+            margin-bottom: @o-wo-tablet-padding;
+            padding: 1em;
+            font-size: 2em;
+            text-transform: initial;
+        }
+    }
+}

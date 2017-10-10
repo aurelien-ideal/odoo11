@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="account assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/account_batch_deposit/static/src/css/account_reconciliation.css"/>
+            <script type="text/javascript" src="/account_batch_deposit/static/src/js/account_batch_deposit_reconciliation.js"></script>
+        </xpath>
+    </template>
+
+    <template id="qunit_suite" name="account_reconciliation tests" inherit_id="web.qunit_suite">
+        <xpath expr="//script[contains(@src, '/web/static/tests/views/kanban_tests.js')]" position="after">
+            <link rel="stylesheet" href="/account_batch_deposit/static/src/css/account_reconciliation.css"/>
+        </xpath>
+    </template>
+</odoo>

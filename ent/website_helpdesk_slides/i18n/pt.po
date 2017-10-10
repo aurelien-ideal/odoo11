@@ -1,0 +1,293 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_helpdesk_slides
+# 
+# Translators:
+# Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2016
+# Manuela Silva <inactive+h_manuela_rodsilva@transifex.com>, 2016
+# Martin Trigaux <mat@odoo.com>, 2016
+# Pedro Oliveira <plo@thinkopensolutions.pt>, 2016
+# Ricardo Correia <rcorreiavv@gmail.com>, 2016
+# Daniel C Santos <dcs@thinkopensolutions.pt>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-29 14:58+0000\n"
+"PO-Revision-Date: 2016-09-29 14:58+0000\n"
+"Last-Translator: Daniel C Santos <dcs@thinkopensolutions.pt>, 2016\n"
+"Language-Team: Portuguese (https://www.transifex.com/odoo/teams/41243/pt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_helpdesk_slides
+#: code:addons/website_helpdesk_slides/wizard/slide_slide.py:71
+#, python-format
+msgid "Already exists in %s : <a href=\"%s\">click here to view it.</a>"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_category_id
+msgid "Category"
+msgstr "Categoria"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_channel_id
+msgid "Channel"
+msgstr "Canal"
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slides_page
+msgid "Click here to view more result..."
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_datas
+msgid "Content"
+msgstr "Conteúdo"
+
+#. module: website_helpdesk_slides
+#: code:addons/website_helpdesk_slides/wizard/slide_slide.py:37
+#, python-format
+msgid ""
+"Could not fetch data from url. Document or access right not available:\n"
+"%s"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_create_uid
+msgid "Created by"
+msgstr "Criada por"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_description
+msgid "Description"
+msgstr "Descrição"
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
+msgid "Description..."
+msgstr "Descrição..."
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_display_name
+msgid "Display Name"
+msgstr "Nome a Exibir"
+
+#. module: website_helpdesk_slides
+#: selection:slide.upload.wizard,slide_type:0
+msgid "Document"
+msgstr "Documento"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_document_id
+msgid "Document ID"
+msgstr "ID Documento"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_url
+msgid "Document URL"
+msgstr "URL do Documento"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_file_name
+msgid "Filename"
+msgstr "Nome de ficheiro"
+
+#. module: website_helpdesk_slides
+#: model:ir.model,name:website_helpdesk_slides.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_id
+msgid "ID"
+msgstr "Id."
+
+#. module: website_helpdesk_slides
+#: selection:slide.upload.wizard,slide_type:0
+msgid "Infographic"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: code:addons/website_helpdesk_slides/wizard/slide_slide.py:52
+#, python-format
+msgid "Invalid file type. Please select pdf or image file"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: code:addons/website_helpdesk_slides/wizard/slide_slide.py:60
+#, python-format
+msgid "Invalid slide type. Please select document or presentation type."
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_mime_type
+msgid "Mime-type"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
+msgid "Name"
+msgstr "Nome"
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.website_helpdesk_slides_team_page
+msgid "No presentations yet."
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: code:addons/website_helpdesk_slides/wizard/slide_slide.py:40
+#, python-format
+msgid "Please enter valid Youtube or Google Doc URL"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.website_helpdesk_slides_team_page
+msgid "Popular Presentations"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: selection:slide.upload.wizard,slide_type:0
+msgid "Presentation"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_helpdesk_team_elearning_url
+msgid "Presentations URL"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
+msgid "Save"
+msgstr "Guardar"
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.helpdesk_team_view_form_inherit_website_helpdesk_slides
+msgid "Save this page to activate the feature"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
+msgid "Slide"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.actions.act_window,name:website_helpdesk_slides.slide_upload_action
+msgid "Slide Upload"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_tag_ids
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
+msgid "Tags..."
+msgstr "Etiquetas..."
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,help:website_helpdesk_slides.field_slide_upload_wizard_slide_type
+msgid ""
+"The document type will be set automatically based on the document URL and "
+"properties (e.g. height and width for presentation and document)."
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,help:website_helpdesk_slides.field_helpdesk_team_elearning_url
+msgid "The full URL to access the document through the website."
+msgstr "O endereço URL completo para aceder ao documento através do website."
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.helpdesk_team_view_form_inherit_website_helpdesk_slides
+msgid ""
+"The related channel is:<br/>\n"
+"                        ⇒"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_name
+msgid "Title"
+msgstr "Título"
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_slide_upload_wizard_slide_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: website_helpdesk_slides
+#: code:addons/website_helpdesk_slides/wizard/slide_slide.py:86
+#, python-format
+msgid "Uploded new slide : <a href=\"%s\">click here to view it.</a>"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: selection:slide.upload.wizard,slide_type:0
+msgid "Video"
+msgstr "Vídeo"
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.helpdesk_team_view_form_inherit_website_helpdesk_slides
+msgid ""
+"View the presentations:<br/>\n"
+"                    ⇒"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slides_page
+msgid "Views ."
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,help:website_helpdesk_slides.field_slide_upload_wizard_document_id
+msgid "Youtube or Google Document ID"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,help:website_helpdesk_slides.field_slide_upload_wizard_url
+msgid "Youtube or Google Document URL"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.model.fields,field_description:website_helpdesk_slides.field_helpdesk_team_elearning_id
+msgid "eLearning"
+msgstr ""
+
+#. module: website_helpdesk_slides
+#: model:ir.ui.view,arch_db:website_helpdesk_slides.slide_upload_wizard_view_form
+msgid "or"
+msgstr "ou"
+
+#. module: website_helpdesk_slides
+#: model:ir.model,name:website_helpdesk_slides.model_slide_upload_wizard
+msgid "slide.upload.wizard"
+msgstr ""

@@ -1,0 +1,234 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_account
+# 
+# Translators:
+# Erwin van der Ploeg <erwin@odooexperts.nl>, 2017
+# Yenthe Van Ginneken <yenthespam@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Cas Vissers <casvissers@brahoo.nl>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: Cas Vissers <casvissers@brahoo.nl>, 2017\n"
+"Language-Team: Dutch (https://www.transifex.com/odoo/teams/41243/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid ", from"
+msgstr ", van"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Operations</strong>"
+msgstr "<strong>Totale kosten van bewerkingen</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Raw Materials</strong>"
+msgstr "<strong>Totale kosten van de grondstoffen</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Total Cost of Scraps</strong>"
+msgstr "<strong>Totale kosten van afval</strong>"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "<strong>Unit Cost</strong>"
+msgstr "<strong>Kostprijs</strong>"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_costs_hour_account_id
+msgid "Analytic Account"
+msgstr "Kostenplaats"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Code"
+msgstr "Code"
+
+#. module: mrp_account
+#: model:ir.actions.report,name:mrp_account.action_cost_struct_mrp_production
+#: model:ir.ui.view,arch_db:mrp_account.mrp_production_form_inherit_view6
+#: model:ir.ui.view,arch_db:mrp_account.product_product_inherit_form_view_cost_structure
+msgid "Cost Analysis"
+msgstr "Kosten analyse"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_productivity_cost_already_recorded
+msgid "Cost Recorded"
+msgstr "Kosten geregistreerd"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost Structure"
+msgstr "Kosten structuur"
+
+#. module: mrp_account
+#: model:ir.actions.report,name:mrp_account.action_cost_struct_product_template
+msgid "Cost Structure Analysis"
+msgstr "Kosten structuur analyse"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost for"
+msgstr "Kost voor"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost of Operations"
+msgstr "Kosten van bewerkingen"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost of Scraps"
+msgstr "Kosten van afval"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_mrp_workcenter_costs_hour
+msgid "Cost per hour"
+msgstr "Kosten per uur"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Cost/hour"
+msgstr "Kost/uur"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_workcenter_view_inherit
+msgid "Costing Information"
+msgstr "Kosten informatie"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_account_mrp_cost_structure_display_name
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_account_product_template_cost_structure_display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_costs_hour_account_id
+msgid ""
+"Fill this only if you want automatic analytic accounting entries on "
+"production orders."
+msgstr ""
+"Vul dit alleen in indien u automatisch kostenplaats boekingen wilt maken van"
+" productieorders."
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_account_mrp_cost_structure_id
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_account_product_template_cost_structure_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_account
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_account_mrp_cost_structure___last_update
+#: model:ir.model.fields,field_description:mrp_account.field_report_mrp_account_product_template_cost_structure___last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_production
+msgid "Manufacturing Order"
+msgstr "Productieorder"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Operation"
+msgstr "Handeling"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Operator"
+msgstr "Operator"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Quantity"
+msgstr "Hoeveelheid"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Raw Materials"
+msgstr "Grondstoffen"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Scraps"
+msgstr "Afgekeurd"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Some of the Manufacturing Order(s) selected are not done yet"
+msgstr "Enkele van de geselecteerde productie order(s) zijn nog niet voltooid"
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_costs_hour
+msgid "Specify cost of work center per hour."
+msgstr "Specificeer de kosten van de productieplaats per uur."
+
+#. module: mrp_account
+#: model:ir.model.fields,help:mrp_account.field_mrp_workcenter_productivity_cost_already_recorded
+msgid ""
+"Technical field automatically checked when a ongoing production posts "
+"journal entries for its costs. This way, we can record one production's cost"
+" multiple times and only consider new entries in the work centers time "
+"lines."
+msgstr ""
+"Technisch veld automatisch aangevinkt wanneer een lopende productie "
+"boekingen  maakt voor de kosten ervan. Op deze manier kunnen we de kosten "
+"van één productie meerdere malen opnemen en alleen nieuwe boekingen maken in"
+" de tijdslijn van de werkplek."
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Total Cost"
+msgstr "Totale kostprijs"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Unit Cost"
+msgstr "Kostprijs per stuk"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_workcenter
+msgid "Work Center"
+msgstr "Werkplek"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_mrp_workcenter_productivity
+msgid "Workcenter Productivity Log"
+msgstr "Effectiviteitslog werkplek"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "Working Time"
+msgstr "Werktijd"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "hours"
+msgstr "uren"
+
+#. module: mrp_account
+#: model:ir.ui.view,arch_db:mrp_account.mrp_cost_structure
+msgid "manufacturing order(s)."
+msgstr "productieorder(s)"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_report_mrp_account_mrp_cost_structure
+msgid "report.mrp_account.mrp_cost_structure"
+msgstr "report.mrp_account.mrp_cost_structure"
+
+#. module: mrp_account
+#: model:ir.model,name:mrp_account.model_report_mrp_account_product_template_cost_structure
+msgid "report.mrp_account.product_template_cost_structure"
+msgstr "report.mrp_account.product_template_cost_structure"

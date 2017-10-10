@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<template id="print_check_bottom">
+    <t t-foreach="docs" t-as="o">
+        <t t-call="web.basic_layout">
+            <div t-foreach="o.get_pages()" t-as="page" class="page ckus_page ckus_bottom_page" t-attf-style="top: {{ o.company_id.us_check_margin_top }}in; left: {{ o.company_id.us_check_margin_left }}in;">
+                <t t-call="l10n_us_check_printing.ckus_stub"><t t-set="stub_num" t-value="1"/></t>
+                <t t-call="l10n_us_check_printing.ckus_stub"><t t-set="stub_num" t-value="2"/></t>
+                <t t-call="l10n_us_check_printing.ckus_check" />
+            </div>
+        </t>
+    </t>
+</template>
+
+</data>
+</odoo>

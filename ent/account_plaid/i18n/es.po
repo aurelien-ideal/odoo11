@@ -1,0 +1,43 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * account_plaid
+# 
+# Translators:
+# RGB Consulting <odoo@rgbconsulting.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-20 11:33+0000\n"
+"PO-Revision-Date: 2017-09-20 11:33+0000\n"
+"Last-Translator: RGB Consulting <odoo@rgbconsulting.com>, 2017\n"
+"Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: account_plaid
+#: code:addons/account_plaid/models/plaid.py:42
+#, python-format
+msgid "Get %s status code for call to %s. Content message: %s"
+msgstr ""
+"Obtener el código de estado %s para la llamada a %s. Contenido del mensaje: "
+"%s"
+
+#. module: account_plaid
+#: model:ir.model,name:account_plaid.model_account_online_journal
+msgid "Interface for online account journal"
+msgstr "Interfaz para diario de cuentas en línea"
+
+#. module: account_plaid
+#: model:ir.model,name:account_plaid.model_account_online_provider
+msgid "Provider for online account synchronization"
+msgstr "Proveedor de sincronización de cuenta en línea"
+
+#. module: account_plaid
+#: code:addons/account_plaid/models/plaid.py:68
+#, python-format
+msgid "Timeout: the server did not reply within 30s"
+msgstr "Tiempo de espera agotado: el servidor no ha respondido en 30s"

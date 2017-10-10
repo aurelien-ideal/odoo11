@@ -1,0 +1,85 @@
+<odoo>
+    <record id="quality_point_view_form_inherit_mrp" model="ir.ui.view">
+        <field name="name">quality.point.view.form.inherit.mrp</field>
+        <field name="model">quality.point</field>
+        <field name="inherit_id" ref="quality.quality_point_view_form"/>
+        <field name="arch" type="xml">
+            <field name="picking_type_id" position="after">
+                <field name="operation_id" attrs="{'invisible': [('code', '!=', 'mrp_operation')]}" groups="mrp.group_mrp_routings" options="{'no_create': True}"/>
+                <field name="code" invisible="1"/>
+            </field>
+            <field name="user_id" position="after">
+                <field name="worksheet" widget="radio" attrs="{'invisible': ['|', ('code', '!=', 'mrp_operation'), ('operation_id', '=', False)]}"/>
+                <field name="worksheet_page" attrs="{'invisible': ['|', '|', ('code', '!=', 'mrp_operation'), ('operation_id', '=', False), ('worksheet', '!=', 'scroll')]}"/>
+                <field name="component_id" attrs="{'invisible': ['|', '|', ('code', '!=', 'mrp_operation'), ('operation_id', '=', False), ('test_type', '!=', 'register_consumed_materials')]}" />
+            </field>
+        </field>
+    </record>
+
+    <record id="quality_check_failure_message" model="ir.ui.view">
+        <field name="name">quality.check.failure.message</field>
+        <field name="model">quality.check</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="failure_message"/>
+                <footer>
+                    <button special="cancel" string="OK" class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="quality_alert_view_form_inherit_mrp" model="ir.ui.view">
+        <field name="name">quality.alert.view.form.inherit.mrp</field>
+        <field name="model">quality.alert</field>
+        <field name="inherit_id" ref="quality.quality_alert_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_create_message" type="object" string="Create Work Order Message"
+                            attrs="{'invisible': [('workcenter_id', '=', False)]}"/>
+            </xpath>
+            <field name="lot_id" position="after">
+                <field name="workcenter_id" groups="mrp.group_mrp_routings"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="quality_alert_view_search_inherit_mrp" model="ir.ui.view">
+        <field name="name">quality.alert.view.search.inherit.mrp</field>
+        <field name="model">quality.alert</field>
+        <field name="inherit_id" ref="quality.quality_alert_view_search"/>
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <field name="production_id"/>
+                <field name="workorder_id"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="quality_check_action_mo" model="ir.actions.act_window">
+        <field name="name">Quality Checks</field>
+        <field name="res_model">quality.check</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('production_id', '=', active_id)]</field>
+        <field name="context">{
+            'search_default_production_id': [active_id],
+            'default_production_id': active_id,
+         }
+        </field>
+    </record>
+
+    <record id="quality_check_action_wo" model="ir.actions.act_window">
+        <field name="name">Quality Checks</field>
+        <field name="res_model">quality.check</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('workorder_id', '=', active_id), ('test_type', '!=', 'register_consumed_materials')]</field>
+        <field name="target">main</field>
+        <field name="context">{
+            'search_default_workorder_id': [active_id],
+            'default_workorder_id': active_id,
+         }
+        </field>
+    </record>
+</odoo>

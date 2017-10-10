@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="usps_price_request" name="USPS">
+        <t t-if="api == 'RateV4'">
+            <RateV4Request t-att-USERID="ID">
+                <Revision t-esc="revision"/>
+                <Package t-att-ID="package_id">
+                    <Service t-esc="Service"/>
+                    <t t-if="Service == 'First Class' or Service == 'First Class Commercial' or Service == 'First Class HFP Commercial'">
+                        <FirstClassMailType t-esc="FirstClassMailType" />
+                    </t>
+                    <ZipOrigination t-esc="ZipOrigination"/>
+                    <ZipDestination t-esc="ZipDestination"/>
+                    <Pounds t-esc="Pounds"/>
+                    <Ounces t-esc="Ounces"/>
+                    <Container t-esc='Container'/>
+                    <Size t-esc="Size"/>
+                    <t t-if="Container != 'VARIABLE'">
+                        <Width t-esc="Width" />
+                        <Length t-esc="Length" />
+                        <Height t-esc="Height" />
+                        <Girth t-esc="Girth" />
+                    </t>
+                    <t t-if="Container == 'VARIABLE'">
+                        <Width />
+                        <Length />
+                        <Height />
+                        <Girth />
+                    </t>
+                    <Machinable t-esc="Machinable"/>
+                </Package>
+            </RateV4Request>
+        </t>
+
+        <t t-if="api == 'IntlRateV2'">
+            <IntlRateV2Request t-att-USERID="ID">
+                <Revision t-esc="revision"/>
+                <Package t-att-ID="package_id">
+                    <Pounds t-esc="Pounds"/>
+                    <Ounces t-esc="Ounces"/>
+                    <Machinable t-esc="Machinable"/>
+                    <MailType t-esc="MailType"/>
+                    <ValueOfContents t-esc="ValueOfContents"/>
+                    <Country t-esc="Country"/>
+                    <Container t-esc='Container'/>
+                    <Size t-esc="Size" />
+                    <t t-if="Container != 'VARIABLE'">
+                        <Width t-esc="Width" />
+                        <Length t-esc="Length" />
+                        <Height t-esc="Height" />
+                        <Girth t-esc="Girth" />
+                    </t>
+                    <t t-if="Container == 'VARIABLE'">
+                        <Width />
+                        <Length />
+                        <Height />
+                        <Girth />
+                    </t>
+                    <OriginZip t-esc="OriginZip"/>
+                </Package>
+            </IntlRateV2Request>
+        </t>
+    </template>
+
+    <template id="usps_shipping_common" name="USPS">
+        <PriorityMailIntlCertifyRequest t-if="api == 'PriorityMailIntlCertify'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </PriorityMailIntlCertifyRequest>
+
+        <PriorityMailIntlRequest t-if="api == 'PriorityMailIntl'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </PriorityMailIntlRequest>
+
+        <ExpressMailIntlCertifyRequest t-if="api == 'ExpressMailIntlCertify'" t-att-USERID="ID" >
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </ExpressMailIntlCertifyRequest>
+
+        <ExpressMailIntlRequest t-if="api == 'ExpressMailIntl'" t-att-USERID="ID" >
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </ExpressMailIntlRequest>
+
+        <FirstClassMailIntlRequest t-if="api == 'FirstClassMailIntl'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </FirstClassMailIntlRequest>
+
+        <FirstClassMailIntlCertifyRequest t-if="api == 'FirstClassMailIntlCertify'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </FirstClassMailIntlCertifyRequest>
+
+        <ExpressMailLabelCertifyRequest t-if="api == 'ExpressMailLabelCertify'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </ExpressMailLabelCertifyRequest>
+
+        <ExpressMailLabelRequest t-if="api == 'ExpressMailLabel'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </ExpressMailLabelRequest>
+
+        <DeliveryConfirmationV4.0Request t-if="api == 'DeliveryConfirmationV4'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </DeliveryConfirmationV4.0Request>
+        <DelivConfirmCertifyV4.0Request t-if="api == 'DelivConfirmCertifyV4'" t-att-USERID="ID">
+            <t t-call="delivery_usps.usps_shipping_request"></t>
+        </DelivConfirmCertifyV4.0Request>
+    </template>
+
+    <template id="usps_shipping_request" name="USPS">
+        <!-- International -->
+        <t t-if="api in ['PriorityMailIntlCertify', 'PriorityMailIntl','ExpressMailIntlCertify', 'ExpressMailIntl','FirstClassMailIntlCertify', 'FirstClassMailIntl']">
+            <Option />
+            <Revision t-esc="revision"/>
+            <ImageParameters />
+            <t t-if="not picking_warehouse_partner.is_company">
+                <FromFirstName t-esc="picking_warehouse_partner.name"/>
+                <FromLastName t-esc="picking_warehouse_partner.name"/>
+                <FromFirm />
+            </t>
+            <t t-if="picking_warehouse_partner.is_company">
+                <FromFirstName />
+                <FromLastName />
+                <FromFirm t-esc="picking_warehouse_partner.name" />
+            </t>
+             <t t-if="picking_warehouse_partner.street">
+                <FromAddress1 t-esc="picking_warehouse_partner.street"/>
+            </t>
+            <t t-if="not picking_warehouse_partner.street">
+                <FromAddress1 t-esc="picking_warehouse_partner.street2"/>
+            </t>
+
+            <t t-if="picking_warehouse_partner.street2">
+                <FromAddress2 t-esc="picking_warehouse_partner.street2"/>
+            </t>
+            <t t-if="not picking_warehouse_partner.street2">
+                <FromAddress2 t-esc="picking_warehouse_partner.street"/>
+            </t>
+            <FromCity t-esc="picking_warehouse_partner.city"/>
+            <FromState t-esc="picking_warehouse_partner.state_id.code"/>
+            <FromZip5 t-esc="func_split_zip(picking_warehouse_partner.zip)[0]"/>
+            <FromZip4 t-esc="func_split_zip(picking_warehouse_partner.zip)[1]"/>
+            <FromPhone t-esc="picking_warehouse_partner_phone"/>
+            <t t-if="not picking_partner.is_company">
+                <ToFirstName t-esc="picking_partner.display_name"/>
+                <ToLastName t-esc="picking_partner.display_name"/>
+                <ToFirm/>
+            </t>
+            <t t-if="picking_partner.is_company">
+                <ToFirstName/>
+                <ToLastName/>
+                <ToFirm t-esc="picking_partner.display_name" />
+            </t>
+            <t t-if="picking_partner.street">
+                <ToAddress1 t-esc="picking_partner.street"/>
+            </t>
+            <t t-if="not picking_partner.street and picking_partner.street2">
+                <ToAddress1 t-esc="picking_partner.street2"/>
+            </t>
+            <t t-if="picking_partner.street2">
+                <ToAddress2 t-esc="picking_partner.street2"/>
+            </t>
+            <t t-if="not picking_partner.street2 and picking_partner.street">
+                <ToAddress2 t-esc="picking_partner.street"/>
+            </t>
+            <ToCity t-esc="picking_partner.city"/>
+            <ToProvince t-esc="picking_partner.state_id.code or ''"/>
+            <ToCountry t-esc="picking_partner.country_id.name"/>
+            <ToPostalCode t-esc="picking_partner.zip"/>
+            <ToPOBoxFlag t-esc="ToPOBoxFlag"/>
+            <ToPhone t-esc="picking_partner.phone"/>
+            <t t-if="api not in ['FirstClassMailIntlCertify', 'FirstClassMailIntl']">
+                <NonDeliveryOption t-esc='UspsNonDeliveryOption'/>
+            </t>
+            <t t-if="UspsNonDeliveryOption == 'REDIRECT'">
+                <AltReturnAddress1 t-esc='AltReturnAddress1'/>
+                <AltReturnAddress2 t-esc='AltReturnAddress2'/>
+                <AltReturnAddress3 t-esc='AltReturnAddress3'/>
+                <AltReturnCountry t-esc="AltReturnCountry"/>
+            </t>
+            <t t-if="api not in ['FirstClassMailIntlCertify', 'FirstClassMailIntl']">
+                <Container t-esc='Container'/>
+            </t>
+            <t t-if="api in ['FirstClassMailIntlCertify', 'FirstClassMailIntl'] and MailType == 'LargeEnvelope'">
+                <FirstClassMailType t-esc="FirstClassMailType" />
+            </t>
+            <ShippingContents>
+                <t t-foreach="shipping" t-as="rec">
+                    <ItemDetail>
+                        <Description t-esc="rec['Description']"/>
+                        <Quantity t-esc="rec['Quantity']"/>
+                        <Value t-esc="rec['Value']"/>
+                        <NetPounds t-esc="rec['NetPounds']"/>
+                        <NetOunces t-esc="rec['NetOunces']"/>
+                        <HSTariffNumber />
+                        <CountryOfOrigin t-esc="rec['CountryOfOrigin']"/>
+                    </ItemDetail>
+                </t>
+            </ShippingContents>
+            <GrossPounds t-esc="GrossPounds"/>
+            <GrossOunces t-esc="GrossOunces"/>
+             <t t-if="api in ['FirstClassMailIntlCertify', 'FirstClassMailIntl']">
+                 <Machinable t-esc="Machinable" />
+            </t>
+            <ContentType t-esc="ContentType"/>
+            <Agreement t-esc="Agreement"/>
+            <Comments />
+            <ImageType t-esc="ImageType"/>
+            <ImageLayout t-esc="ImageLayout"/>
+            <Size t-esc="Size"/>
+            <t t-if="Container != 'VARIABLE'">
+                <Length t-esc="Length" />
+                <Width t-esc="Width" />
+
+                <Height t-esc="Height" />
+                <Girth t-esc="Girth" />
+            </t>
+            <t t-if="Container == 'VARIABLE'">
+                <Length />
+                <Width />
+
+                <Height />
+                <Girth />
+            </t>
+        </t>
+
+        <t t-if="api in ['ExpressMailLabelCertify', 'ExpressMailLabel']">
+            <!-- Domestic Express-->
+            <Option/>
+            <Revision t-esc="revision"/>
+            <EMCAAccount />
+            <EMCAPassword />
+            <ImageParameters />
+            <t t-if="not picking_warehouse_partner.is_company">
+                <FromFirstName t-esc="picking_warehouse_partner.display_name"/>
+                <FromLastName t-esc="picking_warehouse_partner.display_name"/>
+            </t>
+            <t t-if="picking_warehouse_partner.is_company">
+                <FromFirstName />
+                <FromLastName />
+                <FromFirm t-esc="picking_warehouse_partner.display_name" />
+            </t>
+            <t t-if="picking_warehouse_partner.street">
+                <FromAddress1 t-esc="picking_warehouse_partner.street"/>
+            </t>
+            <t t-if="not picking_warehouse_partner.street">
+                <FromAddress1 t-esc="picking_warehouse_partner.street2"/>
+            </t>
+            <t t-if="picking_warehouse_partner.street2">
+                <FromAddress2 t-esc="picking_warehouse_partner.street2"/>
+            </t>
+            <t t-if="not picking_warehouse_partner.street2">
+                <FromAddress2 t-esc="picking_warehouse_partner.street"/>
+            </t>
+            <FromCity t-esc="picking_warehouse_partner.city"/>
+            <FromState t-esc="picking_warehouse_partner.state_id.code"/>
+            <FromZip5 t-esc="func_split_zip(picking_warehouse_partner.zip)[0]"/>
+            <FromZip4 t-esc="func_split_zip(picking_warehouse_partner.zip)[1]"/>
+            <FromPhone t-esc="picking_warehouse_partner_phone"/>
+            <t t-if="not picking_partner.is_company">
+                <ToFirstName t-esc="picking_partner.display_name"/>
+                <ToLastName t-esc="picking_partner.display_name"/>
+                <ToFirm/>
+            </t>
+            <t t-if="picking_partner.is_company">
+                <ToFirstName/>
+                <ToLastName/>
+                <ToFirm t-esc="picking_partner.display_name" />
+            </t>
+            <t t-if="picking_partner.street">
+                <ToAddress1 t-esc="picking_partner.street"/>
+            </t>
+            <t t-if="not picking_partner.street">
+                <ToAddress1 t-esc="picking_partner.street2"/>
+            </t>
+            <t t-if="picking_partner.street2">
+                <ToAddress2 t-esc="picking_partner.street2"/>
+            </t>
+            <t t-if="not picking_partner.street2">
+                <ToAddress2 t-esc="picking_partner.street"/>
+            </t>
+            <ToCity t-esc="picking_partner.city"/>
+            <ToState t-esc="picking_partner.state_id.code"/>
+            <ToZip5 t-esc="func_split_zip(picking_partner.zip)[0]"/>
+            <ToZip4 t-esc="func_split_zip(picking_partner.zip)[1]"/>
+            <ToPOBoxFlag t-esc="ToPOBoxFlagDom" />
+            <ToPhone />
+            <WeightInOunces t-esc="WeightInOunces"/>
+            <POZipCode />
+            <ImageType t-esc="ImageType"/>
+            <Container t-esc='Container'/>
+            <Size t-esc="Size"/>
+            <t t-if="Container != 'VARIABLE'">
+                <Width t-esc="Width" />
+                <Length t-esc="Length" />
+                <Height t-esc="Height" />
+                <Girth t-esc="Girth" />
+            </t>
+            <t t-if="Container == 'VARIABLE'">
+                <Width />
+                <Length />
+                <Height />
+                <Girth />
+            </t>
+        </t>
+
+        <t t-if="api in ['DelivConfirmCertifyV4', 'DeliveryConfirmationV4']">
+            <!-- Domestic Priority and FirstClass-->
+
+            <Revision t-esc="revision"/>
+            <ImageParameters />
+
+            <t t-if="not picking_warehouse_partner.is_company">
+                <FromName t-esc="picking_warehouse_partner.display_name"/>
+                <FromFirm />
+            </t>
+            <t t-if="picking_warehouse_partner.is_company">
+                <FromName>From Company</FromName>
+                <FromFirm t-esc="picking_warehouse_partner.display_name" />
+            </t>
+            <t t-if="picking_warehouse_partner.street">
+                <FromAddress1 t-esc="picking_warehouse_partner.street"/>
+            </t>
+            <t t-if="not picking_warehouse_partner.street">
+                <FromAddress1 t-esc="picking_warehouse_partner.street2"/>
+            </t>
+            <t t-if="picking_warehouse_partner.street2">
+                <FromAddress2 t-esc="picking_warehouse_partner.street2"/>
+            </t>
+            <t t-if="not picking_warehouse_partner.street2">
+                <FromAddress2 t-esc="picking_warehouse_partner.street"/>
+            </t>
+            <FromCity t-esc="picking_warehouse_partner.city"/>
+            <FromState t-esc="picking_warehouse_partner.state_id.code"/>
+            <FromZip5 t-esc="func_split_zip(picking_warehouse_partner.zip)[0]"/>
+            <FromZip4 t-esc="func_split_zip(picking_warehouse_partner.zip)[1]"/>
+            <t t-if="not picking_partner.is_company">
+                <ToName t-esc="picking_partner.display_name"/>
+                <ToFirm/>
+            </t>
+            <t t-if="picking_partner.is_company">
+                <ToName >To Company</ToName>
+                <ToFirm t-esc="picking_partner.display_name" />
+            </t>
+            <t t-if="picking_partner.street">
+                <ToAddress1 t-esc="picking_partner.street"/>
+            </t>
+            <t t-if="not picking_partner.street">
+                <ToAddress1 t-esc="picking_partner.street2"/>
+            </t>
+            <t t-if="picking_partner.street2">
+                <ToAddress2 t-esc="picking_partner.street2"/>
+            </t>
+            <t t-if="not picking_partner.street2">
+                <ToAddress2 t-esc="picking_partner.street"/>
+            </t>
+
+            <ToCity t-esc="picking_partner.city"/>
+            <ToState t-esc="picking_partner.state_id.code"/>
+            <ToZip5 t-esc="func_split_zip(picking_partner.zip)[0]"/>
+            <ToZip4 t-esc="func_split_zip(picking_partner.zip)[1]"/>
+            <ToPOBoxFlag/>
+            <WeightInOunces t-esc="WeightInOunces"/>
+
+            <ServiceType t-esc="ServiceType" />
+
+            <ImageType t-esc="ImageType"/>
+            <Container t-esc='Container'/>
+            <Size t-esc="Size"/>
+            <t t-if="Container != 'VARIABLE'">
+                <Width t-esc="Width" />
+                <Length t-esc="Length" />
+                <Height t-esc="Height" />
+                <Girth t-esc="Girth" />
+            </t>
+            <t t-if="Container == 'VARIABLE'">
+                <Width />
+                <Length />
+                <Height />
+                <Girth />
+            </t>
+            <Machinable t-esc='Machinable'/>
+        </t>
+    </template>
+
+    <template id="usps_cancel_request" name="USPS">
+        <CarrierPickupCancelRequest t-att-USERID="ID">
+            <FirmName t-esc="FirmName"/>
+            <SuiteOrApt t-esc="SuiteOrApt"/>
+            <Address2 t-esc="Address2"/>
+            <Urbanization t-esc="Urbanization"/>
+            <City t-esc="City"/>
+            <State t-esc="State"/>
+            <ZIP5 t-esc="ZIP5"/>
+            <ZIP4 t-esc="ZIP4"/>
+            <ConfirmationNumber t-esc="ConfirmationNumber"/>
+        </CarrierPickupCancelRequest>
+    </template>
+
+</odoo>

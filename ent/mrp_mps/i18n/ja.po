@@ -1,0 +1,460 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * mrp_mps
+# 
+# Translators:
+# Manami Hashi <manami@roomsfor.hk>, 2017
+# Yoshi Tashiro <tashiro@roomsfor.hk>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2017
+# SHIMIZU Taku <shimizu.taku@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:49+0000\n"
+"PO-Revision-Date: 2017-10-02 11:49+0000\n"
+"Last-Translator: SHIMIZU Taku <shimizu.taku@gmail.com>, 2017\n"
+"Language-Team: Japanese (https://www.transifex.com/odoo/teams/41243/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "&lt;&amp;hellip;&lt;"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"fa fa-fw\">-</span> Demand Forecast"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"fa fa-fw\">-</span> Indirect Demand"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid ""
+"<span class=\"fa fa-fw\">=</span> \n"
+"                                    Forecasted Inventory"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "<span class=\"text-muted\"> by</span>"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.mrp_mps_report_view_form
+msgid "Add Product"
+msgstr "製品追加"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:176
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+#, python-format
+msgid "Add a Product"
+msgstr "製品を追加"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "Apply"
+msgstr "申し込む"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_apply_active
+msgid "Apply Active"
+msgstr ""
+
+#. module: mrp_mps
+#: selection:sale.forecast,mode:0
+msgid "Automatic"
+msgstr "自動"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.mrp_mps_report_view_form
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Cancel"
+msgstr "取消"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_res_company
+msgid "Companies"
+msgstr "会社"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_company_id
+msgid "Company"
+msgstr "会社"
+
+#. module: mrp_mps
+#: model:stock.inventory.line,product_name:mrp_mps.mps_stock_inventory_line_1
+msgid "Computer SC234"
+msgstr "Computer SC234"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_create_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_create_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_create_uid
+msgid "Created by"
+msgstr "作成者"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_create_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_create_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_create_date
+msgid "Created on"
+msgstr "作成日"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:15
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:21
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Daily"
+msgstr "日次"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_date
+msgid "Date"
+msgstr "日付"
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_sale_forecast_product_uom_id
+msgid "Default Unit of Measure used for all stock operation."
+msgstr "全在庫操作のために使用されるデフォルト単位"
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_res_company_manufacturing_period
+#: model:ir.model.fields,help:mrp_mps.field_res_config_settings_manufacturing_period
+msgid ""
+"Default value for the time ranges in Master Production Schedule report."
+msgstr "基準生産計画レポートの時間範囲デフォルト値"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:37
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_forecast_qty
+#, python-format
+msgid "Demand Forecast"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_display_name
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_display_name
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_display_name
+msgid "Display Name"
+msgstr "表示名"
+
+#. module: mrp_mps
+#: selection:sale.forecast,state:0
+msgid "Done"
+msgstr "完了"
+
+#. module: mrp_mps
+#: selection:sale.forecast,state:0
+msgid "Forecast"
+msgstr "フォーキャスト"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:52
+#, python-format
+msgid "Forecast Inventory"
+msgstr ""
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:202
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+#, python-format
+msgid "Forecast Product"
+msgstr "製品フォーキャスト"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_forecasted
+msgid "Forecasted Target"
+msgstr "フォーキャストターゲット"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_mps
+#: model:ir.model.fields,help:mrp_mps.field_sale_forecast_to_supply
+msgid "If mode is Manual, this is the forced value"
+msgstr ""
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:42
+#, python-format
+msgid "Indirect Demand"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_quantity
+msgid "Indirect Quantity"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report___last_update
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast___last_update
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect___last_update
+msgid "Last Modified on"
+msgstr "最終更新日"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_write_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_write_uid
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_write_uid
+msgid "Last Updated by"
+msgstr "最終更新者"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_write_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_write_date
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_write_date
+msgid "Last Updated on"
+msgstr "最終更新日"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_apply
+msgid "Latest Apply"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "Launch Procurement"
+msgstr "調達を起動"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:6
+#, python-format
+msgid "Launch green cells"
+msgstr "緑のセルを起動"
+
+#. module: mrp_mps
+#: model:ir.ui.menu,name:mrp_mps.mrp_mps_menu_planning
+msgid "MPS"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_active
+msgid "MPS Active"
+msgstr "MPS有効"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "MPS in Main Warehouse"
+msgstr ""
+
+#. module: mrp_mps
+#: selection:sale.forecast,mode:0
+msgid "Manual"
+msgstr "手動"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_res_company_manufacturing_period
+#: model:ir.model.fields,field_description:mrp_mps.field_res_config_settings_manufacturing_period
+msgid "Manufacturing Period"
+msgstr "製造期間"
+
+#. module: mrp_mps
+#: model:ir.actions.client,name:mrp_mps.mrp_mps_report_action_client
+#: model:ir.ui.menu,name:mrp_mps.mrp_mps_report_menu
+msgid "Master Production Schedule"
+msgstr "基準生産計画"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_max_supply
+msgid "Maximum to Supply"
+msgstr "最大供給数"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_product_product_mps_min_supply
+msgid "Minimum to Supply"
+msgstr "最小供給数"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_mode
+msgid "Mode"
+msgstr "モード"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:13
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:19
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Monthly"
+msgstr "月次"
+
+#. module: mrp_mps
+#: model:stock.inventory.line,product_name:mrp_mps.mps_stock_inventory_line_0
+msgid "Mouse, Wireless"
+msgstr "ワイヤレスマウス"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_period
+msgid "Period"
+msgstr "期間"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:11
+#, python-format
+msgid "Period:"
+msgstr "期間:"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_group_id
+msgid "Procurement Group"
+msgstr "調達グループ"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_procurement_rule
+msgid "Procurement Rule"
+msgstr "調達規則"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_product_product
+#: model:ir.model.fields,field_description:mrp_mps.field_mrp_mps_report_product_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_product_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_product_origin_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_product_id
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Product"
+msgstr "製品"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_product_uom_id
+msgid "Product UoM"
+msgstr "製品単位"
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_indirect_warehouse_id
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_warehouse_id
+msgid "Production Location"
+msgstr "製造ロケーション"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:25
+#, python-format
+msgid "Rows"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.product_product_view_form_mps
+msgid "Save"
+msgstr "保存"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:32
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+#, python-format
+msgid "Starting Inventory"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_state
+msgid "State"
+msgstr "都道府県・州"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.res_config_settings_view_form
+msgid "Time Range"
+msgstr ""
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:47
+#, python-format
+msgid "To Produce"
+msgstr "生産予定"
+
+#. module: mrp_mps
+#: code:addons/mrp_mps/models/mrp_mps_report.py:123
+#, python-format
+msgid "To Reveive / To Supply / Produce"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model.fields,field_description:mrp_mps.field_sale_forecast_to_supply
+msgid "To Supply"
+msgstr ""
+
+#. module: mrp_mps
+#: code:addons/mrp_mps/models/mrp_mps_report.py:149
+#, python-format
+msgid "Week %s"
+msgstr ""
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:14
+#: code:addons/mrp_mps/static/src/xml/mps_backend.xml:20
+#: selection:mrp.mps.report,period:0
+#: selection:res.company,manufacturing_period:0
+#, python-format
+msgid "Weekly"
+msgstr "週次"
+
+#. module: mrp_mps
+#. openerp-web
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:80
+#: code:addons/mrp_mps/static/src/js/mrp_mps_report_widget.js:218
+#, python-format
+msgid "Wrong value entered!"
+msgstr "入力した値が間違っています!"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "double click in order to empty"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_mrp_mps_report
+msgid "mrp.mps.report"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_sale_forecast
+msgid "sale.forecast"
+msgstr "sale.forecast"
+
+#. module: mrp_mps
+#: model:ir.model,name:mrp_mps.model_sale_forecast_indirect
+msgid "sale.forecast.indirect"
+msgstr "sale.forecast.indirect"
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "set min-max"
+msgstr ""
+
+#. module: mrp_mps
+#: model:ir.ui.view,arch_db:mrp_mps.report_inventory
+msgid "set target"
+msgstr ""

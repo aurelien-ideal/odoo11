@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+
+    <t t-name="MPS.buttons">
+        <button type="button" class="btn btn-primary btn-sm">Launch green cells</button>
+    </t>
+    <t t-name="MPS.optionButton">
+        <div class="o_dropdown dropdown o_mps_period_filter">
+            <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="fa fa-calendar"/>
+                Period: 
+                <t t-if="period == 'month'">Monthly</t>
+                <t t-if="period == 'week'">Weekly</t>
+                <t t-if="period == 'day'">Daily</t>
+                <span class="caret"/>
+            </a>
+            <ul class="dropdown-menu o_filters_menu" role="menu">
+                <li data-value="month" t-att-class="'o_mps_option_mps_period ' + (period == 'month' and 'selected' or '')"><a>Monthly</a></li>
+                <li data-value="week" t-att-class="'o_mps_option_mps_period ' + (period == 'week' and 'selected' or '')"><a>Weekly</a></li>
+                <li data-value="day" t-att-class="'o_mps_option_mps_period ' + (period == 'day' and 'selected' or '')"><a>Daily</a></li>
+            </ul>
+        </div>
+        <div class="o_dropdown dropdown o_mps_columns_filter">
+            <a type="button" class="dropdown-toggle" data-toggle="dropdown">
+                Rows
+                <span class="caret"/>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li class="o_mps_option_mps_columns"><a>
+                    <label class="checkbox-inline">
+                        <input class="o_mps_mps_show_line" type="checkbox" data-value="start_inventory" checked="true">Starting Inventory</input>
+                    </label></a>
+                </li>
+                <li class="o_mps_option_mps_columns"><a>
+                    <label class="checkbox-inline">
+                        <input class="o_mps_mps_show_line" type="checkbox" data-value="demand_forecast" checked="true">Demand Forecast</input>
+                    </label></a>
+                </li>
+                <li class="o_mps_option_mps_columns"><a>
+                    <label class="checkbox-inline">
+                        <input class="o_mps_mps_show_line" type="checkbox" data-value="indirect_demand" checked="true">Indirect Demand</input>
+                    </label></a>
+                </li>
+                <li class="o_mps_option_mps_columns"><a>
+                    <label class="checkbox-inline">
+                        <input class="o_mps_mps_show_line" type="checkbox" data-value="to_produce" checked="true">To Produce</input>
+                    </label></a>
+                </li>
+                <li class="o_mps_option_mps_columns"><a>
+                    <label class="checkbox-inline">
+                        <input class="o_mps_mps_show_line" type="checkbox" data-value="forecast_inventory" checked="true">Forecast Inventory</input>
+                    </label></a>
+                </li>
+            </ul>
+        </div>
+    </t>
+
+</templates>

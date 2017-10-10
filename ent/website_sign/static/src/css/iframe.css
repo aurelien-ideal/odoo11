@@ -1,0 +1,193 @@
+
+#viewerContainer { /* PDFJS Viewer */
+    visibility: hidden;
+    opacity: 0.01;
+}
+
+#viewer { /* PDFJS Viewer */
+    padding-top: 21px; /* Allow space for the types toolbar */
+}
+
+.page { /* PDFJS Viewer */
+    position: relative;
+}
+
+.o_sign_signature_item {
+    position: absolute;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: 1px dashed #A4498C;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 3px 1px #A4498C;
+    resize: none;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    font-family: Helvetica;
+    line-height: 1.25;
+
+    z-index: 100;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+textarea.o_sign_signature_item {
+    white-space: pre;
+}
+
+.o_sign_signature_item_required {
+    background-color: rgba(255, 235, 235, 0.9);
+}
+
+.o_sign_signature_item_pdfview {
+    border: 1px dashed silver;
+    box-shadow: 0px 0px 0px 0px white;
+    overflow: visible;
+    background: transparent;
+    color: black;
+    cursor: auto;
+    white-space: pre;
+}
+
+.o_sign_signature_item .o_sign_helper {
+    vertical-align: middle;
+    height: 100%;
+    display: inline-block;
+}
+
+.o_sign_signature_item img {
+    width: 100%;
+    height: 100%;
+
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.o_sign_signature_item .o_sign_config_area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 10pt;
+    text-align: left;
+}
+
+.o_sign_signature_item .o_sign_config_area .fa-arrows {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.o_sign_signature_item .o_sign_config_area .o_sign_responsible_display {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ui-selected, .ui-selecting { /* jQuery UI */
+    box-shadow: 0px 0px 5px 1px orange;
+}
+
+.ui-draggable .ui-draggable-handle, .o_sign_field_type_button.ui-draggable { /* jQuery UI */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.ui-draggable-dragging .ui-draggable-handle, .o_sign_signature_item_to_add.ui-draggable-dragging { /* jQuery UI */
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.o_sign_signature_item_navigator {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    background-color: transparent;
+    background-image: url(../../img/navigator.png);
+    background-size: 100% 100%;
+
+    line-height: 50px;
+    height: 50px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+
+    z-index: 90;
+
+    padding: 0 20px 0 10px;
+    color: white;
+
+    cursor: pointer;
+}
+
+@media (max-width: 767px) { /* @screen-xs-max */
+    .o_sign_signature_item_navigator {
+        line-height: 25px;
+        height: 25px;
+        font-size: 0.8em;
+    }
+}
+
+.o_sign_signature_item_navline {
+    position: fixed;
+    top: 15%;
+    left: 1%;
+
+    pointer-events: none;
+    z-index: 80;
+
+    width: 99%;
+    height: 25px;
+    border-bottom: 1px dashed silver;
+    opacity: 0.5;
+}
+
+@media (max-width: 767px) { /* @screen-xs-max */
+    .o_sign_signature_item_navline {
+        line-height: 12.5px;
+        height: 12.5px;
+    }
+}
+
+.o_sign_field_type_toolbar {
+    width: 100%;
+    position: fixed;
+    z-index: 105;
+
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #E7E7E7;
+    text-align: center;
+
+    opacity: 0.0;
+    transition: opacity ease 500ms;
+}
+
+#viewerContainer:hover .o_sign_field_type_toolbar { /* PDFJS Viewer */
+    opacity: 1.0;
+}
+
+.o_sign_field_type_button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: none;
+    border-right: 1px solid #E7E7E7;
+
+    background-color: #875a7b;
+    color: white;
+
+    height: 30px;
+    padding: 0px 20px 0px 20px;
+}

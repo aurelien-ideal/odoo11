@@ -1,0 +1,192 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * l10n_us_check_printing
+#
+# Translators:
+# Grazziano Duarte <g.negocios@outlook.com.br>, 2015
+# Mateus Cerqueira Lopes <mateus1@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-07 14:56+0000\n"
+"PO-Revision-Date: 2015-12-14 01:01+0000\n"
+"Last-Translator: Grazziano Duarte <g.negocios@outlook.com.br>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/odoo/odoo-9/"
+"language/pt_BR/)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_margin_left
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_margin_top
+msgid ""
+"Adjust the margins of generated checks to make it fit your printer's "
+"settings."
+msgstr ""
+"Ajuste as margens de cheques gerados para combinar com as configurações da "
+"impressora."
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Amount Due"
+msgstr "Valor Devido"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Check Amount:"
+msgstr "Valor do Cheque"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_layout
+msgid "Check Layout"
+msgstr "Modelo de Cheque"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "Check in middle"
+msgstr "Cheque no meio"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "Check on bottom"
+msgstr "Cheque no rodapé"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "Check on top"
+msgstr "Cheque no topo"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Description"
+msgstr "Descrição"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_bottom_display_name
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_middle_display_name
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_top_display_name
+msgid "Display Name"
+msgstr "Nome de Exibição"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Due Date"
+msgstr "Data de Vencimento"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_bottom_id
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_middle_id
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_top_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Invoice Amount"
+msgstr "Valor da Fatura"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_bottom___last_update
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_middle___last_update
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_report_l10n_us_check_printing_print_check_top___last_update
+msgid "Last Modified on"
+msgstr "Última modificação em"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_margin_left
+msgid "Left Margin"
+msgstr "Margem Esquerda"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_multi_stub
+msgid "Multi-Pages Check Stub"
+msgstr "Canhotos de Cheque Multi-páginas"
+
+#. module: l10n_us_check_printing
+#: selection:res.company,us_check_layout:0
+msgid "None"
+msgstr "Nenhum"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.ckus_stub
+msgid "Payment"
+msgstr "Pagamento"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_account_payment
+msgid "Payments"
+msgstr "Pagamentos"
+
+#. module: l10n_us_check_printing
+#: model:ir.actions.report.xml,name:l10n_us_check_printing.action_print_check_bottom
+msgid "Print Check (Bottom)"
+msgstr "Imprimir o Cheque (Rodapé)"
+
+#. module: l10n_us_check_printing
+#: model:ir.actions.report.xml,name:l10n_us_check_printing.action_print_check_middle
+msgid "Print Check (Middle)"
+msgstr "Imprimir Cheque (Meio)"
+
+#. module: l10n_us_check_printing
+#: model:ir.actions.report.xml,name:l10n_us_check_printing.action_print_check_top
+msgid "Print Check (Top)"
+msgstr "Imprimir Cheque (Topo)"
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_layout
+msgid ""
+"Select the format corresponding to the check paper you will be printing your "
+"checks on.\n"
+"In order to disable the printing feature, select 'None'."
+msgstr ""
+"Selecione o formato correspondente ao papel de cheque que irá imprimir seus "
+"cheques.\n"
+"Para desativar o recurso de impressão, selecione 'Nenhum'."
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,help:l10n_us_check_printing.field_res_company_us_check_multi_stub
+msgid ""
+"This option allows you to print check details (stub) on multiple pages if "
+"they don't fit on a single page."
+msgstr ""
+"Esta opção permite que você imprima detalhes do cheque (rascunho) em várias "
+"páginas, se eles não se encaixarem em uma única página."
+
+#. module: l10n_us_check_printing
+#: model:ir.model.fields,field_description:l10n_us_check_printing.field_res_company_us_check_margin_top
+msgid "Top Margin"
+msgstr "Margem Superior"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.view_res_company_form_inherited
+msgid "US Check Printing"
+msgstr "Impressão de Cheque dos EU"
+
+#. module: l10n_us_check_printing
+#: model:ir.ui.view,arch_db:l10n_us_check_printing.view_res_company_form_inherited
+msgid "in"
+msgstr "em"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_report_l10n_us_check_printing_print_check_bottom
+msgid "report.l10n_us_check_printing.print_check_bottom"
+msgstr "report.l10n_us_check_printing.print_check_bottom"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_report_l10n_us_check_printing_print_check_middle
+msgid "report.l10n_us_check_printing.print_check_middle"
+msgstr "report.l10n_us_check_printing.print_check_middle"
+
+#. module: l10n_us_check_printing
+#: model:ir.model,name:l10n_us_check_printing.model_report_l10n_us_check_printing_print_check_top
+msgid "report.l10n_us_check_printing.print_check_top"
+msgstr "report.l10n_us_check_printing.print_check_top"

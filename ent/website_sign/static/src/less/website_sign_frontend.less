@@ -1,0 +1,81 @@
+
+.o_sign_document {
+    height: 100%;
+
+    > header {
+        .o-flex(0, 0, auto);
+        height: @navbar-height;
+        background-color: @odoo-brand-lightsecondary;
+        > div {
+            height: 100%;
+            .o-flex-display();
+            .o-align-items(center);
+            a {
+                .o-flex(0, 0, auto);
+                > img {
+                    height: @navbar-height - 10;
+                }
+            }
+
+            .o_sign_header_instruction {
+                font-size: 1.2em;
+                .o-flex(1, 1, auto);
+            }
+        }
+    }
+
+    ~ .modal .modal-content {
+        border-radius: 0;
+        border: none;
+
+        .btn {
+            border-radius: 0;
+            border: none;
+            color: @odoo-brand-optional;
+        }
+        .btn-primary {
+            background-color: @odoo-brand-optional;
+            color: white;
+        }
+
+        .modal-header {
+            background-color: @odoo-brand-primary;
+            color: #fff;
+            .modal-title {
+                line-height: 1;
+            }
+            .text-muted {
+                color: #fff;
+            }
+            .close {
+                color: #fff;
+                opacity: 1;
+                text-shadow: none;
+            }
+        }
+
+        .modal-body {
+            .o_thankyou_message {
+                margin-top: 25px;
+            }
+            .o_promote_esign {
+                background-color: @odoo-brand-lightsecondary;
+                margin-top: 40px;
+                padding: 0 0 10px 0;
+                h4 {
+                    color: @odoo-brand-primary;
+                }
+                img {
+                    padding-top: 20px;
+                    width: 90px;
+                }
+            }
+        }
+
+        .modal-footer {
+            border-top: none;
+            padding-top: 0;
+            text-align: left;
+        }
+    }
+}

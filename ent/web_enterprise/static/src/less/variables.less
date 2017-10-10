@@ -1,0 +1,51 @@
+///
+/// This file regroups the LESS variables that style odoo components.
+/// They are available in every asset bundle.
+///
+
+// Font sizes
+@odoo-font-size-base-touch: 15px;
+
+// Colors
+@odoo-brand-primary: @odoo-color-pink;
+@odoo-brand-optional: #00a09d;
+@odoo-brand-secondary: #8f8f8f;
+@odoo-brand-lightsecondary: @odoo-color-silver;
+
+@odoo-main-text-color: #666666;
+
+@odoo-control-panel-background-color: white;
+@odoo-form-lightsecondary: lighten(@odoo-brand-secondary, 25%);
+
+@odoo-list-footer-color: @text-color;
+@odoo-list-footer-bg-color: white;
+
+@odoo-tooltip-background-color: @odoo-view-background-color;
+@odoo-tooltip-color: @odoo-main-text-color;
+@odoo-tooltip-arrow-color: @odoo-main-text-color;
+
+// Layout
+@odoo-statbutton-height: 44px;
+@odoo-statbutton-vpadding: 0px;
+@odoo-statbutton-spacing: 6px;
+
+@odoo-navbar-height: 46px;
+@odoo-navbar-inverse-link-hover-bg: darken(@odoo-brand-primary, 10%);
+
+// ------------
+// Side chatter
+// ------------
+
+// The following variables control the sheet/chatter width. Both are
+// configured to not go below a given width (the side chatter feature is
+// only enabled when being able to render the sheet and the chatter to their
+// minimum width). From these widths, both can grow at equal rates.
+@o-chatter-min-width: 530px;
+@o-form-sheet-min-width: @container-md; // Safest is @container-md as it is
+                                        // the minimal width of the default
+                                        // form view design for md/lg sizes
+
+// Note: if we want to set the sidechatter to be enabled for a specific
+// screen size (like 1366px) then we have to choose the above values
+// accordingly (not directly set this next variable)
+@o-screen-sidechatter-min: (@o-form-sheet-min-width + 2 * @odoo-horizontal-padding + @o-chatter-min-width);

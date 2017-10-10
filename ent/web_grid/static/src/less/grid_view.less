@@ -1,0 +1,158 @@
+.o_web_client .o_view_grid {
+    cursor: default;
+
+    table {
+        margin-bottom: 0;
+        table-layout: fixed;
+        min-width: 100%;
+        width: auto;
+        max-width: none;
+    }
+    th, td {
+        border: 0 !important;
+        vertical-align: middle;
+        width: 5em;
+    }
+    .o_grid_title_header {
+        width: 10em;
+    }
+
+    thead {
+        color: @odoo-main-text-color;
+        background-color: @odoo-brand-lightsecondary;
+        th {
+            text-align: center;
+            white-space: pre-line;
+        }
+    }
+
+    tfoot, .o_grid_total {
+        color: white;
+        background-color: @odoo-brand-primary;
+        text-align: right;
+    }
+
+    tbody {
+        background-color: @odoo-view-background-color;
+        text-align: right;
+        th > div {
+            .o-flex-display();
+            > div {
+                .o-flex(1, 1, auto);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                &:before {
+                    content: "/\00a0";
+                    padding: 0 2px;
+                }
+                &:first-child:before {
+                    content: " ";
+                }
+                &:last-child {
+                    .o-flex(100, 1, auto);
+                }
+            }
+        }
+        tr:nth-of-type(odd) th > div:after {
+            background-color: @table-bg-accent;
+        }
+
+        .o_grid_cell_information {
+            cursor: pointer;
+            opacity: 0;
+            .o-transition(opacity, 100ms, ease);
+        }
+        .o_grid_cell_container {
+            .o-flex-display();
+            .o-align-items(center);
+
+            &:hover {
+                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px @odoo-brand-optional;
+
+                &.o_grid_cell_readonly {
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px @odoo-brand-lightsecondary;
+                    cursor: not-allowed;
+                }
+
+                .o_grid_cell_information {
+                    opacity: 0.4;
+                }
+            }
+
+            > i {
+                padding: 2px;
+                .o-flex(0, 0, auto);
+            }
+            > .o_grid_input, > .o_grid_show {
+                width: 100%;
+                .o-flex(1, 1, auto);
+            }
+
+            &.o_grid_cell_empty {
+                > .o_grid_input, > .o_grid_show {
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        .o_grid_input {
+            cursor: text;
+            text-align: right;
+            &:focus {
+                opacity: 1 !important;
+                background-color: @odoo-view-background-color;
+                outline: none;
+            }
+            &.has-error {
+                color: @state-danger-text;
+                border-color: @state-danger-text;
+                background-color: @state-danger-bg;
+            }
+        }
+
+        // "grouped" tbodies get special styling for their title rows (first
+        // row of the tbody) and the row labels of both title and regular rows
+        &.o_grid_section {
+            tr th {
+                padding-left: 3 * @table-condensed-cell-padding;
+            }
+            tr:first-child {
+                th {
+                    padding-left: @table-condensed-cell-padding;
+                    white-space: nowrap;
+                    text-align: left;
+                }
+                color: lighten(@odoo-main-text-color, 15%);
+                background-color: lighten(@odoo-brand-lightsecondary, 4%);
+            }
+        }
+    }
+
+    .o_grid_current:not(.o_grid_total) {
+        background-color: fade(@odoo-brand-optional, 25%);
+    }
+
+    .o_grid_text_muted{
+        color: lighten(@odoo-main-text-color, 15%);
+        font-style: italic;
+    }
+
+    .o_grid_add_line {
+        text-align: left;
+    }
+    @media print {
+        .o_grid_add_line {
+            display: none;
+        }
+    }
+
+    // ensure white background completely surrounds nocontent bubble
+    .o_grid_nocontent_container {
+        overflow: auto;
+
+        .oe_view_nocontent_img_link {
+            padding:10px;
+        }
+    }
+}

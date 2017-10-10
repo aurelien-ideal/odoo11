@@ -1,0 +1,61 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * website_quote_subscription
+# 
+# Translators:
+# grazziano <gra.negocia@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Mateus Lopes <mateus1@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: Mateus Lopes <mateus1@gmail.com>, 2017\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/odoo/teams/41243/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: website_quote_subscription
+#: model:ir.ui.view,arch_db:website_quote_subscription.order_line_row
+msgid "% discount"
+msgstr "% desconto"
+
+#. module: website_quote_subscription
+#: model:ir.model.fields,help:website_quote_subscription.field_sale_order_line_recurring_product
+msgid ""
+"If set, confirming a sale order with this product will create a subscription"
+msgstr ""
+"Se definido, confirmando uma ordem de venda com este produto irá criar uma "
+"assinatura"
+
+#. module: website_quote_subscription
+#: model:ir.ui.view,arch_db:website_quote_subscription.subscription_pricing
+msgid ""
+"One-time Fees <small>- These products will not be part of any "
+"subscription</small>"
+msgstr ""
+
+#. module: website_quote_subscription
+#: model:ir.model,name:website_quote_subscription.model_sale_order
+msgid "Quotation"
+msgstr "Cotação"
+
+#. module: website_quote_subscription
+#: model:ir.model.fields,field_description:website_quote_subscription.field_sale_order_line_recurring_product
+msgid "Recurring Product"
+msgstr "Produto Recorrente"
+
+#. module: website_quote_subscription
+#: model:ir.model,name:website_quote_subscription.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Linha do Pedido de Vendas"
+
+#. module: website_quote_subscription
+#: model:ir.ui.view,arch_db:website_quote_subscription.subscription_pricing
+msgid "Subscription -"
+msgstr ""

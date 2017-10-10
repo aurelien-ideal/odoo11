@@ -1,0 +1,380 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * web_enterprise
+# 
+# Translators:
+# digitouch UAB <digitouchagencyeur@gmail.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Anatolij <an@cq.lt>, 2017
+# Monika Raciunaite <monika.raciunaite@gmail.com>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.saas~18+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 11:50+0000\n"
+"PO-Revision-Date: 2017-10-02 11:50+0000\n"
+"Last-Translator: Monika Raciunaite <monika.raciunaite@gmail.com>, 2017\n"
+"Language-Team: Lithuanian (https://www.transifex.com/odoo/teams/41243/lt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:207
+#, python-format
+msgid "(Enterprise Edition)"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:66
+#, python-format
+msgid "1 month"
+msgstr "1 mėnuo"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base_mobile.xml:8
+#, python-format
+msgid "Action"
+msgstr "Veiksmas"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/js/views/relational_fields.js:51
+#, python-format
+msgid "Add an Item"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:240
+#: code:addons/web_enterprise/static/src/xml/base.xml:243
+#: code:addons/web_enterprise/static/src/xml/base.xml:249
+#: code:addons/web_enterprise/static/src/xml/base.xml:252
+#: code:addons/web_enterprise/static/src/xml/base.xml:258
+#: code:addons/web_enterprise/static/src/xml/base.xml:261
+#: code:addons/web_enterprise/static/src/xml/base.xml:267
+#: code:addons/web_enterprise/static/src/xml/base.xml:270
+#: code:addons/web_enterprise/static/src/xml/base.xml:276
+#: code:addons/web_enterprise/static/src/xml/base.xml:279
+#: code:addons/web_enterprise/static/src/xml/base.xml:285
+#: code:addons/web_enterprise/static/src/xml/base.xml:288
+#: code:addons/web_enterprise/static/src/xml/base.xml:294
+#: code:addons/web_enterprise/static/src/xml/base.xml:297
+#: code:addons/web_enterprise/static/src/xml/base.xml:303
+#: code:addons/web_enterprise/static/src/xml/base.xml:306
+#: code:addons/web_enterprise/static/src/xml/base.xml:312
+#: code:addons/web_enterprise/static/src/xml/base.xml:315
+#, python-format
+msgid "Alt"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base_mobile.xml:38
+#, python-format
+msgid "COMPANIES"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:243
+#: code:addons/web_enterprise/static/src/xml/base.xml:252
+#: code:addons/web_enterprise/static/src/xml/base.xml:261
+#: code:addons/web_enterprise/static/src/xml/base.xml:270
+#: code:addons/web_enterprise/static/src/xml/base.xml:279
+#: code:addons/web_enterprise/static/src/xml/base.xml:288
+#: code:addons/web_enterprise/static/src/xml/base.xml:297
+#: code:addons/web_enterprise/static/src/xml/base.xml:306
+#: code:addons/web_enterprise/static/src/xml/base.xml:315
+#, python-format
+msgid "Control"
+msgstr "Kontrolė"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:265
+#, python-format
+msgid "Create a new record"
+msgstr "Sukurti naują įrašą"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:213
+#, python-format
+msgid "Database expiration:"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:231
+#, python-format
+msgid "Description"
+msgstr "Aprašymas"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:256
+#, python-format
+msgid "Discard a record modification"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:247
+#, python-format
+msgid "Edit a record"
+msgstr "Redaguoti įrašą"
+
+#. module: web_enterprise
+#: model:ir.model,name:web_enterprise.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP nukreipimas"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/js/widgets/user_menu.js:57
+#, python-format
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:97
+#, python-format
+msgid "Log in as an administrator to correct the issue."
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:233
+#, python-format
+msgid "Mac"
+msgstr "Mac"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:47
+#, python-format
+msgid "No result"
+msgstr "Jokių rezultatų"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:206
+#, python-format
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:110
+#, python-format
+msgid "Odoo Help"
+msgstr "Odoo pagalba"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:301
+#, python-format
+msgid "Open the next record"
+msgstr "Atverti kitą įrašą"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:292
+#, python-format
+msgid "Open the previous record"
+msgstr "Atverti ankstesnį įrašą"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:283
+#, python-format
+msgid "Open to kanban view"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:274
+#, python-format
+msgid "Open to list view"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:118
+#, python-format
+msgid "Paste code here"
+msgstr "Įterpkite kodą čia"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:89
+#: code:addons/web_enterprise/static/src/xml/base.xml:94
+#, python-format
+msgid "Refresh subscription status"
+msgstr "Atnaujinti prenumeratos būseną"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:120
+#, python-format
+msgid "Register"
+msgstr "Registruotis"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:85
+#, python-format
+msgid "Register your subscription"
+msgstr "Registruoti Jūsų prenumeratą"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:88
+#, python-format
+msgid "Renew your subscription"
+msgstr "Atnaujinti Jūsų prenumeratą"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:238
+#, python-format
+msgid "Save a record"
+msgstr "Išsaugoti įrašą"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:7
+#, python-format
+msgid "Search..."
+msgstr "Ieškoti..."
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:220
+#, python-format
+msgid "Shortcuts"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:109
+#, python-format
+msgid ""
+"Something went wrong while registering your database. You can try again or "
+"contact"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:115
+#, python-format
+msgid "Subscription Code:"
+msgstr "Prenumeratos kodas:"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:103
+#, python-format
+msgid ""
+"Thank you, your registration was successful! Your database is valid until"
+msgstr "Ačiū, Jūsų registracija sėkminga! Jūsų duomenų bazė galioja iki"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:79
+#, python-format
+msgid "This database has expired."
+msgstr "Ši duomenų bazė nebegalioja"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:75
+#, python-format
+msgid "This database will expire in"
+msgstr "Ši duomenų bazė nustos galioti"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:72
+#, python-format
+msgid "This demo database will expire in"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:310
+#, python-format
+msgid "Toggle home menu"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:93
+#, python-format
+msgid "Upgrade your subscription"
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:232
+#, python-format
+msgid "Windows/Linux"
+msgstr "Windows/Linux"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:91
+#, python-format
+msgid "You have more users than your subscription allows."
+msgstr "Jūs turite daugiau vartotojų nei leidžia Jūsų prenumerata."
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:61
+#, python-format
+msgid ""
+"You will be able to register your database once you have installed your "
+"first app."
+msgstr ""
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:118
+#, python-format
+msgid "Your subscription code"
+msgstr "Jūsų prenumeratos kodas"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:106
+#, python-format
+msgid "Your subscription was updated and is valid until"
+msgstr "Jūsų prenumerata buvo atnaujinta ir galioja iki"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:85
+#, python-format
+msgid "buy a subscription"
+msgstr "pirkite prenumeratą"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:69
+#, python-format
+msgid "days"
+msgstr "dienos"
+
+#. module: web_enterprise
+#. openerp-web
+#: code:addons/web_enterprise/static/src/xml/base.xml:85
+#, python-format
+msgid "or"
+msgstr "arba"
